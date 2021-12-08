@@ -3,5 +3,5 @@ const nextTranslate = require('next-translate');
 module.exports = {
   ...nextTranslate(),
   reactStrictMode: true,
-  exportTrailingSlash: true
+  trailingSlash: true
 };
