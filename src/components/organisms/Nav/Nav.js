@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-function Nav(props) {
+function Nav() {
   return <div>nav</div>;
 }
 

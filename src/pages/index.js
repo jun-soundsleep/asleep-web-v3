@@ -29,10 +29,3 @@ export default function Index() {
     </div>
   );
 }
-
-const Test = styled.div`
-  font-family: 'Pretendard';
-  width: 500px;
-  height: 500px;
-  background-color: var(--main-color);
-`;

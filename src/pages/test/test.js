@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-function test({ data }) {
+function TestComp({ data }) {
   return (
     <>
       <Link href="/test/test" locale="en">
@@ -58,4 +58,4 @@ const Test4 = styled.div`
   background-color: var(--main-color);
 `;
 
-export default test;
+export default TestComp;
