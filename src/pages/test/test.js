@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-function TestComp({ data }) {
+function TestComp() {
   return (
     <>
       <Link href="/test/test" locale="en">
