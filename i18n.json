@@ -3,6 +3,7 @@
   "defaultLocale": "ko",
   "locales": ["ko", "en"],
   "pages": {
-    "*": ["common"]
+    "*": ["common"],
+    "/": ["common"]
   }
 }

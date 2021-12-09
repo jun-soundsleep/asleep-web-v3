@@ -13,7 +13,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -37,4 +37,8 @@ input {
 ol,
 ul {
   list-style: none;
+}
+
+.bar-of-progress {
+  z-index: 50;
 }
