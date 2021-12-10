@@ -3,14 +3,14 @@ import styled from '@emotion/styled';
 import { mp } from '../../../styles/device';
 import Head from 'next/head';
 
-function IndexMainImage({ src, ...props }) {
+function IndexMainImage({ src, forwardedRef }) {
   console.log(src);
   return (
     <>
       <Head>
         <link rel="preload" href={src} as="image" />
       </Head>
-      <IndexMainImageContainer>
+      <IndexMainImageContainer ref={forwardedRef}>
         <ImageContainer src={src} />
       </IndexMainImageContainer>
 
