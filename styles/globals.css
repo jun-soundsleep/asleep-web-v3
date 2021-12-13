@@ -7,6 +7,59 @@
   --dark-grey: #222227;
   --brown-grey: #a8a8a8;
   --very-light-pink-two: #ececec;
+  --greyish-brown: #515151;
+  --brown-grey-three: #7e7e7e;
+  --light-peach: #b6b6b6;
+
+  /* 새로 import  */
+  --dark-grey: #222227;
+  --brown-grey-two: #8d8d8d;
+  --text-in-light-text-10: #221714;
+  --text-in-light-text-06: #696969;
+  --components-components-02: #f2f2f2;
+  --backgorund-bg-04: #191f2e;
+  --text-in-dark-text-03: #a8a8a8;
+  --text-in-dark-text-01: #ececec;
+  --text-in-dark-text-00: #fff;
+  --text-in-light-text-07: #515151;
+  --text-in-light-text-05: #7e7e7e;
+  --text-in-light-text-02: #b6b6b6;
+  --text-in-light-text-08: #3f3f3f;
+  --text-in-light-text-01: #cecece;
+  --text-in-light-text-04: #959595;
+  --text-in-dark-text-02: #b2b2b2;
+  --primary-primary-in-light: #406bff;
+  --text-in-light-text-09: #232324;
+  --primary-primary-in-dark: #3e53c0;
+  --sub-sub-03: #f6f6f6;
+  --sub-sub-02: #eff0f4;
+  --sub-sub-01: #f5f5f8;
+  --sub-sub-04: #d8e1ff;
+  --sub-sub-05: #8f94a6;
+  --components-components-03: #e8e8e8;
+  --components-components-00: #fff;
+  --components-components-01: #f6f6f6;
+  --components-components-05: #eee;
+  --components-components-04: #ddd;
+  --sub-sub-07: #273256;
+  --components-components-06: #363640;
+  --backgorund-bg-00: #fff;
+  --backgorund-bg-01: #f8f8f8;
+  --backgorund-bg-06: #29292e;
+  --backgorund-bg-03: #f0f0f0;
+  --backgorund-bg-05: #11141b;
+  --alpha-alpha-03: rgba(255, 255, 255, 0.02);
+  --alpha-alpha-05: rgba(17, 18, 19, 0.3);
+  --alpha-alpha-02: rgba(240, 240, 240, 0.25);
+  --alpha-alpha-04: rgba(240, 240, 240, 0.56);
+  --backgorund-bg-07: #232330;
+  --alpha-alpha-01: rgba(35, 35, 36, 0.32);
+  --alpha-alpha-07: rgba(208, 208, 208, 0.34);
+  --alpha-alpha-06: rgba(23, 31, 47, 0.38);
+  --dim-dim-03: rgba(0, 0, 0, 0.25);
+  --dim-dim-02: rgba(0, 0, 0, 0.6);
+  --dim-dim-04: rgba(0, 0, 0, 0.45);
+  --dim-dim-01: rgba(0, 0, 0, 0.75);
 }
 
 * {
@@ -39,6 +92,7 @@ input {
   outline: none;
   border: 0;
   background: none;
+  padding: 0;
 }
 
 ol,
