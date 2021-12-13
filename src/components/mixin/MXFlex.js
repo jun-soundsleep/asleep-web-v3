@@ -26,3 +26,8 @@ export const MXFlexDirectionColumn = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const MXFlexVerticalCentering = styled.div`
+  display: flex;
+  align-items: center;
+`;

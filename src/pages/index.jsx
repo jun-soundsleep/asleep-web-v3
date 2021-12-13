@@ -3,10 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
-import IndexMainImage from '../components/atoms/IndexMainImage';
-import IndexMainImageTest from '../components/atoms/IndexMainImageTest';
-import { useEffect, useRef } from 'react';
-import IndexMainImageFull from '../components/atoms/IndexMainImageFull';
+import Footer from '../components/organisms/Footer/Footer';
 
 export default function Index() {
   const { locale, locales, defaultLocale } = useRouter();
@@ -19,9 +16,9 @@ export default function Index() {
       <Head>
         <title>Asleep Web</title>
       </Head>
-      <IndexMainImageFull
+      {/* <IndexMainImageFull
         src={'https://static.toss.im/3d/toss-im-web-intro-still-start.jpg'}
-      />
+      /> */}
 
       {/* <div>{t('common:greeting')}</div>
       <Link href="/" locale="en">
@@ -35,6 +32,7 @@ export default function Index() {
         <ImageTest />
       </ImageTestContainer> */}
       {/* <IndexMainImageTest src={'https://www.lunit.io/img/news/hero.jpg'} /> */}
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 :root {
   --main-color: hotpink;
+  --black: #221714;
+  --brownish-grey: #696969;
 }
 
 * {
@@ -35,8 +37,11 @@ input {
 }
 
 ol,
-ul {
+ul,
+li {
   list-style: none;
+  padding-inline-start: 0px;
+  margin: 0px;
 }
 
 .bar-of-progress {
