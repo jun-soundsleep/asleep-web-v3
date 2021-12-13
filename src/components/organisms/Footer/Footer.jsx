@@ -165,7 +165,7 @@ const FooterWrapper = styled.footer`
   padding: 44px 0px 64px 22px;
   background-color: var(--white);
   background-color: ${({ darkMode }) =>
-    darkMode ? ' var(--dark) ' : 'var(--brownish-grey)'};
+    darkMode ? ' var(--dark) ' : 'var(--text-in-dark-text-00)'};
   border-top: 2px solid var(--very-light-pink);
 
   ${mp[0]} {
@@ -176,7 +176,7 @@ const FooterWrapper = styled.footer`
 const OverLargeFooter = styled.footer`
   display: none;
   background-color: ${({ darkMode }) =>
-    darkMode ? ' var(--dark) ' : 'var(--brownish-grey)'};
+    darkMode ? ' var(--dark) ' : 'var(--text-in-dark-text-00)'};
   border-top: 2px solid var(--very-light-pink);
   padding: 40px 0px 140px 104px;
 
