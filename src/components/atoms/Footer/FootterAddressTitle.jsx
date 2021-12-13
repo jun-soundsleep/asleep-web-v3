@@ -19,5 +19,5 @@ const AddressTitle = styled.div`
   line-height: normal;
   letter-spacing: -0.54px;
   text-align: left;
-  color: var(--brownish-grey);
+  color: var(--black);
 `;

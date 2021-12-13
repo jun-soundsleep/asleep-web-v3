@@ -37,5 +37,5 @@ const Address = styled.address`
   line-height: 2;
   letter-spacing: -0.54px;
   text-align: left;
-  color: var(--brownish-grey);
+  color: var(--black);
 `;

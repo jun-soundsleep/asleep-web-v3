@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { MXFlexVerticalCentering } from '../../mixin/MXFlex';
+import { mp } from '../../../../styles/device';
 
 function FooterExternalConnection({ item, margin, href }) {
   return (
@@ -40,4 +41,8 @@ const Item = styled.div`
   text-align: left;
   color: var(--brownish-grey);
   cursor: pointer;
+
+  ${mp[1]} {
+    font-size: 16px;
+  }
 `;

@@ -20,7 +20,13 @@ const Title = styled.li`
   text-align: left;
   color: var(--black);
 
+  ${mp[0]} {
+    line-height: 1.67;
+    letter-spacing: 0.12px;
+    margin-bottom: 12px;
+  }
+
   ${mp[1]} {
-    font-size: 22px;
+    font-size: 18px;
   }
 `;

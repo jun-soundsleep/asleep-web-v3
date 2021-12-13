@@ -31,4 +31,14 @@ const Container = styled.li`
     text-decoration: underline;
     color: var(--black);
   }
+
+  ${mp[0]} {
+    line-height: 1.73;
+    letter-spacing: 0.11px;
+    margin: ${({ margin }) => (margin ? margin : ' 0px 0px 6px 0px')};
+  }
+
+  ${mp[1]} {
+    font-size: 16px;
+  }
 `;
