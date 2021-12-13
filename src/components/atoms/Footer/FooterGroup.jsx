@@ -2,8 +2,12 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
 
-function FooterGroup({ title, margin }) {
-  return <Title margin={margin}>{title}</Title>;
+function FooterGroup({ title, margin, darkMode }) {
+  return (
+    <Title margin={margin} darkMode={darkMode}>
+      {title}
+    </Title>
+  );
 }
 
 export default FooterGroup;
@@ -18,7 +22,8 @@ const Title = styled.li`
   line-height: 1.86;
   letter-spacing: -0.63px;
   text-align: left;
-  color: var(--black);
+  color: ${({ darkMode }) =>
+    darkMode ? 'var(--very-light-pink-two)' : 'var(--black)'};
 
   ${mp[0]} {
     line-height: 1.67;

@@ -3,17 +3,31 @@ import styled from '@emotion/styled';
 import FooterGroup from '../../atoms/Footer/FooterGroup';
 import FooterGroupItem from '../../atoms/Footer/FooterGroupItem';
 
-function FotterMoculeGroup({ width, margin, title, item, rightItem }) {
+function FotterMoculeGroup({
+  width,
+  margin,
+  title,
+  item,
+  rightItem,
+  darkMode
+}) {
+  console.log(darkMode);
+
   return (
     <FotterMoculeGroupWrapper
       rightItem={rightItem}
       margin={margin}
       width={width}
     >
-      <FooterGroup title={title} />
+      <FooterGroup title={title} darkMode={darkMode} />
       {item &&
         item.map(({ item, href, outerLink }) => (
-          <FooterGroupItem item={item} href={href} outerLink={outerLink} />
+          <FooterGroupItem
+            item={item}
+            href={href}
+            outerLink={outerLink}
+            darkMode={darkMode}
+          />
         ))}
     </FotterMoculeGroupWrapper>
   );

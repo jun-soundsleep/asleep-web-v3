@@ -3,9 +3,9 @@ import Link from 'next/link';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
 
-function FooterGroupItem({ item, margin, href }) {
+function FooterGroupItem({ item, margin, href, darkMode }) {
   return (
-    <Container margin={margin}>
+    <Container margin={margin} darkMode={darkMode}>
       <Link href={href}>
         <a>{item}</a>
       </Link>
@@ -24,12 +24,14 @@ const Container = styled.li`
   line-height: 1.86;
   letter-spacing: -0.63px;
   text-align: left;
-  color: var(--brownish-grey);
+  color: ${({ darkMode }) =>
+    darkMode ? ' var(--brown-grey) ' : 'var(--brownish-grey)'};
   cursor: pointer;
 
   & :hover {
     text-decoration: underline;
-    color: var(--black);
+    color: ${({ darkMode }) =>
+      darkMode ? ' var(--very-light-pink-two) ' : 'var(--brownish-grey)'};
   }
 
   ${mp[0]} {

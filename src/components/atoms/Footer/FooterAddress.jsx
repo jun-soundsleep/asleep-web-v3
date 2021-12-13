@@ -2,10 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { useRouter } from 'next/router';
 
-function FooterAddress({ margin }) {
+function FooterAddress({ margin, darkMode }) {
   const router = useRouter();
   return (
-    <Address margin={margin}>
+    <Address margin={margin} darkMode={darkMode}>
       {router.locale === 'ko' ? (
         <span>
           사업자 등록번호: 840-81-02142 | 대표: 이동헌
@@ -37,5 +37,6 @@ const Address = styled.address`
   line-height: 2;
   letter-spacing: -0.54px;
   text-align: left;
-  color: var(--black);
+  color: ${({ darkMode }) =>
+    darkMode ? 'var(--very-light-pink-two)' : 'var(--black)'};
 `;

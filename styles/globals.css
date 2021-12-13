@@ -2,6 +2,11 @@
   --main-color: hotpink;
   --black: #221714;
   --brownish-grey: #696969;
+  --very-light-pink: #f2f2f2;
+  --dark: #191f2e;
+  --dark-grey: #222227;
+  --brown-grey: #a8a8a8;
+  --very-light-pink-two: #ececec;
 }
 
 * {

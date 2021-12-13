@@ -3,15 +3,19 @@ import styled from '@emotion/styled';
 import { MXFlexVerticalCentering } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
 
-function FooterExternalConnection({ item, margin, href }) {
+function FooterExternalConnection({ item, margin, href, darkMode }) {
   return (
     <a href={href} target="_blank" rel="noreferrer">
-      <FooterExternalConnectionContainer margin={margin}>
-        <Item>{item}</Item>
+      <FooterExternalConnectionContainer margin={margin} darkMode={darkMode}>
+        <Item darkMode={darkMode}>{item}</Item>
         <img
           width={14}
           height={14}
-          src="/images/icon/components-icons-icons-arrow-up-right.svg"
+          src={
+            darkMode
+              ? '/images/icon/components-icons-icons-arrow-up-right-white.svg'
+              : '/images/icon/components-icons-icons-arrow-up-right.svg'
+          }
           alt="icons-arrow-up-right"
         />
       </FooterExternalConnectionContainer>
@@ -25,7 +29,8 @@ const FooterExternalConnectionContainer = styled(MXFlexVerticalCentering)`
   margin: ${({ margin }) => margin && margin};
 
   & :hover {
-    color: var(--black);
+    color: ${({ darkMode }) =>
+      darkMode ? ' var(--very-light-pink-two) ' : 'var(--black)'};
     text-decoration: underline;
   }
 `;
@@ -39,7 +44,8 @@ const Item = styled.div`
   line-height: 1.86;
   letter-spacing: -0.63px;
   text-align: left;
-  color: var(--brownish-grey);
+  color: ${({ darkMode }) =>
+    darkMode ? 'var(--brown-grey)' : 'var(--brownish-grey)'};
   cursor: pointer;
 
   ${mp[1]} {
