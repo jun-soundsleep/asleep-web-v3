@@ -3,9 +3,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
-import Footer from '../components/organisms/Footer/Footer';
-import Nav from '../components/organisms/Nav/Nav';
-import Blank from '../components/atoms/Blank';
+import AsleepLayout from '../../src/components/organisms/AppLayout/AsleepLayout';
+import MainBigImageSection from '../components/organisms/Main/MainBigImageSection';
 
 export default function Index() {
   const { locale, locales, defaultLocale } = useRouter();
@@ -14,30 +13,21 @@ export default function Index() {
   const title = t('common:greeting');
 
   return (
-    <div>
+    <>
       <Head>
         <title>Asleep Web</title>
       </Head>
       {/* <IndexMainImageFull
         src={'https://static.toss.im/3d/toss-im-web-intro-still-start.jpg'}
       /> */}
-
-      {/* <div>{t('common:greeting')}</div>
-      <Link href="/" locale="en">
-        <a>영어</a>
-      </Link>
-      <Link href="/" locale="ko">
-        <a>한국어</a>
-      </Link> */}
       {/* <img src="https://www.lunit.io/img/news/hero.jpg" alt="" /> */}
       {/* <ImageTestContainer>
         <ImageTest />
       </ImageTestContainer> */}
-      {/* <IndexMainImageTest src={'https://www.lunit.io/img/news/hero.jpg'} /> */}
-      <Nav />
-      <Blank height={'900px'} />
-      <Footer />
-    </div>
+      <AsleepLayout>
+        <MainBigImageSection />
+      </AsleepLayout>
+    </>
   );
 }
 

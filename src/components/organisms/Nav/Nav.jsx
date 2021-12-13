@@ -11,12 +11,10 @@ import { mp } from '../../../../styles/device';
 function Nav() {
   const [menuSelected, setMenuSelected] = useState(false);
 
-  console.log(menuSelected);
   const mobileMenuClickHandler = () => {
     setMenuSelected(!menuSelected);
   };
   const largeView = useMediaQuery({ query: '(min-width: 1920px)' });
-  console.warn(largeView);
 
   return (
     <>
@@ -104,7 +102,7 @@ const LogoContainer = styled.nav`
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: var(--main-nav);
   background-color: var(--text-in-dark-text-00);
 
   ${mp[0]} {
@@ -136,6 +134,12 @@ const OverTabletNavContainer = styled.nav`
   ${mp[0]} {
     display: block;
     height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--main-nav);
+    background-color: var(--text-in-dark-text-00);
   }
 `;
 

@@ -6,7 +6,7 @@ import FotterMoculeGroup from '../../mocules/Footer/FotterMoculeGroup';
 import FootterAddressTitle from '../../atoms/Footer/FootterAddressTitle';
 import FooterAddress from '../../atoms/Footer/FooterAddress';
 import FooterExternalConnection from '../../atoms/Footer/FooterExternalConnection';
-import Blank from '../../atoms/Blank';
+import Blank from '../../atoms/Common/Blank';
 import { mp } from '../../../../styles/device';
 import {
   BIZ_ITEM,
