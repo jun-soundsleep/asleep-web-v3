@@ -37,8 +37,6 @@ export default function Index() {
       <Nav />
       <Blank height={'900px'} />
       <Footer />
-      <Footer />
-      <Footer />
     </div>
   );
 }

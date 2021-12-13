@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
-
+import { mp } from '../../../../styles/device';
 function NavBarItem({ item, margin, on, href }) {
   return (
     <NavBarContainer margin={margin} on={on}>
@@ -25,4 +25,22 @@ const NavBarContainer = styled.li`
   letter-spacing: 0.64px;
   text-align: left;
   color: ${({ on }) => (on ? ' var(--black)' : 'var(--brown-grey-three)')};
+
+  ${mp[0]} {
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
+  }
+
+  ${mp[1]} {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+  }
 `;

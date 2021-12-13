@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { mp } from '../../../../styles/device';
 
-function NavLanguageChangeButton() {
+function NavLanguageChangeButton({ margin }) {
   const router = useRouter();
-  console.log(router.path);
 
   return (
-    <LanguageButton>
+    <LanguageButton margin={margin}>
       <Link locale="ko" href={router.pathname}>
         <a>
           {' '}
@@ -28,7 +28,7 @@ function NavLanguageChangeButton() {
 export default NavLanguageChangeButton;
 
 const LanguageButton = styled.button`
-  margin-top: 64px;
+  margin: ${({ margin }) => (margin ? margin : '64px 0px 0px')};
   font-family: RedHatDisplay;
   font-size: 16px;
   font-weight: normal;
@@ -37,6 +37,24 @@ const LanguageButton = styled.button`
   line-height: 1.63;
   letter-spacing: 0.64px;
   text-align: left;
+
+  ${mp[0]} {
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
+  }
+
+  ${mp[1]} {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+  }
 `;
 
 const HorizontalDivider = styled.span`

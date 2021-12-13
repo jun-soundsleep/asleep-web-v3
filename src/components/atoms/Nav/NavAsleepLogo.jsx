@@ -1,7 +1,9 @@
 import React from 'react';
+import { useRouter } from 'next/router';
+import styled from '@emotion/styled';
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { mp } from '../../../../styles/device';
 
 function NavAsleepLogo() {
   const router = useRouter();
@@ -13,12 +15,9 @@ function NavAsleepLogo() {
       </Head>
       <Link href={'/'} locale={router.locale}>
         <a>
-          <img
-            width={96}
-            height={17}
-            src="/images/icon/asleep_logo.svg"
-            alt={'asleepLogo'}
-          />
+          <LogoContainer>
+            <AsleepLogo />
+          </LogoContainer>
         </a>
       </Link>
     </>
@@ -26,3 +25,25 @@ function NavAsleepLogo() {
 }
 
 export default NavAsleepLogo;
+
+const AsleepLogo = styled.div`
+  background: url('/images/icon/asleep_logo.svg');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+`;
+
+const LogoContainer = styled.div`
+  width: 96px;
+  height: 17px;
+
+  ${mp[0]} {
+    width: 64px;
+    height: 10.4px;
+  }
+
+  ${mp[1]} {
+    width: 145px;
+    height: 22px;
+  }
+`;
