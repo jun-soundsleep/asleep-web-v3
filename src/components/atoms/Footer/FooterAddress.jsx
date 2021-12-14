@@ -38,5 +38,7 @@ const Address = styled.address`
   letter-spacing: -0.54px;
   text-align: left;
   color: ${({ darkMode }) =>
-    darkMode ? 'var(--very-light-pink-two)' : 'var(--black)'};
+    darkMode
+      ? 'var(--components-components-02)'
+      : 'var(--text-in-light-text-10)'};
 `;

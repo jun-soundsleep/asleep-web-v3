@@ -24,7 +24,8 @@ const NavBarContainer = styled.li`
   line-height: 1.63;
   letter-spacing: 0.64px;
   text-align: left;
-  color: ${({ on }) => (on ? ' var(--black)' : 'var(--brown-grey-three)')};
+  color: ${({ on }) =>
+    on ? ' var(--text-in-light-text-10)' : 'var(--text-in-dark-text-03)'};
 
   ${mp[0]} {
     font-size: 10px;

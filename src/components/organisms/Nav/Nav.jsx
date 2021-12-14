@@ -7,14 +7,20 @@ import NavLanguageChangeButton from '../../atoms/Nav/NavLanguageChangeButton';
 import { useMediaQuery } from 'react-responsive';
 import { MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
+import { useRouter } from 'next/router';
 
 function Nav() {
+  const router = useRouter();
   const [menuSelected, setMenuSelected] = useState(false);
+  const largeView = useMediaQuery({ query: '(min-width: 1920px)' });
 
   const mobileMenuClickHandler = () => {
     setMenuSelected(!menuSelected);
   };
-  const largeView = useMediaQuery({ query: '(min-width: 1920px)' });
+
+  const handleItemActive = path => {
+    return router.pathname === path;
+  };
 
   return (
     <>
@@ -32,23 +38,32 @@ function Nav() {
               item={'Company'}
               margin={'44px 0px 28px 0px'}
               href="company"
+              on={handleItemActive('/company')}
             />
             <NavBarItem
               margin={'0px 0px 28px 0px'}
               item={'Technology'}
               href="technology"
+              on={handleItemActive('/technology')}
             />
             <NavBarItem
               margin={'0px 0px 28px 0px'}
               item={'Business'}
               href="business"
+              on={handleItemActive('/business')}
             />
             <NavBarItem
               margin={'0px 0px 28px 0px'}
               item={'People'}
               href="people"
+              on={handleItemActive('/business')}
             />
-            <NavBarItem margin={'0px 0px 28px 0px'} item={'News'} href="news" />
+            <NavBarItem
+              margin={'0px 0px 28px 0px'}
+              item={'News'}
+              href="news"
+              on={handleItemActive('/news')}
+            />
             <NavLanguageChangeButton />
           </ul>
         </DetailItem>
@@ -64,26 +79,31 @@ function Nav() {
                 item={'Company'}
                 href="company"
                 margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
+                on={handleItemActive('/company')}
               />
               <NavBarItem
                 item={'Technology'}
                 href="technology"
                 margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
+                on={handleItemActive('/technology')}
               />
               <NavBarItem
                 item={'Business'}
                 href="business"
                 margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
+                on={handleItemActive('/business')}
               />
               <NavBarItem
                 item={'People'}
                 href="people"
                 margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
+                on={handleItemActive('/people')}
               />
               <NavBarItem
                 item={'News'}
                 href="news"
                 margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
+                on={handleItemActive('/news')}
               />
               <NavLanguageChangeButton margin="0ox" />
             </ItemListContainer>

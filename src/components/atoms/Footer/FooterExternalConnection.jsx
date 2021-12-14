@@ -30,7 +30,9 @@ const FooterExternalConnectionContainer = styled(MXFlexVerticalCentering)`
 
   & :hover {
     color: ${({ darkMode }) =>
-      darkMode ? ' var(--very-light-pink-two) ' : 'var(--black)'};
+      darkMode
+        ? ' var(--components-components-02) '
+        : 'var(--text-in-light-text-10)'};
     text-decoration: underline;
   }
 `;
@@ -45,7 +47,7 @@ const Item = styled.div`
   letter-spacing: -0.63px;
   text-align: left;
   color: ${({ darkMode }) =>
-    darkMode ? 'var(--brown-grey)' : 'var(--brownish-grey)'};
+    darkMode ? 'var(--text-in-dark-text-03)' : 'var(--text-in-light-text-06)'};
   cursor: pointer;
 
   ${mp[1]} {

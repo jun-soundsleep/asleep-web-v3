@@ -25,13 +25,17 @@ const Container = styled.li`
   letter-spacing: -0.63px;
   text-align: left;
   color: ${({ darkMode }) =>
-    darkMode ? ' var(--brown-grey) ' : 'var(--brownish-grey)'};
+    darkMode
+      ? ' var(--text-in-dark-text-03) '
+      : 'var(--text-in-light-text-06)'};
   cursor: pointer;
 
   & :hover {
     text-decoration: underline;
     color: ${({ darkMode }) =>
-      darkMode ? ' var(--very-light-pink-two) ' : 'var(--brownish-grey)'};
+      darkMode
+        ? ' var(--text-in-dark-text-01) '
+        : 'var(--text-in-light-text-06)'};
   }
 
   ${mp[0]} {

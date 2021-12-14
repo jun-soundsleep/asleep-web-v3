@@ -16,10 +16,12 @@ import {
   TECH_ITEM
 } from '../../../data/footer/FOOTER_DATA';
 import { useRouter } from 'next/router';
+import { useMediaQuery } from 'react-responsive';
 
 function Footer() {
   const router = useRouter();
   const { t } = useTranslation();
+  const largeView = useMediaQuery({ query: '(min-width: 1920px)' });
 
   const checkIfTechPageOrNot = () => {
     console.log(router.pathname === '/technology');
@@ -98,34 +100,34 @@ function Footer() {
             title="Company"
             item={COMPANY_ITEM}
             width={'auto'}
-            margin="0px 48px 0px 0px"
+            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <FotterMoculeGroup
             darkMode={checkIfTechPageOrNot()}
             title="Tech"
             item={TECH_ITEM}
             width={'auto'}
-            margin="0px 48px 0px 0px"
+            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <FotterMoculeGroup
             darkMode={checkIfTechPageOrNot()}
             title="Biz"
             item={BIZ_ITEM}
             width={'auto'}
-            margin="0px 48px 0px 0px"
+            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <FotterMoculeGroup
             darkMode={checkIfTechPageOrNot()}
             title="People"
             item={PEOPLE_ITEM}
             width={'auto'}
-            margin="0px 48px 0px 0px"
+            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <FotterMoculeGroup
             darkMode={checkIfTechPageOrNot()}
             title="News"
             width={'auto'}
-            margin="0px 48px 0px 0px"
+            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <div>
             <FotterMoculeGroup
@@ -165,8 +167,8 @@ const FooterWrapper = styled.footer`
   padding: 44px 0px 64px 22px;
   background-color: var(--white);
   background-color: ${({ darkMode }) =>
-    darkMode ? ' var(--dark) ' : 'var(--text-in-dark-text-00)'};
-  border-top: 2px solid var(--very-light-pink);
+    darkMode ? ' var(--backgorund-bg-04) ' : 'var(--text-in-dark-text-00)'};
+  border-top: 2px solid var(--components-components-02);
 
   ${mp[0]} {
     display: none;
@@ -176,11 +178,15 @@ const FooterWrapper = styled.footer`
 const OverLargeFooter = styled.footer`
   display: none;
   background-color: ${({ darkMode }) =>
-    darkMode ? ' var(--dark) ' : 'var(--text-in-dark-text-00)'};
-  border-top: 2px solid var(--very-light-pink);
+    darkMode ? ' var(--backgorund-bg-04) ' : 'var(--text-in-dark-text-00)'};
+  border-top: 2px solid var(--components-components-02);
   padding: 40px 0px 140px 104px;
 
   ${mp[0]} {
     display: block;
+  }
+
+  ${mp[0]} {
+    padding: 87px 0px 140px 280px;
   }
 `;

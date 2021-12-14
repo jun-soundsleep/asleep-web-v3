@@ -7,8 +7,6 @@ import AsleepLayout from '../../src/components/organisms/AppLayout/AsleepLayout'
 import MainBigImageSection from '../components/organisms/Main/MainBigImageSection';
 
 export default function Index() {
-  const { locale, locales, defaultLocale } = useRouter();
-  const router = useRouter();
   const { t, lang } = useTranslation();
   const title = t('common:greeting');
 
@@ -17,10 +15,6 @@ export default function Index() {
       <Head>
         <title>Asleep Web</title>
       </Head>
-      {/* <IndexMainImageFull
-        src={'https://static.toss.im/3d/toss-im-web-intro-still-start.jpg'}
-      /> */}
-      {/* <img src="https://www.lunit.io/img/news/hero.jpg" alt="" /> */}
       {/* <ImageTestContainer>
         <ImageTest />
       </ImageTestContainer> */}

@@ -1,17 +1,4 @@
 :root {
-  --main-color: hotpink;
-  --black: #221714;
-  --brownish-grey: #696969;
-  --very-light-pink: #f2f2f2;
-  --dark: #191f2e;
-  --dark-grey: #222227;
-  --brown-grey: #a8a8a8;
-  --very-light-pink-two: #ececec;
-  --greyish-brown: #515151;
-  --brown-grey-three: #7e7e7e;
-  --light-peach: #b6b6b6;
-
-  /* 새로 import  */
   --dark-grey: #222227;
   --brown-grey-two: #8d8d8d;
   --text-in-light-text-10: #221714;

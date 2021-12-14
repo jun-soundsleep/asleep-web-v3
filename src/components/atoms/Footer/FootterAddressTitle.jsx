@@ -20,5 +20,5 @@ const AddressTitle = styled.div`
   letter-spacing: -0.54px;
   text-align: left;
   color: ${({ darkMode }) =>
-    darkMode ? ' var(--very-light-pink-two)' : 'var(--black)'};
+    darkMode ? ' var(--text-in-dark-text-01)' : 'var(--text-in-light-text-10)'};
 `;

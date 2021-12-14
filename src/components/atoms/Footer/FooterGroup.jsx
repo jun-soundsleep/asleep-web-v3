@@ -23,7 +23,7 @@ const Title = styled.li`
   letter-spacing: -0.63px;
   text-align: left;
   color: ${({ darkMode }) =>
-    darkMode ? 'var(--very-light-pink-two)' : 'var(--black)'};
+    darkMode ? 'var(--text-in-dark-text-01)' : 'var(--text-in-light-text-10)'};
 
   ${mp[0]} {
     line-height: 1.67;
