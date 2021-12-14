@@ -1,15 +1,13 @@
 import styled from '@emotion/styled';
 import Head from 'next/head';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import AsleepLayout from '../../src/components/organisms/AppLayout/AsleepLayout';
 import MainBigImageSection from '../components/organisms/Main/MainBigImageSection';
-import MainCard from '../components/mocules/Main/MainCard';
+import MainAsleepVision from '../components/organisms/Main/MainAsleepVision';
 
 export default function Index() {
   const { t, lang } = useTranslation();
-  const title = t('common:greeting');
+  const asleepWorld = t('main:the_world_that_we_dream_of');
 
   return (
     <>
@@ -18,7 +16,7 @@ export default function Index() {
       </Head>
       <AsleepLayout>
         <MainBigImageSection />
-        <MainCard src="https://www.lunit.io/img/news/hero.jpg" />
+        <MainAsleepVision />
       </AsleepLayout>
     </>
   );

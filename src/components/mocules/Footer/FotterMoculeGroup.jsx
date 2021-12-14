@@ -11,8 +11,6 @@ function FotterMoculeGroup({
   rightItem,
   darkMode
 }) {
-  console.log(darkMode);
-
   return (
     <FotterMoculeGroupWrapper
       rightItem={rightItem}

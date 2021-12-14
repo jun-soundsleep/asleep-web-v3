@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { mp } from '../../../../styles/device';
 
 function MainCardMission({ margin, item }) {
   return (
@@ -19,4 +20,8 @@ const MainCardMissionContainer = styled.div`
   letter-spacing: -0.45px;
   text-align: left;
   color: var(--text-in-light-text-06);
+
+  ${mp[1]} {
+    font-size: 24px;
+  }
 `;

@@ -71,6 +71,7 @@ const ArrowContainer = styled.div`
   width: 28px;
   height: 28px;
   animation: ${bounce} 1.5s ease infinite;
+  cursor: pointer;
 
   ${mp[0]} {
     width: 34px;

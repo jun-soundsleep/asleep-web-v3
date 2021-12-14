@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { mp } from '../../../../styles/device';
 
 function MainCardTitle({ item, margin }) {
   return (
@@ -19,4 +20,12 @@ const MainCardTitleContainer = styled.div`
   letter-spacing: 0.16px;
   text-align: left;
   color: var(--text-in-light-text-10);
+
+  ${mp[0]} {
+    font-size: 20px;
+  }
+
+  ${mp[1]} {
+    font-size: 46px;
+  }
 `;

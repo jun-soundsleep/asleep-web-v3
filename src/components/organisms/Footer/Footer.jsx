@@ -24,7 +24,6 @@ function Footer() {
   const largeView = useMediaQuery({ query: '(min-width: 1920px)' });
 
   const checkIfTechPageOrNot = () => {
-    console.log(router.pathname === '/technology');
     return router.pathname === '/technology';
   };
 
