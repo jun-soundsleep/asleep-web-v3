@@ -4,7 +4,6 @@ import NavAsleepLogo from '../../atoms/Nav/NavAsleepLogo';
 import NavMenuButton from '../../atoms/Nav/NavMenuButton';
 import NavBarItem from '../../atoms/Nav/NavBarItem';
 import NavLanguageChangeButton from '../../atoms/Nav/NavLanguageChangeButton';
-import { useMediaQuery } from 'react-responsive';
 import { MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
 import { useRouter } from 'next/router';
@@ -12,7 +11,6 @@ import { useRouter } from 'next/router';
 function Nav() {
   const router = useRouter();
   const [menuSelected, setMenuSelected] = useState(false);
-  const largeView = useMediaQuery({ query: '(min-width: 1920px)' });
 
   const mobileMenuClickHandler = () => {
     setMenuSelected(!menuSelected);
@@ -78,31 +76,26 @@ function Nav() {
               <NavBarItem
                 item={'Company'}
                 href="company"
-                margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
                 on={handleItemActive('/company')}
               />
               <NavBarItem
                 item={'Technology'}
                 href="technology"
-                margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
                 on={handleItemActive('/technology')}
               />
               <NavBarItem
                 item={'Business'}
                 href="business"
-                margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
                 on={handleItemActive('/business')}
               />
               <NavBarItem
                 item={'People'}
                 href="people"
-                margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
                 on={handleItemActive('/people')}
               />
               <NavBarItem
                 item={'News'}
                 href="news"
-                margin={largeView ? '0px 68px 0px 0px' : '0px 30.5px 0px 0px'}
                 on={handleItemActive('/news')}
               />
               <NavLanguageChangeButton margin="0ox" />

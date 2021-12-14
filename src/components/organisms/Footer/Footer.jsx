@@ -16,12 +16,10 @@ import {
   TECH_ITEM
 } from '../../../data/footer/FOOTER_DATA';
 import { useRouter } from 'next/router';
-import { useMediaQuery } from 'react-responsive';
 
 function Footer() {
   const router = useRouter();
   const { t } = useTranslation();
-  const largeView = useMediaQuery({ query: '(min-width: 1920px)' });
 
   const checkIfTechPageOrNot = () => {
     return router.pathname === '/technology';
@@ -99,34 +97,29 @@ function Footer() {
             title="Company"
             item={COMPANY_ITEM}
             width={'auto'}
-            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <FotterMoculeGroup
             darkMode={checkIfTechPageOrNot()}
             title="Tech"
             item={TECH_ITEM}
             width={'auto'}
-            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <FotterMoculeGroup
             darkMode={checkIfTechPageOrNot()}
             title="Biz"
             item={BIZ_ITEM}
             width={'auto'}
-            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <FotterMoculeGroup
             darkMode={checkIfTechPageOrNot()}
             title="People"
             item={PEOPLE_ITEM}
             width={'auto'}
-            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <FotterMoculeGroup
             darkMode={checkIfTechPageOrNot()}
             title="News"
             width={'auto'}
-            margin={largeView ? '0px 170px 0px 0px' : '0px 48px 0px 0px'}
           />
           <div>
             <FotterMoculeGroup

@@ -16,11 +16,14 @@ function MainCardMoreButton({ item, margin }) {
       <MainCardMoreButtonContainer margin={margin}>
         {item}
       </MainCardMoreButtonContainer>
-      <img
-        src="/images/icon/acomponents-icons-icons-arrow-up-right-blue.svg"
-        width={largeView ? 24 : mediumView ? 13 : 12}
-        height={largeView ? 24 : mediumView ? 13 : 12}
-      />
+      <MoreButtonContainer>
+        <img
+          src="/images/icon/acomponents-icons-icons-arrow-up-right-blue.svg"
+          // width={largeView ? 24 : mediumView ? 13 : 12}
+          // height={largeView ? 24 : mediumView ? 13 : 12}
+          objectfit={'cover'}
+        />
+      </MoreButtonContainer>
     </Wrapper>
   );
 }
@@ -47,11 +50,19 @@ const MainCardMoreButtonContainer = styled.button`
   }
 `;
 
-const MoreButtonImage = styled.div`
-  background: url('/images/icon/acomponents-icons-icons-arrow-up-right-blue.svg');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+const MoreButtonContainer = styled(MXFlexCenteringSB)`
+  width: 12px;
+  height: 12px;
+
+  ${mp[0]} {
+    width: 13px;
+    height: 13px;
+  }
+
+  ${mp[1]} {
+    width: 24px;
+    height: 24px;
+  }
 `;
 
 const Wrapper = styled(MXFlexCenteringFS)`

@@ -1,11 +1,8 @@
-import React, { useRef, forwardRef } from 'react';
-import styled from '@emotion/styled';
+import React, { forwardRef } from 'react';
 import Head from 'next/head';
-import useTranslation from 'next-translate/useTranslation';
 import dynamic from 'next/dynamic';
 import AsleepLayout from '../../src/components/organisms/AppLayout/AsleepLayout';
 import MainBigImageSection from '../components/organisms/Main/MainBigImageSection';
-import MainAsleepVision from '../components/organisms/Main/MainAsleepVision';
 import MainTechSection from '../components/organisms/Main/MainTechSection';
 import MainBusinessSection from '../components/organisms/Main/MainBusinessSection';
 import MainPeopleSection from '../components/organisms/Main/MainPeopleSection';
@@ -20,13 +17,10 @@ const ForwardedRefComponent = forwardRef((props, ref) => {
 });
 
 export default function Index() {
-  const { t, lang } = useTranslation();
-  const asleepWorld = t('main:the_world_that_we_dream_of');
-
-  const foo = React.createRef();
+  const section = React.createRef();
 
   const goToNextSection = () => {
-    foo.current?.scrollIntoView({
+    section.current?.scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     });
@@ -39,7 +33,7 @@ export default function Index() {
       </Head>
       <AsleepLayout>
         <MainBigImageSection clickListener={goToNextSection} />
-        <ForwardedRefComponent ref={foo} />
+        <ForwardedRefComponent ref={section} />
         <MainTechSection />
         <MainBusinessSection />
         <MainPeopleSection />
@@ -47,10 +41,3 @@ export default function Index() {
     </>
   );
 }
-
-const ImageTest = styled.div`
-  background: url('https://www.lunit.io/img/news/hero.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-`;

@@ -34,6 +34,7 @@ const NavBarContainer = styled.li`
     font-style: normal;
     line-height: 1.8;
     letter-spacing: 0.4px;
+    margin: 0px 30.5px 0px 0px;
   }
 
   ${mp[1]} {
@@ -43,5 +44,6 @@ const NavBarContainer = styled.li`
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.72px;
+    margin: 0px 68px 0px 0px;
   }
 `;
