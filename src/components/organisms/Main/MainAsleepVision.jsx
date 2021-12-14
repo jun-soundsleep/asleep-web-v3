@@ -4,7 +4,6 @@ import useTranslate from 'next-translate/useTranslation';
 import MainCardLabel from '../../atoms/Main/MainCardLabel';
 import MainCard from '../../mocules/Main/MainCard';
 import { useMediaQuery } from 'react-responsive';
-import { MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
 
 function MainAsleepVision({ margin }) {
@@ -17,8 +16,6 @@ function MainAsleepVision({ margin }) {
   const newExperience = t('main:providing_a_whole_new_sleep_experience');
   const ditialTransformation = t('main:digital_transformation_of_sleep');
 
-  console.log(mediumView);
-
   return (
     <MainAsleepVisionContainer margin={margin}>
       <MainCardLabel
@@ -27,6 +24,7 @@ function MainAsleepVision({ margin }) {
           largeView ? '0 auto 88px' : mediumView ? '0 auto 32px' : '0 auto'
         }
       />
+      <Blank />
       <ThreeColumnContainer>
         <ThreeColumnsItem>
           <MainCard
@@ -91,6 +89,18 @@ const ThreeColumnsItem = styled.div`
   ${mp[1]} {
     width: 440px;
     height: 585px;
+  }
+`;
+
+const Blank = styled.div`
+  height: 8px;
+
+  ${mp[0]} {
+    height: 24px;
+  }
+
+  ${mp[1]} {
+    height: 64px;
   }
 `;
 

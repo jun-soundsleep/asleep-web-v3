@@ -15,16 +15,16 @@ function MainCard({ margin, src, title, href, category, oneColumn }) {
   const findOurMore = t('main:find_our_more');
 
   return (
-    <MainCardContainer margin={margin} src={src} oneColumn={oneColumn}>
-      <Link href={href} locale={router.locale}>
-        <a>
+    <Link href={href} locale={router.locale} style={{ zIndex: '1000' }}>
+      <a>
+        <MainCardContainer margin={margin} src={src} oneColumn={oneColumn}>
           <MainCardMission item={category ? category : 'Mission'} />
           <MainCardTitle item={title} margin="8px 0px 26px 0px" />
           <MainCardMoreButton item={findOurMore} href={href} />
-        </a>
-      </Link>
-      <WhiteDim />
-    </MainCardContainer>
+          <WhiteDim />
+        </MainCardContainer>
+      </a>
+    </Link>
   );
 }
 
@@ -41,6 +41,7 @@ const MainCardContainer = styled.div`
   background-repeat: no-repeat;
   background-position: 50%;
   position: relative;
+  z-index: 1001;
 
   ${mp[0]} {
     padding: ${({ oneColumn }) =>
