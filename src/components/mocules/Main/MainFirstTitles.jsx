@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
-import MainBigTitle from '../../atoms/Main/MainBigTitle';
+import BigTitle from '../../atoms/Main/BigTitle';
 import MainSubTitle from '../../atoms/Main/MainBigSubTitle';
 import Head from 'next/head';
 import { keyframes } from '@emotion/react';
@@ -22,7 +22,7 @@ function MainFirstTitles({ clickListener }) {
         />
       </Head>
       <ContentsContainer>
-        <MainBigTitle item={mainTitle} margin=" 0px 0px 32px 0px" />
+        <BigTitle item={mainTitle} margin=" 0px 0px 32px 0px" />
         <MainSubTitle item={subTitle} />
       </ContentsContainer>
       <button onClick={clickListener}>

@@ -1,16 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {
-  MXFlex,
-  MXFlexCenteringFS,
-  MXFlexCenteringSB
-} from '../../mixin/MXFlex';
-import { useMediaQuery } from 'react-responsive';
+import { MXFlexCenteringFS, MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
 
 function MainCardMoreButton({ item, margin }) {
-  const mediumView = useMediaQuery({ query: '(min-width: 768px)' });
-  const largeView = useMediaQuery({ query: '(min-width: 1920px)' });
   return (
     <Wrapper>
       <MainCardMoreButtonContainer margin={margin}>
@@ -19,8 +12,6 @@ function MainCardMoreButton({ item, margin }) {
       <MoreButtonContainer>
         <img
           src="/images/icon/acomponents-icons-icons-arrow-up-right-blue.svg"
-          // width={largeView ? 24 : mediumView ? 13 : 12}
-          // height={largeView ? 24 : mediumView ? 13 : 12}
           objectfit={'cover'}
         />
       </MoreButtonContainer>

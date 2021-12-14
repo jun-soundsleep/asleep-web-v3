@@ -2,14 +2,13 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
 
-function MainBigTitle({ item, margin }) {
-  return <MainBigTitleContainer margin={margin}>{item}</MainBigTitleContainer>;
+function BusinessHead({ margin, item }) {
+  return <BusinessHeadContainer margin={margin}>{item}</BusinessHeadContainer>;
 }
 
-export default MainBigTitle;
+export default BusinessHead;
 
-const MainBigTitleContainer = styled.h1`
-  /* min-width: 320px; */
+const BusinessHeadContainer = styled.h1`
   margin: ${({ margin }) => margin && margin};
   font-size: 40px;
   font-weight: bold;
@@ -18,10 +17,7 @@ const MainBigTitleContainer = styled.h1`
   line-height: 1.25;
   letter-spacing: -1.6px;
   text-align: center;
-  color: var(--text-in-dark-text-00);
-  z-index: 1000;
-  word-break: keep-all;
-  white-space: pre-wrap;
+  color: var(--text-in-light-text-10);
 
   ${mp[0]} {
     font-size: 32px;

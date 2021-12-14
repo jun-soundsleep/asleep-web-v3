@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Head from 'next/head';
 
 function NavMenuButton({ clickHandler, menuSelected }) {
-  // const [selected, setSelected] = useState(false);
-
   return (
     <>
       <Head>
