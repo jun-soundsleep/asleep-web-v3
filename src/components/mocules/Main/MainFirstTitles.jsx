@@ -7,7 +7,7 @@ import Head from 'next/head';
 import { keyframes } from '@emotion/react';
 import { mp } from '../../../../styles/device';
 
-function MainFirstTitles() {
+function MainFirstTitles({ clickListener }) {
   const { t } = useTranslation();
   const mainTitle = t('main:main_title');
   const subTitle = t('main:sub_title');
@@ -25,7 +25,7 @@ function MainFirstTitles() {
         <MainBigTitle item={mainTitle} margin=" 0px 0px 32px 0px" />
         <MainSubTitle item={subTitle} />
       </ContentsContainer>
-      <button>
+      <button onClick={clickListener}>
         <ArrowContainer>
           <Arrow />
         </ArrowContainer>

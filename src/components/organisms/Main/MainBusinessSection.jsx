@@ -5,35 +5,33 @@ import MainCardLabel from '../../atoms/Main/MainCardLabel';
 import MainCard from '../../mocules/Main/MainCard';
 import { mp } from '../../../../styles/device';
 
-function MainTechSection() {
+function MainBusinessSection(props) {
   const { t } = useTranslate();
   const title = t(
     'main:making_history_in_the_sleep_tech_industry_with_ai_technology'
   );
   return (
-    <MainTechSectionContainer>
-      <MainCardLabel item={'Technology'} color="var(--text-in-dark-text-00)" />
+    <MainBusinessSectionContainer>
+      <MainCardLabel item={'Business'} />
       <CardContainer>
         <MainCard
-          src="/images/main/home_6_s_2x.jpg"
-          srcM="/images/main/home_6_m_2x.jpg"
-          srcL="/images/main/home_6_l_2x.jpg"
+          src="/images/main/home_7_s_2x.jpg"
+          srcM="/images/main/home_7_m_2x.jpg"
+          srcL="/images/main/home_7_l_2x.jpg"
           href={'/'}
           title={title}
           margin="32px auto 0px"
-          category={'Technology'}
-          whiteTitleColor={true}
+          category={'Business'}
         />
       </CardContainer>
-    </MainTechSectionContainer>
+    </MainBusinessSectionContainer>
   );
 }
 
-export default MainTechSection;
+export default MainBusinessSection;
 
-const MainTechSectionContainer = styled.div`
+const MainBusinessSectionContainer = styled.div`
   padding: 43px 0 64px;
-  background-color: var(--backgorund-bg-04);
   /* min-height: 404px; */
 `;
 

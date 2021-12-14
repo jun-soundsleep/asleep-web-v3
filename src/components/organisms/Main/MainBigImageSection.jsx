@@ -2,15 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Dim from '../../atoms/Common/Dim';
 import MainBigImage from '../../atoms/Main/MainBigImage';
-import MainBigTitle from '../../atoms/Main/MainBigTitle';
 import MainFirstTitles from '../../mocules/Main/MainFirstTitles';
 
-function MainBigImageSection(props) {
+function MainBigImageSection({ clickListener }) {
   return (
     <MainBigSectionContainer>
       <MainBigImage />
       <Dim />
-      <MainFirstTitles />
+      <MainFirstTitles clickListener={clickListener} />
     </MainBigSectionContainer>
   );
 }

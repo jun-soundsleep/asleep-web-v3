@@ -2,9 +2,11 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
 
-function MainCardTitle({ item, margin }) {
+function MainCardTitle({ item, margin, whiteColor }) {
   return (
-    <MainCardTitleContainer margin={margin}>{item}</MainCardTitleContainer>
+    <MainCardTitleContainer margin={margin} whiteColor={whiteColor}>
+      {item}
+    </MainCardTitleContainer>
   );
 }
 
@@ -19,7 +21,10 @@ const MainCardTitleContainer = styled.div`
   line-height: 1.5;
   letter-spacing: 0.16px;
   text-align: left;
-  color: var(--text-in-light-text-10);
+  color: ${({ whiteColor }) =>
+    whiteColor
+      ? 'var(--text-in-dark-text-01)'
+      : 'var(--text-in-light-text-10)'};
 
   ${mp[0]} {
     font-size: 20px;

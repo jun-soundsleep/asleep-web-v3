@@ -9,7 +9,17 @@ import useTranslation from 'next-translate/useTranslation';
 import { mp } from '../../../../styles/device';
 import WhiteDim from '../../atoms/Common/WhiteDim';
 
-function MainCard({ margin, src, title, href, category, oneColumn }) {
+function MainCard({
+  margin,
+  src,
+  srcM,
+  srcL,
+  title,
+  whiteTitleColor,
+  href,
+  category,
+  oneColumn
+}) {
   const router = useRouter();
   const { t } = useTranslation();
   const findOurMore = t('main:find_our_more');
@@ -17,11 +27,21 @@ function MainCard({ margin, src, title, href, category, oneColumn }) {
   return (
     <Link href={href} locale={router.locale} style={{ zIndex: '1000' }}>
       <a>
-        <MainCardContainer margin={margin} src={src} oneColumn={oneColumn}>
+        <MainCardContainer
+          margin={margin}
+          src={src}
+          oneColumn={oneColumn}
+          srcM={srcM}
+          srcL={srcL}
+        >
           <MainCardMission item={category ? category : 'Mission'} />
-          <MainCardTitle item={title} margin="8px 0px 26px 0px" />
+          <MainCardTitle
+            item={title}
+            margin="8px 0px 26px 0px"
+            whiteColor={whiteTitleColor}
+          />
           <MainCardMoreButton item={findOurMore} href={href} />
-          <WhiteDim />
+          {/* <WhiteDim /> */}
         </MainCardContainer>
       </a>
     </Link>
@@ -44,12 +64,25 @@ const MainCardContainer = styled.div`
   z-index: 1001;
 
   ${mp[0]} {
+    background: url(${({ srcM }) => srcM && srcM});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
     padding: ${({ oneColumn }) =>
       oneColumn ? '44px 0px 128px 24px' : '24px 0px 216px 24px'};
   }
 
   ${mp[1]} {
+    background: url(${({ srcL }) => srcL && srcL});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
     padding: ${({ oneColumn }) =>
       oneColumn ? '88px 0px 356px 44px' : '88px 0px 356px 44px'};
   }
+`;
+
+//
+const Test = styled.div`
+  z-index: 1000;
 `;

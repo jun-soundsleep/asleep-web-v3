@@ -3,13 +3,10 @@ import styled from '@emotion/styled';
 import useTranslate from 'next-translate/useTranslation';
 import MainCardLabel from '../../atoms/Main/MainCardLabel';
 import MainCard from '../../mocules/Main/MainCard';
-import { useMediaQuery } from 'react-responsive';
 import { mp } from '../../../../styles/device';
 
-function MainAsleepVision({ margin }) {
+function MainAsleepVision({ margin, forwardedRef }) {
   const { t } = useTranslate();
-  const mediumView = useMediaQuery({ query: '(min-width: 768px)' });
-  const largeView = useMediaQuery({ query: '(min-width: 1920px)' });
   const title = t('main:mission_title');
   const asleepWorld = t('main:the_world_that_we_dream_of');
   const betterLife = t('main:the_believe_that_we_can_make_a_better_life');
@@ -17,18 +14,15 @@ function MainAsleepVision({ margin }) {
   const ditialTransformation = t('main:digital_transformation_of_sleep');
 
   return (
-    <MainAsleepVisionContainer margin={margin}>
-      <MainCardLabel
-        item={title}
-        margin={
-          largeView ? '0 auto 88px' : mediumView ? '0 auto 32px' : '0 auto'
-        }
-      />
+    <MainAsleepVisionContainer margin={margin} ref={forwardedRef}>
+      <MainCardLabel item={title} />
       <Blank />
       <ThreeColumnContainer>
         <ThreeColumnsItem>
           <MainCard
             src="/images/main/home_2_s_2x.jpg"
+            srcM="/images/main/home_2_m_2x.jpg"
+            srcL="/images/main/home_2_l_2x.jpg"
             href={'/'}
             title={asleepWorld}
           />
@@ -36,6 +30,8 @@ function MainAsleepVision({ margin }) {
         <ThreeColumnsItem>
           <MainCard
             src="/images/main/home_3_s_2x.jpg"
+            srcM="/images/main/home_3_m_2x.jpg"
+            srcL="/images/main/home_3_l_2x.jpg"
             href={'/'}
             title={betterLife}
           />
@@ -43,6 +39,8 @@ function MainAsleepVision({ margin }) {
         <ThreeColumnsItem>
           <MainCard
             src="/images/main/home_4_s_2x.jpg"
+            srcM="/images/main/home_4_m_2x.jpg"
+            srcL="/images/main/home_4_l_2x.jpg"
             href={'/'}
             title={newExperience}
           />
@@ -50,7 +48,9 @@ function MainAsleepVision({ margin }) {
       </ThreeColumnContainer>
       <OneColumnContainer>
         <MainCard
-          src="/images/main/home_5_s.jpg"
+          src="/images/main/home_5_s_2x.jpg"
+          srcM="/images/main/home_5_m_2x.jpg"
+          srcL="/images/main/home_5_l_2x.jpg"
           href={'/'}
           title={ditialTransformation}
           category="story"
