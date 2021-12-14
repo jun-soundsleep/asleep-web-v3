@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import AsleepLayout from '../../src/components/organisms/AppLayout/AsleepLayout';
 import MainBigImageSection from '../components/organisms/Main/MainBigImageSection';
+import MainCard from '../components/mocules/Main/MainCard';
 
 export default function Index() {
   const { t, lang } = useTranslation();
@@ -15,29 +16,17 @@ export default function Index() {
       <Head>
         <title>Asleep Web</title>
       </Head>
-      {/* <ImageTestContainer>
-        <ImageTest />
-      </ImageTestContainer> */}
       <AsleepLayout>
         <MainBigImageSection />
+        <MainCard src="https://www.lunit.io/img/news/hero.jpg" />
       </AsleepLayout>
     </>
   );
 }
 
-const ImageTestContainer = styled.div`
-  /* position: relative; */
-  /* height: 100%; */
-  height: 100vh;
-  /* width: 100vw; */
-`;
-
 const ImageTest = styled.div`
   background: url('https://www.lunit.io/img/news/hero.jpg');
-  /* background-position-y: center; */
-  /* background-position-x: center; */
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: cover; */
   height: 100%;
 `;

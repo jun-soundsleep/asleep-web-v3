@@ -53,6 +53,11 @@
   */
   --main-nav: 200;
   --common-dim: 100;
+
+  /* 
+  height
+  */
+  --nav-height: 58;
 }
 
 * {
@@ -98,4 +103,13 @@ li {
 
 .bar-of-progress {
   z-index: 50;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }

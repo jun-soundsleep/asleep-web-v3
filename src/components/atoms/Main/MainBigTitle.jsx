@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { mp } from '../../../../styles/device';
 
 function MainBigTitle({ item, margin }) {
   return <MainBigTitleContainer margin={margin}>{item}</MainBigTitleContainer>;
@@ -8,6 +9,7 @@ function MainBigTitle({ item, margin }) {
 export default MainBigTitle;
 
 const MainBigTitleContainer = styled.h1`
+  /* min-width: 320px; */
   margin: ${({ margin }) => margin && margin};
   font-size: 40px;
   font-weight: bold;
@@ -18,8 +20,18 @@ const MainBigTitleContainer = styled.h1`
   text-align: center;
   color: var(--text-in-dark-text-00);
   z-index: 1000;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  word-break: keep-all;
+  white-space: pre-wrap;
+
+  ${mp[0]} {
+    font-size: 32px;
+    line-height: 1.31;
+    letter-spacing: -1.28px;
+  }
+
+  ${mp[1]} {
+    font-size: 72px;
+    line-height: 1.28;
+    letter-spacing: -2.88px;
+  }
 `;

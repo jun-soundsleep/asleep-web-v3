@@ -7,7 +7,7 @@ function AsleepLayout({ children }) {
   return (
     <>
       <Nav />
-      <MainWrapper>{children}</MainWrapper>
+      <main>{children}</main>
       <Footer />
     </>
   );
