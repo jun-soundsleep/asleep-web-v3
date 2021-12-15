@@ -25,6 +25,7 @@ const IconImageContainer = styled.div`
   width: ${({ sw }) => sw && sw};
   height: ${({ sh }) => sh && sh};
   background: url(${({ src }) => src && src}) 50% / cover no-repeat;
+  margin: auto;
 
   ${mp[0]} {
     width: ${({ mw }) => mw && mw};

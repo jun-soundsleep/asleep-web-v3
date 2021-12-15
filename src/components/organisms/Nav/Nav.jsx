@@ -124,7 +124,7 @@ const LogoContainer = styled.nav`
 `;
 
 const NavLogContainer = styled(MXFlexCenteringSB)`
-  height: 58px;
+  height: var(--nav-height);
   padding: 0px 20px 0px 20px;
 `;
 
@@ -146,7 +146,7 @@ const OverTabletNavContainer = styled.nav`
 
   ${mp[0]} {
     display: block;
-    height: 56px;
+    height: var(--nav-height);
     position: fixed;
     top: 0;
     left: 0;

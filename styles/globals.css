@@ -57,7 +57,8 @@
   /* 
   height
   */
-  --nav-height: 58;
+  --nav-height: 58px;
+  --nav--height--over-tablet: 56px;
 }
 
 * {

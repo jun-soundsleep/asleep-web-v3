@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
-import BigTitle from '../../atoms/Main/BigTitle';
+import BigTitle from '../../atoms/Common/BigTitle';
 import MainSubTitle from '../../atoms/Main/MainBigSubTitle';
 import Head from 'next/head';
 import { keyframes } from '@emotion/react';
