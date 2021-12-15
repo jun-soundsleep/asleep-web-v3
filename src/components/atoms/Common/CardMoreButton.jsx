@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { MXFlexCenteringFS, MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
 
-function MainCardMoreButton({ item, margin }) {
+function CardMoreButton({ item, margin }) {
   return (
     <Wrapper>
       <MainCardMoreButtonContainer margin={margin}>
@@ -19,7 +19,7 @@ function MainCardMoreButton({ item, margin }) {
   );
 }
 
-export default MainCardMoreButton;
+export default CardMoreButton;
 
 const MainCardMoreButtonContainer = styled.button`
   margin: ${({ margin }) => (margin ? margin : '0px 8px 0px 0px')};

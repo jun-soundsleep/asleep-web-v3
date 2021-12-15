@@ -54,7 +54,7 @@ function Nav() {
               margin={'0px 0px 28px 0px'}
               item={'People'}
               href="people"
-              on={handleItemActive('/business')}
+              on={handleItemActive('/people')}
             />
             <NavBarItem
               margin={'0px 0px 28px 0px'}

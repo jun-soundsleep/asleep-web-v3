@@ -6,6 +6,7 @@ import MainSubTitle from '../../atoms/Main/MainBigSubTitle';
 import Head from 'next/head';
 import { keyframes } from '@emotion/react';
 import { mp } from '../../../../styles/device';
+import BigArrrowButton from '../../atoms/Common/BigArrrowButton';
 
 function MainFirstTitles({ clickListener }) {
   const { t } = useTranslation();
@@ -25,11 +26,7 @@ function MainFirstTitles({ clickListener }) {
         <BigTitle item={mainTitle} margin=" 0px 0px 32px 0px" />
         <MainSubTitle item={subTitle} />
       </ContentsContainer>
-      <button onClick={clickListener}>
-        <ArrowContainer>
-          <Arrow />
-        </ArrowContainer>
-      </button>
+      <BigArrrowButton clickListener={clickListener} />
     </>
   );
 }

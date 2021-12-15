@@ -1,12 +1,13 @@
 import React from 'react';
-import Footer from '../components/organisms/Footer/Footer';
-import Nav from '../components/organisms/Nav/Nav';
+import AsleepLayout from '../../src/components/organisms/AppLayout/AsleepLayout';
+import TechMainSection from '../components/organisms/Tech/TechMainSection';
 
-function Technology(props) {
+function Technology() {
   return (
     <>
-      <Nav />
-      <Footer />
+      <AsleepLayout>
+        <TechMainSection />
+      </AsleepLayout>
     </>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
 
-function MainCardTitle({ item, margin, whiteColor }) {
+function CardTitle({ item, margin, whiteColor }) {
   return (
     <MainCardTitleContainer margin={margin} whiteColor={whiteColor}>
       {item}
@@ -10,7 +10,7 @@ function MainCardTitle({ item, margin, whiteColor }) {
   );
 }
 
-export default MainCardTitle;
+export default CardTitle;
 
 const MainCardTitleContainer = styled.div`
   margin: ${({ margin }) => margin && margin};
