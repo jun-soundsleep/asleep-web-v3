@@ -26,9 +26,9 @@ function Business() {
         bsrc={'/images/business/business_1_s_2x.jpg'}
         bsrcM={'/images/business/business_1_l_2x.jpg'}
         bsrcL={'/images/business/business_1_m_2x.jpg'}
-        logosrc={'/images/business/Business_Logo-1_s_2x1.jpg'}
-        logosrcM={'/images/business/Business_Logo-1_M_2x1.jpg'}
-        logosrcL={'/images/business/Business_Logo-1_L_2x1.jpg'}
+        logosrc={'/images/business/Business_Logo-1_s_2x1.png'}
+        logosrcM={'/images/business/Business_Logo-1_M_2x1.png'}
+        logosrcL={'/images/business/Business_Logo-1_L_2x1.png'}
         logoSw={'310px'}
         logoSh={'94px'}
         logoMw={'550px'}
@@ -51,13 +51,13 @@ function Business() {
         bsrc={'/images/business/business_3_s_2x.jpg'}
         bsrcM={'/images/business/business_3_l_2x.jpg'}
         bsrcL={'/images/business/business_3_m_2x.jpg'}
-        logosrc={'/images/business/Business_Logo-2_s_2x1.jpg'}
-        logosrcM={'/images/business/Business_Logo-2_M_2x1.jpg'}
-        logosrcL={'/images/business/Business_Logo-2_L_2x1.jpg'}
+        logosrc={'/images/business/Business_Logo-2_s_2x1.png'}
+        logosrcM={'/images/business/Business_Logo-2_M_2x1.png'}
+        logosrcL={'/images/business/Business_Logo-2_L_2x1.png'}
         logoSw={'320px'}
         logoSh={'18px'}
-        logoMw={'518px'}
-        logoMh={'27.5px'}
+        logoMw={'531px'}
+        logoMh={'28.5px'}
         logoLw={'1118px'}
         logoLh={'58px'}
       />
