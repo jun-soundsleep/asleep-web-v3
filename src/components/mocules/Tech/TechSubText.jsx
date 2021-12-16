@@ -4,13 +4,13 @@ import { mp } from '../../../../styles/device';
 import { useRouter } from 'next/router';
 import TechSubTitleModal from '../../atoms/Tech/TechSubTitleModal';
 
-function TechSubText(props) {
+function TechSubText({ forwardedRef }) {
   const [modalVisible, setModalVisible] = useState(false);
   const router = useRouter();
   return (
-    <>
+    <Conatiner ref={forwardedRef}>
       {router.locale === 'ko' ? (
-        <TechSubTitleContainer>
+        <TechSubTextContainer>
           기존에는 수면 분석의 정확성을 담보하기 위해 뇌파 데이터가
           필요했습니다. 하지만 에이슬립은 독자적인 AI Technology를 통해 수면 중
           호흡과 움직임의 패턴만으로 뇌파를 활용한 것과 같은 수준의 정확도를
@@ -42,14 +42,21 @@ function TechSubText(props) {
           트래킹합니다. Wi-Fi 수면 센싱 기술은 Wi-Fi를 사용하는 모든 IoT
           가전들에 내장 될 수 있으며, 호흡과 움직임을 더욱 정밀하고 끊김 없이
           트래킹할 수 있습니다.
-        </TechSubTitleContainer>
+        </TechSubTextContainer>
       ) : (
-        <TechSubTitleContainer>
+        <TechSubTextContainer>
           Conventionally, EEG data is essential to ensure accurate sleep
           analysis. Through its remarkable AI technology, Asleep achieves the
           same level of accuracy as past EEG methods by solely using breathing
           patterns and movement detected during sleep.
-          <span>
+          <span
+            onMouseOver={() => {
+              setModalVisible(true);
+            }}
+            onMouseLeave={() => {
+              setModalVisible(false);
+            }}
+          >
             Asleep's AI technology enables us to accurately determine sleep
             stages by looking at autonomic nervous system activation levels
             through the analysis of breathing patterns and body movement.
@@ -70,16 +77,27 @@ function TechSubText(props) {
           technology can be easily integrated into IoT home appliances that use
           Wi-Fi, allowing a more precise and seamless breathing and movement
           tracing.
-        </TechSubTitleContainer>
+        </TechSubTextContainer>
       )}
-      {/* {true && <TechSubTitleModal />} */}
-    </>
+    </Conatiner>
   );
 }
 
 export default TechSubText;
 
-const TechSubTitleContainer = styled.div`
+const Conatiner = styled.div`
+  padding-top: 200px;
+
+  ${mp[0]} {
+    padding-top: 32px;
+  }
+
+  ${mp[1]} {
+    padding-top: 72px;
+  }
+`;
+
+const TechSubTextContainer = styled.div`
   width: 320px;
   margin: 0 auto;
   padding: 24px 32px 32px;
@@ -106,8 +124,12 @@ const TechSubTitleContainer = styled.div`
   }
 
   ${mp[0]} {
+    width: 560px;
+    padding: 32.8px 36px 36px;
   }
 
   ${mp[1]} {
+    width: 1400px;
+    padding: 88px 67px;
   }
 `;

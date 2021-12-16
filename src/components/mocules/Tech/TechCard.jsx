@@ -15,12 +15,12 @@ function TechCard({
   title,
   whiteTitleColor,
   href,
-  category,
   oneColumn
 }) {
   const router = useRouter();
   const { t } = useTranslation();
   const findOurMore = t('main:find_our_more');
+
   return (
     <Link href={href} locale={router.locale} style={{ zIndex: '1000' }}>
       <a>

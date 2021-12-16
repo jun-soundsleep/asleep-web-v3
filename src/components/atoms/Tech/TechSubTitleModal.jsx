@@ -38,4 +38,18 @@ const TechSubTitleModalContainer = styled.div`
     top: -10px;
     left: 20px;
   }
+
+  ${mp[0]} {
+    width: 380px;
+    padding: 39px 24px 24px;
+    top: ${({ en }) => (en ? '98px' : '85px')};
+    left: ${({ en }) => (en ? '114px' : '-60px')};
+  }
+
+  ${mp[1]} {
+    width: 852px;
+    padding: 72px 44px 44px 50px;
+    top: ${({ en }) => (en ? '38px' : '33px')};
+    left: ${({ en }) => (en ? '540px' : '57%')};
+  }
 `;

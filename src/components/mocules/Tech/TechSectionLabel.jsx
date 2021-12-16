@@ -4,10 +4,12 @@ import Link from 'next/link';
 import TechBodyTitle from '../../atoms/Tech/TechBodyTitle';
 // import TechSubTitle from '../../mocules/Tech/TechSubTitle';
 import IconImage from '../../atoms/Common/IconImage';
+import TechTitle from '../../atoms/Tech/TechTitle';
+import TechBodySubTitle from '../../atoms/Tech/TechBodySubTitle';
 import { mp } from '../../../../styles/device';
 
 function TechSectionLabel({
-  bodyTitle,
+  title,
   subTitle,
   src,
   srcM,
@@ -21,8 +23,8 @@ function TechSectionLabel({
 }) {
   return (
     <TechSectionLabelContainer>
-      <TechBodyTitle item={'aksjd'} />
-      {/* <TechSubTitle item={'aksjd'} /> */}
+      <TechTitle item={title} />
+      <TechBodySubTitle item={subTitle} />
       {src && (
         <IconImage
           src={src}
