@@ -1,4 +1,12 @@
 {
   "title": "AI 모델로 써 내려가는 \n슬립테크의 새로운 역사",
-  "modal": "수면 중 호흡과 몸의 움직임은 자율신경계에 의해 조절됩니다. 수면 단계를 판독하면 수면 효율, 수면의 질, 수면의 깊이 그리고 렘 수면 주기 및 길이와 같은 수면의 핵심 지표를 도출할 수 있습니다."
+  "modal": "수면 중 호흡과 몸의 움직임은 자율신경계에 의해 조절됩니다. 수면 단계를 판독하면 수면 효율, 수면의 질, 수면의 깊이 그리고 렘 수면 주기 및 길이와 같은 수면의 핵심 지표를 도출할 수 있습니다.",
+  "tracking_sleep_with_sound": "사운드로 측정하는 수면",
+  "tracking_sleep_with_sound_sub": "가정에서 스마트폰 하나로 측정하고 관리할 수 있습니다",
+  "the_magic_of_sound": "스마트폰만으로 정확한 수면 분석을 가능케 하는 방대한 데이터의 마법",
+  "medically_verified_sound_ai": "의학계와 함께 하는 검증된 AI 수면 단계 분석",
+  "synergy_between_sound_and_Wi-Fi_sensing": "사운드와 RF 신호의 놀라운 시너지",
+  "synergy_between_sound_and_Wi-Fi_sensing_sub": "센서 퓨전(Sensor Fusion)으로 더 정확한 측정을 경험하세요",
+  "the_world_most_unobtrusive": "세상에서 가장 자연스럽게 수면을 기록하는 방법",
+  "a_big_leap_toward_accurate_sleep_measurement": "더 정확한 측정의 큰 걸음, 사운드와 RF 신호 센서 퓨전"
 }
