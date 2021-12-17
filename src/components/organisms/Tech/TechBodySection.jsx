@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import TechTitle from '../../atoms/Tech/TechTitle';
-import TechBodySubTitle from '../../atoms/Tech/TechBodySubTitle';
-import IconImage from '../../atoms/Common/IconImage';
 import TechSectionLabel from '../../mocules/Tech/TechSectionLabel';
 import TechCard from '../../mocules/Tech/TechCard';
+import { mp } from '../../../../styles/device';
 
 function TechBodySection({
   title,
   subTitle,
+  background,
   src,
   srcM,
   srcL,
@@ -29,10 +28,14 @@ function TechBodySection({
   shref,
   ssrc,
   ssrcm,
-  ssrcl
+  ssrcl,
+  whiteTitleColor,
+  forwardedRef,
+  fmodalListener,
+  smodalListener
 }) {
   return (
-    <Container>
+    <Container background={background} ref={forwardedRef}>
       <TechSectionLabel
         title={title}
         subTitle={subTitle}
@@ -46,22 +49,32 @@ function TechBodySection({
         lw={lw}
         lh={lh}
       />
-      <TechCard
-        title={fcardtitle}
-        subtitle={fcardsubtitle}
-        href={fhref}
-        src={fsrc}
-        srcM={fsrcm}
-        srcL={fsrcl}
-      />
-      <TechCard
-        title={scardtitle}
-        subtitle={scardsubtitle}
-        href={shref}
-        src={ssrc}
-        srcM={ssrcm}
-        srcL={ssrcl}
-      />
+      <CardContainer>
+        <CardWrapper>
+          <TechCard
+            title={fcardtitle}
+            subtitle={fcardsubtitle}
+            href={fhref}
+            src={fsrc}
+            srcM={fsrcm}
+            srcL={fsrcl}
+            whiteTitleColor={whiteTitleColor}
+            modalListener={fmodalListener}
+          />
+        </CardWrapper>
+        <CardWrapper>
+          <TechCard
+            title={scardtitle}
+            subtitle={scardsubtitle}
+            href={shref}
+            src={ssrc}
+            srcM={ssrcm}
+            srcL={ssrcl}
+            whiteTitleColor={whiteTitleColor}
+            modalListener={smodalListener}
+          />
+        </CardWrapper>
+      </CardContainer>
     </Container>
   );
 }
@@ -70,5 +83,45 @@ export default TechBodySection;
 
 const Container = styled.div`
   padding: 64px 20px;
-  background-color: var(--dark);
+  background-color: ${({ background }) =>
+    background ? background : 'var(--backgorund-bg-05)'};
+  ${mp[0]} {
+    padding: 140px 0px;
+  }
+
+  ${mp[1]} {
+    padding: 280px 0px;
+  }
+`;
+
+const CardContainer = styled.div`
+  ${mp[0]} {
+    max-width: 560px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  ${mp[1]} {
+    max-width: 1266px;
+    display: flex;
+    margin: auto;
+  }
+`;
+
+const CardWrapper = styled.div`
+  width: 320px;
+  height: 212px;
+  margin: 0 auto;
+
+  ${mp[0]} {
+    margin: unset;
+    width: 270px;
+    height: 311px;
+  }
+
+  ${mp[1]} {
+    width: 603px;
+    height: 570px;
+  }
 `;

@@ -22,10 +22,7 @@ const MainCardTitleContainer = styled.div`
   letter-spacing: 0.16px;
   text-align: left;
   color: ${({ whiteColor }) =>
-    whiteColor
-      ? 'var(--text-in-dark-text-01)'
-      : 'var(--text-in-light-text-10)'};
-
+    whiteColor ? whiteColor : 'var(--text-in-light-text-10)'};
   ${mp[0]} {
     font-size: 20px;
   }

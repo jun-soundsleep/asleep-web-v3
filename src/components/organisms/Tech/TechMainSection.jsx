@@ -6,7 +6,7 @@ import TechSubText from '../../mocules/Tech/TechSubText';
 import Head from 'next/head';
 import BigArrrowButton from '../../atoms/Common/BigArrrowButton';
 
-function TechMainSection({ title, srcM, srcL }) {
+function TechMainSection({ title, srcM, srcL, clickListener }) {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ function TechMainSection({ title, srcM, srcL }) {
       <TechMainSectionContainer srcM={srcM} srcL={srcL}>
         <TechTitle item={title} />
         <TechSubText />
-        <BigArrrowButton />
+        <BigArrrowButton clickListener={clickListener} />
       </TechMainSectionContainer>
     </>
   );

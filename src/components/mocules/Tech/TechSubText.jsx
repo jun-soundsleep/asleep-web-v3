@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import { mp } from '../../../../styles/device';
 import { useRouter } from 'next/router';
 import TechSubTitleModal from '../../atoms/Tech/TechSubTitleModal';
+import { mp } from '../../../../styles/device';
 
 function TechSubText({ forwardedRef }) {
   const [modalVisible, setModalVisible] = useState(false);
   const router = useRouter();
+
   return (
     <Conatiner ref={forwardedRef}>
       {router.locale === 'ko' ? (

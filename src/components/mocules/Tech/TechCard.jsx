@@ -4,8 +4,9 @@ import { mp } from '../../../../styles/device';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import CardTitle from '../../atoms/Common/CardTitle';
-import CardMoreButton from '../../atoms/Common/CardMoreButton';
 import useTranslation from 'next-translate/useTranslation';
+import TechCardMoreButton from '../../atoms/Tech/TechCardMoreButton';
+import useWindowSize from '../../../../hooks/userWindowSize';
 
 function TechCard({
   margin,
@@ -15,32 +16,56 @@ function TechCard({
   title,
   whiteTitleColor,
   href,
-  oneColumn
+  oneColumn,
+  modalListener
 }) {
   const router = useRouter();
   const { t } = useTranslation();
   const findOurMore = t('main:find_our_more');
 
+  const size = useWindowSize();
+  let overTablet = size.width > 768;
+
   return (
-    <Link href={href} locale={router.locale} style={{ zIndex: '1000' }}>
-      <a>
+    <>
+      {overTablet ? (
         <TechContainer
           margin={margin}
           src={src}
           oneColumn={oneColumn}
           srcM={srcM}
           srcL={srcL}
+          onClick={modalListener}
         >
           <CardTitle
             item={title}
             margin="8px 0px 26px 0px"
             whiteColor={whiteTitleColor}
           />
-          <CardMoreButton CardMoreButton item={findOurMore} href={href} />
-          {/* <WhiteDim /> */}
+          <TechCardMoreButton item={findOurMore} href={href} />
         </TechContainer>
-      </a>
-    </Link>
+      ) : (
+        <Link href={href} locale={router.locale}>
+          <a>
+            <TechContainer
+              margin={margin}
+              src={src}
+              oneColumn={oneColumn}
+              srcM={srcM}
+              srcL={srcL}
+              onClick={modalListener}
+            >
+              <CardTitle
+                item={title}
+                margin="8px 0px 26px 0px"
+                whiteColor={whiteTitleColor}
+              />
+              <TechCardMoreButton item={findOurMore} href={href} />
+            </TechContainer>
+          </a>
+        </Link>
+      )}
+    </>
   );
 }
 
@@ -57,15 +82,13 @@ const TechContainer = styled.div`
   background-repeat: no-repeat;
   background-position: 50%;
   position: relative;
-  z-index: 1001;
+  /* z-index: 1001; */
 
   ${mp[0]} {
     background: url(${({ srcM }) => srcM && srcM});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    padding: ${({ oneColumn }) =>
-      oneColumn ? '44px 0px 128px 24px' : '24px 0px 216px 24px'};
   }
 
   ${mp[1]} {
@@ -73,8 +96,7 @@ const TechContainer = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    padding: ${({ oneColumn }) =>
-      oneColumn ? '88px 0px 356px 44px' : '88px 0px 356px 44px'};
+    padding: ${({ padding }) => (padding ? padding : '88px 0px 0px 44px')};
   }
 `;
 
