@@ -31,6 +31,24 @@ function Technology() {
   const accurateSleepMeasurement = t(
     'tech:a_big_leap_toward_accurate_sleep_measurement'
   );
+
+  const modal_1_title = t('tech:smartphone_modal');
+  const modal_1_body = t('tech:smartphone_modal_body');
+  const modal_1_footnote = t('tech:smartphone_modal_body_footnote');
+
+  const modal_2_title = t('tech:accurate_ai_title');
+  const modal_2_body = t('tech:accurate_ai_body');
+  const modal_2_footnote = t('tech:accurate_ai_footnote');
+
+  const modal_3_title = t('tech:natural_sleep_record');
+  const modal_3_body = t('tech:natural_sleep_record_body');
+  const modal_3_footnote = t('tech:natural_sleep_record_body_footnote');
+
+  const modal_4_title = t('tech:accurate_wifi_sensing');
+  const modal_4_body = t('tech:accurate_wifi_sensing-body');
+  const modal_4_footnote = t('tech:accurate_wifi_sensing-footnote');
+  const modal_4_footnote_2 = t('tech:accurate_wifi_sensing-footnote_2');
+
   const firstSection = React.createRef();
 
   const goToNextSection = () => {
@@ -42,8 +60,20 @@ function Technology() {
 
   const [currentModal, setCurrentModal] = useState('');
 
-  const modalClick = () => {
-    setCurrentModal('sleep');
+  const floatSmartPhoneModal = () => {
+    setCurrentModal('smart');
+  };
+
+  const floatAccurateModal = () => {
+    setCurrentModal('accurate');
+  };
+
+  const floatRecordModal = () => {
+    setCurrentModal('record');
+  };
+
+  const floatwifiModal = () => {
+    setCurrentModal('wifi');
   };
 
   const cancelModal = () => {
@@ -90,8 +120,8 @@ function Technology() {
           ssrcm={'/images/tech/tech_3_m_2x.jpg'}
           ssrcl={'/images/tech/tech_3_l_2x.jpg'}
           whiteTitleColor={'var(--text-in-dark-text-02)'}
-          fmodalListener={modalClick}
-          smodalListener={modalClick}
+          fmodalListener={floatSmartPhoneModal}
+          smodalListener={floatAccurateModal}
           ref={firstSection}
         />
         <TechBodySection
@@ -112,19 +142,47 @@ function Technology() {
           // ref={firstSection}
           ssrcl={'/images/tech/tech_5_l_2x.jpg'}
           whiteTitleColor={'var(--text-in-dark-text-02)'}
-          fmodalListener={modalClick}
-          smodalListener={modalClick}
+          fmodalListener={floatRecordModal}
+          smodalListener={floatwifiModal}
         />
-        {currentModal === 'sleep' && (
+        {currentModal === 'smart' && (
           <CommonModal
-            title={'alskjdal\nskdjalsdk'}
-            body={
-              '모두가 잠든 밤, 침실에는 에어컨과 선풍기의 바람 소리, 가습기의 동작음, 열린 창문을 통해 불어오는 바람 소리 등 다양한 소리가 존재합니다. 에이슬립의 Sound AI는 이런 주변 소음이 있는 상황에서도 사용자의 호흡음과 뒤척임에 의한 소리를 정확하게 인식할 수 있습니다. 호흡음의 주파수 분포, 호흡의 패턴, 뒤척임의 패턴을 추출하고 독자적인 AI 호흡 패턴 분석을 통해 수면 단계를 판독하는 에이슬립의 Sound AI는 30초 단위의 수면 단계 변화도 정밀하게 트래킹합니다. 에이슬립의 Sound AI는 방대한 데이터를 기반으로 학습되고있습니다. 의사의 수면 판독과 매칭된 3,800,000개의 수면 사운드 데이터(1)를 기반으로 학습되었고 지금도 계속해서 가정 환경에서 수집하고 있는 수면 사운드 데이터를 기반으로 진화하고 있습니다.  '
-            }
+            title={modal_1_title}
+            body={modal_1_body}
             exitHandler={cancelModal}
-            srcm={'/images/tech/tech_4_m_2x.jpg'}
-            srcl={'/images/tech/tech_4_l_2x.jpg'}
-            footNote={['asdada', 'asdlkj']}
+            srcm={'/images/tech/tech-pop_1_m_2x.jpg'}
+            srcl={'/images/tech/tech-pop_1_m_2x.jpg'}
+            footNote={[modal_1_footnote]}
+          />
+        )}
+        {currentModal === 'accurate' && (
+          <CommonModal
+            title={modal_2_title}
+            body={modal_2_body}
+            exitHandler={cancelModal}
+            srcm={'/images/tech/tech-pop_2_m_2x.jpg'}
+            srcl={'/images/tech/tech-pop_2_m_2x.jpg'}
+            footNote={[modal_2_footnote]}
+          />
+        )}
+        {currentModal === 'record' && (
+          <CommonModal
+            title={modal_3_title}
+            body={modal_3_body}
+            exitHandler={cancelModal}
+            srcm={'/images/tech/tech-pop_3_m_2x.jpg'}
+            srcl={'/images/tech/tech-pop_3_m_2x.jpg'}
+            footNote={[modal_3_footnote]}
+          />
+        )}
+        {currentModal === 'wifi' && (
+          <CommonModal
+            title={modal_4_title}
+            body={modal_4_body}
+            exitHandler={cancelModal}
+            srcm={'/images/tech/tech-pop_4_m_2x.jpg'}
+            srcl={'/images/tech/tech-pop_4_m_2x.jpg'}
+            footNote={[modal_4_footnote, modal_4_footnote_2]}
           />
         )}
       </AsleepLayout>

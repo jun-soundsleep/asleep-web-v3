@@ -111,6 +111,9 @@ const Background = styled.div`
 
   ${mp[1]} {
     background: url(${({ srcl }) => srcl && srcl});
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
   }
 `;
 
