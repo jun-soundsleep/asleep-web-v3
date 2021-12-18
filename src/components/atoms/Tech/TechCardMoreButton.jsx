@@ -2,10 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { MXFlexCenteringFS, MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
+import { useRouter } from 'next/router';
 
 function TechCardMoreButton({ item, margin }) {
+  const router = useRouter();
+  console.log(router.locale);
+
   return (
-    <Wrapper>
+    <Wrapper locale={router.locale}>
       <MainCardMoreButtonContainer margin={margin}>
         {item}
       </MainCardMoreButtonContainer>
@@ -59,15 +63,15 @@ const MoreButtonContainer = styled(MXFlexCenteringSB)`
 const Wrapper = styled(MXFlexCenteringFS)`
   margin-left: 13.5px;
   position: absolute;
-  left: 24px;
-  bottom: 40px;
+  left: ${({ locale }) => (locale === 'en' ? '24px' : '24px')};
+  bottom: ${({ locale }) => (locale === 'en' ? '40px' : '40px')};
   ${mp[0]} {
-    left: 24px;
-    bottom: 115px;
+    left: ${({ locale }) => (locale === 'en' ? '24px' : '24px')};
+    bottom: ${({ locale }) => (locale === 'en' ? '59px' : '115px')};
   }
 
   ${mp[1]} {
-    left: 44px;
-    bottom: 187px;
+    left: ${({ locale }) => (locale === 'en' ? '44px' : '44px')};
+    bottom: ${({ locale }) => (locale === 'en' ? '41px' : '187px')};
   }
 `;

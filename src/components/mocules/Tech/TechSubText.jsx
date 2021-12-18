@@ -131,6 +131,13 @@ const TechSubTextContainer = styled.div`
 
   ${mp[1]} {
     width: 1400px;
+    /* min-height: 827px; */
     padding: 88px 67px;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: -1.62px;
   }
 `;

@@ -53,7 +53,6 @@ function TechCard({
               oneColumn={oneColumn}
               srcM={srcM}
               srcL={srcL}
-              onClick={modalListener}
             >
               <CardTitle
                 item={title}

@@ -160,7 +160,11 @@ const FooterWrapper = styled.footer`
   background-color: var(--white);
   background-color: ${({ darkMode }) =>
     darkMode ? ' var(--backgorund-bg-04) ' : 'var(--text-in-dark-text-00)'};
-  border-top: 2px solid var(--components-components-02);
+  border-top: 2px solid
+    ${({ darkMode }) =>
+      darkMode
+        ? 'var(--components-components-06)'
+        : 'var(--components-components-02)'};
 
   ${mp[0]} {
     display: none;
@@ -171,7 +175,12 @@ const OverLargeFooter = styled.footer`
   display: none;
   background-color: ${({ darkMode }) =>
     darkMode ? ' var(--backgorund-bg-04) ' : 'var(--text-in-dark-text-00)'};
-  border-top: 2px solid var(--components-components-02);
+  border-top: 2px solid
+    ${({ darkMode }) =>
+      darkMode
+        ? 'var(--components-components-06)'
+        : 'var(--components-components-02)'};
+
   padding: 40px 0px 140px 104px;
 
   ${mp[0]} {

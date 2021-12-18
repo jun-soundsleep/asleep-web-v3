@@ -34,7 +34,5 @@ const TechTitleContainer = styled.h1`
 
   ${mp[1]} {
     font-size: 88px;
-    line-height: 1.27;
-    letter-spacing: -3.52px;
   }
 `;

@@ -25,16 +25,20 @@ function TechMainSection({ title, srcM, srcL, clickListener }) {
 export default TechMainSection;
 
 const TechMainSectionContainer = styled.section`
+  position: relative;
   height: 100vh;
   background-color: var(--backgorund-bg-05);
 
   ${mp[0]} {
     background: url(${({ srcM }) => srcM && srcM}) 50% / cover no-repeat;
+    /* padding: 198px 0 86px 0; */
     padding-top: 198px;
   }
 
   ${mp[1]} {
+    height: auto;
     background: url(${({ srcL }) => srcL && srcL}) 50% / cover no-repeat;
     padding-top: 338px;
+    padding-bottom: 500px;
   }
 `;
