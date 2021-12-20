@@ -19,10 +19,6 @@ function Company() {
   const [currentModal, setCurrentModal] = useState('');
 
   const floatDiagnosisModal = () => {
-    console.log('asldkjlsda');
-    if (typeof window !== 'undefined') {
-      window.alert('asldka;');
-    }
     setCurrentModal('diagnosis');
   };
 
@@ -38,24 +34,14 @@ function Company() {
     setCurrentModal('');
   };
 
-  console.log(currentModal);
+  const modal_1_title = t('company:company_popup_1');
+  const modal_1_body = t('company:company_popup_1_contents');
 
-  const modal_1_title = t('tech:smartphone_modal');
-  const modal_1_body = t('tech:smartphone_modal_body');
-  const modal_1_footnote = t('tech:smartphone_modal_body_footnote');
+  const modal_2_title = t('company:company_popup_2');
+  const modal_2_body = t('company:company_popup_2_contents');
 
-  const modal_2_title = t('tech:accurate_ai_title');
-  const modal_2_body = t('tech:accurate_ai_body');
-  const modal_2_footnote = t('tech:accurate_ai_footnote');
-
-  const modal_3_title = t('tech:natural_sleep_record');
-  const modal_3_body = t('tech:natural_sleep_record_body');
-  const modal_3_footnote = t('tech:natural_sleep_record_body_footnote');
-
-  const modal_4_title = t('tech:accurate_wifi_sensing');
-  const modal_4_body = t('tech:accurate_wifi_sensing-body');
-  const modal_4_footnote = t('tech:accurate_wifi_sensing-footnote');
-  const modal_4_footnote_2 = t('tech:accurate_wifi_sensing-footnote_2');
+  const modal_3_title = t('company:company_popup_3');
+  const modal_3_body = t('company:company_popup_3_contents');
 
   return (
     <AsleepLayout>
@@ -71,32 +57,32 @@ function Company() {
       <CompanyHistorySection />
       {currentModal === 'diagnosis' && (
         <CommonModal
-          title={modal_4_title}
-          body={modal_4_body}
+          title={modal_1_title}
+          body={modal_1_body}
           exitHandler={cancelModal}
-          srcm={'/images/tech/tech-pop_4_m_2x.jpg'}
-          srcl={'/images/tech/tech-pop_4_m_2x.jpg'}
-          footNote={[modal_4_footnote, modal_4_footnote_2]}
+          blackTitle={true}
+          srcm={'/images/company/company-pop_1_m_2x.jpg'}
+          srcl={'/images/company/company-pop_1_l_2x.jpg'}
         />
       )}
       {currentModal === 'monitoring' && (
         <CommonModal
-          title={modal_4_title}
-          body={modal_4_body}
+          title={modal_2_title}
+          body={modal_2_body}
           exitHandler={cancelModal}
-          srcm={'/images/tech/tech-pop_4_m_2x.jpg'}
-          srcl={'/images/tech/tech-pop_4_m_2x.jpg'}
-          footNote={[modal_4_footnote, modal_4_footnote_2]}
+          blackTitle={true}
+          srcm={'/images/company/company-pop_2_m_2x.jpg'}
+          srcl={'/images/company/company-pop_2_l_2x.jpg'}
         />
       )}
       {currentModal === 'solution' && (
         <CommonModal
-          title={modal_4_title}
-          body={modal_4_body}
+          title={modal_3_title}
+          body={modal_3_body}
           exitHandler={cancelModal}
-          srcm={'/images/tech/tech-pop_4_m_2x.jpg'}
-          srcl={'/images/tech/tech-pop_4_m_2x.jpg'}
-          footNote={[modal_4_footnote, modal_4_footnote_2]}
+          blackTitle={true}
+          srcm={'/images/company/company-pop_3_m_2x.jpg'}
+          srcl={'/images/company/company-pop_3_l_2x.jpg'}
         />
       )}
     </AsleepLayout>

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import CommonDetailPage from '../../components/templates/CommonDetailPage';
 import useTranslation from 'next-translate/useTranslation';
 
-function sleepsolution(props) {
+function Sleepsolution(props) {
   const { t } = useTranslation();
   const modal_1_title = t('company:company_popup_2');
   const modal_1_body = t('company:company_popup_2_contents');
@@ -17,4 +17,4 @@ function sleepsolution(props) {
   );
 }
 
-export default sleepsolution;
+export default Sleepsolution;

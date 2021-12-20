@@ -16,7 +16,7 @@ function CompanyHistoryBigCard({ highlight, title, body }) {
   };
 
   return (
-    <AnimateHeight id="example-panel2" duration={500} height={height}>
+    <AnimateHeight id="history-panel2" duration={500} height={height}>
       <Container active={arrow} height={height}>
         <TitleWrapper>
           <Title highlight={highlight}>{title}</Title>

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import CommonDetailPage from '../../components/templates/CommonDetailPage';
 import useTranslation from 'next-translate/useTranslation';
 
-function mobileapplication() {
+function Mobileapplication() {
   const { t } = useTranslation();
   const modal_1_title = t('tech:smartphone_modal');
   const modal_1_body = t('tech:smartphone_modal_body');
@@ -18,4 +18,4 @@ function mobileapplication() {
   );
 }
 
-export default mobileapplication;
+export default Mobileapplication;

@@ -6,7 +6,15 @@ import ModalDivider from '../../atoms/Common/modal/ModalDivider';
 import ModalFootNote from '../../atoms/Common/modal/ModalFootNote';
 import { mp } from '../../../../styles/device';
 
-function CommonDetailPage({ title, body, exitHandler, srcm, srcl, footNote }) {
+function CommonDetailPage({
+  title,
+  body,
+  exitHandler,
+  srcm,
+  srcl,
+  footNote,
+  blackTitle
+}) {
   const wrapper = React.createRef(null);
 
   const handleCloseModal = e => {
@@ -42,7 +50,7 @@ function CommonDetailPage({ title, body, exitHandler, srcm, srcl, footNote }) {
           <ExitButtonWrapper>
             <ExitButton onClick={exitHandler} />
           </ExitButtonWrapper>
-          <ModalTitle item={title} />
+          <ModalTitle item={title} blackTitle={blackTitle} />
         </ImageContainer>
         <Article>
           <ModalBody item={body} />

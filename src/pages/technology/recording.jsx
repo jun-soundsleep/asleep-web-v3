@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import CommonDetailPage from '../../components/templates/CommonDetailPage';
 import useTranslation from 'next-translate/useTranslation';
 
-function recording(props) {
+function Recording(props) {
   const { t } = useTranslation();
   const modal_1_title = t('tech:natural_sleep_record');
   const modal_1_body = t('tech:natural_sleep_record_body');
@@ -18,4 +18,4 @@ function recording(props) {
   );
 }
 
-export default recording;
+export default Recording;

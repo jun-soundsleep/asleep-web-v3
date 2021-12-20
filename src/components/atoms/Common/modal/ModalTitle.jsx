@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../../styles/device';
 
-function ModalTitle({ item }) {
-  return <Container>{item}</Container>;
+function ModalTitle({ item, blackTitle }) {
+  return <Container blackTitle={blackTitle}>{item}</Container>;
 }
 
 export default ModalTitle;
@@ -19,7 +19,10 @@ const Container = styled.div`
   line-height: 1.38;
   letter-spacing: -0.96px;
   text-align: left;
-  color: var(--text-in-dark-text-01);
+  color: ${({ blackTitle }) =>
+    blackTitle
+      ? 'var(--text-in-light-text-10)'
+      : 'var(--text-in-dark-text-01)'};
 
   ${mp[1]} {
     left: 88px;

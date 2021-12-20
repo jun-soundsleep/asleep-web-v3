@@ -20,8 +20,9 @@ function FotterMoculeGroup({
     >
       <FooterGroup title={title} darkMode={darkMode} />
       {item &&
-        item.map(({ item, href, outerLink }) => (
+        item.map(({ item, href, outerLink }, idx) => (
           <FooterGroupItem
+            key={idx}
             item={item}
             href={href}
             outerLink={outerLink}

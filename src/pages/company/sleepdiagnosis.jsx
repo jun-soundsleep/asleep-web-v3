@@ -1,9 +1,8 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import CommonDetailPage from '../../components/templates/CommonDetailPage';
 import useTranslation from 'next-translate/useTranslation';
 
-function sleepdiagnosis(props) {
+function Sleepdiagnosis(props) {
   const { t } = useTranslation();
   const modal_1_title = t('company:company_popup_1');
   const modal_1_body = t('company:company_popup_1_contents');
@@ -18,4 +17,4 @@ function sleepdiagnosis(props) {
   );
 }
 
-export default sleepdiagnosis;
+export default Sleepdiagnosis;
