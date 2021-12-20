@@ -23,6 +23,7 @@ const MainCardTitleContainer = styled.div`
   text-align: left;
   color: ${({ whiteColor }) =>
     whiteColor ? whiteColor : 'var(--text-in-light-text-10)'};
+  word-wrap: break-word;
   ${mp[0]} {
     font-size: 20px;
   }

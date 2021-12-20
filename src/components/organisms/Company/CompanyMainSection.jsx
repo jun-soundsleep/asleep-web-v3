@@ -33,10 +33,31 @@ function CompanyMainSection({ title, subTitle }) {
 
 export default CompanyMainSection;
 
-const BigTitleWrapper = styled.div``;
+const BigTitleWrapper = styled.div`
+  /* max-width: 320px; */
+  margin: 0 auto;
+
+  ${mp[0]} {
+    max-width: unset;
+    margin: 0 auto 20px;
+  }
+
+  ${mp[1]} {
+    margin: 133px auto 56px;
+  }
+`;
 
 const SubTitleWrapper = styled.div`
-  margin-bottom: 32px;
+  margin: 32px auto 32px;
+
+  ${mp[0]} {
+    max-width: unset;
+    margin: 32px auto 36px;
+  }
+
+  ${mp[1]} {
+    margin: 0 auto 71px;
+  }
 `;
 
 const Container = styled.section`

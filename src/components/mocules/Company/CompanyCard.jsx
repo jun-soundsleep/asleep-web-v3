@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { mp } from '../../../../styles/device';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import CardTitle from '../../atoms/Common/CardTitle';
 import useTranslation from 'next-translate/useTranslation';
-import TechCardMoreButton from '../../atoms/Tech/TechCardMoreButton';
-import useWindowSize from '../../../../hooks/userWindowSize';
+import userWindowSize from '../../../../hooks/userWindowSize';
+import CompanyCardMoreButton from '../../atoms/Company/CompanyCardMoreButton';
+import { mp } from '../../../../styles/device';
 
-function TechCard({
+function CompanyCard({
   margin,
   src,
   srcM,
@@ -23,13 +23,13 @@ function TechCard({
   const { t } = useTranslation();
   const findOurMore = t('main:find_our_more');
 
-  const size = useWindowSize();
+  const size = userWindowSize();
   let overTablet = size.width > 768;
 
   return (
     <>
       {overTablet ? (
-        <TechContainer
+        <Container
           margin={margin}
           src={src}
           oneColumn={oneColumn}
@@ -42,12 +42,12 @@ function TechCard({
             margin="8px 0px 26px 0px"
             whiteColor={whiteTitleColor}
           />
-          <TechCardMoreButton item={findOurMore} href={href} />
-        </TechContainer>
+          <CompanyCardMoreButton item={findOurMore} href={href} />
+        </Container>
       ) : (
         <Link href={href} locale={router.locale}>
           <a>
-            <TechContainer
+            <Container
               margin={margin}
               src={src}
               oneColumn={oneColumn}
@@ -59,8 +59,8 @@ function TechCard({
                 margin="8px 0px 26px 0px"
                 whiteColor={whiteTitleColor}
               />
-              <TechCardMoreButton item={findOurMore} href={href} />
-            </TechContainer>
+              <CompanyCardMoreButton item={findOurMore} href={href} />
+            </Container>
           </a>
         </Link>
       )}
@@ -68,9 +68,9 @@ function TechCard({
   );
 }
 
-export default TechCard;
+export default CompanyCard;
 
-const TechContainer = styled.div`
+const Container = styled.div`
   width: 100%;
   height: 100%;
   padding: ${({ padding }) => (padding ? padding : '32px 0px 74px 24px')};
@@ -81,13 +81,14 @@ const TechContainer = styled.div`
   background-repeat: no-repeat;
   background-position: 50%;
   position: relative;
-  /* z-index: 1001; */
 
   ${mp[0]} {
     background: url(${({ srcM }) => srcM && srcM});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
+
+    margin: ${({ margin }) => (margin ? margin : '20px auto 0px')};
   }
 
   ${mp[1]} {
@@ -97,4 +98,11 @@ const TechContainer = styled.div`
     background-position: 50%;
     padding: ${({ padding }) => (padding ? padding : '88px 0px 0px 44px')};
   }
+
+  cursor: pointer;
+`;
+
+//
+const Test = styled.div`
+  z-index: 1000;
 `;

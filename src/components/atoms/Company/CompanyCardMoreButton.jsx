@@ -4,7 +4,7 @@ import { MXFlexCenteringFS, MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
 import { useRouter } from 'next/router';
 
-function TechCardMoreButton({ item, margin }) {
+function CompanyCardMoreButton({ item, margin }) {
   const router = useRouter();
 
   return (
@@ -14,7 +14,7 @@ function TechCardMoreButton({ item, margin }) {
       </MainCardMoreButtonContainer>
       <MoreButtonContainer>
         <img
-          src="/images/icon/acomponents-icons-icons-arrow-up-right-light-blue.svg"
+          src="/images/icon/acomponents-icons-icons-arrow-up-right-blue.svg"
           objectfit={'cover'}
         />
       </MoreButtonContainer>
@@ -22,7 +22,7 @@ function TechCardMoreButton({ item, margin }) {
   );
 }
 
-export default TechCardMoreButton;
+export default CompanyCardMoreButton;
 
 const MainCardMoreButtonContainer = styled.button`
   margin: ${({ margin }) => (margin ? margin : '0px 8px 0px 0px')};
@@ -33,7 +33,7 @@ const MainCardMoreButtonContainer = styled.button`
   line-height: 1.67;
   letter-spacing: 0.12px;
   text-align: left;
-  color: var(--sub-sub-04);
+  color: var(--primary-primary-in-light);
 
   ${mp[0]} {
     font-size: 13px;
@@ -61,7 +61,7 @@ const MoreButtonContainer = styled(MXFlexCenteringSB)`
 
 const Wrapper = styled(MXFlexCenteringFS)`
   margin-left: 13.5px;
-  position: absolute;
+  /* position: absolute; */
   left: ${({ locale }) => (locale === 'en' ? '24px' : '24px')};
   bottom: ${({ locale }) => (locale === 'en' ? '40px' : '40px')};
   ${mp[0]} {

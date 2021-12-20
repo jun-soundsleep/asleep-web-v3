@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
+// import CompanyHistoryBodyTitle from '../../atoms/Company/CompanyHistoryBodyTitle';
+import CompanyHistoryBigCard from '../../mocules/Company/CompanyHistoryBigCard';
 import CompanyBodyTitle from '../../atoms/Company/CompanyBodyTitle';
-import CompanyBigCard from '../../mocules/Company/CompanyBigCard';
 
 const temp = [
   {
@@ -18,8 +19,8 @@ function CompanyHistorySection(props) {
   return (
     <Container>
       <CompanyBodyTitle item={'에이슬립이 만들어가는새로운 수면 여정'} />
-      <CompanyBigCard title={'2021'} body={temp} />
-      {/* <CompanyBigCard /> */}
+      <CompanyHistoryBigCard title={'2021'} body={temp} highlight={true} />
+      <CompanyHistoryBigCard title={'2021'} body={temp} />
     </Container>
   );
 }

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import AnimateHeight from 'react-animate-height';
 import { MXFlexCenteringSB } from '../../mixin/MXFlex';
 
-function CompanySmallCard({ title, body }) {
+function CompanyHistorySmallCard({ title, body }) {
   const [arrow, setArrow] = useState(false);
   const [height, setHeight] = useState(100);
 
@@ -40,11 +40,9 @@ function CompanySmallCard({ title, body }) {
   );
 }
 
-export default CompanySmallCard;
+export default CompanyHistorySmallCard;
 
 const Container = styled.section`
-  padding: 24px 0px 24px 24px;
-  background-color: var(--backgorund-bg-01);
   margin: 24px 0px;
   padding: 24px 25px 24px 24px;
   border-radius: 20px;

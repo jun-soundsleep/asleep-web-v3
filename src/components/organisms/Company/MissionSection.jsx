@@ -8,19 +8,16 @@ function MissionSection({ missionTitle, missionBody }) {
   return (
     <Container>
       <ImageWrapper>
-        {/* <Background
-          src={'/images/company/company_1_s_2x.jpg'}
-          srcM={'/images/company/company_1_m_2x.jpg'}
-          srcL={'/images/company/company_1_l_2x.jpg'}
-        ></Background> */}
-        <FullImageContainer
-          src={'/images/company/company_1_s_2x.jpg'}
-          srcM={'/images/company/company_1_m_2x.jpg'}
-          srcL={'/images/company/company_1_l_2x.jpg'}
-        />
+        <ImageContainer>
+          <FullImage
+            src={'/images/company/company_1_s_2x.jpg'}
+            srcM={'/images/company/company_1_m_2x.jpg'}
+            srcL={'/images/company/company_1_l_2x.jpg'}
+          />
+        </ImageContainer>
         <MissionWrapper>
           <Mission>{missionTitle}</Mission>
-          <MissionBody>{missionBody}</MissionBody>
+          <MissionBody dangerouslySetInnerHTML={{ __html: missionBody }} />
         </MissionWrapper>
       </ImageWrapper>
     </Container>
@@ -31,9 +28,34 @@ export default MissionSection;
 
 const Container = styled.section``;
 
+const ImageContainer = styled.div`
+  height: 504px;
+
+  ${mp[0]} {
+    height: 408px;
+  }
+
+  ${mp[1]} {
+    height: 843px;
+  }
+`;
+
+const FullImage = styled.div`
+  width: 100%;
+  height: 100%;
+  background: url(${({ src }) => src && src}) 50% / cover no-repeat;
+
+  ${mp[0]} {
+    background: url(${({ srcM }) => srcM && srcM}) 50% / cover no-repeat;
+  }
+
+  ${mp[1]} {
+    background: url(${({ srcL }) => srcL && srcL}) 50% / cover no-repeat;
+  }
+`;
+
 const ImageWrapper = styled.div`
   position: relative;
-  height: 504px;
 `;
 
 const Mission = styled.h2`
@@ -45,6 +67,24 @@ const Mission = styled.h2`
   letter-spacing: -0.64px;
   text-align: center;
   color: var(--text-in-light-text-10);
+
+  ${mp[0]} {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: -0.63px;
+  }
+
+  ${mp[1]} {
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: -1.44px;
+  }
 `;
 
 const MissionBody = styled.p`
@@ -60,6 +100,24 @@ const MissionBody = styled.p`
   b {
     color: var(--text-in-light-text-09);
   }
+
+  ${mp[0]} {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: -0.63px;
+  }
+
+  ${mp[1]} {
+    font-size: 32px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: -1.44px;
+  }
 `;
 
 const MissionWrapper = styled.div`
@@ -72,4 +130,17 @@ const MissionWrapper = styled.div`
   -webkit-backdrop-filter: blur(13px);
   backdrop-filter: blur(13px);
   background-color: var(--alpha-alpha-03);
+
+  min-width: 320px;
+  max-height: 416px;
+
+  ${mp[0]} {
+    min-width: 560px;
+    max-height: 202px;
+  }
+
+  ${mp[1]} {
+    min-width: 1265px;
+    max-height: 427px;
+  }
 `;

@@ -25,8 +25,11 @@ const Container = styled.h1`
   }
 
   ${mp[1]} {
-    font-size: 30px;
-    line-height: 1.27;
-    letter-spacing: -1.2px;
+    font-size: 72px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: -2.88px;
   }
 `;

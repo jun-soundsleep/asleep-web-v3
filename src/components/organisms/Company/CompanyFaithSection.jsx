@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import CompanyBodyTitle from '../../atoms/Company/CompanyBodyTitle';
 import CompanyBodySubTitle from '../../atoms/Company/CompanyBodySubTitle';
-import CompanySmallCard from '../../mocules/Company/CompanySmallCard';
+import CompanyHistorySmallCard from '../../mocules/Company/CompanyHistorySmallCard';
 
 function CompanyFaithSection(props) {
   return (
@@ -12,25 +12,25 @@ function CompanyFaithSection(props) {
       />
 
       <CompanyBodySubTitle item={'aslkdjsadlkasjd'} />
-      <CompanySmallCard
+      <CompanyHistorySmallCard
         title={'laksdalskdj'}
         body={
           '미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ'
         }
       />
-      <CompanySmallCard
+      <CompanyHistorySmallCard
         title={'laksdalskdj'}
         body={
           '미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ'
         }
       />
-      <CompanySmallCard
+      <CompanyHistorySmallCard
         title={'laksdalskdj'}
         body={
           '미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ'
         }
       />
-      <CompanySmallCard
+      <CompanyHistorySmallCard
         title={'laksdalskdj'}
         body={
           '미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ미나엄닝비비비비ㅣ'
