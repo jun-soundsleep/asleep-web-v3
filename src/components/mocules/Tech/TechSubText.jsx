@@ -58,7 +58,7 @@ function TechSubText({ forwardedRef }) {
               setModalVisible(false);
             }}
           >
-            Asleep's AI technology enables us to accurately determine sleep
+            Asleep&apos;s AI technology enables us to accurately determine sleep
             stages by looking at autonomic nervous system activation levels
             through the analysis of breathing patterns and body movement.
             {modalVisible && <TechSubTitleModal en={true} />}
@@ -67,14 +67,14 @@ function TechSubText({ forwardedRef }) {
           <br />
           <b>
             Asleep measures breathing patterns and body movement in two,
-            contactless ways which do not affect a person's sleep.
+            contactless ways which do not affect a person&apos;s sleep.
           </b>
           The first method is to determine sleep stages through breathing sound
           and movement sound data analysis during sleep. People can get access
-          to Asleep's sleep solutions by simply updating software on their
+          to Asleep&apos;s sleep solutions by simply updating software on their
           smartphones or smart speakers, types of devices that are already
           widely used in a home environment. The second method is to use
-          Asleep's unique Wi-Fi sensing technology. Wi-Fi sleep sensing
+          Asleep&apos;s unique Wi-Fi sensing technology. Wi-Fi sleep sensing
           technology can be easily integrated into IoT home appliances that use
           Wi-Fi, allowing a more precise and seamless breathing and movement
           tracing.

@@ -116,7 +116,7 @@ function CompanyBodySection() {
           services is low. The low accuracy inherent in these devices becomes a
           major obstacle in connecting sleep-related services and medical sleep
           therapy, thereby hindering the development of technology that takes
-          care of a person's sleep.
+          care of a person&apos;s sleep.
           <br />
           <br />
           Achieving accurate sleep stage analysis will bring about a new era
