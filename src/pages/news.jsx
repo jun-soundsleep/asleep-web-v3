@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import NewsCard from '../components/mocules/News/NewsCard';
 import AsleepLayout from '../components/organisms/AppLayout/AsleepLayout';
-import NewsMoreButton from '../components/atoms/News/NewsMoreButton';
 import NewsNavigation from '../components/organisms/News/NewsNavigation';
-import NewsCategory from '../components/atoms/News/NewsCategory';
-import useTranslation from 'next-translate/useTranslation';
+import CategoryTab from '../components/atoms/Common/CategoryTab';
 import NewsContents from '../components/organisms/News/NewsContents';
 import NewsAllTab from '../components/organisms/News/NewsAllTab';
 import { ABOUT_DATA } from '../data/News/ABOUT_DATA';
@@ -65,37 +62,37 @@ function News({ allList, about }) {
     <AsleepLayout>
       <NewsNavigation />
       <CategoryWrapper>
-        <NewsCategory
+        <CategoryTab
           item={'All'}
           active={checkTabActive('all')}
           clickListener={allButonClick}
         />
-        <NewsCategory
+        <CategoryTab
           item={'Corporate'}
           active={checkTabActive('corporate')}
           clickListener={corporateClick}
         />
-        <NewsCategory
+        <CategoryTab
           item={'Business'}
           active={checkTabActive('business')}
           clickListener={businessClick}
         />
-        <NewsCategory
+        <CategoryTab
           item={'Medical'}
           active={checkTabActive('medical')}
           clickListener={medicalClick}
         />
-        <NewsCategory
+        <CategoryTab
           item={'Tech'}
           active={checkTabActive('tech')}
           clickListener={techClick}
         />
-        <NewsCategory
+        <CategoryTab
           item={'Investment'}
           active={checkTabActive('investment')}
           clickListener={investmentClick}
         />
-        <NewsCategory
+        <CategoryTab
           item={'About'}
           active={checkTabActive('about')}
           clickListener={aboutClick}
@@ -113,7 +110,7 @@ const CategoryWrapper = styled.div`
   padding: 10px;
   text-align: center;
 
-  & > span {
+  & > button {
     margin: 0px 10px 16px 0px;
   }
 

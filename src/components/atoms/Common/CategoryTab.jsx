@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
 
-function NewsCategory({ item, active, clickListener }) {
+function CategoryTab({ item, active, clickListener }) {
   return (
     <Content active={active} onClick={clickListener}>
       {item}
@@ -10,9 +10,9 @@ function NewsCategory({ item, active, clickListener }) {
   );
 }
 
-export default NewsCategory;
+export default CategoryTab;
 
-const Content = styled.span`
+const Content = styled.button`
   display: inline-flex;
   justify-content: center;
   align-items: center;

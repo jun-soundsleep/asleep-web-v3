@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
-import NewsCategory from '../../atoms/News/NewsCategory';
 import NewsCardTitle from '../../atoms/News/NewsCardTitle';
 import NewsCardDate from '../../atoms/News/NewsCardDate';
 import NewsCardTag from '../../atoms/News/NewsCardTag';

@@ -16,7 +16,6 @@ function NewsContents({ data }) {
         new Moment(b.date).format('YYYYMMDD') -
         new Moment(a.date).format('YYYYMMDD')
     );
-    console.log(data);
     setList([...list, ...data.slice(currentIndex, currentIndex + nextList)]);
   }, [currentIndex]);
 

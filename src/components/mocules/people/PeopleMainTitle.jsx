@@ -1,15 +1,15 @@
 import React from 'react';
+import Head from 'next/head';
 import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
 import BigTitle from '../../atoms/Common/BigTitle';
 import MainSubTitle from '../../atoms/Main/MainBigSubTitle';
-import Head from 'next/head';
 import BigArrrowButton from '../../atoms/Common/BigArrrowButton';
 
-function MainFirstTitles({ clickListener }) {
+function PeopleMainTitle(props) {
   const { t } = useTranslation();
-  const mainTitle = t('main:main_title');
-  const subTitle = t('main:sub_title');
+  const mainTitle = t('people:title');
+  const subTitle = t('people:sub_title');
 
   return (
     <>
@@ -21,15 +21,15 @@ function MainFirstTitles({ clickListener }) {
         />
       </Head>
       <ContentsContainer>
-        <BigTitle item={mainTitle} margin=" 0px 0px 32px 0px" />
+        <BigTitle item={mainTitle} margin="0px 0px 32px 0px" />
         <MainSubTitle item={subTitle} />
       </ContentsContainer>
-      <BigArrrowButton clickListener={clickListener} />
+      <BigArrrowButton clickListener={() => {}} />
     </>
   );
 }
 
-export default MainFirstTitles;
+export default PeopleMainTitle;
 
 const ContentsContainer = styled.div`
   width: 100%;

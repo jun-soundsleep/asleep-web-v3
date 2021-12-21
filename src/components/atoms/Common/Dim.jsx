@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-function Dim() {
-  return <DimContainer></DimContainer>;
+function Dim({ dimColor }) {
+  return <DimContainer dimColor={dimColor} />;
 }
 
 export default Dim;
@@ -16,5 +16,6 @@ const DimContainer = styled.div`
   right: 0;
   bottom: 0;
   z-index: var(--commib-dim);
-  background-color: var(--dim-dim-03);
+  background-color: ${({ dimColor }) =>
+    dimColor ? dimColor : 'var(--dim-dim-03)'};
 `;
