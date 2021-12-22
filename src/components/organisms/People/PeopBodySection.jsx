@@ -1,11 +1,26 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
-import { mp } from '../../../../styles/device';
 import PeopleBodyTitle from '../../atoms/people/PeopleBodyTitle';
 import CategoryTab from '../../atoms/Common/CategoryTab';
-import { MXFlexCenteringSB } from '../../mixin/MXFlex';
 import IconImage from '../../atoms/Common/IconImage';
+import RndTab from './RndTab';
+import LeaderTab from '../../organisms/People/LeaderTab';
+import TechnicalTab from '../../organisms/People/TechnicalTab';
+import BusinessTab from '../../organisms/People/BusinessTab';
+import DirectorsTab from '../../organisms/People/DirectorsTab';
+import AdvisorsTab from '../../organisms/People/AdvisorsTab';
+import { MXFlexCenteringSB } from '../../mixin/MXFlex';
+import { mp } from '../../../../styles/device';
+
+const content = {
+  leaders: <LeaderTab />,
+  rd: <RndTab />,
+  technical: <TechnicalTab />,
+  business: <BusinessTab />,
+  directors: <DirectorsTab />,
+  advisors: <AdvisorsTab />
+};
 
 function PeopBodySection() {
   const [currentTab, setCurrentTab] = useState('leaders');
@@ -41,7 +56,7 @@ function PeopBodySection() {
   };
 
   return (
-    <>
+    <div>
       <TitleContainer>
         <PeopleBodyTitle item={title} />
       </TitleContainer>
@@ -90,7 +105,8 @@ function PeopBodySection() {
           clickListener={advisorClick}
         />
       </CategoryWrapper>
-    </>
+      {content[currentTab]}
+    </div>
   );
 }
 
