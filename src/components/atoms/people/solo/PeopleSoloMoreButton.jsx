@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
-import { MXFlexVerticalCentering } from '../../mixin/MXFlex';
-import { mp } from '../../../../styles/device';
+import { MXFlexVerticalCentering } from '../../../mixin/MXFlex';
+import { mp } from '../../../../../styles/device';
 
 function PeopleSoloMoreButton({ href }) {
   const { t } = useTranslation();

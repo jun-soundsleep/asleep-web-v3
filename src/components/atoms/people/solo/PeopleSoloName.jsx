@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { mp } from '../../../../styles/device';
+import { mp } from '../../../../../styles/device';
 
-function PeopleSoloBody({ item }) {
+function PeopleSoloName({ item }) {
   return <Container dangerouslySetInnerHTML={{ __html: item }} />;
 }
 
-export default PeopleSoloBody;
+export default PeopleSoloName;
 
 const Container = styled.p`
   font-size: 16px;
@@ -23,12 +23,11 @@ const Container = styled.p`
   }
 
   ${mp[0]} {
-    max-width: 290px;
   }
+
   ${mp[1]} {
-    max-width: 677px;
     font-size: 24px;
     line-height: 1.58;
-    letter-spacing: -1.08px;
+    letter-spacing: 0.24px;
   }
 `;

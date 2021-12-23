@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import useTranslation from 'next-translate/useTranslation';
-import PeopleSoloImage from '../../atoms/people/PeopleSoloImage';
-import PeopleSoloBody from '../../atoms/people/PeopleSoloBody';
-import PeopleSoloMoreButton from '../../atoms/people/PeopleSoloMoreButton';
-import PeopleSoloName from '../../atoms/people/PeopleSoloName';
+import PeopleSoloImage from '../../atoms/people/solo/PeopleSoloImage';
+import PeopleSoloBody from '../../atoms/people/solo/PeopleSoloBody';
+import PeopleSoloMoreButton from '../../atoms/people/solo/PeopleSoloMoreButton';
+import PeopleSoloName from '../../atoms/people/solo/PeopleSoloName';
 import { mp } from '../../../../styles/device';
 
 function PeopleSoleSection({ src, name, body, href }) {

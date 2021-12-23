@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { mp } from '../../../../styles/device';
+import { mp } from '../../../../../styles/device';
 
 function PeopleSoloImage({ src }) {
   return <Container src={src[0]} srcm={src[1]} srcl={src[2]} />;
