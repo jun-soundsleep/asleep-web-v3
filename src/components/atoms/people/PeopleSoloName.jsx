@@ -24,6 +24,10 @@ const Container = styled.p`
 
   ${mp[0]} {
   }
+
   ${mp[1]} {
+    font-size: 24px;
+    line-height: 1.58;
+    letter-spacing: 0.24px;
   }
 `;

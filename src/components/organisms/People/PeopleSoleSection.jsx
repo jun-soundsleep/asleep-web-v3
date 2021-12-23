@@ -1,36 +1,50 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import useTranslation from 'next-translate/useTranslation';
 import PeopleSoloImage from '../../atoms/people/PeopleSoloImage';
 import PeopleSoloBody from '../../atoms/people/PeopleSoloBody';
 import PeopleSoloMoreButton from '../../atoms/people/PeopleSoloMoreButton';
 import PeopleSoloName from '../../atoms/people/PeopleSoloName';
+import { mp } from '../../../../styles/device';
 
-function PeopleSoleSection() {
+function PeopleSoleSection({ src, name, body, href }) {
   return (
-    <div>
-      <ImageContainer>
-        <PeopleSoloImage src={'/images/people/solo/1_David2_l_2x.jpg'} />
-      </ImageContainer>
+    <Wrapper>
+      <PeopleSoloImage src={src} />
       <BodyContainer>
-        <PeopleSoloName item={'<b>이상현(Paul)</b> |  Global Director'} />
-        <PeopleSoloBody
-          item={
-            '에이슬립 대표이사 David입니다. 엔지니어 출신으로 네 번째 스타트업 창업에 도전하고 있습니다. 세상의 어떠한 문제라도 정량화하고, 이를 혁신적인 방법으로 해결하고자 고민합니다. 현재 기업에서 모델링 한 문제를 가장 잘 풀 수 있는 인력을 모셔오고, 구성원이 문제를 공감하고 새로운 문제와 혁신적인 솔루션을 제기할 수 있도록 분위기를 조성하며, 최종적으로 회사와 함께 성장할 수 있도록 노력하고 있습니다.'
-          }
-        />
-        <PeopleSoloMoreButton />
+        <PeopleSoloName item={name} />
+        <PeopleSoloBody item={body} />
+        <PeopleSoloMoreButton href={href} />
       </BodyContainer>
-    </div>
+    </Wrapper>
   );
 }
 
 export default PeopleSoleSection;
 
-const ImageContainer = styled.div`
-  position: relative;
-  /* height: 800px; */
+const BodyContainer = styled.div`
+  max-width: 360px;
+  margin: 32px auto;
+
+  ${mp[0]} {
+    max-width: unset;
+    margin: 32px 20px;
+  }
+
+  ${mp[1]} {
+    margin: 32px 0 0 108px;
+  }
 `;
 
-const BodyContainer = styled.div`
-  margin: 32px 20px;
+const Wrapper = styled.div`
+  ${mp[0]} {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 48px;
+    max-width: 720px;
+  }
+  ${mp[1]} {
+    max-width: 1920px;
+    margin: 0 auto 88px;
+  }
 `;

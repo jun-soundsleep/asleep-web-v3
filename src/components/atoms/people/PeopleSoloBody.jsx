@@ -23,7 +23,12 @@ const Container = styled.p`
   }
 
   ${mp[0]} {
+    max-width: 290px;
   }
   ${mp[1]} {
+    max-width: 677px;
+    font-size: 24px;
+    line-height: 1.58;
+    letter-spacing: -1.08px;
   }
 `;
