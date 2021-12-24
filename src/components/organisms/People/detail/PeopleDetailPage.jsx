@@ -62,8 +62,8 @@ function PeopleDetailPage({ data }) {
       list.current.style.transform = `translateX(-${
         rightBoundary + moveTodoAnimation
       }px)`;
-      moveUnderRightBoundaryWhenDrag(rightBoundary)
-    } 
+      moveUnderRightBoundaryWhenDrag(rightBoundary);
+    }
 
     setMouseDown(false);
     checkScrollRightDirection(e);
@@ -76,23 +76,24 @@ function PeopleDetailPage({ data }) {
         getComputedStyle(card?.current).marginRight
       );
       const cardWidth = card?.current.offsetWidth;
-      const rightBoundary = ((cardMarginRight + cardWidth) * data.length * 3) / 4;
+      const rightBoundary =
+        ((cardMarginRight + cardWidth) * data.length * 3) / 4;
 
       const diffX =
         originX - e.clientX > 0
           ? (originX - e.clientX) * -1
           : Math.abs(originX - e.clientX);
-      
+
       if (
         rightBoundary <= Math.abs(findTransformPx(list.current.style.transform))
       ) {
         list.current.style.transform = `translateX(-${
           rightBoundary + moveTodoAnimation
         }px)`;
-        moveUnderRightBoundaryWhenDrag(rightBoundary)
+        moveUnderRightBoundaryWhenDrag(rightBoundary);
         setMoveX(findTransformPx(list.current.style.transform));
         return;
-      } 
+      }
 
       if (moveX !== undefined) {
         e.currentTarget.style.transform = `translateX(${moveX + diffX}px)`;
@@ -115,8 +116,8 @@ function PeopleDetailPage({ data }) {
       list.current.style.transform = `translateX(-${
         rightBoundary + moveTodoAnimation
       }px)`;
-      moveUnderRightBoundaryWhenDrag(rightBoundary)
-    } 
+      moveUnderRightBoundaryWhenDrag(rightBoundary);
+    }
     checkScrollRightDirection(e);
     setMoveX(findTransformPx(e.currentTarget.style.transform));
     setMouseDown(false);
@@ -137,7 +138,7 @@ function PeopleDetailPage({ data }) {
     if (findTransformPx(list.current.style.transform) >= 0) {
       setTimeout(moveForAnimationWhenLeftDirection, 100);
       list.current.style.transform = `translateX(${moveTodoAnimation}px)`;
-      clearTimeout(moveForAnimationWhenLeftDirection)
+      clearTimeout(moveForAnimationWhenLeftDirection);
       return;
     }
 
@@ -165,8 +166,8 @@ function PeopleDetailPage({ data }) {
         rightBoundary + moveTodoAnimation
       }px)`;
       const timer = setTimeout(() => {
-        moveForAnimationWhenRightDirection(rightBoundary)
-        clearTimeout(timer)
+        moveForAnimationWhenRightDirection(rightBoundary);
+        clearTimeout(timer);
       }, 100);
       setMoveX(findTransformPx(list.current.style.transform));
       return;
@@ -179,17 +180,17 @@ function PeopleDetailPage({ data }) {
     setMoveX(findTransformPx(list.current.style.transform));
   };
 
-  const moveForAnimationWhenRightDirection = (rightBoundary) => {
-    list?.current?.style.transform = `translateX(-${rightBoundary}px)`;
-  }
+  const moveForAnimationWhenRightDirection = rightBoundary => {
+    list.current.style.transform = `translateX(-${rightBoundary}px)`;
+  };
 
-  const moveUnderRightBoundaryWhenDrag = (rightBoundary) => {
-    list?.current?.style.transform = `translateX(-${rightBoundary - 200}px)`;
-  }
+  const moveUnderRightBoundaryWhenDrag = rightBoundary => {
+    list.current.style.transform = `translateX(-${rightBoundary - 200}px)`;
+  };
 
   const moveForAnimationWhenLeftDirection = () => {
-    list?.current?.style.transform = `translateX(0px)`;
-  }
+    list.current.style.transform = `translateX(0px)`;
+  };
 
   const findTransformPx = str => {
     const start = str.indexOf('(');
