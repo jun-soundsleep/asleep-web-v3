@@ -31,8 +31,8 @@ const Container = styled.div`
   }
 
   ${mp[1]} {
-    /* width: 578px;
-    height: 720px; */
+    width: 867px;
+    /* height: 720px; */ */
     background: url(${({ srcl }) => srcl && srcl});
     background-size: cover;
     background-position: center;

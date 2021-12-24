@@ -19,6 +19,8 @@ const ForwardedRefComponent = forwardRef((props, ref) => {
 export default function Index() {
   const section = React.createRef();
 
+  console.log(section);
+
   const goToNextSection = () => {
     section.current?.scrollIntoView({
       behavior: 'smooth',

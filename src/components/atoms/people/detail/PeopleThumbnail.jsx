@@ -2,13 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../../styles/device';
 
-function PeopleThumbnail({ src, index, clickListener }) {
+function PeopleThumbnail({ src, index, clickListener, forwardedRef }) {
   return (
     <Container
       onClick={() => clickListener(index)}
       src={src[0]}
       srcm={src[1]}
       srcl={src[2]}
+      ref={forwardedRef}
     />
   );
 }

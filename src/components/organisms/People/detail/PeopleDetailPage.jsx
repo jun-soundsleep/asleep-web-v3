@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 import styled from '@emotion/styled';
+import dynamic from 'next/dynamic';
 import PeopleSoloName from '../../../atoms/people/solo/PeopleSoloName';
 import PeopleSoloBody from '../../../atoms/people/solo/PeopleSoloBody';
 import PeopleSoloMoreButton from '../../../atoms/people/solo/PeopleSoloMoreButton';
@@ -7,7 +8,29 @@ import AsleepLayout from '../../AppLayout/AsleepLayout';
 import PeopleThumnail from '../../../atoms/people/detail/PeopleThumbnail';
 import DetailPeopleImage from '../../../atoms/people/detail/DetailPeopleImage';
 import userWindowSize from '../../../../../hooks/userWindowSize';
+import DetailPeopleDirectionButton from '../../../atoms/people/detail/DetailPeopleDirectionButton';
 import { mp } from '../../../../../styles/device';
+import DetailPeopleDirectionLeftButton from '../../../atoms/people/detail/DetailPeopleDirectionLeftButton';
+
+const OverTabletThumbnailContainerComponent = dynamic(
+  import('../../../atoms/people/detail/OverTabletThumbnailContainer')
+);
+
+// eslint-disable-next-line react/display-name
+const ForwardedOverTabletThumbnailContainer = forwardRef((props, ref) => {
+  return (
+    <OverTabletThumbnailContainerComponent {...props} forwardedRef={ref} />
+  );
+});
+
+const ThumbnailComponent = dynamic(
+  import('../../../atoms/people/detail/PeopleThumbnail')
+);
+
+// eslint-disable-next-line react/display-name
+const ForwardedThumbnail = forwardRef((props, ref) => {
+  return <ThumbnailComponent {...props} forwardedRef={ref} />;
+});
 
 function PeopleDetailPage({ data }) {
   const [mouseDown, setMouseDown] = useState(false);
@@ -15,20 +38,10 @@ function PeopleDetailPage({ data }) {
   const [moveX, setMoveX] = useState(undefined);
 
   const [currentPeople, setPeople] = useState(0);
-  const size = userWindowSize();
+  const moveTodoAnimation = 80;
+
   const list = React.createRef();
-
-  const mImageSize = 312;
-  const mListMargin = 20;
-  const mListWidth = 174;
-  const mMovePx = 200;
-
-  const checkNeedTranslateButton = () => {
-    return (
-      size.width >
-      mImageSize + data.length * mListWidth + mListMargin * data.length
-    );
-  };
+  const card = React.createRef();
 
   const handleMouseDown = e => {
     setMouseDown(true);
@@ -37,18 +50,49 @@ function PeopleDetailPage({ data }) {
 
   const handleMouseUp = e => {
     console.log('move up');
-    setMouseDown(false);
+    const cardMarginRight = calculateMarginRight(
+      getComputedStyle(card?.current).marginRight
+    );
+    const cardWidth = card?.current.offsetWidth;
+    const rightBoundary = ((cardMarginRight + cardWidth) * data.length * 3) / 4;
 
+    if (
+      rightBoundary <= Math.abs(findTransformPx(list.current.style.transform))
+    ) {
+      list.current.style.transform = `translateX(-${
+        rightBoundary + moveTodoAnimation
+      }px)`;
+      moveUnderRightBoundaryWhenDrag(rightBoundary)
+    } 
+
+    setMouseDown(false);
     checkScrollRightDirection(e);
     setMoveX(findTransformPx(e.currentTarget.style.transform));
   };
 
   const handleMouseMove = e => {
     if (mouseDown) {
+      const cardMarginRight = calculateMarginRight(
+        getComputedStyle(card?.current).marginRight
+      );
+      const cardWidth = card?.current.offsetWidth;
+      const rightBoundary = ((cardMarginRight + cardWidth) * data.length * 3) / 4;
+
       const diffX =
         originX - e.clientX > 0
           ? (originX - e.clientX) * -1
           : Math.abs(originX - e.clientX);
+      
+      if (
+        rightBoundary <= Math.abs(findTransformPx(list.current.style.transform))
+      ) {
+        list.current.style.transform = `translateX(-${
+          rightBoundary + moveTodoAnimation
+        }px)`;
+        moveUnderRightBoundaryWhenDrag(rightBoundary)
+        setMoveX(findTransformPx(list.current.style.transform));
+        return;
+      } 
 
       if (moveX !== undefined) {
         e.currentTarget.style.transform = `translateX(${moveX + diffX}px)`;
@@ -58,14 +102,21 @@ function PeopleDetailPage({ data }) {
     }
   };
 
-  const findTransformPx = str => {
-    const start = str.indexOf('(');
-    const end = str.indexOf('p');
-    const result = str.slice(start + 1, end);
-    return Number(result);
-  };
-
   const handleMouseOut = e => {
+    const cardMarginRight = calculateMarginRight(
+      getComputedStyle(card?.current).marginRight
+    );
+    const cardWidth = card?.current.offsetWidth;
+    const rightBoundary = ((cardMarginRight + cardWidth) * data.length * 3) / 4;
+
+    if (
+      rightBoundary <= Math.abs(findTransformPx(list.current.style.transform))
+    ) {
+      list.current.style.transform = `translateX(-${
+        rightBoundary + moveTodoAnimation
+      }px)`;
+      moveUnderRightBoundaryWhenDrag(rightBoundary)
+    } 
     checkScrollRightDirection(e);
     setMoveX(findTransformPx(e.currentTarget.style.transform));
     setMouseDown(false);
@@ -78,8 +129,78 @@ function PeopleDetailPage({ data }) {
     }
   };
 
-  const handleSlide = e => {
-    // const newPosition = e.clientX - originX + afterX;
+  const moveSlideToLeft = e => {
+    const cardMarginRight = getComputedStyle(card?.current).marginRight;
+    const cardWidth = card?.current.offsetWidth;
+    const moveSize = cardWidth + calculateMarginRight(cardMarginRight);
+
+    if (findTransformPx(list.current.style.transform) >= 0) {
+      setTimeout(moveForAnimationWhenLeftDirection, 100);
+      list.current.style.transform = `translateX(${moveTodoAnimation}px)`;
+      clearTimeout(moveForAnimationWhenLeftDirection)
+      return;
+    }
+
+    if (moveX !== undefined) {
+      list.current.style.transform = `translateX(${moveX + moveSize}px)`;
+    } else {
+      list.current.style.transform = `translateX(${moveSize}px)`;
+    }
+    setMoveX(findTransformPx(list.current.style.transform));
+  };
+
+  const moveSlideToRight = e => {
+    const cardMarginRight = calculateMarginRight(
+      getComputedStyle(card?.current).marginRight
+    );
+    const cardWidth = card?.current.offsetWidth;
+    const moveSize = (cardWidth + cardMarginRight) * -1;
+    const rightBoundary = ((cardMarginRight + cardWidth) * data.length * 3) / 4;
+
+    // 3/4 이상 못 넘어가게 transform 기준
+    if (
+      rightBoundary <= Math.abs(findTransformPx(list.current.style.transform))
+    ) {
+      list.current.style.transform = `translateX(-${
+        rightBoundary + moveTodoAnimation
+      }px)`;
+      const timer = setTimeout(() => {
+        moveForAnimationWhenRightDirection(rightBoundary)
+        clearTimeout(timer)
+      }, 100);
+      setMoveX(findTransformPx(list.current.style.transform));
+      return;
+    }
+    if (moveX !== undefined) {
+      list.current.style.transform = `translateX(${moveX + moveSize}px)`;
+    } else {
+      list.current.style.transform = `translateX(${moveSize}px)`;
+    }
+    setMoveX(findTransformPx(list.current.style.transform));
+  };
+
+  const moveForAnimationWhenRightDirection = (rightBoundary) => {
+    list?.current?.style.transform = `translateX(-${rightBoundary}px)`;
+  }
+
+  const moveUnderRightBoundaryWhenDrag = (rightBoundary) => {
+    list?.current?.style.transform = `translateX(-${rightBoundary - 200}px)`;
+  }
+
+  const moveForAnimationWhenLeftDirection = () => {
+    list?.current?.style.transform = `translateX(0px)`;
+  }
+
+  const findTransformPx = str => {
+    const start = str.indexOf('(');
+    const end = str.indexOf('p');
+    const result = str.slice(start + 1, end);
+    return Number(result);
+  };
+
+  const calculateMarginRight = str => {
+    const end = str.indexOf('p');
+    return Number(str.slice(0, end));
   };
 
   return (
@@ -112,23 +233,26 @@ function PeopleDetailPage({ data }) {
           <PeopleSoloName item={data[currentPeople].name} />
           <PeopleSoloBody item={data[currentPeople].body} />
           <PeopleSoloMoreButton href={data[currentPeople].href} />
-          <OverTabletThumbnailContainer
+          <ForwardedOverTabletThumbnailContainer
             length={data.length}
-            onMouseLeave={handleMouseOut}
-            onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
-            onMouseMove={handleMouseMove}
+            handleMouseOut={handleMouseOut}
+            handleMouseDown={handleMouseDown}
+            handleMouseUp={handleMouseUp}
+            handleMouseMove={handleMouseMove}
             ref={list}
           >
             {data?.map(({ thumbnail }, idx) => (
-              <PeopleThumnail
+              <ForwardedThumbnail
                 key={idx}
                 src={thumbnail}
                 index={idx}
                 clickListener={setPeople}
+                ref={card}
               />
             ))}
-          </OverTabletThumbnailContainer>
+          </ForwardedOverTabletThumbnailContainer>
+          <DetailPeopleDirectionLeftButton clickListener={moveSlideToLeft} />
+          <DetailPeopleDirectionButton clickListener={moveSlideToRight} />
         </BodyContainer>
       </OverTablet>
     </>
@@ -195,23 +319,5 @@ const ThumnailContainer = styled.ul`
   ${mp[0]} {
   }
   ${mp[1]} {
-  }
-`;
-
-const OverTabletThumbnailContainer = styled.ul`
-  display: flex;
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  user-select: none;
-  width: ${({ length }) => length * 174 + length * 20}px;
-  /* width: 500px; */
-  height: 242px;
-  overflow-x: hidden;
-  z-index: var(--peope-detail-thumbnail);
-  transition: transform 100ms ease 0s;
-
-  & > li {
-    margin-right: 20px;
   }
 `;
