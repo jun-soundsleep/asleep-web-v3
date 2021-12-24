@@ -181,11 +181,15 @@ function PeopleDetailPage({ data }) {
   };
 
   const moveForAnimationWhenRightDirection = rightBoundary => {
-    list.current.style.transform = `translateX(-${rightBoundary}px)`;
+    if (list?.current?.style) {
+      list.current.style.transform = `translateX(-${rightBoundary}px)`;
+    }
   };
 
   const moveUnderRightBoundaryWhenDrag = rightBoundary => {
-    list.current.style.transform = `translateX(-${rightBoundary - 200}px)`;
+    if (list?.current?.style) {
+      list.current.style.transform = `translateX(-${rightBoundary - 200}px)`;
+    }
   };
 
   const moveForAnimationWhenLeftDirection = () => {
