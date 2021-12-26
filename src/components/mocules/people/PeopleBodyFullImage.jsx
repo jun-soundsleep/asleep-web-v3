@@ -13,9 +13,8 @@ function PeopleBodyFullImage({ src, title, href }) {
     <a href={href} target="_blank" rel="noreferrer">
       <Container src={src[0]} srcm={src[1]} srcl={src[2]}>
         <Dim dimColor={' var(--dim-dim-04) '} />
-
         <TitleContainer>
-          <Title>{title}</Title>
+          <Title dangerouslySetInnerHTML={{ __html: title }} />
           <CheckJd>
             <span>{jd}</span>
             <svg

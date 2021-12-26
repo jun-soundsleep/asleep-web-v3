@@ -28,7 +28,7 @@ function TechnicalTab() {
         <PeopleBodyCard
           title={'Technical Product Team'}
           subtitle={cardFirst}
-          href={'/en'}
+          href={'/people/technicalproduct'}
         />
       </CardContainer>
       <CardOverTablet>
@@ -36,14 +36,14 @@ function TechnicalTab() {
           <PeopleBodyCard
             title={'App/Web Service Team'}
             subtitle={cardSecond}
-            href={'/en'}
+            href={'/people/appwebservice'}
           />
         </CardContainer>
         <CardContainer>
           <PeopleBodyCard
             title={'AI Service Team'}
             subtitle={cardThird}
-            href={'/en'}
+            href={'/people/aiservice'}
           />
         </CardContainer>
       </CardOverTablet>
@@ -79,6 +79,16 @@ const CardOverTablet = styled.div`
     & > div {
       width: 270px;
       height: 312px;
+    }
+
+    & > div:first-child {
+      margin: unset;
+      margin-right: 15px;
+    }
+
+    & > div:last-child {
+      margin: unset;
+      margin-left: 15px;
     }
   }
 

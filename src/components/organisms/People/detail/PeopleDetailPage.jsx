@@ -221,16 +221,18 @@ function PeopleDetailPage({ data }) {
               <PeopleSoloName item={data[currentPeople].name} />
               <PeopleSoloBody item={data[currentPeople].body} />
               <PeopleSoloMoreButton href={data[currentPeople].href} />
-              <ThumnailContainer>
-                {data?.map(({ thumbnail }, idx) => (
-                  <PeopleThumnail
-                    key={idx}
-                    src={thumbnail}
-                    index={idx}
-                    clickListener={setPeople}
-                  />
-                ))}
-              </ThumnailContainer>
+              {data.length >= 2 && (
+                <ThumnailContainer>
+                  {data?.map(({ thumbnail }, idx) => (
+                    <PeopleThumnail
+                      key={idx}
+                      src={thumbnail}
+                      index={idx}
+                      clickListener={setPeople}
+                    />
+                  ))}
+                </ThumnailContainer>
+              )}
             </BodyContainer>
           </Wrapper>
         </AsleepLayout>
@@ -244,26 +246,34 @@ function PeopleDetailPage({ data }) {
           <PeopleSoloName item={data[currentPeople].name} />
           <PeopleSoloBody item={data[currentPeople].body} />
           <PeopleSoloMoreButton href={data[currentPeople].href} />
-          <ForwardedOverTabletThumbnailContainer
-            length={data.length}
-            handleMouseOut={handleMouseOut}
-            handleMouseDown={handleMouseDown}
-            handleMouseUp={handleMouseUp}
-            handleMouseMove={handleMouseMove}
-            ref={list}
-          >
-            {data?.map(({ thumbnail }, idx) => (
-              <ForwardedThumbnail
-                key={idx}
-                src={thumbnail}
-                index={idx}
-                clickListener={setPeople}
-                ref={card}
+          {data.length >= 2 && (
+            <ForwardedOverTabletThumbnailContainer
+              length={data.length}
+              handleMouseOut={handleMouseOut}
+              handleMouseDown={handleMouseDown}
+              handleMouseUp={handleMouseUp}
+              handleMouseMove={handleMouseMove}
+              ref={list}
+            >
+              {data?.map(({ thumbnail }, idx) => (
+                <ForwardedThumbnail
+                  key={idx}
+                  src={thumbnail}
+                  index={idx}
+                  clickListener={setPeople}
+                  ref={card}
+                />
+              ))}
+            </ForwardedOverTabletThumbnailContainer>
+          )}
+          {data.length >= 2 && (
+            <>
+              <DetailPeopleDirectionLeftButton
+                clickListener={moveSlideToLeft}
               />
-            ))}
-          </ForwardedOverTabletThumbnailContainer>
-          <DetailPeopleDirectionLeftButton clickListener={moveSlideToLeft} />
-          <DetailPeopleDirectionButton clickListener={moveSlideToRight} />
+              <DetailPeopleDirectionButton clickListener={moveSlideToRight} />
+            </>
+          )}
         </BodyContainer>
       </OverTablet>
     </>

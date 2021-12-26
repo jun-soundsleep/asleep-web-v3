@@ -8,6 +8,7 @@ import SectionContainer from '../../atoms/people/SectionContainer';
 
 function RndTab(props) {
   const { t } = useTranslation();
+  const title = t('people:rnd_title');
   const cardFirst = t('people:rd_card_1');
   const cardSecond = t('people:rd_card_2');
 
@@ -19,23 +20,21 @@ function RndTab(props) {
           '/images/people/people_2_m_2x.jpg',
           '/images/people/people_2_l_2x.jpg'
         ]}
-        title={
-          'R&D Division is in charge of source technology development and works to make Asleep more competitive.'
-        }
+        title={title}
         href={'https://asleep.ai/en'}
       />
       <CardContainer style={{ marginTop: '48px' }}>
         <PeopleBodyCard
           title={'Sleep Sensor Team'}
           subtitle={cardFirst}
-          href={'/en'}
+          href={'/people/rnd'}
         />
       </CardContainer>
       <CardContainer>
         <PeopleBodyCard
           title={'AI Reseaerch Team'}
           subtitle={cardSecond}
-          href={'/en'}
+          href={'/people/research'}
         />
       </CardContainer>
     </SectionContainer>

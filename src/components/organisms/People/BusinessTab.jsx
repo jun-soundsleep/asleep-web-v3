@@ -8,10 +8,11 @@ import SectionContainer from '../../atoms/people/SectionContainer';
 
 function BusinessTab(props) {
   const { t } = useTranslation();
-  const title = t('people:tech_title');
-  const cardFirst = t('people:tech_card_1');
-  const cardSecond = t('people:tech_card_2');
-  const cardThird = t('people:tech_card_3');
+  const title = t('people:businee_title');
+  const cardFirst = t('people:business_card_1');
+  const cardSecond = t('people:business_card_2');
+  const cardThird = t('people:business_card_3');
+  const cardFourth = t('people:business_card_4');
 
   return (
     <SectionContainer>
@@ -26,9 +27,9 @@ function BusinessTab(props) {
       />
       <CardContainer style={{ marginTop: '48px' }}>
         <PeopleBodyCard
-          title={'Technical Product Team'}
+          title={'Product Team'}
           subtitle={cardFirst}
-          href={'/en'}
+          href={'/people/product'}
         />
       </CardContainer>
       <CardOverTablet>
@@ -36,25 +37,25 @@ function BusinessTab(props) {
           <Temp>
             <PeopleBodyCard
               className="bizBd"
-              title={'Bd'}
-              subtitle={cardFirst}
-              href={'/en'}
+              title={'Business Development Team'}
+              subtitle={cardSecond}
+              href={'/people/businessdevelopment'}
             />
           </Temp>
           <Temp>
             <PeopleBodyCard
-              title={'Technical Product Team'}
-              subtitle={cardFirst}
-              href={'/en'}
+              title={'Marketing & Branding Team'}
+              subtitle={cardThird}
+              href={'/people/marketing'}
             />
           </Temp>
         </div>
         <div className="bizRight">
           <Temp>
             <PeopleBodyCard
-              title={'Technical Product Team'}
-              subtitle={cardFirst}
-              href={'/en'}
+              title={'Operating Team'}
+              subtitle={cardFourth}
+              href={'/people/operating'}
             />
           </Temp>
         </div>

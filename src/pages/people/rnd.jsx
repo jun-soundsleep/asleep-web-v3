@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
 import PeopleDetailPage from '../../components/organisms/People/detail/PeopleDetailPage';
 
 function Rnd(props) {
   const { t } = useTranslation();
+
   const johnName = t('people:john_name');
   const johnBody = t('people:john_body');
   const julieName = t('people:julie_name');
