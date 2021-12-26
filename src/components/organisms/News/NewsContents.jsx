@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
-import Moment from 'moment';
 import NewsMoreButton from '../../atoms/News/NewsMoreButton';
 import NewsCard from '../../mocules/News/NewsCard';
 import { mp } from '../../../../styles/device';
@@ -8,14 +7,10 @@ import { mp } from '../../../../styles/device';
 function NewsContents({ data }) {
   const nextList = 6;
   const [currentIndex, setcurrentIndexIndex] = useState(0);
-  const [list, setList] = useState([]);
+  const [list, setList] = useState([...data.slice(0, 6)]);
 
   useEffect(() => {
-    data.sort(
-      (a, b) =>
-        new Moment(b.date).format('YYYYMMDD') -
-        new Moment(a.date).format('YYYYMMDD')
-    );
+    if (currentIndex === 0) return;
     setList([...list, ...data.slice(currentIndex, currentIndex + nextList)]);
   }, [currentIndex]);
 
@@ -25,16 +20,17 @@ function NewsContents({ data }) {
 
   return (
     <CardContainer>
-      {list?.map(({ category, title, date, href }, idx) => (
+      {list?.map(({ category, title, enTitle, date, href }, idx) => (
         <NewsCard
           category={category}
           title={title}
+          enTitle={enTitle}
           date={date}
           key={idx}
           href={href}
         />
       ))}
-      {currentIndex < data.length && (
+      {currentIndex + nextList < data.length && (
         <NewsMoreButton clickListener={handleMoreBUttonClick} />
       )}
     </CardContainer>

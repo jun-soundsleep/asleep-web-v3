@@ -5,8 +5,10 @@ import NewsCardTitle from '../../atoms/News/NewsCardTitle';
 import NewsCardDate from '../../atoms/News/NewsCardDate';
 import NewsCardTag from '../../atoms/News/NewsCardTag';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-function NewsCard({ title, category, date, href }) {
+function NewsCard({ title, enTitle, category, date, href }) {
+  const router = useRouter();
   return (
     <a href={href} target="_blank" rel="noreferrer">
       <CardContainer>
@@ -15,7 +17,11 @@ function NewsCard({ title, category, date, href }) {
             <NewsCardTag item={category} />
           </TagConatiner>
           <TitleContainer>
-            <NewsCardTitle item={title} />
+            {router.locale === 'ko' ? (
+              <NewsCardTitle item={title} />
+            ) : (
+              <NewsCardTitle item={enTitle} />
+            )}
           </TitleContainer>
           <NewsCardDate item={date} />
         </Temp>

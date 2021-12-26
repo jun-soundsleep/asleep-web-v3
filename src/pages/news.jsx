@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
+import Moment from 'moment';
 import AsleepLayout from '../components/organisms/AppLayout/AsleepLayout';
 import NewsNavigation from '../components/organisms/News/NewsNavigation';
 import CategoryTab from '../components/atoms/Common/CategoryTab';
@@ -12,17 +13,22 @@ import NewsBusinessTab from '../components/organisms/News/NewsBusinessTab';
 import NewsMedicalTab from '../components/organisms/News/NewsMedicalTab';
 import NewsInvestment from '../components/organisms/News/NewsInvestment';
 import NewsAboutTab from '../components/organisms/News/NewsAboutTab';
+import { INVEST_DATA } from '../data/News/INVEST_DATA';
+import { TECH_DATA } from '../data/News/TECH_DATA';
+import { MEDICAL_DATA } from '../data/News/MEDICAL_DATA';
+import { BUSINESS_DATA } from '../data/News/BUSINESS_DATA';
+import { CORPORATE_DATA } from '../data/News/CORPORATE_DATA';
 
-function News({ allList, about }) {
+function News({ allList, about, invest, tech, medical, business, corporate }) {
   const [currentTab, setCurrentTab] = useState('all');
 
   const content = {
     all: <NewsAllTab data={allList} />,
-    corporate: <NewsCorporate data={about} />,
-    business: <NewsBusinessTab data={about} />,
-    medical: <NewsMedicalTab data={about} />,
-    tech: <NewsContents data={about} />,
-    investment: <NewsInvestment data={about} />,
+    corporate: <NewsCorporate data={corporate} />,
+    business: <NewsBusinessTab data={business} />,
+    medical: <NewsMedicalTab data={medical} />,
+    tech: <NewsContents data={tech} />,
+    investment: <NewsInvestment data={invest} />,
     about: <NewsAboutTab data={about} />
   };
 
@@ -120,10 +126,33 @@ const CategoryWrapper = styled.div`
 `;
 
 export async function getStaticProps() {
+  const sortLatest = data => {
+    return data.sort(
+      (a, b) =>
+        new Moment(b.date).format('YYYYMMDD') -
+        new Moment(a.date).format('YYYYMMDD')
+    );
+  };
+
   return {
     props: {
-      allList: [...ABOUT_DATA, ...ABOUT_DATA],
-      about: [...ABOUT_DATA]
+      allList: [
+        ...sortLatest([
+          ...ABOUT_DATA,
+          ...CORPORATE_DATA,
+          ...BUSINESS_DATA,
+          ...MEDICAL_DATA,
+          ...TECH_DATA,
+          ...INVEST_DATA,
+          ...ABOUT_DATA
+        ])
+      ],
+      corporate: [...sortLatest(CORPORATE_DATA)],
+      business: [...sortLatest(BUSINESS_DATA)],
+      medical: [...sortLatest(MEDICAL_DATA)],
+      tech: [...sortLatest(TECH_DATA)],
+      invest: [...sortLatest(INVEST_DATA)],
+      about: [...sortLatest(ABOUT_DATA)]
     }
   };
 }

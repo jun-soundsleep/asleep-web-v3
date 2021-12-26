@@ -3,12 +3,13 @@ import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
 
 function NewsCardTitle({ item }) {
-  return <Contents>{item}</Contents>;
+  return <Contents dangerouslySetInnerHTML={{ __html: item }} />;
 }
 
 export default NewsCardTitle;
 
 const Contents = styled.h2`
+  word-break: keep-all;
   font-size: 16px;
   font-weight: 600;
   font-stretch: normal;
