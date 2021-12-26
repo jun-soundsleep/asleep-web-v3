@@ -22,9 +22,9 @@ const content = {
   advisors: <AdvisorsTab />
 };
 
-function PeopBodySection() {
+function PeopBodySection({ forwardedRef }) {
   const [currentTab, setCurrentTab] = useState('leaders');
-  const { t, lang } = useTranslation();
+  const { t } = useTranslation();
   const title = t('people:body_title');
 
   const checkTabActive = tab => {
@@ -56,7 +56,7 @@ function PeopBodySection() {
   };
 
   return (
-    <div>
+    <Wrapper ref={forwardedRef}>
       <TitleContainer>
         <PeopleBodyTitle item={title} />
       </TitleContainer>
@@ -106,11 +106,15 @@ function PeopBodySection() {
         />
       </CategoryWrapper>
       {content[currentTab]}
-    </div>
+    </Wrapper>
   );
 }
 
 export default PeopBodySection;
+
+const Wrapper = styled.div`
+  padding-top: 64px;
+`;
 
 const CategoryWrapper = styled.div`
   margin: 32px 20px 32px;
@@ -127,7 +131,7 @@ const CategoryWrapper = styled.div`
 `;
 
 const TitleContainer = styled.div`
-  margin: 64px 20px 32px;
+  margin: 0px 20px 32px;
 `;
 
 const ImageContainer = styled(MXFlexCenteringSB)`

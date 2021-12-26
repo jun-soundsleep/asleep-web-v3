@@ -9,6 +9,7 @@ function AdvisorsTitle({ item }) {
 export default AdvisorsTitle;
 
 const Container = styled.div`
+  margin-top: 64px;
   font-size: 16px;
   font-weight: 600;
   font-stretch: normal;
@@ -19,6 +20,7 @@ const Container = styled.div`
   color: var(--primary-primary-in-light);
 
   ${mp[0]} {
+    margin-top: unset;
     text-align: left;
   }
   ${mp[1]} {

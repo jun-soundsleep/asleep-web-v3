@@ -6,7 +6,7 @@ import BigTitle from '../../atoms/Common/BigTitle';
 import MainSubTitle from '../../atoms/Main/MainBigSubTitle';
 import BigArrrowButton from '../../atoms/Common/BigArrrowButton';
 
-function PeopleMainTitle(props) {
+function PeopleMainTitle({ clickListener }) {
   const { t } = useTranslation();
   const mainTitle = t('people:title');
   const subTitle = t('people:sub_title');
@@ -24,7 +24,7 @@ function PeopleMainTitle(props) {
         <BigTitle item={mainTitle} margin="0px 0px 32px 0px" />
         <MainSubTitle item={subTitle} />
       </ContentsContainer>
-      <BigArrrowButton clickListener={() => {}} />
+      <BigArrrowButton clickListener={clickListener} />
     </>
   );
 }

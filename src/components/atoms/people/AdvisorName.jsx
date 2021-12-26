@@ -9,6 +9,7 @@ function AdvisorName({ item }) {
 export default AdvisorName;
 
 const Container = styled.div`
+  margin-top: 13px;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;

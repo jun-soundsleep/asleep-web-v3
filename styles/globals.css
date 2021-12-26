@@ -69,7 +69,7 @@
 
 * {
   box-sizing: border-box;
-  word-break: keep-all;
+  /* word-break: keep-all; */
   white-space: pre-wrap;
 }
 

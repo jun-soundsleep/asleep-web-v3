@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Dim from '../../atoms/Common/Dim';
-import MainFirstTitles from '../../mocules/Main/MainFirstTitles';
 import PeopleBigImage from '../../atoms/people/PeopleBigImage';
 import PeopleMainTitle from '../../mocules/people/PeopleMainTitle';
 

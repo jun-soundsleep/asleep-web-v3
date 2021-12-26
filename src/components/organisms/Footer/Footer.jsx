@@ -91,63 +91,65 @@ function Footer() {
         />
       </FooterWrapper>
       <OverLargeFooter darkMode={checkIfTechPageOrNot()}>
-        <MXFlex>
-          <FotterMoculeGroup
-            darkMode={checkIfTechPageOrNot()}
-            title="Company"
-            item={COMPANY_ITEM}
-            width={'auto'}
-          />
-          <FotterMoculeGroup
-            darkMode={checkIfTechPageOrNot()}
-            title="Tech"
-            item={TECH_ITEM}
-            width={'auto'}
-          />
-          <FotterMoculeGroup
-            darkMode={checkIfTechPageOrNot()}
-            title="Biz"
-            item={BIZ_ITEM}
-            width={'auto'}
-          />
-          <FotterMoculeGroup
-            darkMode={checkIfTechPageOrNot()}
-            title="People"
-            item={PEOPLE_ITEM}
-            width={'auto'}
-          />
-          <FotterMoculeGroup
-            darkMode={checkIfTechPageOrNot()}
-            title="News"
-            width={'auto'}
-          />
-          <div>
+        <Wrapper>
+          <MXFlex>
             <FotterMoculeGroup
               darkMode={checkIfTechPageOrNot()}
-              title="Contact"
-              item={CONTACT_ITEM}
+              title="Company"
+              item={COMPANY_ITEM}
               width={'auto'}
-              margin="0px 48px 77px 0px"
             />
-            <FooterExternalConnection
+            <FotterMoculeGroup
               darkMode={checkIfTechPageOrNot()}
-              item={t('footer:recruiting')}
-              href="https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd"
+              title="Tech"
+              item={TECH_ITEM}
+              width={'auto'}
             />
-            <FooterExternalConnection
-              item={t('footer:blog')}
+            <FotterMoculeGroup
               darkMode={checkIfTechPageOrNot()}
-              href="
+              title="Biz"
+              item={BIZ_ITEM}
+              width={'auto'}
+            />
+            <FotterMoculeGroup
+              darkMode={checkIfTechPageOrNot()}
+              title="People"
+              item={PEOPLE_ITEM}
+              width={'auto'}
+            />
+            <FotterMoculeGroup
+              darkMode={checkIfTechPageOrNot()}
+              title="News"
+              width={'auto'}
+            />
+            <div>
+              <FotterMoculeGroup
+                darkMode={checkIfTechPageOrNot()}
+                title="Contact"
+                item={CONTACT_ITEM}
+                width={'auto'}
+                margin="0px 48px 77px 0px"
+              />
+              <FooterExternalConnection
+                darkMode={checkIfTechPageOrNot()}
+                item={t('footer:recruiting')}
+                href="https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd"
+              />
+              <FooterExternalConnection
+                item={t('footer:blog')}
+                darkMode={checkIfTechPageOrNot()}
+                href="
           https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd"
-            />
-          </div>
-        </MXFlex>
-        <Blank height={'100px'} />
-        <FootterAddressTitle darkMode={checkIfTechPageOrNot()} />
-        <FooterAddress
-          margin={'12px 0px 0px'}
-          darkMode={checkIfTechPageOrNot()}
-        />
+              />
+            </div>
+          </MXFlex>
+          <Blank height={'100px'} />
+          <FootterAddressTitle darkMode={checkIfTechPageOrNot()} />
+          <FooterAddress
+            margin={'12px 0px 0px'}
+            darkMode={checkIfTechPageOrNot()}
+          />
+        </Wrapper>
       </OverLargeFooter>
     </>
   );
@@ -181,13 +183,26 @@ const OverLargeFooter = styled.footer`
         ? 'var(--components-components-06)'
         : 'var(--components-components-02)'};
 
-  padding: 40px 0px 140px 104px;
+  ${mp[0]} {
+    display: block;
+    margin: 0 auto;
+  }
+`;
+
+const Wrapper = styled.div`
+  display: none;
+  width: 100%;
+  height: 100%;
 
   ${mp[0]} {
     display: block;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 40px 110px 140px 100px;
   }
 
-  ${mp[0]} {
-    padding: 87px 0px 140px 280px;
+  ${mp[1]} {
+    max-width: 1500px;
+    padding: 87px 110px 140px 100px;
   }
 `;
