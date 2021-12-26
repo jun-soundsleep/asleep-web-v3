@@ -27,11 +27,13 @@ const Container = styled.div`
   }
 
   ${mp[0]} {
+    max-width: 154px;
     font-size: 13px;
     line-height: 1.62;
     letter-spacing: -0.59px;
   }
   ${mp[1]} {
+    max-width: 368px;
     font-size: 24px;
     line-height: 1.58;
     letter-spacing: -1.08px;

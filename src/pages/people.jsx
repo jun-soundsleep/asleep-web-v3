@@ -1,7 +1,6 @@
 import React, { forwardRef } from 'react';
 import dynamic from 'next/dynamic';
 import AsleepLayout from '../components/organisms/AppLayout/AsleepLayout';
-import PeopBodySection from '../components/organisms/People/PeopBodySection';
 import PeopleMainSection from '../components/organisms/People/PeopleMainSection';
 
 const BodyComponent = dynamic(
