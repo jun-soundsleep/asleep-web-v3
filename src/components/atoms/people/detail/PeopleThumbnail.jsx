@@ -23,6 +23,7 @@ const Container = styled.li`
   background: url(${({ src }) => src && src});
   background-size: cover;
   background-position: 50%;
+  background-repeat: no-repeat;
   border-radius: 20px;
   cursor: pointer;
 
@@ -30,10 +31,16 @@ const Container = styled.li`
     width: 174px;
     height: 242px;
     background: url(${({ srcm }) => srcm && srcm});
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
   }
   ${mp[1]} {
     width: 185px;
     height: 227px;
     background: url(${({ srcl }) => srcl && srcl});
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
   }
 `;

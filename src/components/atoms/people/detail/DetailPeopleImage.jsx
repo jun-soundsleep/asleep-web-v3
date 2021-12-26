@@ -1,16 +1,23 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../../styles/device';
+import DetailPeoleBackButton from './DetailPeoleBackButton';
 
-function DetailPeopleImage({ src }) {
-  return <Container src={src[0]} srcm={src[1]} srcl={src[2]} />;
+function DetailPeopleImage({ src, clickListener }) {
+  return (
+    <>
+      <Container src={src[0]} srcm={src[1]} srcl={src[2]}>
+        <DetailPeoleBackButton clickListener={clickListener} />
+      </Container>
+    </>
+  );
 }
 
 export default DetailPeopleImage;
 
 const Container = styled.div`
   width: 360px;
-  height: 286px;
+  height: 445px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -32,7 +39,6 @@ const Container = styled.div`
 
   ${mp[1]} {
     width: 867px;
-    /* height: 720px; */ */
     background: url(${({ srcl }) => srcl && srcl});
     background-size: cover;
     background-position: center;

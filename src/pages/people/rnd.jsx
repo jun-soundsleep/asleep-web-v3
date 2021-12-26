@@ -82,9 +82,9 @@ const temp = [
 
 function Rnd(props) {
   return (
-    <div>
+    <>
       <PeopleDetailPage data={temp} />
-    </div>
+    </>
   );
 }
 

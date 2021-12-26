@@ -7,10 +7,10 @@ import PeopleSoloMoreButton from '../../../atoms/people/solo/PeopleSoloMoreButto
 import AsleepLayout from '../../AppLayout/AsleepLayout';
 import PeopleThumnail from '../../../atoms/people/detail/PeopleThumbnail';
 import DetailPeopleImage from '../../../atoms/people/detail/DetailPeopleImage';
-import userWindowSize from '../../../../../hooks/userWindowSize';
 import DetailPeopleDirectionButton from '../../../atoms/people/detail/DetailPeopleDirectionButton';
 import { mp } from '../../../../../styles/device';
 import DetailPeopleDirectionLeftButton from '../../../atoms/people/detail/DetailPeopleDirectionLeftButton';
+import { useRouter } from 'next/router';
 
 const OverTabletThumbnailContainerComponent = dynamic(
   import('../../../atoms/people/detail/OverTabletThumbnailContainer')
@@ -36,10 +36,10 @@ function PeopleDetailPage({ data }) {
   const [mouseDown, setMouseDown] = useState(false);
   const [originX, setOriginX] = useState(0);
   const [moveX, setMoveX] = useState(undefined);
-
   const [currentPeople, setPeople] = useState(0);
   const moveTodoAnimation = 80;
 
+  const router = useRouter();
   const list = React.createRef();
   const card = React.createRef();
 
@@ -213,7 +213,10 @@ function PeopleDetailPage({ data }) {
       <Mobile>
         <AsleepLayout>
           <Wrapper>
-            <DetailPeopleImage src={data[currentPeople].src} />
+            <DetailPeopleImage
+              src={data[currentPeople].src}
+              clickListener={() => router.push('/people')}
+            />
             <BodyContainer>
               <PeopleSoloName item={data[currentPeople].name} />
               <PeopleSoloBody item={data[currentPeople].body} />
@@ -233,7 +236,10 @@ function PeopleDetailPage({ data }) {
         </AsleepLayout>
       </Mobile>
       <OverTablet>
-        <DetailPeopleImage src={data[currentPeople].src} />
+        <DetailPeopleImage
+          src={data[currentPeople].src}
+          clickListener={() => router.push('/people')}
+        />
         <BodyContainer>
           <PeopleSoloName item={data[currentPeople].name} />
           <PeopleSoloBody item={data[currentPeople].body} />

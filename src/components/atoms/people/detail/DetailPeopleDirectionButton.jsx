@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { mp } from '../../../../../styles/device';
 
 function DetailPeopleDirectionButton({ clickListener }) {
   return (
@@ -21,6 +22,10 @@ const Button = styled.button`
   bottom: 142px;
   z-index: var(--direction-button);
   cursor: pointer;
+
+  ${mp[1]} {
+    bottom: 122px;
+  }
 `;
 
 const Image = styled.img``;
