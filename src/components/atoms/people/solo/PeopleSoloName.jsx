@@ -9,6 +9,7 @@ function PeopleSoloName({ item }) {
 export default PeopleSoloName;
 
 const Container = styled.p`
+  word-break: break-word;
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
