@@ -1,7 +1,7 @@
 export const CORPORATE_DATA = [
   {
     category: 'Coporate',
-    title: '에이슬립, 美 아마존 &qout;알렉사&qout; 공식 협력사 선정',
+    title: '에이슬립, 美 아마존 &#39;알렉사&#39; 공식 협력사 선정',
     enTitle: 'Asleep Officially Selected as Amazon Alexa Startups Company',
     date: '2021. 12. 02',
     href: 'https://news.mt.co.kr/mtview.php?no=2021120214551620502'
@@ -32,7 +32,7 @@ export const CORPORATE_DATA = [
   {
     category: 'Coporate',
     title:
-      '&qout;에이슬립&qout;, &qout;투비콘&qout; 등 13개 스타트업, &qout;삼성금융 오픈 컬래버레이션&qout; 본선 진출',
+      '&#39;에이슬립&#39;, &#39;투비콘&#39; 등 13개 스타트업, &#39;삼성금융 오픈 컬래버레이션&#39; 본선 진출',
     enTitle:
       '13 startups, including Asleep and Tobecon, advance to Samsung Financial Open Collaboration Finals',
     date: '2021. 05. 12',

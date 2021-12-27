@@ -53,6 +53,13 @@ const Container = styled.section`
 const MobileTechMainSectionContainer = styled.div`
   height: 100vh;
   background-color: var(--backgorund-bg-05);
+
+  & > button {
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+  }
 `;
 
 const TechTitleContainer = styled.div`

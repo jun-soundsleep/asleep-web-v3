@@ -46,7 +46,7 @@ export const ABOUT_DATA = [
     title:
       '"침대 밑 센서나 웨어러블 착용은 불편" 무선 와이파이 기술로 편리하고 정확한 수면상태 측정 나선 에이슬립',
     enTitle:
-      '"It&qout;s uncomfortable to wear sensors or  wearables in bed". Asleep started measuring sleep conditions conveniently and accurately with contactless Wi-Fi technology.',
+      '"It&#39;s uncomfortable to wear sensors or  wearables in bed". Asleep started measuring sleep conditions conveniently and accurately with contactless Wi-Fi technology.',
     date: '2021. 04. 09',
     href: 'http://www.medigatenews.com/news/2161288985'
   },
@@ -68,10 +68,9 @@ export const ABOUT_DATA = [
   },
   {
     category: 'about',
-    title:
-      '[Sleeptech] Asleep introduced a personalized sleep coaching program at CES.',
+    title: '[슬립테크] 에이슬립, CES서 개인맞춤형 수면 코칭 프로그램 선봬',
     enTitle:
-      '[CES 2021 All Digital] The sleep technology solution developed by ‘Asleep’ was introduced at CES 2021.',
+      '[Sleeptech] IT is the future of the sleep industry ... Sleep Tech Talk Concert',
     date: '2021. 01. 11',
     href: 'http://www.medigatenews.com/news/2066283282'
   },

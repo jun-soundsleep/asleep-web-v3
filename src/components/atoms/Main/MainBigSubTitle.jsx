@@ -11,7 +11,9 @@ function MainBigSubTitle({ item, margin }) {
 export default MainBigSubTitle;
 
 const MainBigSubTitleContainer = styled.h2`
-  margin: ${({ margin }) => margin && margin};
+  max-width: 270px;
+
+  margin: ${({ margin }) => (margin ? margin : '0 auto')};
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -24,6 +26,7 @@ const MainBigSubTitleContainer = styled.h2`
   color: var(--text-in-light-text-01);
 
   ${mp[0]} {
+    max-width: unset;
     font-size: 16px;
     line-height: 1.56;
     letter-spacing: -0.72px;
