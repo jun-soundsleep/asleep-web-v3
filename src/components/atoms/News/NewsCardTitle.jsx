@@ -9,7 +9,7 @@ function NewsCardTitle({ item }) {
 export default NewsCardTitle;
 
 const Contents = styled.h2`
-  word-break: keep-all;
+  word-break: break-all;
   font-size: 16px;
   font-weight: 600;
   font-stretch: normal;

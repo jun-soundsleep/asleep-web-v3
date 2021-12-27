@@ -42,7 +42,7 @@ const CardContainer = styled.li`
   display: inline-block;
   width: 50%;
   padding: 10px;
-  word-wrap: break-word;
+  /* word-wrap: keep-all; */
   cursor: pointer;
 
   ${mp[0]} {
