@@ -59,7 +59,7 @@ function PeopBodySection({ forwardedRef }) {
 
   useEffect(() => {
     handleInitialTab();
-  }, []);
+  }, [router.asPath]);
 
   const checkTabActive = tab => {
     return currentTab === tab;
