@@ -22,7 +22,9 @@ function MainTechSection() {
           title={title}
           margin="32px auto 0px"
           category={'Technology'}
-          whiteTitleColor={true}
+          whiteTitleColor={'var(--text-in-dark-text-01)'}
+          missionColor={'var(--text-in-dark-text-01)'}
+          moreButtonColor={'var(--primary-primary-in-dark)'}
         />
       </CardContainer>
     </MainTechSectionContainer>

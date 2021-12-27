@@ -22,6 +22,8 @@ function MainBusinessSection(props) {
           title={title}
           margin="32px auto 0px"
           category={'Business'}
+          whiteDim={true}
+          moreButtonColor={'var(--sub-sub-04)'}
         />
       </CardContainer>
     </MainBusinessSectionContainer>
@@ -32,7 +34,6 @@ export default MainBusinessSection;
 
 const MainBusinessSectionContainer = styled.div`
   padding: 43px 0 64px;
-  /* min-height: 404px; */
 `;
 
 const CardContainer = styled.div`

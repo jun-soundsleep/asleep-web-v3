@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
 import PeopleBodyTitle from '../../atoms/people/PeopleBodyTitle';
@@ -12,10 +13,11 @@ import DirectorsTab from '../../organisms/People/DirectorsTab';
 import AdvisorsTab from '../../organisms/People/AdvisorsTab';
 import { MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
+import { useEffect } from 'react/cjs/react.development';
 
 const content = {
   leaders: <LeaderTab />,
-  rd: <RndTab />,
+  rnd: <RndTab />,
   technical: <TechnicalTab />,
   business: <BusinessTab />,
   directors: <DirectorsTab />,
@@ -23,9 +25,44 @@ const content = {
 };
 
 function PeopBodySection({ forwardedRef }) {
+  const router = useRouter();
   const [currentTab, setCurrentTab] = useState('leaders');
   const { t } = useTranslation();
   const title = t('people:body_title');
+
+  const handleInitialTab = () => {
+    console.log(router.asPath);
+    switch (router.asPath) {
+      case '/people/':
+        return;
+      case '/people/#leaders':
+        setCurrentTab('leaders');
+        return;
+      case '/people/#rnd':
+        setCurrentTab('rnd');
+        return;
+      case '/people/#technical':
+        console.log('tech');
+        setCurrentTab('technical');
+        return;
+      case '/people/#business':
+        setCurrentTab('business');
+        return;
+      case '/people/#directors':
+        setCurrentTab('directors');
+        return;
+      case '/people/#advisors':
+        setCurrentTab('advisors');
+        return;
+      default:
+        setCurrentTab('leaders');
+        return;
+    }
+  };
+
+  useEffect(() => {
+    handleInitialTab();
+  }, [router.asPath]);
 
   const checkTabActive = tab => {
     return currentTab === tab;
@@ -35,8 +72,8 @@ function PeopBodySection({ forwardedRef }) {
     setCurrentTab('leaders');
   };
 
-  const rdClick = () => {
-    setCurrentTab('rd');
+  const rndClick = () => {
+    setCurrentTab('rnd');
   };
 
   const technicalClick = () => {
@@ -57,6 +94,12 @@ function PeopBodySection({ forwardedRef }) {
 
   return (
     <Wrapper ref={forwardedRef}>
+      <a id="leaders" />
+      <a id="rnd" />
+      <a id="technical" />
+      <a id="business" />
+      <a id="directors" />
+      <a id="advisors" />
       <TitleContainer>
         <PeopleBodyTitle item={title} />
       </TitleContainer>
@@ -81,8 +124,8 @@ function PeopBodySection({ forwardedRef }) {
         />
         <CategoryTab
           item={'R&D'}
-          active={checkTabActive('rd')}
-          clickListener={rdClick}
+          active={checkTabActive('rnd')}
+          clickListener={rndClick}
         />
         <CategoryTab
           item={'Technical'}

@@ -23,8 +23,9 @@ function MainAsleepVision({ margin, forwardedRef }) {
             src="/images/main/home_2_s_2x.jpg"
             srcM="/images/main/home_2_m_2x.jpg"
             srcL="/images/main/home_2_l_2x.jpg"
-            href={'/'}
+            href={'/company'}
             title={asleepWorld}
+            whiteDim={true}
           />
         </ThreeColumnsItem>
         <ThreeColumnsItem>
@@ -32,8 +33,9 @@ function MainAsleepVision({ margin, forwardedRef }) {
             src="/images/main/home_3_s_2x.jpg"
             srcM="/images/main/home_3_m_2x.jpg"
             srcL="/images/main/home_3_l_2x.jpg"
-            href={'/'}
+            href={'/company#companyFuture'}
             title={betterLife}
+            whiteDim={true}
           />
         </ThreeColumnsItem>
         <ThreeColumnsItem>
@@ -43,6 +45,7 @@ function MainAsleepVision({ margin, forwardedRef }) {
             srcL="/images/main/home_4_l_2x.jpg"
             href={'/'}
             title={newExperience}
+            whiteDim={true}
           />
         </ThreeColumnsItem>
       </ThreeColumnContainer>
@@ -53,6 +56,7 @@ function MainAsleepVision({ margin, forwardedRef }) {
           srcL="/images/main/home_5_l_2x.jpg"
           href={'/'}
           title={ditialTransformation}
+          whiteDim={true}
           category="story"
           oneLine={true}
         />

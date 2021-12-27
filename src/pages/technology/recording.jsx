@@ -13,7 +13,7 @@ function Recording(props) {
       title={modal_1_title}
       body={modal_1_body}
       originLocation={'/technology'}
-      src={'/Images/tech/tech-pop_3_m_2x.jpg'}
+      src={'/images/tech/tech-pop_3_m_2x.jpg'}
     />
   );
 }

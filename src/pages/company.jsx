@@ -48,12 +48,15 @@ function Company() {
       <CompanyMainSection title={title} subTitle={subTitle} />
       <MissionSection missionTitle={'Mission'} missionBody={mission} />
       <CompanyBodySection />
+      <a id="companyFuture" />
       <CompanyVisionSection
         floatDiagnosisModal={floatDiagnosisModal}
         floatMonitoringModal={floatMonitoringModal}
         floatSolutionModal={floatSolutionModal}
       />
+      <a id="companyFaith" />
       <CompanyFaithSection />
+      <a id="companyHistory" />
       <CompanyHistorySection />
       {currentModal === 'diagnosis' && (
         <CommonModal

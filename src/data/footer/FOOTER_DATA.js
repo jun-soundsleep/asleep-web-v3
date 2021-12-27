@@ -1,27 +1,27 @@
 export const COMPANY_ITEM = [
-  { item: 'Mission', href: '/en' },
-  { item: 'Core value', href: '/en' },
-  { item: 'History', href: '/en' }
+  { item: 'Mission', href: '/company#companyFuture' },
+  { item: 'Core value', href: '/company#companyFaith' },
+  { item: 'History', href: '/company#companyHistory' }
 ];
 
 export const BIZ_ITEM = [
-  { item: 'Technology', href: '/en' },
-  { item: 'Healthcare', href: '/en' },
-  { item: 'Medical', href: '/en' }
+  { item: 'Technology', href: '/business#sleepAnalysis' },
+  { item: 'Healthcare', href: '/business#sleepLifeCardApp' },
+  { item: 'Medical', href: '/business#homePsg' }
 ];
 
 export const TECH_ITEM = [
-  { item: 'Sound', href: '/en' },
-  { item: 'Sound & RF', href: '/en' }
+  { item: 'Sound', href: '/technology#techSound' },
+  { item: 'Sound & RF', href: '/technology#techRf' }
 ];
 
 export const PEOPLE_ITEM = [
-  { item: 'Leaders', href: '/en' },
-  { item: 'R&D', href: '/en' },
-  { item: 'Technical', href: '/en' },
-  { item: 'Business', href: '/en' },
-  { item: 'Directors', href: '/en' },
-  { item: 'Advisors', href: '/en' }
+  { item: 'Leaders', href: '/people#leaders' },
+  { item: 'R&D', href: '/people#rnd' },
+  { item: 'Technical', href: '/people#technical' },
+  { item: 'Business', href: '/people#business' },
+  { item: 'Directors', href: '/people#directors' },
+  { item: 'Advisors', href: '/people#advisors' }
 ];
 
 export const CONTACT_ITEM = [

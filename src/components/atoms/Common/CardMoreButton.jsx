@@ -3,17 +3,27 @@ import styled from '@emotion/styled';
 import { MXFlexCenteringFS, MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
 
-function CardMoreButton({ item, margin }) {
+function CardMoreButton({ item, margin, color }) {
   return (
     <Wrapper>
-      <MainCardMoreButtonContainer margin={margin}>
+      <MainCardMoreButtonContainer margin={margin} color={color}>
         {item}
       </MainCardMoreButtonContainer>
       <MoreButtonContainer>
-        <img
-          src="/images/icon/acomponents-icons-icons-arrow-up-right-blue.svg"
-          objectfit={'cover'}
-        />
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M6.61 9.515a.375.375 0 0 0 .53 0l3.125-3.125a.375.375 0 0 0 0-.53L7.14 2.735a.375.375 0 1 0-.53.53L9.095 5.75h-7.22a.375.375 0 1 0 0 .75h7.22L6.61 8.985a.375.375 0 0 0 0 .53z"
+            fill={color ? color : '#406BFF'}
+          />
+        </svg>
       </MoreButtonContainer>
     </Wrapper>
   );
@@ -30,7 +40,7 @@ const MainCardMoreButtonContainer = styled.button`
   line-height: 1.67;
   letter-spacing: 0.12px;
   text-align: left;
-  color: var(--primary-primary-in-light);
+  color: ${({ color }) => (color ? color : 'var(--primary-primary-in-light)')};
 
   ${mp[0]} {
     font-size: 13px;

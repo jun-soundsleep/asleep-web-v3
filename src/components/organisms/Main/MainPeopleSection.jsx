@@ -12,26 +12,34 @@ function MainPeopleSection(props) {
   return (
     <MainPeopleSectionContainer>
       <MainCardLabel item={'People'} />
-      <CardContainer>
-        <MainCard
-          src="/images/main/home_8_s_2x.jpg"
-          srcM="/images/main/home_8_m_2x.jpg"
-          srcL="/images/main/home_8_l_2x.jpg"
-          href={'/'}
-          title={title}
-          margin="32px auto 0px"
-          category={'People'}
-        />
-        <MainCard
-          src="/images/main/home_9_s_2x.jpg"
-          srcM="/images/main/home_9_m_2x.jpg"
-          srcL="/images/main/home_9_l_2x.jpg"
-          href={'/'}
-          title={secondTitle}
-          margin="32px auto 0px"
-          category={'People  |  Blog Interview'}
-        />
-      </CardContainer>
+      <CardWrapper>
+        <CardContainer>
+          <MainCard
+            src="/images/main/home_8_s_2x.jpg"
+            srcM="/images/main/home_8_m_2x.jpg"
+            srcL="/images/main/home_8_l_2x.jpg"
+            href={'/'}
+            title={title}
+            margin="32px auto 0px"
+            category={'People'}
+            whiteDim={true}
+            moreButtonColor={'var(--sub-sub-07)'}
+          />
+        </CardContainer>
+        <CardContainer>
+          <MainCard
+            src="/images/main/home_9_s_2x.jpg"
+            srcM="/images/main/home_9_m_2x.jpg"
+            srcL="/images/main/home_9_l_2x.jpg"
+            href={'/'}
+            title={secondTitle}
+            margin="32px auto 0px"
+            category={'People  |  Blog Interview'}
+            whiteDim={true}
+            moreButtonColor={'var(--sub-sub-07)'}
+          />
+        </CardContainer>
+      </CardWrapper>
     </MainPeopleSectionContainer>
   );
 }
@@ -40,14 +48,14 @@ export default MainPeopleSection;
 
 const MainPeopleSectionContainer = styled.div`
   padding: 43px 0 64px;
-  min-height: 704px;
 
   ${mp[0]} {
-    min-height: 1004px;
+    background-color: var(--backgorund-bg-01);
+    padding: 72px 0 104px;
   }
 
   ${mp[1]} {
-    min-height: 2004px;
+    padding: 72px 0 104px;
   }
 `;
 
@@ -55,13 +63,27 @@ const CardContainer = styled.div`
   width: 320px;
   height: 212px;
   margin: 0 auto;
+
   ${mp[0]} {
-    width: 560px;
-    height: 310px;
+    width: 270px;
+    height: 337px;
+    margin: unset;
   }
 
   ${mp[1]} {
     width: 1400px;
     height: 725px;
+  }
+`;
+
+const CardWrapper = styled.div`
+  ${mp[0]} {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    & > div:first-child {
+      margin-right: 20px;
+    }
   }
 `;

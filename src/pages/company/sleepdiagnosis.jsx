@@ -12,7 +12,7 @@ function Sleepdiagnosis(props) {
       title={modal_1_title}
       body={modal_1_body}
       originLocation={'/company'}
-      src={'/Images/tech/tech-pop_1_m_2x.jpg'}
+      src={'/images/tech/tech-pop_1_m_2x.jpg'}
     />
   );
 }

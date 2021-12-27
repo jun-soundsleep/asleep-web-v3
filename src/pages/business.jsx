@@ -19,6 +19,7 @@ function Business() {
   return (
     <AsleepLayout>
       <BusinessMainSection />
+      <a id="sleepAnalysis" />
       <BusinessSection
         title={solutionTitle}
         subTitle={solutionSubTitle}
@@ -36,6 +37,7 @@ function Business() {
         logoLw={'1166px'}
         logoLh={'64px'}
       />
+      <a id="sleepLifeCardApp" />
       <BusinessSection
         title={appTitle}
         subTitle={appSubTitle}
@@ -44,6 +46,7 @@ function Business() {
         bsrcM={'/images/business/business_2_l_2x.jpg'}
         bsrcL={'/images/business/business_2_m_2x.jpg'}
       />
+      <a id="homePsg" />
       <BusinessSection
         title={homeTitle}
         subTitle={homeSubTitle}

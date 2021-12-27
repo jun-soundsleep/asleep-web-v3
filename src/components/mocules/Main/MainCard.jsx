@@ -18,14 +18,17 @@ function MainCard({
   whiteTitleColor,
   href,
   category,
-  oneColumn
+  oneColumn,
+  missionColor,
+  whiteDim,
+  moreButtonColor
 }) {
   const router = useRouter();
   const { t } = useTranslation();
   const findOurMore = t('main:find_our_more');
 
   return (
-    <Link href={href} locale={router.locale} style={{ zIndex: '1000' }}>
+    <Link href={href} locale={router.locale}>
       <a>
         <MainCardContainer
           margin={margin}
@@ -34,14 +37,24 @@ function MainCard({
           srcM={srcM}
           srcL={srcL}
         >
-          <MainCardMission item={category ? category : 'Mission'} />
-          <CardTitle
-            item={title}
-            margin="8px 0px 26px 0px"
-            whiteColor={whiteTitleColor}
-          />
-          <CardMoreButton CardMoreButton item={findOurMore} href={href} />
-          {/* <WhiteDim /> */}
+          <TextWrapper>
+            <MainCardMission
+              item={category ? category : 'Mission'}
+              color={missionColor}
+            />
+            <CardTitle
+              item={title}
+              margin="8px 0px 26px 0px"
+              whiteColor={whiteTitleColor}
+            />
+            <CardMoreButton
+              CardMoreButton
+              item={findOurMore}
+              href={href}
+              color={moreButtonColor}
+            />
+          </TextWrapper>
+          {whiteDim && <WhiteDim />}
         </MainCardContainer>
       </a>
     </Link>
@@ -82,7 +95,6 @@ const MainCardContainer = styled.div`
   }
 `;
 
-//
-const Test = styled.div`
-  z-index: 1000;
+const TextWrapper = styled.div`
+  z-index: 101;
 `;

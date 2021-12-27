@@ -97,6 +97,7 @@ function Technology() {
             clickListener={goToNextSection}
           />
         </OverTabletTechMainSection>
+        <a id="techSound" />
         <ForwardedFristBodySection
           title={trackingTitle}
           subTitle={trackingSubTitle}
@@ -124,6 +125,7 @@ function Technology() {
           smodalListener={floatAccurateModal}
           ref={firstSection}
         />
+        <a id="techRf" />
         <TechBodySection
           title={synergyTitle}
           subTitle={synergySubTitle}
