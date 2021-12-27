@@ -1,6 +1,7 @@
 import React, { useState, forwardRef } from 'react';
 import styled from '@emotion/styled';
 import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';
 import PeopleSoloName from '../../../atoms/people/solo/PeopleSoloName';
 import PeopleSoloBody from '../../../atoms/people/solo/PeopleSoloBody';
 import PeopleSoloMoreButton from '../../../atoms/people/solo/PeopleSoloMoreButton';
@@ -8,9 +9,8 @@ import AsleepLayout from '../../AppLayout/AsleepLayout';
 import PeopleThumnail from '../../../atoms/people/detail/PeopleThumbnail';
 import DetailPeopleImage from '../../../atoms/people/detail/DetailPeopleImage';
 import DetailPeopleDirectionButton from '../../../atoms/people/detail/DetailPeopleDirectionButton';
-import { useRouter } from 'next/router';
-import { mp } from '../../../../../styles/device';
 import DetailPeopleDirectionLeftButton from '../../../atoms/people/detail/DetailPeopleDirectionLeftButton';
+import { mp } from '../../../../../styles/device';
 
 const OverTabletThumbnailContainerComponent = dynamic(
   import('../../../atoms/people/detail/OverTabletThumbnailContainer')

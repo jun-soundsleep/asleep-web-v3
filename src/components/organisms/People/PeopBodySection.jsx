@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
@@ -13,7 +13,6 @@ import DirectorsTab from '../../organisms/People/DirectorsTab';
 import AdvisorsTab from '../../organisms/People/AdvisorsTab';
 import { MXFlexCenteringSB } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
-import { useEffect } from 'react/cjs/react.development';
 
 const content = {
   leaders: <LeaderTab />,
@@ -60,7 +59,7 @@ function PeopBodySection({ forwardedRef }) {
 
   useEffect(() => {
     handleInitialTab();
-  }, [router.asPath]);
+  }, []);
 
   const checkTabActive = tab => {
     return currentTab === tab;

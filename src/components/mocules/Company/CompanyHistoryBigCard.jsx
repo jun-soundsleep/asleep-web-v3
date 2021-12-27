@@ -105,13 +105,11 @@ const Body = styled.p`
     highlight
       ? 'var(--text-in-light-text-10)'
       : 'var(--text-in-light-text-05)'};
-  word-break: break-all;
-
   b {
     font-weight: bold;
   }
   div {
-    word-break: break-all;
+    word-break: keep-all;
   }
 `;
 
