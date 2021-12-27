@@ -114,5 +114,6 @@ const Body = styled.p`
 `;
 
 const Quarter = styled.div`
+  min-width: 50px;
   margin-right: 16px;
 `;

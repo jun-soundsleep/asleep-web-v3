@@ -8,6 +8,7 @@ import TechMainSection from '../components/organisms/Tech/TechMainSection';
 import TechBodySection from '../components/organisms/Tech/TechBodySection';
 import { mp } from '../../styles/device';
 import CommonModal from '../components/mocules/Common/CommonModal';
+import Head from 'next/head';
 
 const FirstBodySection = dynamic(
   import('../components/organisms/Tech/TechBodySection')
@@ -82,6 +83,10 @@ function Technology() {
 
   return (
     <>
+      <Head>
+        <link rel="preload" href="/images/tech/tech_1_l_2x.jpg" as="image" />
+        <link rel="preload" href="/images/tech/tech_1_m_2x.jpg" as="image" />
+      </Head>
       <AsleepLayout>
         <MobileContainer>
           <TechMobileMainSection

@@ -27,13 +27,13 @@ function TechMobileMainSection({ title, src }) {
       <Head>
         <link rel="preload" href={src} as="image" />
       </Head>
+      <MobileTechMainSectionContainer>
+        <TechTitleContainer>
+          <TechTitle item={title} />
+        </TechTitleContainer>
+        <BigArrrowButton clickListener={goToSubTitleInMobileSection} />
+      </MobileTechMainSectionContainer>
       <Container src={src}>
-        <MobileTechMainSectionContainer>
-          <TechTitleContainer>
-            <TechTitle item={title} />
-          </TechTitleContainer>
-          <BigArrrowButton clickListener={goToSubTitleInMobileSection} />
-        </MobileTechMainSectionContainer>
         <ForwardedTechMobileMainComponent ref={mobileSection} />
       </Container>
     </>
@@ -47,12 +47,17 @@ const Container = styled.section`
   background: url(${({ src }) => src && src}) bottom / cover no-repeat;
   padding-top: ${({ ratio }) => (ratio ? ratio : 46)}%;
   padding-bottom: 64px;
+  position: relative;
 `;
 
 const MobileTechMainSectionContainer = styled.div`
   height: 100vh;
+  background-color: var(--backgorund-bg-05);
 `;
 
 const TechTitleContainer = styled.div`
-  padding: 328px 0 0 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 `;

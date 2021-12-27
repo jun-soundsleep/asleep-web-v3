@@ -26,6 +26,7 @@ const HoverContents = styled.div`
   letter-spacing: -0.56px;
   text-align: left;
   color: var(--text-in-light-text-04);
+  z-index: var(--company-hoverd);
 
   :after {
     border-top: 0px solid transparent;

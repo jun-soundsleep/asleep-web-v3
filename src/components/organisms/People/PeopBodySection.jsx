@@ -102,15 +102,15 @@ function PeopBodySection({ forwardedRef }) {
       </TitleContainer>
       <ImageContainer>
         <IconImage
-          src="/images/icon/01-14995884-2@2x.png"
-          srcM="/images/icon/01-14995884-2@2x.png"
-          srcL="/images/icon/01-14995884-2@3x.png"
+          src="/images/icon/534-shop-1-847556-removebg-preview-1.jpg"
+          srcM="/images/icon/534-shop-1-847556-removebg-preview-1@2x.jpg"
+          srcL="/images/icon/534-shop-1-847556-removebg-preview-1@3x.jpg"
           sw={'23px'}
           sh={'47px'}
           mw={'23px'}
           mh={'47px'}
-          lw={'23px'}
-          lh={'47px'}
+          lw={'51px'}
+          lh={'75px'}
         />
       </ImageContainer>
       <CategoryWrapper>

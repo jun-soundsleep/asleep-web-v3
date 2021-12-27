@@ -7,7 +7,8 @@ import { useRouter } from 'next/router';
 import CompanyVisionHoveredContents from '../../atoms/Company/CompanyVisionHoveredContents';
 
 function CompanyBodySection() {
-  const [hoverContents, setHover] = useState(false);
+  const [firstHoverContents, setfirstHoverContents] = useState(false);
+  const [secondHoverContents, setSecondHover] = useState(false);
   const router = useRouter();
 
   return (
@@ -17,10 +18,24 @@ function CompanyBodySection() {
           <b>에이슬립은 단순한 고민에서 시작되었습니다.</b> 어떻게 하면 사람들이
           밤에 더 잘 자고, 활기차게 하루를 시작할 수 있을까? 밤에 잠을 충분히
           자지 못하면 낮 시간의 활동에 부정적인 영향을 미치게 되는데,{' '}
-          <span>
+          <span
+            onMouseOver={() => {
+              setfirstHoverContents(true);
+            }}
+            onMouseLeave={() => {
+              setfirstHoverContents(false);
+            }}
+          >
             이는 곧 수면으로 인해 전체적인 삶의 질이 떨어질 수도 있다는 것을
             의미
           </span>
+          {firstHoverContents && (
+            <CompanyVisionHoveredContents
+              item={
+                '수면은 크게 낮에 쌓인 신체와 정신의 피로를 풀어주고 에너지를 충전하는 비 렘수면과, 꿈을 꾸며 기억력에 영향을 미치며 정신적인 피로는 물론 감정 순화에 영향을 주는 렘수면으로 구분됩니다. 특히 비 렘수면의 경우 수면의 깊이에 따라 세 단계로 구분되는 특징이 있는데, 이렇게 수면은 단계별로 하룻밤에도 여러 사이클로 반복됩니다. 수면의 사이클이 적절하게 충족되지 않는다면, 주간 활동에 부정적인 영향을 미치게 됩니다.'
+              }
+            ></CompanyVisionHoveredContents>
+          )}
           합니다.
           <br />
           <br />
@@ -35,16 +50,16 @@ function CompanyBodySection() {
           수면다원검사를 받는 것입니다.{' '}
           <span
             onMouseOver={() => {
-              setHover(true);
+              setSecondHover(true);
             }}
             onMouseLeave={() => {
-              setHover(false);
+              setSecondHover(false);
             }}
           >
             하지만 수면다원검사의 경우 예약 과정의 어려움, 측정의 불편함, 분석
             과정의 복잡함 등 여러 불편함을 동반하고 있습니다.{' '}
           </span>
-          {hoverContents && (
+          {secondHoverContents && (
             <CompanyVisionHoveredContents
               item={
                 '수면다원검사는 병원이라는 낯선 환경에서 수십 개의 센서를 몸에 부착하고 자야 하기 때문에 수면장애를 가진 사람들에게 부담이 됩니다. 그리고 매일 반복적으로 발생하는 수면을 단 하룻밤의 측정으로 평가해야 한다는 것도 쉽지 않습니다. 또한 수면에 영향을 주는 낮 시간의 행동을 파악할 수 없을 뿐더러, 검사 결과 수면 질환이 발견되지 않으면 보험료의 지원을 받기 어려울 수도 있습니다.'
@@ -71,9 +86,23 @@ function CompanyBodySection() {
           <b>Asleep started with these simple questions.</b> How can people
           sleep better at night and start the day feeling refreshed? Not getting
           enough sleep at night negatively affects daytime activities,{' '}
-          <span>
+          <span
+            onMouseOver={() => {
+              setfirstHoverContents(true);
+            }}
+            onMouseLeave={() => {
+              setfirstHoverContents(false);
+            }}
+          >
             which means that sleep can reduce the overall quality of life.
           </span>{' '}
+          {firstHoverContents && (
+            <CompanyVisionHoveredContents
+              item={
+                'Sleep is largely divided into non-REM sleep, which relieves the fatigue of the body and mind accumulated during the day and charges energy, and REM sleep, which affects memory by dreaming and mental fatigue as well as emotional purification. In particular, non-REM sleep is divided into three stages according to the depth of sleep, and sleep is repeated several cycles per night step. If the sleep cycle is not properly met, it will negatively affect daytime activities.'
+              }
+            ></CompanyVisionHoveredContents>
+          )}
           <br />
           <br />
           The sleep industry is growing at a fast rate, but ironically, the
@@ -88,10 +117,10 @@ function CompanyBodySection() {
           tough;{' '}
           <span
             onMouseOver={() => {
-              setHover(true);
+              setSecondHover(true);
             }}
             onMouseLeave={() => {
-              setHover(false);
+              setSecondHover(false);
             }}
           >
             {' '}
@@ -99,7 +128,7 @@ function CompanyBodySection() {
             procedures are inconvenient, and the data analysis process is rather
             complex.
           </span>{' '}
-          {hoverContents && (
+          {secondHoverContents && (
             <CompanyVisionHoveredContents
               item={
                 'Polysomnography tests are burdensome for people with sleep disorders because they have to sleep with dozens of sensors attached to their bodies in an unfamiliar environment: the hospital. Additionally, it is not easy to evaluate a person`s overall sleep, which happens every day, through data collected over one single night. Furthermore, daytime activities that affect sleep cannot be identified through polysomnography tests. If the test result do not show signs of sleep disorder, it may be difficult to even receive insurance support.'

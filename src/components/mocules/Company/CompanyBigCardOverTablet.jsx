@@ -80,4 +80,5 @@ const Body = styled.p`
 
 const Quarter = styled.div`
   margin-right: 16px;
+  min-width: 50px;
 `;

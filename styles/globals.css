@@ -55,10 +55,11 @@
   --main-nav: 2000;
   --common-dim: 100;
   --tech-modal: 200;
-  --global-modal: 400;
+  --global-modal: 2400;
   --peope-detail-image: 200;
   --peope-detail-thumbnail: 100;
   --direction-button: 500;
+  --company-hoverd: 100;
 
   /* 
   height
@@ -69,7 +70,7 @@
 
 * {
   box-sizing: border-box;
-  /* word-break: keep-all; */
+  word-break: keep-all;
   white-space: pre-wrap;
 }
 
