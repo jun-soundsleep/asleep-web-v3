@@ -18,7 +18,6 @@ function CommonDetailPage({
   const wrapper = React.createRef(null);
 
   const handleCloseModal = e => {
-    console.log(e.target);
     if (wrapper?.current === e.target) exitHandler();
   };
 

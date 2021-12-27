@@ -4,11 +4,11 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { mp } from '../../../../styles/device';
 
-function NavLanguageChangeButton({ margin }) {
+function NavLanguageChangeButton({ margin, clickListener }) {
   const router = useRouter();
 
   return (
-    <LanguageButton margin={margin}>
+    <LanguageButton margin={margin} onClick={clickListener}>
       <Link locale="ko" href={router.pathname}>
         <a>
           {' '}

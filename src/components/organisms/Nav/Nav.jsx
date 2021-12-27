@@ -62,7 +62,11 @@ function Nav() {
               href="news"
               on={handleItemActive('/news')}
             />
-            <NavLanguageChangeButton />
+            <NavLanguageChangeButton
+              clickListener={() => {
+                setMenuSelected(false);
+              }}
+            />
           </ul>
         </DetailItem>
       </LogoContainer>
@@ -98,7 +102,7 @@ function Nav() {
                 href="news"
                 on={handleItemActive('/news')}
               />
-              <NavLanguageChangeButton margin="0ox" />
+              <NavLanguageChangeButton margin="0px" />
             </ItemListContainer>
           </div>
         </OverTabletItemContainer>

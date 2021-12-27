@@ -31,7 +31,6 @@ function PeopBodySection({ forwardedRef }) {
   const title = t('people:body_title');
 
   const handleInitialTab = () => {
-    console.log(router.asPath);
     switch (router.asPath) {
       case '/people/':
         return;
@@ -42,7 +41,6 @@ function PeopBodySection({ forwardedRef }) {
         setCurrentTab('rnd');
         return;
       case '/people/#technical':
-        console.log('tech');
         setCurrentTab('technical');
         return;
       case '/people/#business':
