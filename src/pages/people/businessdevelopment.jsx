@@ -12,7 +12,7 @@ function Businessdevelopment(props) {
   const BD = [
     {
       name: ryanName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-%EC%97%90%EC%9D%B4%EC%8A%AC%EB%A6%BD%EC%9D%98-%EC%A0%84%EB%9E%B5%EA%B0%80-cso-ryan-153174889f3a',
       body: ryanBody,
       src: [
         '/images/people/detail/2_Ryan_s_2x.jpg',
@@ -27,7 +27,7 @@ function Businessdevelopment(props) {
     },
     {
       name: willName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-%EC%B0%BD%EC%97%85%EC%9D%80-%EB%82%98%EC%A4%91%EC%97%90-%ED%95%98%EC%A3%A0-%EB%AD%90-97ab2a9d5a7c?p=97ab2a9d5a7c',
       body: willBody,
       src: [
         '/images/people/detail/2_Will_s_2x.jpg',
