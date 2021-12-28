@@ -130,6 +130,7 @@ function Footer() {
                 width={'auto'}
                 margin="0px 48px 77px 0px"
               />
+              <OvertabletHeight />
               <FooterExternalConnection
                 darkMode={checkIfTechPageOrNot()}
                 item={t('footer:recruiting')}
@@ -204,5 +205,17 @@ const Wrapper = styled.div`
   ${mp[1]} {
     max-width: 1500px;
     padding: 87px 110px 140px 100px;
+  }
+`;
+
+const OvertabletHeight = styled.div`
+  display: none;
+
+  ${mp[0]} {
+    display: block;
+    height: 78px;
+  }
+  ${mp[1]} {
+    height: 150px;
   }
 `;

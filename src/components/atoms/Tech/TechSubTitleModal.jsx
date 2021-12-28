@@ -25,13 +25,13 @@ const TechSubTitleModalContainer = styled.div`
   backdrop-filter: blur(13px);
   -webkit-backdrop-filter: blur(13px);
   box-shadow: 0 4px 30px 0 rgba(32, 32, 32, 0.25);
-  background-color: var(--alpha-alpha-06);
+  background-color: rgba(23, 31, 47, 0.7);
 
   :after {
     border-top: 0px solid transparent;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid var(--alpha-alpha-06);
+    border-bottom: 10px solid rgba(23, 31, 47, 0.7);
     box-shadow: 0 4px 30px 0 rgba(32, 32, 32, 0.25);
     content: '';
     position: absolute;

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import PeopleSoloName from '../../../atoms/people/solo/PeopleSoloName';
-import PeopleSoloBody from '../../../atoms/people/solo/PeopleSoloBody';
+import DetailSoloBody from '../../../atoms/people/detail/DetailSoloBody';
 import PeopleSoloMoreButton from '../../../atoms/people/solo/PeopleSoloMoreButton';
 import AsleepLayout from '../../AppLayout/AsleepLayout';
 import PeopleThumnail from '../../../atoms/people/detail/PeopleThumbnail';
@@ -218,7 +218,7 @@ function PeopleDetailPage({ data }) {
             />
             <BodyContainer>
               <PeopleSoloName item={data[currentPeople].name} />
-              <PeopleSoloBody item={data[currentPeople].body} />
+              <DetailSoloBody item={data[currentPeople].body} />
               <PeopleSoloMoreButton href={data[currentPeople].href} />
               {data.length >= 2 && (
                 <ThumnailContainer>
@@ -243,7 +243,7 @@ function PeopleDetailPage({ data }) {
         />
         <BodyContainer>
           <PeopleSoloName item={data[currentPeople].name} />
-          <PeopleSoloBody item={data[currentPeople].body} />
+          <DetailSoloBody item={data[currentPeople].body} />
           <PeopleSoloMoreButton href={data[currentPeople].href} />
           {data.length >= 2 && (
             <ForwardedOverTabletThumbnailContainer

@@ -53,7 +53,7 @@ export default PeopleSoloMoreButton;
 
 const Container = styled(MXFlexVerticalCentering)`
   display: inline-flex;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;

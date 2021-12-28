@@ -24,21 +24,6 @@ function Operating(props) {
         '/images/people/thumbnail/2_Tyler_thumb-M_2x.jpg',
         '/images/people/thumbnail/2_Tyler_thumb-L_2x.jpg'
       ]
-    },
-    {
-      name: hannaName,
-      href: '',
-      body: hannaBody,
-      src: [
-        '/images/people/detail/2_Hanna_s_2x.jpg',
-        '/images/people/detail/2_Hanna_m_2x.jpg',
-        '/images/people/detail/2_Hanna_l_2x.jpg'
-      ],
-      thumbnail: [
-        '/images/people/thumbnail/2_Hanna_thumb-S_2x.jpg',
-        '/images/people/thumbnail/2_Hanna_thumb-M_2x.jpg',
-        '/images/people/thumbnail/2_Hanna_thumb-L_2x.jpg'
-      ]
     }
   ];
 

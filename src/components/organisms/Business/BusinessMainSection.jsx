@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { mp } from '../../../../styles/device';
 import BigTitle from '../../atoms/Common/BigTitle';
 import useTranslation from 'next-translate/useTranslation';
 import IconImage from '../../atoms/Common/IconImage';
 import { MXFlexCentering } from '../../mixin/MXFlex';
 import BusinessSubTitle from '../../atoms/Business/BusinessSubTitle';
+import { mp } from '../../../../styles/device';
 
 function BusinessMainSection() {
   const { t } = useTranslation();
@@ -26,8 +26,8 @@ function BusinessMainSection() {
           sh={'47px'}
           mw={'23px'}
           mh={'47px'}
-          lw={'23px'}
-          lh={'47px'}
+          lw={'51.8px'}
+          lh={'91.3px'}
         />
       </ImageContainer>
       <SubTitleContainer>
@@ -54,6 +54,10 @@ const BigTitleContainer = styled(MXFlexCentering)`
 
 const ImageContainer = styled(MXFlexCentering)`
   margin: 36px auto;
+
+  ${mp[1]} {
+    margin: 48px auto 72px;
+  }
 `;
 
 const SubTitleContainer = styled(MXFlexCentering)`

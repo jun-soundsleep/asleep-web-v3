@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
 import PeopleSoleSection from './PeopleSoleSection';
 import { mp } from '../../../../styles/device';
+import SectionContainer from '../../atoms/people/SectionContainer';
 
 function LeaderTab(props) {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ function LeaderTab(props) {
   const jadenBody = t('people:jaden_body');
 
   return (
-    <>
+    <SectionContainer>
       <PeopleSoleSection
         src={[
           '/images/people/solo/1_David_s_2x.jpg',
@@ -49,7 +50,7 @@ function LeaderTab(props) {
           'https://medium.com/asleepblog/people-in-asleep-이게되나-를-이게-된다-로-만드는-에이슬립의-cto-3c25d60c5605'
         }
       />
-    </>
+    </SectionContainer>
   );
 }
 

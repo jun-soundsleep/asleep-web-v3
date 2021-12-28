@@ -40,7 +40,7 @@ const Content = styled.button`
   }
 
   ${mp[1]} {
-    height: 98px;
+    height: 88px;
     padding: 26px 30px;
     font-size: 24px;
     line-height: 1.64;

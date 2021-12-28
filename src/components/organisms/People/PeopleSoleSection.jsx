@@ -36,6 +36,7 @@ const BodyContainer = styled.div`
 `;
 
 const Wrapper = styled.div`
+  margin-bottom: 88px;
   ${mp[0]} {
     display: flex;
     justify-content: center;

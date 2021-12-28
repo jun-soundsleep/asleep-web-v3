@@ -31,6 +31,7 @@ const TechMainSectionContainer = styled.section`
 
   ${mp[0]} {
     background: url(${({ srcM }) => srcM && srcM}) 50% / cover no-repeat;
+    height: auto;
     padding-top: 198px;
   }
 

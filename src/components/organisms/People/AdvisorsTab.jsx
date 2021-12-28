@@ -23,8 +23,7 @@ function AdvisorsTab(props) {
         sbody={[
           t('people:advisor_2_body_1'),
           t('people:advisor_2_body_2'),
-          t('people:advisor_2_body_3'),
-          t('people:advisor_2_body_4')
+          t('people:advisor_2_body_3')
         ]}
         ssrc={'/images/people/advisor/3_advisor-2_l_2x.jpg'}
       />
@@ -44,7 +43,8 @@ function AdvisorsTab(props) {
           t('people:advisor_4_body_1'),
           t('people:advisor_4_body_2'),
           t('people:advisor_4_body_3'),
-          t('people:advisor_4_body_4')
+          t('people:advisor_4_body_4'),
+          t('people:advisor_4_body_5')
         ]}
         ssrc={'/images/people/advisor/3_advisor-4_l_2x.jpg'}
       />

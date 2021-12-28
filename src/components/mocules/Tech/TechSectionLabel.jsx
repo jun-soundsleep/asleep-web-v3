@@ -77,6 +77,9 @@ const SubTitleWrapper = styled.div`
 `;
 
 const IconWrapper = styled.div`
+  ${mp[0]} {
+    margin: 36px 0;
+  }
   ${mp[1]} {
     margin-bottom: 72px;
   }

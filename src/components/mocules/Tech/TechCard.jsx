@@ -95,6 +95,6 @@ const TechContainer = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
-    padding: ${({ padding }) => (padding ? padding : '88px 0px 0px 44px')};
+    padding: ${({ padding }) => (padding ? padding : '88px 36px 0px 44px')};
   }
 `;

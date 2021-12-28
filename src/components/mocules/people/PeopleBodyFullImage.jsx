@@ -12,25 +12,43 @@ function PeopleBodyFullImage({ src, title, href }) {
   return (
     <a href={href} target="_blank" rel="noreferrer">
       <Container src={src[0]} srcm={src[1]} srcl={src[2]}>
-        <Dim dimColor={' var(--dim-dim-04) '} />
+        <Dim dimColor={'var(--dim-dim-04)'} />
         <TitleContainer>
           <Title dangerouslySetInnerHTML={{ __html: title }} />
           <CheckJd>
             <span>{jd}</span>
-            <svg
-              width="13"
-              height="13"
-              viewBox="0 0 25 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M13.72 19.639a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H4.25a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"
-                fill="#D8E1FF"
-              />
-            </svg>
+            <ArrowImg>
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M13.72 19.639a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H4.25a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"
+                  fill="#D8E1FF"
+                />
+              </svg>
+            </ArrowImg>
+            <OverTabletImg>
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M13.72 19.639a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H4.25a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"
+                  fill="#D8E1FF"
+                />
+              </svg>
+            </OverTabletImg>
           </CheckJd>
         </TitleContainer>
       </Container>
@@ -105,7 +123,7 @@ const Title = styled.h2`
 
   ${mp[0]} {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.57;
@@ -114,10 +132,11 @@ const Title = styled.h2`
   }
 
   ${mp[1]} {
-    font-size: 36px;
-    line-height: 1.06;
+    font-size: 32px;
+    line-height: 1.66;
     letter-spacing: -1.62px;
-    margin-top: 103px;
+    margin-top: 23px;
+    margin-bottom: 80px;
   }
 `;
 
@@ -133,5 +152,28 @@ const CheckJd = styled(MXFlexCenteringSB)`
 
   & > span {
     margin-right: 8px;
+  }
+
+  ${mp[0]} {
+  }
+  ${mp[1]} {
+    /* margin-top: 80px; */
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.58;
+    letter-spacing: 0.24px;
+  }
+`;
+
+const ArrowImg = styled(MXFlexCenteringSB)`
+  ${mp[0]} {
+    display: none;
+  }
+`;
+
+const OverTabletImg = styled(MXFlexCenteringSB)`
+  display: none;
+  ${mp[0]} {
+    display: block;
   }
 `;

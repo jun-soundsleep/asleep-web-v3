@@ -15,7 +15,7 @@ function NavLanguageChangeButton({ margin, clickListener }) {
           <LanguageSpan active={router.locale === 'ko'}>Kor</LanguageSpan>
         </a>
       </Link>
-      <HorizontalDivider> | </HorizontalDivider>
+      <HorizontalDivider>&nbsp;&nbsp;|&nbsp;&nbsp;</HorizontalDivider>
       <Link locale="en" href={router.pathname}>
         <a>
           <LanguageSpan active={router.locale === 'en'}>Eng</LanguageSpan>

@@ -23,7 +23,7 @@ const Container = styled.div`
   border-radius: 22px;
 
   ${mp[1]} {
-    width: 603px;
+    width: 583px;
     height: 590px;
     padding: 88px 36px 246px 44px;
   }

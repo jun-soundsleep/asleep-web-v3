@@ -11,7 +11,7 @@ export default PeopleSoloBody;
 const Container = styled.p`
   word-break: keep-all;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.63;

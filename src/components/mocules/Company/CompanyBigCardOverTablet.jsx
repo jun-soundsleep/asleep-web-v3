@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
+import { mp } from '../../../../styles/device';
 
 function CompanyBigCardOverTablet({ newData, oldData }) {
   return (
@@ -41,6 +42,14 @@ const Title = styled.div`
     highlight
       ? 'var(--text-in-light-text-10)'
       : 'var(--text-in-light-text-05)'};
+
+  /* ${mp[0]} {
+    margin-top: ${({ highlight }) => highlight && '48px'};
+  } */
+
+  /* ${mp[1]} { */
+  /* margin-top: ${({ highlight }) => highlight && '200px'}; */
+  /* } */
 `;
 
 const Container = styled.div`
@@ -49,6 +58,10 @@ const Container = styled.div`
   padding: 56px 42px;
   border-radius: 24px;
   background-color: var(--components-components-02);
+
+  ${mp[1]} {
+    min-width: 1295px;
+  }
 `;
 
 const Body = styled.p`
@@ -75,6 +88,16 @@ const Body = styled.p`
   }
   div {
     word-break: break-all;
+  }
+
+  ${mp[0]} {
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+  ${mp[1]} {
+    line-height: 1.2;
+    margin-bottom: 44px;
   }
 `;
 

@@ -63,6 +63,14 @@ const SubTitleWrapper = styled.div`
 const Container = styled.section`
   padding: 146px 0px 88px;
   padding-top: 146px;
+
+  ${mp[0]} {
+    padding: 146px 0px 36px;
+  }
+
+  ${mp[1]} {
+    padding: 146px 0px 88px;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -71,7 +79,7 @@ const LogoContainer = styled.div`
   justify-content: space-between;
 
   ${mp[0]} {
-    margin: 64px auto 0px;
+    margin: 36px auto 0px;
     max-width: 560px;
   }
 

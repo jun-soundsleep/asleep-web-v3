@@ -25,7 +25,7 @@ function RndTab(props) {
           'https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd'
         }
       />
-      <CardContainer style={{ marginTop: '48px' }}>
+      <CardContainer>
         <PeopleBodyCard
           title={'Sleep Sensor Team'}
           subtitle={cardFirst}
@@ -48,7 +48,7 @@ export default RndTab;
 const CardContainer = styled.div`
   width: 320px;
   height: 264px;
-  margin: 0px auto 24px;
+  margin: 48px auto 0px;
 
   ${mp[0]} {
     width: 560px;
@@ -58,5 +58,6 @@ const CardContainer = styled.div`
   ${mp[1]} {
     width: 1400px;
     height: 674px;
+    margin: 72px auto 0px;
   }
 `;

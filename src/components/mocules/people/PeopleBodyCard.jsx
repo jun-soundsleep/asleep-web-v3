@@ -100,6 +100,7 @@ const SubTitle = styled.div`
   word-break: keep-all;
 
   ${mp[0]} {
+    max-width: 310px;
     font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
@@ -108,12 +109,14 @@ const SubTitle = styled.div`
     letter-spacing: 0.13px;
   }
   ${mp[1]} {
+    max-width: 510px;
     font-size: 24px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.58;
     letter-spacing: -1.08px;
+    margin-bottom: 60.5px;
   }
 `;
 

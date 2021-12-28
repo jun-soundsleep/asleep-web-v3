@@ -136,7 +136,6 @@ const MissionWrapper = styled.div`
 
   ${mp[0]} {
     min-width: 560px;
-    max-height: 202px;
   }
 
   ${mp[1]} {

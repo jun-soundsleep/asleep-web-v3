@@ -28,7 +28,7 @@ const NavBarContainer = styled.li`
     on ? ' var(--text-in-light-text-10)' : 'var(--text-in-dark-text-03)'};
 
   ${mp[0]} {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

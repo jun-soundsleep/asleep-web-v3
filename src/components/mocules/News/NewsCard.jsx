@@ -71,6 +71,5 @@ const TitleContainer = styled.div`
   ${mp[1]} {
     height: 370px;
     margin-bottom: 10px;
-    overflow: scroll;
   }
 `;
