@@ -18,7 +18,7 @@ function MainTechSection() {
           src="/images/main/home_6_s_2x.jpg"
           srcM="/images/main/home_6_m_2x.jpg"
           srcL="/images/main/home_6_l_2x.jpg"
-          href={'/'}
+          href={'/technology'}
           title={title}
           margin="32px auto 0px"
           category={'Technology'}

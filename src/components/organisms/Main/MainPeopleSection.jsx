@@ -18,7 +18,7 @@ function MainPeopleSection(props) {
             src="/images/main/home_8_s_2x.jpg"
             srcM="/images/main/home_8_m_2x.jpg"
             srcL="/images/main/home_8_l_2x.jpg"
-            href={'/'}
+            href={'/people'}
             title={title}
             margin="32px auto 0px"
             category={'People'}
@@ -31,11 +31,12 @@ function MainPeopleSection(props) {
             src="/images/main/home_9_s_2x.jpg"
             srcM="/images/main/home_9_m_2x.jpg"
             srcL="/images/main/home_9_l_2x.jpg"
-            href={'/'}
+            href={'https://medium.com/asleepblog'}
             title={secondTitle}
             margin="32px auto 0px"
             category={'People  |  Blog Interview'}
             whiteDim={true}
+            outer
             moreButtonColor={'var(--sub-sub-07)'}
           />
         </CardContainer>

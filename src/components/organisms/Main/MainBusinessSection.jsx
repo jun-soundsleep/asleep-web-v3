@@ -18,7 +18,7 @@ function MainBusinessSection(props) {
           src="/images/main/home_7_s_2x.jpg"
           srcM="/images/main/home_7_m_2x.jpg"
           srcL="/images/main/home_7_l_2x.jpg"
-          href={'/'}
+          href={'/business'}
           title={title}
           margin="32px auto 0px"
           category={'Business'}
