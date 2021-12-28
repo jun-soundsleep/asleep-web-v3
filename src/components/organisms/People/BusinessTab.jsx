@@ -23,7 +23,9 @@ function BusinessTab(props) {
           '/images/people/people_4_l_2x.jpg'
         ]}
         title={title}
-        href={'https://asleep.ai/en'}
+        href={
+          'https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd'
+        }
       />
       <CardContainer style={{ marginTop: '48px' }}>
         <PeopleBodyCard

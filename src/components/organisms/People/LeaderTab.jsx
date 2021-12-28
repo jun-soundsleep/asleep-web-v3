@@ -23,7 +23,9 @@ function LeaderTab(props) {
         ]}
         name={davidName}
         body={davidBody}
-        href={'https://asleep.ai'}
+        href={
+          'https://medium.com/asleepblog/people-in-asleep-개발자는-4번째-창업-아이템으로-왜-잠을-골랐을까-182b1168dac9'
+        }
       />
       <PeopleSoleSection
         src={[
