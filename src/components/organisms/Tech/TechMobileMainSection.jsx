@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import dynamic from 'next/dynamic';
 import TechTitle from '../../atoms/Tech/TechTitle';
 import BigArrrowButton from '../../atoms/Common/BigArrrowButton';
+import TehcMobileArrowButton from '../../atoms/Tech/TehcMobileArrowButton';
 
 const TechSubTextComponent = dynamic(import('../../mocules/Tech/TechSubText'));
 
@@ -31,7 +32,7 @@ function TechMobileMainSection({ title, src }) {
         <TechTitleContainer>
           <TechTitle item={title} />
         </TechTitleContainer>
-        <BigArrrowButton clickListener={goToSubTitleInMobileSection} />
+        <TehcMobileArrowButton clickListener={goToSubTitleInMobileSection} />
       </MobileTechMainSectionContainer>
       <Container src={src}>
         <ForwardedTechMobileMainComponent ref={mobileSection} />
@@ -53,13 +54,7 @@ const Container = styled.section`
 const MobileTechMainSectionContainer = styled.div`
   height: 100vh;
   background-color: var(--backgorund-bg-05);
-
-  & > button {
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
-  }
+  position: relative;
 `;
 
 const TechTitleContainer = styled.div`

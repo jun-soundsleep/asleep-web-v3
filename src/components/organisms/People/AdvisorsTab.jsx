@@ -51,12 +51,7 @@ function AdvisorsTab(props) {
       <AdvisorSection
         title={'Collaborated Research'}
         fname={t('people:advisor_5_name')}
-        fbody={[
-          t('people:advisor_5_body_1'),
-          t('people:advisor_5_body_2'),
-          t('people:advisor_5_body_3'),
-          t('people:advisor_5_body_4')
-        ]}
+        fbody={[t('people:advisor_5_body_1'), t('people:advisor_5_body_2')]}
         fsrc={'/images/people/advisor/3_advisor-5_l_2x.jpg'}
         stitle={'asldkj'}
         sname={t('people:advisor_6_name')}
