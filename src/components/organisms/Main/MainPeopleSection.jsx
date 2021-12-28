@@ -72,7 +72,7 @@ const CardContainer = styled.div`
   }
 
   ${mp[1]} {
-    width: 1400px;
+    width: 602px;
     height: 725px;
   }
 `;

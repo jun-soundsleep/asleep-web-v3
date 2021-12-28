@@ -26,7 +26,7 @@ const Contents = styled.h2`
   }
 
   ${mp[1]} {
-    font-size: 40px;
+    font-size: 26px;
     line-height: 1.35;
   }
 `;

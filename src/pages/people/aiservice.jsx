@@ -10,7 +10,7 @@ function Aiservice(props) {
   const REASEARCH = [
     {
       name: kevin,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-케빈-기회를-잡고-되게-만들어봐-86b111dfd518',
       body: kevinBody,
       src: [
         '/images/people/detail/2_Kevin_s_2x.jpg',

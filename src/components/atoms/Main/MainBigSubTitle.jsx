@@ -33,8 +33,8 @@ const MainBigSubTitleContainer = styled.h2`
   }
 
   ${mp[1]} {
-    font-size: 36px;
-    line-height: 1.06;
+    font-size: 30px;
+    line-height: 1.8;
     letter-spacing: -1.62px;
   }
 `;

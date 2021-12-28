@@ -28,7 +28,7 @@ const Contents = styled.h2`
   }
 
   ${mp[1]} {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

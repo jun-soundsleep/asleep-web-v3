@@ -12,7 +12,7 @@ function Marketing(props) {
   const MARKETING = [
     {
       name: kendrickName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-패션-스포츠를-넘어-이젠-수면을-정복하려는-에이슬립-cmo의-이야기-a6c1643a9073',
       body: kendrickBody,
       src: [
         '/images/people/detail/2_Kenrick_s_2x.jpg',
@@ -27,7 +27,7 @@ function Marketing(props) {
     },
     {
       name: freddieName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-갓-태어난-스타트업에서-브랜드-디자이너라고-46f88945408c',
       body: freddieBody,
       src: [
         '/images/people/detail/2_Freddie_s_2x.jpg',

@@ -25,7 +25,7 @@ const TechBodySubTitleContainer = styled.h2`
   }
 
   ${mp[1]} {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.67;
     letter-spacing: -1.62px;
   }

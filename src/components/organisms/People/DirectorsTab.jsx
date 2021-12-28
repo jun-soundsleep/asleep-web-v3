@@ -16,7 +16,7 @@ function DirectorsTab() {
         ]}
         name={paulName}
         body={paulBody}
-        href={'https://asleep.ai'}
+        href={'https://medium.com/asleepblog/people-in-asleep-df3822468aa6'}
       />
     </>
   );

@@ -29,6 +29,7 @@ const MainCardTitleContainer = styled.div`
   }
 
   ${mp[1]} {
-    font-size: 46px;
+    font-size: 36px;
+    line-height: 1.4;
   }
 `;

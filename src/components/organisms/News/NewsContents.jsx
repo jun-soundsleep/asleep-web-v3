@@ -40,7 +40,7 @@ function NewsContents({ data }) {
 export default NewsContents;
 
 const CardContainer = styled.ul`
-  margin: 0 20px;
+  margin: 0 auto;
   padding-bottom: 128px;
 
   ${mp[0]} {

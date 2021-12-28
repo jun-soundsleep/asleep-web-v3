@@ -17,7 +17,7 @@ function Rnd(props) {
   const RND = [
     {
       name: johnName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-수면이라는-우주를-탐험하는-천문학도-출신-리드-엔지니어-이야기-9146991372c5',
       body: johnBody,
       src: [
         '/images/people/detail/2_John_s_2x.jpg',
@@ -32,7 +32,7 @@ function Rnd(props) {
     },
     {
       name: julieName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-잠을-좋아하던-잠꾸러기-에이슬립의-막내-엔지니어가-되어-잠을-연구하다-40d86a244266',
       body: julieBody,
       src: [
         '/images/people/detail/2_Julie_s_2x.jpg',
@@ -47,7 +47,7 @@ function Rnd(props) {
     },
     {
       name: brianName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-대학생-신분-8년차-졸업을-미루고-에이슬립에-합류한-엔지니어-이야기-2684f46f0f3f',
       body: brianBody,
       src: [
         '/images/people/detail/2_Brian_s_2x.jpg',
@@ -62,7 +62,7 @@ function Rnd(props) {
     },
     {
       name: joeyName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-150년된-회사에서-1-5년된-에이슬립으로-임베디드-소프트웨어-엔지니어의-스타트업-적응기-5979a462b42a',
       body: joeyBody,
       src: [
         '/images/people/detail/2_Joey_s_2x.jpg',

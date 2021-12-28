@@ -53,7 +53,7 @@ const Container = styled.section`
 
 const MobileTechMainSectionContainer = styled.div`
   height: 100vh;
-  background-color: var(--backgorund-bg-05);
+  background-color: #070a13;
   position: relative;
 `;
 

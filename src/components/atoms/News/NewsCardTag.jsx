@@ -28,15 +28,21 @@ const Content = styled.span`
 
   ${mp[0]} {
     padding: 11px 9.5px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  ${mp[1]} {
+    padding: 11px 9.5px;
     height: 45px;
     font-size: 13px;
   }
 
-  ${mp[1]} {
+  /* ${mp[1]} {
     height: 47px;
     padding: 26px 12.5px;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 1.64;
     letter-spacing: -1.26px;
-  }
+  } */
 `;

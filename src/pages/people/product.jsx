@@ -16,7 +16,7 @@ function Product(props) {
   const RND = [
     {
       name: melName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-출국-일주일-전-비행기표-취소하고-1년-된-스타트업에-셀프-감금된-사연-bcee77cc7ea9',
       body: melBody,
       src: [
         '/images/people/detail/2_Mel_s_2x.jpg',
@@ -31,7 +31,7 @@ function Product(props) {
     },
     {
       name: malcolmName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-가치에-중독된-경험-디자이너-6e61ae4f5fb3',
       body: malcolmBody,
       src: [
         '/images/people/detail/2_Malcolm_s_2x.jpg',
@@ -46,7 +46,7 @@ function Product(props) {
     },
     {
       name: jennyName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-sleep-tech-스타트업-product-designer가-된-asmr-유튜버-c8dd55d17238',
       body: jennyBody,
       src: [
         '/images/people/detail/2_Jenny_s_2x.jpg',
@@ -61,7 +61,7 @@ function Product(props) {
     },
     {
       name: sarahName,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-만들기를-좋아하는-창작가-에이슬립에서-수면-경험-창작에-도전하다-31274f1a11da',
       body: sarahBody,
       src: [
         '/images/people/detail/2_Sarah_s_2x.jpg',

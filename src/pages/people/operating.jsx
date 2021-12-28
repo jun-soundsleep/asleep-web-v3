@@ -12,7 +12,7 @@ function Operating(props) {
   const RND = [
     {
       name: tyler2Name,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-ai와-사람-모두에-귀기울이는-ai-researcher-겸-operator-179a6230a8dd',
       body: tyler2Body,
       src: [
         '/images/people/detail/2_Tyler_s_2x.jpg',

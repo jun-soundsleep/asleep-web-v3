@@ -167,6 +167,10 @@ const CategoryWrapper = styled.div`
 
   ${mp[1]} {
     margin: 72px auto 72px;
+
+    & > button {
+      margin: 0px 24px 16px 0px;
+    }
   }
 `;
 

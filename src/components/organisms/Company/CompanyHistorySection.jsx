@@ -5,6 +5,7 @@ import CompanyHistoryBigCard from '../../mocules/Company/CompanyHistoryBigCard';
 import CompanyBodyTitle from '../../atoms/Company/CompanyBodyTitle';
 import CompanyBigCardOverTablet from '../../mocules/Company/CompanyBigCardOverTablet';
 import { mp } from '../../../../styles/device';
+import CompanySectionContainer from '../../atoms/Company/CompanySectionContainer';
 
 function CompanyHistorySection(props) {
   const { t } = useTranslation();
@@ -50,6 +51,7 @@ function CompanyHistorySection(props) {
         <CompanyHistoryBigCard title={'2020'} body={history_2020} />
       </MobileContainer>
       <OverTabletContainer>
+        <CompanyBodyTitle item={history} />
         <CompanyBigCardOverTablet
           newData={history_2021}
           oldData={history_2020}
@@ -65,6 +67,14 @@ const Container = styled.section`
   margin: 64px 0 127px;
   padding: 64px 20px;
   background-color: var(--backgorund-bg-01);
+
+  ${mp[0]} {
+    padding: 140px 20px;
+  }
+
+  ${mp[1]} {
+    padding: 280px 20px;
+  }
 `;
 
 const MobileContainer = styled.div`

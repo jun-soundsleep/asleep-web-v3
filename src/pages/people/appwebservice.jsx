@@ -27,7 +27,7 @@ function Appwebservice(props) {
     },
     {
       name: jun,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-에이슬립-개발자-준-그를-알아보자-d418a44c2922',
       body: junBody,
       src: [
         '/images/people/detail/2_Jun_s_2x.jpg',

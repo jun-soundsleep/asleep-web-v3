@@ -14,7 +14,7 @@ function Technicalproduct(props) {
   const REASEARCH = [
     {
       name: aaron,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-스타트업-로켓에-올라탄-前미사일-연구원-2737f67a6f42',
       body: aaronBody,
       src: [
         '/images/people/detail/2_Aaron_s_2x.jpg',
@@ -29,7 +29,7 @@ function Technicalproduct(props) {
     },
     {
       name: lea,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-절대-재미추구형-에이슬립-백앤드-개발자-2a2f004b96ba',
       body: leaBody,
       src: [
         '/images/people/detail/2_Lea_s_2x.jpg',
@@ -44,7 +44,7 @@ function Technicalproduct(props) {
     },
     {
       name: blaze,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-사이버전에서-수면으로-에이슬립의-춤추는-개발자-7284a04345a2',
       body: blazeBody,
       src: [
         '/images/people/detail/2_Blaze_s_2x.jpg',

@@ -39,7 +39,7 @@ const Head = styled.h1`
   }
 
   ${mp[1]} {
-    font-size: 72px;
+    font-size: 64px;
     line-height: 1.28;
     letter-spacing: 0.72px;
   }

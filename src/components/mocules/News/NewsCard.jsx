@@ -10,9 +10,9 @@ import { useRouter } from 'next/router';
 function NewsCard({ title, enTitle, category, date, href }) {
   const router = useRouter();
   return (
-    <a href={href} target="_blank" rel="noreferrer">
-      <CardContainer>
-        <Temp>
+    <CardContainer>
+      <a href={href} target="_blank" rel="noreferrer">
+        <ListSection>
           <TagConatiner>
             <NewsCardTag item={category} />
           </TagConatiner>
@@ -24,25 +24,34 @@ function NewsCard({ title, enTitle, category, date, href }) {
             )}
           </TitleContainer>
           <NewsCardDate item={date} />
-        </Temp>
-      </CardContainer>
-    </a>
+        </ListSection>
+      </a>
+    </CardContainer>
   );
 }
 
 export default NewsCard;
 
-const Temp = styled.div`
+const ListSection = styled.div`
   padding: 20px 16px;
+  height: 239px;
   border-radius: 18px;
   background-color: var(--backgorund-bg-01);
+
+  ${mp[0]} {
+    height: 270px;
+  }
+
+  ${mp[1]} {
+    height: 544px;
+    padding: 44px 44px 44px 32px;
+  }
 `;
 
 const CardContainer = styled.li`
   display: inline-block;
   width: 50%;
   padding: 10px;
-  /* word-wrap: keep-all; */
   cursor: pointer;
 
   ${mp[0]} {
@@ -55,6 +64,13 @@ const TagConatiner = styled.div`
 `;
 
 const TitleContainer = styled.div`
-  min-height: 126px;
+  height: 126px;
   margin-bottom: 24px;
+  overflow: scroll;
+
+  ${mp[1]} {
+    height: 370px;
+    margin-bottom: 10px;
+    overflow: scroll;
+  }
 `;

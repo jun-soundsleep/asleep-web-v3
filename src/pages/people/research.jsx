@@ -12,7 +12,7 @@ function Research(props) {
   const REASEARCH = [
     {
       name: tyler,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-ai와-사람-모두에-귀기울이는-ai-researcher-겸-operator-179a6230a8dd',
       body: tylerBody,
       src: [
         '/images/people/detail/2_Tyler_s_2x.jpg',
@@ -27,7 +27,7 @@ function Research(props) {
     },
     {
       name: roben,
-      href: '',
+      href: 'https://medium.com/asleepblog/people-in-asleep-%EB%8C%80%ED%95%99%EC%9B%90-%EB%8F%99%EB%A3%8C%EB%93%A4%EC%9D%84-%EB%94%B0%EB%9D%BC-%ED%9A%8C%EC%82%AC%EA%B9%8C%EC%A7%80-%EC%98%AE%EA%B8%B4-%EC%95%84%EB%A7%88-%EA%B3%A7-%ED%95%9C%EA%B5%AD%EC%96%B4-%EB%A7%88%EC%8A%A4%ED%84%B0-a0f70b79f1e3',
       body: robenBody,
       src: [
         '/images/people/detail/2_Roben_s_2x.jpg',

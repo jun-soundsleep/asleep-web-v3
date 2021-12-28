@@ -28,7 +28,7 @@ const Content = styled.button`
   color: ${({ active }) =>
     active ? 'var(--components-components-02)' : 'var(--sub-sub-05)'};
 
-  border-radius: 8px;
+  border-radius: 13px;
   background-color: ${({ active }) =>
     active ? 'var(--sub-sub-05)' : 'var(--components-components-02)'};
   cursor: pointer;
@@ -42,8 +42,9 @@ const Content = styled.button`
   ${mp[1]} {
     height: 98px;
     padding: 26px 30px;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.64;
     letter-spacing: -1.26px;
+    border-radius: 24px;
   }
 `;

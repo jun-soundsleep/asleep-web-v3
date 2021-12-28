@@ -121,7 +121,7 @@ const CategoryWrapper = styled.div`
   }
 
   ${mp[1]} {
-    margin: 72px auto 72px;
+    margin: 72px auto 40px;
   }
 `;
 

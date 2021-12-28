@@ -29,7 +29,7 @@ const MainSmallTitleContainer = styled.h1`
   }
 
   ${mp[1]} {
-    font-size: 88px;
+    font-size: 70px;
     line-height: 1.27;
     letter-spacing: -3.52px;
   }

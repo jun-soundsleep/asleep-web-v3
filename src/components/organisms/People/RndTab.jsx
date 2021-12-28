@@ -34,7 +34,7 @@ function RndTab(props) {
       </CardContainer>
       <CardContainer>
         <PeopleBodyCard
-          title={'AI Reseaerch Team'}
+          title={'AI Research Team'}
           subtitle={cardSecond}
           href={'/people/research'}
         />

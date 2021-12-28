@@ -45,7 +45,9 @@ function LeaderTab(props) {
         ]}
         name={jadenName}
         body={jadenBody}
-        href={'https://asleep.ai'}
+        href={
+          'https://medium.com/asleepblog/people-in-asleep-이게되나-를-이게-된다-로-만드는-에이슬립의-cto-3c25d60c5605'
+        }
       />
     </>
   );

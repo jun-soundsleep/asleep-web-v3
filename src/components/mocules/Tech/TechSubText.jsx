@@ -11,7 +11,7 @@ function TechSubText({ forwardedRef }) {
   return (
     <Conatiner ref={forwardedRef}>
       {router.locale === 'ko' ? (
-        <TechSubTextContainer>
+        <TechSubTextContainer locale={router.locale}>
           기존에는 수면 분석의 정확성을 담보하기 위해 뇌파 데이터가
           필요했습니다. 하지만 에이슬립은 독자적인 AI Technology를 통해 수면 중
           호흡과 움직임의 패턴만으로 뇌파를 활용한 것과 같은 수준의 정확도를
@@ -49,7 +49,7 @@ function TechSubText({ forwardedRef }) {
           Conventionally, EEG data is essential to ensure accurate sleep
           analysis. Through its remarkable AI technology, Asleep achieves the
           same level of accuracy as past EEG methods by solely using breathing
-          patterns and movement detected during sleep.
+          patterns and movement detected during sleep.{' '}
           <span
             onMouseOver={() => {
               setModalVisible(true);
@@ -131,13 +131,12 @@ const TechSubTextContainer = styled.div`
 
   ${mp[1]} {
     width: 1400px;
-    /* min-height: 827px; */
     padding: 88px 67px;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.58;
-    letter-spacing: -1.62px;
+    line-height: ${({ locale }) => (locale === 'ko' ? 1.58 : 1.6)};
+    letter-spacing: ${({ locale }) => (locale === 'ko' ? '-1.62px' : '0.36px')};
   }
 `;
