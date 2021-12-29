@@ -79,10 +79,10 @@ function MainCard({
                   whiteColor={whiteTitleColor}
                 />
                 <CardMoreButton
-                  CardMoreButton
                   item={findOurMore}
-                  href={href}
+                  CardMoreButton
                   color={moreButtonColor}
+                  href={href}
                 />
               </TextWrapper>
               {whiteDim && <WhiteDim />}

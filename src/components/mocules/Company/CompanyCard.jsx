@@ -7,6 +7,7 @@ import useTranslation from 'next-translate/useTranslation';
 import userWindowSize from '../../../../hooks/userWindowSize';
 import CompanyCardMoreButton from '../../atoms/Company/CompanyCardMoreButton';
 import { mp } from '../../../../styles/device';
+import ButtonMoreInfoInCard from '../../atoms/Common/ButtonMoreInfoInCard';
 
 function CompanyCard({
   margin,
@@ -42,7 +43,12 @@ function CompanyCard({
             margin="8px 0px 26px 0px"
             whiteColor={whiteTitleColor}
           />
-          <CompanyCardMoreButton item={findOurMore} href={href} />
+          <ButtonMoreInfoInCard
+            hexColor={'#406bff'}
+            item={findOurMore}
+            itemColor={'var(--primary-primary-in-light)'}
+            fontWeight={500}
+          />
         </Container>
       ) : (
         <Link href={href} locale={router.locale}>
@@ -59,7 +65,12 @@ function CompanyCard({
                 margin="8px 0px 26px 0px"
                 whiteColor={whiteTitleColor}
               />
-              <CompanyCardMoreButton item={findOurMore} href={href} />
+              <ButtonMoreInfoInCard
+                hexColor={'#406bff'}
+                item={findOurMore}
+                itemColor={'var(--primary-primary-in-light)'}
+                fontWeight={500}
+              />
             </Container>
           </a>
         </Link>

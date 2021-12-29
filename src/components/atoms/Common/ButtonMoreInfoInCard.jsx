@@ -7,16 +7,18 @@ function ButtonMoreInfoInCard({
   item,
   itemColor,
   fontWeight,
-  clickListener
+  clickListener,
+  margin
 }) {
   return (
     <Container
       itemColor={itemColor}
       onClick={clickListener}
       fontWeight={fontWeight}
+      margin={margin}
     >
       <Text>
-        <b>{item}</b>
+        <span>{item}</span>
         <ArrowImg>
           <svg
             width="13"
@@ -60,6 +62,7 @@ const Container = styled.button`
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+
   font-size: 13px;
   font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : 500)};
   font-stretch: normal;
@@ -68,20 +71,23 @@ const Container = styled.button`
   letter-spacing: -0.59px;
   text-align: left;
   color: ${({ itemColor }) => itemColor && itemColor};
+  margin: ${({ margin }) => (margin ? margin : '0px 0px 0px 13.5px')};
   cursor: pointer;
 
   ${mp[0]} {
+    margin: ${({ margin }) => (margin ? margin : '0px 0px 0px 15px')};
   }
   ${mp[1]} {
     font-size: 24px;
     line-height: 1.58;
     letter-spacing: 0.24px;
+    margin: ${({ margin }) => (margin ? margin : '0px 0px 0px 25.6px')};
   }
 `;
 
 const ArrowImg = styled.span`
   position: relative;
-  top: 1px;
+  top: 2.5px;
 
   ${mp[1]} {
     display: none;
@@ -103,7 +109,7 @@ const Text = styled.span`
   justify-content: space-between;
   align-items: center;
 
-  b {
+  span {
     margin-right: 8px;
   }
 `;

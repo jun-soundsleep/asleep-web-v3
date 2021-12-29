@@ -7,6 +7,7 @@ import CardTitle from '../../atoms/Common/CardTitle';
 import useTranslation from 'next-translate/useTranslation';
 import TechCardMoreButton from '../../atoms/Tech/TechCardMoreButton';
 import useWindowSize from '../../../../hooks/userWindowSize';
+import ButtonMoreInfoInCard from '../../atoms/Common/ButtonMoreInfoInCard';
 
 function TechCard({
   margin,
@@ -42,7 +43,12 @@ function TechCard({
             margin="8px 0px 26px 0px"
             whiteColor={whiteTitleColor}
           />
-          <TechCardMoreButton item={findOurMore} href={href} />
+          <ButtonMoreInfoInCard
+            hexColor={'#D8E1FF'}
+            item={findOurMore}
+            itemColor={'var(--sub-sub-04)'}
+            fontWeight={500}
+          />
         </TechContainer>
       ) : (
         <Link href={href} locale={router.locale}>
@@ -59,7 +65,12 @@ function TechCard({
                 margin="8px 0px 26px 0px"
                 whiteColor={whiteTitleColor}
               />
-              <TechCardMoreButton item={findOurMore} href={href} />
+              <ButtonMoreInfoInCard
+                hexColor={'#D8E1FF'}
+                item={findOurMore}
+                itemColor={'var(--sub-sub-04)'}
+                fontWeight={500}
+              />
             </TechContainer>
           </a>
         </Link>

@@ -19,6 +19,7 @@ function PeopleBodyFullImage({ src, title, href }) {
             item={jd}
             hexColor={'#D8E1FF'}
             itemColor={'var(--sub-sub-04)'}
+            margin={''}
           />
         </TitleContainer>
       </Container>
