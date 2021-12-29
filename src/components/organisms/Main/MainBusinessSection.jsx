@@ -4,6 +4,7 @@ import useTranslate from 'next-translate/useTranslation';
 import MainCardLabel from '../../atoms/Main/MainCardLabel';
 import MainCard from '../../mocules/Main/MainCard';
 import { mp } from '../../../../styles/device';
+import MainSectionContainer from '../../atoms/Main/MainSectionContainer';
 
 function MainBusinessSection(props) {
   const { t } = useTranslate();
@@ -11,7 +12,7 @@ function MainBusinessSection(props) {
     'main:making_history_in_the_sleep_tech_industry_with_ai_technology'
   );
   return (
-    <MainBusinessSectionContainer>
+    <MainSectionContainer>
       <MainCardLabel item={'Business'} />
       <CardContainer>
         <MainCard
@@ -26,7 +27,7 @@ function MainBusinessSection(props) {
           moreButtonColor={'var(--sub-sub-04)'}
         />
       </CardContainer>
-    </MainBusinessSectionContainer>
+    </MainSectionContainer>
   );
 }
 

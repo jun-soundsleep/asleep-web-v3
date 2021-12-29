@@ -4,6 +4,7 @@ import useTranslate from 'next-translate/useTranslation';
 import MainCardLabel from '../../atoms/Main/MainCardLabel';
 import MainCard from '../../mocules/Main/MainCard';
 import { mp } from '../../../../styles/device';
+import MainSectionContainer from '../../atoms/Main/MainSectionContainer';
 
 function MainTechSection() {
   const { t } = useTranslate();
@@ -11,7 +12,7 @@ function MainTechSection() {
     'main:making_history_in_the_sleep_tech_industry_with_ai_technology'
   );
   return (
-    <MainTechSectionContainer>
+    <MainSectionContainer background={'var(--backgorund-bg-04)'}>
       <MainCardLabel item={'Technology'} color="var(--text-in-dark-text-00)" />
       <CardContainer>
         <MainCard
@@ -27,17 +28,11 @@ function MainTechSection() {
           moreButtonColor={'var(--primary-primary-in-dark)'}
         />
       </CardContainer>
-    </MainTechSectionContainer>
+    </MainSectionContainer>
   );
 }
 
 export default MainTechSection;
-
-const MainTechSectionContainer = styled.div`
-  padding: 43px 0 64px;
-  background-color: var(--backgorund-bg-04);
-  /* min-height: 404px; */
-`;
 
 const CardContainer = styled.div`
   width: 320px;

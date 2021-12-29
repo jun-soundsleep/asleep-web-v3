@@ -48,15 +48,14 @@ function MainPeopleSection(props) {
 export default MainPeopleSection;
 
 const MainPeopleSectionContainer = styled.div`
-  padding: 43px 0 64px;
+  padding: 60px 0px;
 
   ${mp[0]} {
     background-color: var(--backgorund-bg-01);
-    padding: 72px 0 104px;
+    padding: 120px 0px;
   }
-
   ${mp[1]} {
-    padding: 72px 0 104px;
+    padding: 240px 0px;
   }
 `;
 

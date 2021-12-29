@@ -7,8 +7,9 @@ import useTranslation from 'next-translate/useTranslation';
 import { mp } from '../../../../styles/device';
 import CompanyFaithCard from '../../mocules/Company/CompanyFaithCard';
 import { MXFlexCenteringSB } from '../../mixin/MXFlex';
+import CompanySectionContainer from '../../atoms/Company/CompanySectionContainer';
 
-function CompanyFaithSection(props) {
+function CompanyFaithSection() {
   const { t } = useTranslation();
   const title = t('company:company_faith_title');
   const subTitle = t('company:company_faith_title_sub');
@@ -26,7 +27,7 @@ function CompanyFaithSection(props) {
   const preventDiseaseDetail = t('company:prevent_disease_detail');
 
   return (
-    <Container>
+    <CompanySectionContainer>
       <TitleContainer>
         <CompanyBodyTitle item={title} />
       </TitleContainer>
@@ -82,15 +83,11 @@ function CompanyFaithSection(props) {
           />
         </CardContainer>
       </OverTabletConatiner>
-    </Container>
+    </CompanySectionContainer>
   );
 }
 
 export default CompanyFaithSection;
-
-const Container = styled.section`
-  padding: 64px 20px 66px;
-`;
 
 const TitleContainer = styled.div`
   margin: 0 0 10px 0;

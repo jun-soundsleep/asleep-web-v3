@@ -4,6 +4,7 @@ import useTranslation from 'next-translate/useTranslation';
 import CompanyBodyTitle from '../../atoms/Company/CompanyBodyTitle';
 import CompanyCard from '../../mocules/Company/CompanyCard';
 import { mp } from '../../../../styles/device';
+import CompanySectionContainer from '../../atoms/Company/CompanySectionContainer';
 
 function CompanyVisionSection({
   floatDiagnosisModal,
@@ -17,7 +18,7 @@ function CompanyVisionSection({
   const visionThird = t('company:company_vision_3');
 
   return (
-    <Container>
+    <CompanySectionContainer background={'var(--backgorund-bg-01)'}>
       <CompanyBodyTitle item={vision} />
       <MobileContainer>
         <CardConatiner>
@@ -87,16 +88,11 @@ function CompanyVisionSection({
           </VisionRight>
         </Test>
       </OverTabletContainer>
-    </Container>
+    </CompanySectionContainer>
   );
 }
 
 export default CompanyVisionSection;
-
-const Container = styled.section`
-  padding: 64px 20px 66px;
-  background-color: var(--backgorund-bg-01);
-`;
 
 const CardConatiner = styled.div`
   width: 320px;

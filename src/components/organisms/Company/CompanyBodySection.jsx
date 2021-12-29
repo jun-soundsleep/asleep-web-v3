@@ -5,6 +5,7 @@ import { MXFlexCenteringSB } from '../../mixin/MXFlex';
 import FullImageContainer from '../../atoms/Common/FullImageContainer';
 import { useRouter } from 'next/router';
 import CompanyVisionHoveredContents from '../../atoms/Company/CompanyVisionHoveredContents';
+import CompanySectionContainer from '../../atoms/Company/CompanySectionContainer';
 
 function CompanyBodySection() {
   const [firstHoverContents, setfirstHoverContents] = useState(false);
@@ -12,7 +13,7 @@ function CompanyBodySection() {
   const router = useRouter();
 
   return (
-    <Section>
+    <CompanySectionContainer>
       {router.locale === 'ko' ? (
         <CompanySubTextContainer>
           <b>에이슬립은 단순한 고민에서 시작되었습니다.</b> 어떻게 하면 사람들이
@@ -155,20 +156,16 @@ function CompanyBodySection() {
           automates sleep measurement at home.
         </CompanySubTextContainer>
       )}
-    </Section>
+    </CompanySectionContainer>
   );
 }
 
 export default CompanyBodySection;
 
-const Section = styled.section`
-  padding-bottom: 60px;
-`;
-
 const CompanySubTextContainer = styled.div`
   position: relative;
-  width: 320px;
-  margin: 32px auto 0px;
+  max-width: 320px;
+  margin: 0px auto;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -189,18 +186,18 @@ const CompanySubTextContainer = styled.div`
   }
 
   ${mp[0]} {
-    width: 560px;
-    margin: 64px auto 0px;
+    max-width: 560px;
+    /* margin: 64px auto 0px; */
   }
 
   ${mp[1]} {
-    width: 1265px;
+    max-width: 1265px;
     font-size: 32px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.63;
     letter-spacing: -1.44px;
-    margin: 200px auto 280px;
+    /* margin: 200px auto 280px; */
   }
 `;

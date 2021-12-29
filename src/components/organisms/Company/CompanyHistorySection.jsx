@@ -40,7 +40,7 @@ function CompanyHistorySection(props) {
   ];
 
   return (
-    <Container>
+    <CompanySectionContainer background={'var(--backgorund-bg-01)'}>
       <MobileContainer>
         <CompanyBodyTitle item={history} />
         <CompanyHistoryBigCard
@@ -57,25 +57,11 @@ function CompanyHistorySection(props) {
           oldData={history_2020}
         />
       </OverTabletContainer>
-    </Container>
+    </CompanySectionContainer>
   );
 }
 
 export default CompanyHistorySection;
-
-const Container = styled.section`
-  margin: 64px 0 127px;
-  padding: 64px 20px;
-  background-color: var(--backgorund-bg-01);
-
-  ${mp[0]} {
-    padding: 140px 20px;
-  }
-
-  ${mp[1]} {
-    padding: 280px 20px;
-  }
-`;
 
 const MobileContainer = styled.div`
   & > div:nth-child(2) {

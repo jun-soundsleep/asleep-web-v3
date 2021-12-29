@@ -4,6 +4,7 @@ import useTranslate from 'next-translate/useTranslation';
 import MainCardLabel from '../../atoms/Main/MainCardLabel';
 import MainCard from '../../mocules/Main/MainCard';
 import { mp } from '../../../../styles/device';
+import MainSectionContainer from '../../atoms/Main/MainSectionContainer';
 
 function MainAsleepVision({ margin, forwardedRef }) {
   const { t } = useTranslate();
@@ -14,7 +15,10 @@ function MainAsleepVision({ margin, forwardedRef }) {
   const ditialTransformation = t('main:digital_transformation_of_sleep');
 
   return (
-    <MainAsleepVisionContainer margin={margin} ref={forwardedRef}>
+    <MainSectionContainer
+      forwardedRef={forwardedRef}
+      background={'var(--text-in-dark-text-00)'}
+    >
       <MainCardLabel item={title} />
       <Blank />
       <ThreeColumnContainer>
@@ -61,25 +65,11 @@ function MainAsleepVision({ margin, forwardedRef }) {
           oneLine={true}
         />
       </OneColumnContainer>
-    </MainAsleepVisionContainer>
+    </MainSectionContainer>
   );
 }
 
 export default MainAsleepVision;
-
-const MainAsleepVisionContainer = styled.section`
-  margin: ${({ margin }) => margin && margin};
-  padding: 64px 0;
-  background-color: var(--text-in-dark-text-00);
-
-  ${mp[0]} {
-    padding: 100px 0;
-  }
-
-  ${mp[1]} {
-    padding: 280px 0;
-  }
-`;
 
 const ThreeColumnsItem = styled.div`
   width: 320px;
