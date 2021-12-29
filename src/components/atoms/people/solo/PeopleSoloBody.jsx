@@ -9,7 +9,7 @@ function PeopleSoloBody({ item }) {
 export default PeopleSoloBody;
 
 const Container = styled.p`
-  word-break: keep-all;
+  word-break: break-all;
   font-size: 16px;
   font-weight: 400;
   font-stretch: normal;

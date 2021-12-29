@@ -108,11 +108,12 @@ const ThreeColumnContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 560px;
-    margin: 0 auto 40px;
+    margin: 0 auto 16px;
   }
 
   ${mp[1]} {
     width: 1400px;
+    margin: 0 auto 40px;
   }
 `;
 

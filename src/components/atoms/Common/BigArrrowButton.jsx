@@ -5,15 +5,23 @@ import { mp } from '../../../../styles/device';
 
 function BigArrrowButton({ clickListener }) {
   return (
-    <button onClick={clickListener}>
+    <Button onClick={clickListener}>
       <ArrowContainer>
         <Arrow />
       </ArrowContainer>
-    </button>
+    </Button>
   );
 }
 
 export default BigArrrowButton;
+
+const Button = styled.button`
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  margin-bottom: 64px;
+`;
 
 const bounce = keyframes`
   from, 20%, 53%, 80%, to {
@@ -34,11 +42,6 @@ const bounce = keyframes`
 `;
 
 const ArrowContainer = styled.div`
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0px;
-  margin-bottom: 64px;
   width: 28px;
   height: 28px;
   animation: ${bounce} 1.5s ease infinite;

@@ -160,7 +160,7 @@ function Footer() {
 export default Footer;
 
 const FooterWrapper = styled.footer`
-  padding: 44px 0px 64px 22px;
+  padding: 44px 20px 64px 22px;
   background-color: var(--white);
   background-color: ${({ darkMode }) =>
     darkMode ? ' var(--backgorund-bg-04) ' : 'var(--text-in-dark-text-00)'};

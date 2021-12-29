@@ -42,6 +42,13 @@ const TextTest = styled.div`
     highlight
       ? 'var(--text-in-light-text-10)'
       : 'var(--text-in-light-text-05)'};
+
+  ${mp[0]} {
+    margin-top: 72px;
+  }
+  ${mp[1]} {
+    margin-top: 100px;
+  }
 `;
 
 const TitleContent = styled.div`
@@ -73,10 +80,6 @@ const Container = styled.div`
   padding: 56px 42px;
   border-radius: 24px;
   background-color: var(--components-components-02);
-
-  ${mp[1]} {
-    max-width: 860px;
-  }
 `;
 
 const BodyContent = styled.p`

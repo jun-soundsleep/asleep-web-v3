@@ -38,7 +38,7 @@ const NavBarContainer = styled.li`
   }
 
   ${mp[1]} {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

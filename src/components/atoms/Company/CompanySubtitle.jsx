@@ -17,6 +17,7 @@ const Container = styled.h2`
   letter-spacing: -0.72px;
   text-align: center;
   color: var(--text-in-light-text-05);
+  padding: 0 20px 0;
 
   ${mp[1]} {
     font-size: 36px;

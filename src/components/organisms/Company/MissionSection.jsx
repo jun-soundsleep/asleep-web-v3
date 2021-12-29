@@ -97,7 +97,7 @@ const MissionBody = styled.p`
   text-align: center;
   color: var(--text-in-light-text-06);
 
-  b {
+  span {
     color: var(--text-in-light-text-09);
   }
 

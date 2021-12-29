@@ -99,7 +99,7 @@ export default MainCard;
 const MainCardContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: ${({ padding }) => (padding ? padding : '32px 0px 74px 24px')};
+  padding: ${({ padding }) => (padding ? padding : '32px 24px 74px 24px')};
   border-radius: 22px;
   margin: ${({ margin }) => (margin ? margin : '')};
   background: url(${({ src }) => src && src});
@@ -115,7 +115,7 @@ const MainCardContainer = styled.div`
     background-repeat: no-repeat;
     background-position: 50%;
     padding: ${({ oneColumn }) =>
-      oneColumn ? '44px 0px 128px 24px' : '24px 0px 216px 24px'};
+      oneColumn ? '44px 24px 128px 24px' : '24px 24px 216px 24px'};
   }
 
   ${mp[1]} {
