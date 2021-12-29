@@ -46,7 +46,7 @@ function BusinessTab(props) {
           </Temp>
           <Temp>
             <PeopleBodyCard
-              title={'Marketing & Branding Team'}
+              title={'Marketing \n& Branding Team'}
               subtitle={cardThird}
               href={'/people/marketing'}
             />

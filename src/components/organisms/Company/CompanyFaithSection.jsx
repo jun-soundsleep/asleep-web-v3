@@ -94,7 +94,15 @@ const TitleContainer = styled.div`
 `;
 
 const SubTitleContainer = styled.div`
-  margin: 0 0 32px 0;
+  margin: 0 auto 32px;
+  ${mp[0]} {
+    max-width: 520px;
+    margin: 0 auto 48px;
+  }
+  ${mp[1]} {
+    max-width: 1265px;
+    margin: 0 auto 120px;
+  }
 `;
 
 const MobileContainer = styled.div`

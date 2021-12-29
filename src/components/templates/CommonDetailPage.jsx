@@ -100,6 +100,7 @@ const Body = styled.div`
   line-height: 1.63;
   letter-spacing: -0.72px;
   text-align: left;
+  padding-bottom: 64px;
   color: var(--text-in-dark-text-03);
 
   b > {

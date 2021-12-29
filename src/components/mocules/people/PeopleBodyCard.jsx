@@ -97,6 +97,7 @@ const SubTitle = styled.div`
     font-style: normal;
     line-height: 1.62;
     letter-spacing: 0.13px;
+    margin-bottom: 36px;
   }
   ${mp[1]} {
     max-width: 510px;
@@ -109,40 +110,3 @@ const SubTitle = styled.div`
     margin-bottom: 60.5px;
   }
 `;
-
-// const MoreButton = styled.button`
-//   display: flex;
-//   align-items: center;
-//   font-size: 13px;
-//   font-weight: 500;
-//   font-stretch: normal;
-//   font-style: normal;
-//   line-height: 1.77;
-//   letter-spacing: -0.59px;
-//   text-align: left;
-//   color: var(--primary-primary-in-light);
-//   margin-left: 15px;
-
-//   & > span {
-//     margin-right: 8px;
-//   }
-
-//   ${mp[0]} {
-//     font-size: 13px;
-//     font-weight: 500;
-//     font-stretch: normal;
-//     font-style: normal;
-//     line-height: 1.77;
-//     letter-spacing: 0.13px;
-//     text-align: left;
-//   }
-
-//   ${mp[1]} {
-//     font-size: 24px;
-//     font-weight: 500;
-//     font-stretch: normal;
-//     font-style: normal;
-//     line-height: 1.58;
-//     letter-spacing: -1.08px;
-//   }
-// `;

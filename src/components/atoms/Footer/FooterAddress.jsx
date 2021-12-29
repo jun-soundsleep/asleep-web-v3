@@ -12,7 +12,8 @@ function FooterAddress({ margin, darkMode }) {
           <br />
           본사: 06178 서울특별시 강남구 테헤란로82길 15(대치동 942-15,
           디아이타워 7층)
-          <br /> 미국 지사: 3003 North 1st Street #221, San Jose, CA 95134
+          <br />
+          미국 지사: 3003 North 1st Street #221, San Jose, CA 95134
         </span>
       ) : (
         <span>

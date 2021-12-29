@@ -5,23 +5,23 @@ import { mp } from '../../../../styles/device';
 function CompanyBigCardOverTablet({ newData, oldData }) {
   return (
     <Container>
-      <Title highlight={true}>2021</Title>
+      <TitleContent highlight={true}>2021</TitleContent>
       {newData?.map((el, idx) => (
-        <Body key={idx} highlight={true}>
+        <BodyContent key={idx} highlight={true}>
           <Quarter>
             <b>{el.quarter}</b>
           </Quarter>
           <div>{el.content}</div>
-        </Body>
+        </BodyContent>
       ))}
-      <Title highlight={false}>2020</Title>
+      <TextTest>2020</TextTest>
       {oldData?.map((el, idx) => (
-        <Body key={idx} highlight={false}>
+        <BodyContent key={(idx + 1) * 2} highlight={false}>
           <Quarter>
             <b>{el.quarter}</b>
           </Quarter>
           <div>{el.content}</div>
-        </Body>
+        </BodyContent>
       ))}
     </Container>
   );
@@ -29,7 +29,22 @@ function CompanyBigCardOverTablet({ newData, oldData }) {
 
 export default CompanyBigCardOverTablet;
 
-const Title = styled.div`
+const TextTest = styled.div`
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: ${({ highlight }) =>
+    highlight
+      ? 'var(--text-in-light-text-10)'
+      : 'var(--text-in-light-text-05)'};
+`;
+
+const TitleContent = styled.div`
   margin: 0 auto;
   font-size: 24px;
   font-weight: 600;
@@ -60,11 +75,11 @@ const Container = styled.div`
   background-color: var(--components-components-02);
 
   ${mp[1]} {
-    min-width: 1295px;
+    max-width: 860px;
   }
 `;
 
-const Body = styled.p`
+const BodyContent = styled.p`
   display: flex;
   justify-content: flex-start;
   align-items: start;
@@ -83,10 +98,10 @@ const Body = styled.p`
       : 'var(--text-in-light-text-05)'};
   word-break: break-all;
 
-  b {
+  & > b {
     font-weight: bold;
   }
-  div {
+  & > div {
     word-break: break-all;
   }
 

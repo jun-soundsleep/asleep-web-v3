@@ -60,7 +60,7 @@ const MainPeopleSectionContainer = styled.div`
 const CardContainer = styled.div`
   width: 320px;
   height: 212px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
 
   ${mp[0]} {
     width: 270px;

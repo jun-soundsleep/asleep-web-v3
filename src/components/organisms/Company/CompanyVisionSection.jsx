@@ -21,7 +21,7 @@ function CompanyVisionSection({
     <CompanySectionContainer background={'var(--backgorund-bg-01)'}>
       <CompanyBodyTitle item={vision} />
       <MobileContainer>
-        <CardConatiner>
+        <MobileCardConatiner>
           <CompanyCard
             title={visionFirst}
             href={'/company/sleepdiagnosis'}
@@ -30,8 +30,8 @@ function CompanyVisionSection({
             srcL={'/images/company/company_2_l_2x.jpg'}
             modalListener={() => {}}
           />
-        </CardConatiner>
-        <CardConatiner>
+        </MobileCardConatiner>
+        <MobileCardConatiner>
           <CompanyCard
             title={visionSecond}
             href={'/company/sleepsolution'}
@@ -40,8 +40,8 @@ function CompanyVisionSection({
             srcL={'/images/company/company_3_l_2x.jpg'}
             modalListener={() => {}}
           />
-        </CardConatiner>
-        <CardConatiner>
+        </MobileCardConatiner>
+        <MobileCardConatiner>
           <CompanyCard
             title={visionThird}
             href={'/company/sleepmonitoring'}
@@ -50,12 +50,12 @@ function CompanyVisionSection({
             srcL={'/images/company/company_4_l_2x.jpg'}
             modalListener={() => {}}
           />
-        </CardConatiner>
+        </MobileCardConatiner>
       </MobileContainer>
       <OverTabletContainer>
         <Test>
           <div>
-            <VisionLeft>
+            <VisionLeftFirst>
               <CompanyCard
                 title={visionFirst}
                 href={'shref'}
@@ -64,7 +64,7 @@ function CompanyVisionSection({
                 srcL={'/images/company/company_2_l_2x.jpg'}
                 modalListener={floatDiagnosisModal}
               />
-            </VisionLeft>
+            </VisionLeftFirst>
             <VisionLeft>
               <CompanyCard
                 title={visionSecond}
@@ -94,10 +94,10 @@ function CompanyVisionSection({
 
 export default CompanyVisionSection;
 
-const CardConatiner = styled.div`
+const MobileCardConatiner = styled.div`
   width: 320px;
   height: 200px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
 `;
 
 const MobileContainer = styled.div`
@@ -133,6 +133,20 @@ const VisionLeft = styled.div`
   ${mp[1]} {
     width: 603px;
     height: 570px;
+  }
+`;
+
+const VisionLeftFirst = styled.div`
+  width: 270px;
+  height: 312px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  ${mp[1]} {
+    width: 603px;
+    height: 570px;
+    margin-right: 58px;
+    margin-bottom: 63px;
   }
 `;
 

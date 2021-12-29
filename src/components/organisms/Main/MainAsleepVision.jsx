@@ -73,10 +73,12 @@ export default MainAsleepVision;
 const ThreeColumnsItem = styled.div`
   width: 320px;
   height: 222px;
+  margin-bottom: 24px;
 
   ${mp[0]} {
     width: 176px;
     height: 261px;
+    margin-bottom: unset;
   }
 
   ${mp[1]} {
