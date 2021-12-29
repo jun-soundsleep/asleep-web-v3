@@ -20,7 +20,6 @@ function MainPeopleSection(props) {
             srcL="/images/main/home_8_l_2x.jpg"
             href={'/people'}
             title={title}
-            margin="32px auto 0px"
             category={'People'}
             whiteDim={true}
             moreButtonColor={'var(--sub-sub-07)'}
@@ -33,7 +32,6 @@ function MainPeopleSection(props) {
             srcL="/images/main/home_9_l_2x.jpg"
             href={'https://medium.com/asleepblog'}
             title={secondTitle}
-            margin="32px auto 0px"
             category={'People  |  Blog Interview'}
             whiteDim={true}
             outer

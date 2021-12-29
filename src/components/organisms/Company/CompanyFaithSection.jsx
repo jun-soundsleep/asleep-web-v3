@@ -90,7 +90,7 @@ function CompanyFaithSection() {
 export default CompanyFaithSection;
 
 const TitleContainer = styled.div`
-  margin: 0 0 10px 0;
+  /* margin: 0 0 10px 0; */
 `;
 
 const SubTitleContainer = styled.div`

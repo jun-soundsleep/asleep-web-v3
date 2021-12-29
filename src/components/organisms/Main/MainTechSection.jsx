@@ -21,7 +21,6 @@ function MainTechSection() {
           srcL="/images/main/home_6_l_2x.jpg"
           href={'/technology'}
           title={title}
-          margin="32px auto 0px"
           category={'Technology'}
           whiteTitleColor={'var(--text-in-dark-text-01)'}
           missionColor={'var(--text-in-dark-text-01)'}

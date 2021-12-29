@@ -14,6 +14,7 @@ export default MainCardLabel;
 
 const MainSmallTitleContainer = styled.h1`
   margin: ${({ margin }) => margin && margin};
+  margin-bottom: 32px;
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
@@ -29,6 +30,7 @@ const MainSmallTitleContainer = styled.h1`
   }
 
   ${mp[1]} {
+    margin-bottom: 88px;
     font-size: 64px;
     line-height: 1.27;
     letter-spacing: -3.52px;

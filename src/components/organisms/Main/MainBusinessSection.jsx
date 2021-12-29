@@ -21,7 +21,6 @@ function MainBusinessSection(props) {
           srcL="/images/main/home_7_l_2x.jpg"
           href={'/business'}
           title={title}
-          margin="32px auto 0px"
           category={'Business'}
           whiteDim={true}
           moreButtonColor={'var(--sub-sub-04)'}

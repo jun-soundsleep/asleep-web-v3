@@ -20,7 +20,6 @@ function MainAsleepVision({ margin, forwardedRef }) {
       background={'var(--text-in-dark-text-00)'}
     >
       <MainCardLabel item={title} />
-      <Blank />
       <ThreeColumnContainer>
         <ThreeColumnsItem>
           <MainCard

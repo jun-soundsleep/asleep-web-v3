@@ -29,21 +29,11 @@ export default function Index() {
 
   return (
     <AsleepLayout>
-      <Wrapper>
-        <MainBigImageSection clickListener={goToNextSection} />
-        <ForwardedRefComponent ref={section} />
-        <MainTechSection />
-        <MainBusinessSection />
-        <MainPeopleSection />
-      </Wrapper>
+      <MainBigImageSection clickListener={goToNextSection} />
+      <ForwardedRefComponent ref={section} />
+      <MainTechSection />
+      <MainBusinessSection />
+      <MainPeopleSection />
     </AsleepLayout>
   );
 }
-
-const Wrapper = styled.div`
-  padding-bottom: 140px;
-
-  ${mp[1]} {
-    padding-bottom: 280px;
-  }
-`;

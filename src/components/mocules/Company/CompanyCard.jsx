@@ -86,7 +86,7 @@ const Container = styled.div`
   height: 100%;
   padding: ${({ padding }) => (padding ? padding : '32px 0px 74px 24px')};
   border-radius: 22px;
-  margin: ${({ margin }) => (margin ? margin : '24px auto 0px')};
+  margin: ${({ margin }) => (margin ? margin : '')};
   background: url(${({ src }) => src && src});
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ const Container = styled.div`
     background-repeat: no-repeat;
     background-position: 50%;
 
-    margin: ${({ margin }) => (margin ? margin : '20px auto 0px')};
+    margin: ${({ margin }) => (margin ? margin : '')};
   }
 
   ${mp[1]} {

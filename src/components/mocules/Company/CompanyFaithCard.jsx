@@ -39,12 +39,17 @@ const Title = styled.div`
   text-align: left;
   color: var(--text-in-light-text-10);
 
+  ${mp[0]} {
+    margin-bottom: 24px;
+  }
+
   ${mp[1]} {
     font-size: 46px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.3;
+    margin-bottom: 44px;
   }
 `;
 
