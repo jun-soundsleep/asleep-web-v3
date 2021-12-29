@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
 import Dim from '../../atoms/Common/Dim';
 import { mp } from '../.././../../styles/device';
-import { MXFlexCenteringSB } from '../../../components/mixin/MXFlex';
+import ButtonMoreInfoInCard from '../../atoms/Common/ButtonMoreInfoInCard';
 
 function PeopleBodyFullImage({ src, title, href }) {
   const { t } = useTranslation();
@@ -15,41 +15,11 @@ function PeopleBodyFullImage({ src, title, href }) {
         <Dim dimColor={'var(--dim-dim-04)'} />
         <TitleContainer>
           <Title dangerouslySetInnerHTML={{ __html: title }} />
-          <CheckJd>
-            <span>{jd}</span>
-            <ArrowImg>
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M13.72 19.639a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H4.25a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"
-                  fill="#D8E1FF"
-                />
-              </svg>
-            </ArrowImg>
-            <OverTabletImg>
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 25 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M13.72 19.639a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H4.25a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"
-                  fill="#D8E1FF"
-                />
-              </svg>
-            </OverTabletImg>
-          </CheckJd>
+          <ButtonMoreInfoInCard
+            item={jd}
+            hexColor={'#D8E1FF'}
+            itemColor={'var(--sub-sub-04)'}
+          />
         </TitleContainer>
       </Container>
     </a>
@@ -137,43 +107,5 @@ const Title = styled.h2`
     letter-spacing: -1.62px;
     margin-top: 23px;
     margin-bottom: 80px;
-  }
-`;
-
-const CheckJd = styled(MXFlexCenteringSB)`
-  font-size: 13px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.77;
-  letter-spacing: -0.59px;
-  text-align: left;
-  color: var(--sub-sub-04);
-
-  & > span {
-    margin-right: 8px;
-  }
-
-  ${mp[0]} {
-  }
-  ${mp[1]} {
-    /* margin-top: 80px; */
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.58;
-    letter-spacing: 0.24px;
-  }
-`;
-
-const ArrowImg = styled(MXFlexCenteringSB)`
-  ${mp[0]} {
-    display: none;
-  }
-`;
-
-const OverTabletImg = styled(MXFlexCenteringSB)`
-  display: none;
-  ${mp[0]} {
-    display: block;
   }
 `;

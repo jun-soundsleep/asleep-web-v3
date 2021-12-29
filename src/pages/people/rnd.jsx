@@ -77,7 +77,7 @@ function Rnd(props) {
     }
   ];
 
-  return <PeopleDetailPage data={RND} />;
+  return <PeopleDetailPage data={RND} href={'/people#rnd'} />;
 }
 
 export default Rnd;

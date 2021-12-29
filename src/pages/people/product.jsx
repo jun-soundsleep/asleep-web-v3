@@ -76,7 +76,7 @@ function Product(props) {
     }
   ];
 
-  return <PeopleDetailPage data={RND} />;
+  return <PeopleDetailPage data={RND} href={'/people#business'} />;
 }
 
 export default Product;

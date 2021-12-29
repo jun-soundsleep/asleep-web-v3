@@ -80,6 +80,7 @@ function Footer() {
               title="Contact"
               item={CONTACT_ITEM}
               rightItem={true}
+              margin="52px 0px 0px"
             />
           </div>
         </MXFlex>

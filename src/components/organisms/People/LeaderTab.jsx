@@ -36,7 +36,9 @@ function LeaderTab(props) {
         ]}
         name={louisName}
         body={louisBody}
-        href={'https://asleep.ai'}
+        href={
+          'https://medium.com/asleepblog/people-in-asleep-대기업의-오퍼를-거절하고-창업에-뛰어든-에이슬립-cro의-이야기-587548f78dc7?p=587548f78dc7'
+        }
       />
       <PeopleSoleSection
         src={[

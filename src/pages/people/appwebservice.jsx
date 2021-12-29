@@ -27,7 +27,7 @@ function Appwebservice(props) {
     }
   ];
 
-  return <PeopleDetailPage data={REASEARCH} />;
+  return <PeopleDetailPage data={REASEARCH} href={'/people#technical'} />;
 }
 
 export default Appwebservice;

@@ -3,11 +3,11 @@ import styled from '@emotion/styled';
 import { mp } from '../../../../../styles/device';
 import DetailPeoleBackButton from './DetailPeoleBackButton';
 
-function DetailPeopleImage({ src, clickListener }) {
+function DetailPeopleImage({ src, href }) {
   return (
     <>
       <Container src={src[0]} srcm={src[1]} srcl={src[2]}>
-        <DetailPeoleBackButton clickListener={clickListener} />
+        <DetailPeoleBackButton href={href} />
       </Container>
     </>
   );

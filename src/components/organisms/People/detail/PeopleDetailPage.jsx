@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from 'react';
+import React, { useState, useEffect, forwardRef } from 'react';
 import styled from '@emotion/styled';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
@@ -32,7 +32,8 @@ const ForwardedThumbnail = forwardRef((props, ref) => {
   return <ThumbnailComponent {...props} forwardedRef={ref} />;
 });
 
-function PeopleDetailPage({ data }) {
+function PeopleDetailPage({ data, href }) {
+  // const [load, setCurrentLoad] = useState(true);
   const [mouseDown, setMouseDown] = useState(false);
   const [originX, setOriginX] = useState(0);
   const [moveX, setMoveX] = useState(undefined);
@@ -207,15 +208,21 @@ function PeopleDetailPage({ data }) {
     return Number(str.slice(0, end));
   };
 
+  useEffect(() => {
+    const handleBack = e => {
+      router.push(href);
+    };
+    window.addEventListener('popstate', handleBack);
+
+    return () => window.removeEventListener('popstate', handleBack);
+  });
+
   return (
     <>
       <Mobile>
         <AsleepLayout>
           <Wrapper>
-            <DetailPeopleImage
-              src={data[currentPeople].src}
-              clickListener={() => router.push('/people')}
-            />
+            <DetailPeopleImage src={data[currentPeople].src} href={href} />
             <BodyContainer>
               <PeopleSoloName item={data[currentPeople].name} />
               <DetailSoloBody item={data[currentPeople].body} />
@@ -237,10 +244,7 @@ function PeopleDetailPage({ data }) {
         </AsleepLayout>
       </Mobile>
       <OverTablet>
-        <DetailPeopleImage
-          src={data[currentPeople].src}
-          clickListener={() => router.push('/people')}
-        />
+        <DetailPeopleImage src={data[currentPeople].src} href={href} />
         <BodyContainer>
           <PeopleSoloName item={data[currentPeople].name} />
           <DetailSoloBody item={data[currentPeople].body} />

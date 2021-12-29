@@ -42,7 +42,7 @@ function Businessdevelopment(props) {
     }
   ];
 
-  return <PeopleDetailPage data={BD} />;
+  return <PeopleDetailPage data={BD} href={'/people#business'} />;
 }
 
 export default Businessdevelopment;

@@ -42,7 +42,7 @@ function Research(props) {
     }
   ];
 
-  return <PeopleDetailPage data={REASEARCH} />;
+  return <PeopleDetailPage data={REASEARCH} href={'/people#rnd'} />;
 }
 
 export default Research;

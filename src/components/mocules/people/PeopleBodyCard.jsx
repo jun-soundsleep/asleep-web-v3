@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
 import { mp } from '../../../../styles/device';
 import Link from 'next/link';
+import ButtonMoreInfoInCard from '../../atoms/Common/ButtonMoreInfoInCard';
 
 function PeopleBodyCard({ title, subtitle, href }) {
   const { t } = useTranslation();
@@ -14,23 +15,12 @@ function PeopleBodyCard({ title, subtitle, href }) {
         <Container>
           <Title>{title}</Title>
           <SubTitle>{subtitle}</SubTitle>
-          <MoreButton>
-            <span>{meetMembers}</span>
-            <svg
-              width="13"
-              height="13"
-              viewBox="0 0 25 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M13.72 19.639a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0 0-1.06l-6.25-6.25a.75.75 0 1 0-1.06 1.06l4.97 4.97H4.25a.75.75 0 0 0 0 1.5h14.44l-4.97 4.97a.75.75 0 0 0 0 1.06z"
-                fill="#406bff"
-              />
-            </svg>
-          </MoreButton>
+          <ButtonMoreInfoInCard
+            hexColor={'#406bff'}
+            item={meetMembers}
+            itemColor={'var(--primary-primary-in-light)'}
+            fontWeight={500}
+          />
         </Container>
       </a>
     </Link>
@@ -120,39 +110,39 @@ const SubTitle = styled.div`
   }
 `;
 
-const MoreButton = styled.button`
-  display: flex;
-  align-items: center;
-  font-size: 13px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.77;
-  letter-spacing: -0.59px;
-  text-align: left;
-  color: var(--primary-primary-in-light);
-  margin-left: 15px;
+// const MoreButton = styled.button`
+//   display: flex;
+//   align-items: center;
+//   font-size: 13px;
+//   font-weight: 500;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: 1.77;
+//   letter-spacing: -0.59px;
+//   text-align: left;
+//   color: var(--primary-primary-in-light);
+//   margin-left: 15px;
 
-  & > span {
-    margin-right: 8px;
-  }
+//   & > span {
+//     margin-right: 8px;
+//   }
 
-  ${mp[0]} {
-    font-size: 13px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.77;
-    letter-spacing: 0.13px;
-    text-align: left;
-  }
+//   ${mp[0]} {
+//     font-size: 13px;
+//     font-weight: 500;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: 1.77;
+//     letter-spacing: 0.13px;
+//     text-align: left;
+//   }
 
-  ${mp[1]} {
-    font-size: 24px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.58;
-    letter-spacing: -1.08px;
-  }
-`;
+//   ${mp[1]} {
+//     font-size: 24px;
+//     font-weight: 500;
+//     font-stretch: normal;
+//     font-style: normal;
+//     line-height: 1.58;
+//     letter-spacing: -1.08px;
+//   }
+// `;

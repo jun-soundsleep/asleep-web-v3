@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
 import styled from '@emotion/styled';
-import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import AsleepLayout from '../../src/components/organisms/AppLayout/AsleepLayout';
 import MainBigImageSection from '../components/organisms/Main/MainBigImageSection';
@@ -29,20 +28,15 @@ export default function Index() {
   };
 
   return (
-    <>
-      <Head>
-        <title>Asleep Web</title>
-      </Head>
-      <AsleepLayout>
-        <Wrapper>
-          <MainBigImageSection clickListener={goToNextSection} />
-          <ForwardedRefComponent ref={section} />
-          <MainTechSection />
-          <MainBusinessSection />
-          <MainPeopleSection />
-        </Wrapper>
-      </AsleepLayout>
-    </>
+    <AsleepLayout>
+      <Wrapper>
+        <MainBigImageSection clickListener={goToNextSection} />
+        <ForwardedRefComponent ref={section} />
+        <MainTechSection />
+        <MainBusinessSection />
+        <MainPeopleSection />
+      </Wrapper>
+    </AsleepLayout>
   );
 }
 

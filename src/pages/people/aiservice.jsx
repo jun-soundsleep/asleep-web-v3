@@ -25,7 +25,7 @@ function Aiservice(props) {
     }
   ];
 
-  return <PeopleDetailPage data={REASEARCH} />;
+  return <PeopleDetailPage data={REASEARCH} href={'/people#technical'} />;
 }
 
 export default Aiservice;

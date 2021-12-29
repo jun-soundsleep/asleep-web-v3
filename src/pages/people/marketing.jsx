@@ -42,7 +42,7 @@ function Marketing(props) {
     }
   ];
 
-  return <PeopleDetailPage data={MARKETING} />;
+  return <PeopleDetailPage data={MARKETING} href={'/people#business'} />;
 }
 
 export default Marketing;
