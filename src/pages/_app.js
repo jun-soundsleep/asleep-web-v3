@@ -38,7 +38,7 @@ function App({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Grade Asleep" />
         <meta property="og:url" content="https://asleep.ai/" />
-        <meta property="og:image" content="/images/ogtag_image.jpg" />
+        <meta property="og:image" content="/ogtag_image.jpg" />
         <meta
           property="og:description"
           content="최고의 수면을 경험하세요 당신을 위한 개인 맞춤형 인공지능 수면비서 에이슬립 수면을 알고, 삶을 바꿔보아요"
@@ -74,7 +74,6 @@ function App({ Component, pageProps }) {
           type="font"
           href="/fonts/RedHatDisplay/RedHatDisplay-Regular.ttf"
         /> */}
-        {/* <link rel="preload" href="/images/tech/tech_1_l_2x.jpg" as="image" /> */}
         <link rel="preload" href={'/images/icon/asleep_logo.svg'} as="image" />
         <link
           rel="preload"
