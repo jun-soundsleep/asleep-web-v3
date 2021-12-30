@@ -33,7 +33,6 @@ const ForwardedThumbnail = forwardRef((props, ref) => {
 });
 
 function PeopleDetailPage({ data, href }) {
-  // const [load, setCurrentLoad] = useState(true);
   const [mouseDown, setMouseDown] = useState(false);
   const [originX, setOriginX] = useState(0);
   const [moveX, setMoveX] = useState(undefined);

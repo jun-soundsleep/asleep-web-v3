@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import Head from 'next/head';
 import { mp } from '../../../../styles/device';
 
-function MainBigImage({ margin }) {
+function MainBigImage() {
   return (
     <>
       <Head>

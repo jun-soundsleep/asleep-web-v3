@@ -1,15 +1,25 @@
 import React from 'react';
+import Head from 'next/head';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 import { mp } from '../../../../styles/device';
 
 function BigArrrowButton({ clickListener }) {
   return (
-    <Button onClick={clickListener}>
-      <ArrowContainer>
-        <Arrow />
-      </ArrowContainer>
-    </Button>
+    <>
+      <Head>
+        <link
+          rel="preload"
+          href={'/images/icon/components-icons-icons-chevron-down-white.svg'}
+          as="image"
+        />
+      </Head>
+      <Button onClick={clickListener}>
+        <ArrowContainer>
+          <Arrow />
+        </ArrowContainer>
+      </Button>
+    </>
   );
 }
 

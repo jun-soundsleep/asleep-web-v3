@@ -1,8 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styled from '@emotion/styled';
-import Head from 'next/head';
-import Link from 'next/link';
 import { mp } from '../../../../styles/device';
 
 function NavAsleepLogo() {
@@ -10,9 +9,6 @@ function NavAsleepLogo() {
 
   return (
     <>
-      <Head>
-        <link rel="preload" href={'/images/icon/asleep_logo.svg'} as="image" />
-      </Head>
       <Link href={'/'} locale={router.locale}>
         <a>
           <LogoContainer>

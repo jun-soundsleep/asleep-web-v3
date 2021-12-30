@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect } from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import AsleepLayout from '../../src/components/organisms/AppLayout/AsleepLayout';
 import MainBigImageSection from '../components/organisms/Main/MainBigImageSection';
@@ -16,6 +16,7 @@ const ForwardedRefComponent = forwardRef((props, ref) => {
 });
 
 export default function Index() {
+  const [load, setLoad] = useState(true);
   const section = React.createRef();
 
   const goToNextSection = () => {
@@ -24,6 +25,16 @@ export default function Index() {
       block: 'start'
     });
   };
+
+  useEffect(() => {
+    console.log('alkj');
+    setLoad(false);
+    // const handleLoad = () => {
+    //   setLoad(false);
+    // };
+    // window.addEventListener('load', handleLoad);
+    // return () => window.removeEventListener('load', handleLoad);
+  }, []);
 
   return (
     <AsleepLayout>

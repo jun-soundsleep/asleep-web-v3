@@ -13,13 +13,6 @@ function PeopleMainTitle({ clickListener }) {
 
   return (
     <>
-      <Head>
-        <link
-          rel="preload"
-          href={'/images/icon/components-icons-icons-chevron-down-white.svg'}
-          as="image"
-        />
-      </Head>
       <ContentsContainer>
         <BigTitle item={mainTitle} margin="0px 0px 32px 0px" />
         <MainSubTitle item={subTitle} />
