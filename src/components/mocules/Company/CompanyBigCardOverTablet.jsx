@@ -3,10 +3,6 @@ import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
 
 function CompanyBigCardOverTablet({ newData, oldData }) {
-  useEffect(() => {
-    console.log('a');
-  });
-
   return (
     <Container>
       <TitleContent highlight={true}>2021</TitleContent>

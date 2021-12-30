@@ -1,12 +1,10 @@
-import React, { forwardRef } from 'react';
-import styled from '@emotion/styled';
+import React, { forwardRef, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import AsleepLayout from '../../src/components/organisms/AppLayout/AsleepLayout';
 import MainBigImageSection from '../components/organisms/Main/MainBigImageSection';
 import MainTechSection from '../components/organisms/Main/MainTechSection';
 import MainBusinessSection from '../components/organisms/Main/MainBusinessSection';
 import MainPeopleSection from '../components/organisms/Main/MainPeopleSection';
-import { mp } from '../../styles/device';
 
 const MainAsleepVisionComponent = dynamic(
   import('../components/organisms/Main/MainAsleepVision')
