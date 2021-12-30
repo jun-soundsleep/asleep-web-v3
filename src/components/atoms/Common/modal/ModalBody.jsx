@@ -33,5 +33,9 @@ const Container = styled.div`
     font-style: normal;
     line-height: 1.58;
     letter-spacing: 0.24px;
+
+    & > sup {
+      font-size: 14px;
+    }
   }
 `;

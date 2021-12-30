@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
 
 function CompanyBigCardOverTablet({ newData, oldData }) {
+  useEffect(() => {
+    console.log('a');
+  });
+
   return (
     <Container>
       <TitleContent highlight={true}>2021</TitleContent>
@@ -14,7 +18,7 @@ function CompanyBigCardOverTablet({ newData, oldData }) {
           <div>{el.content}</div>
         </BodyContent>
       ))}
-      <TextTest>2020</TextTest>
+      <TitleContent>2020</TitleContent>
       {oldData?.map((el, idx) => (
         <BodyContent key={(idx + 1) * 2} highlight={false}>
           <Quarter>
@@ -28,28 +32,6 @@ function CompanyBigCardOverTablet({ newData, oldData }) {
 }
 
 export default CompanyBigCardOverTablet;
-
-const TextTest = styled.div`
-  margin: 0 auto;
-  font-size: 24px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: ${({ highlight }) =>
-    highlight
-      ? 'var(--text-in-light-text-10)'
-      : 'var(--text-in-light-text-05)'};
-
-  ${mp[0]} {
-    margin-top: 72px;
-  }
-  ${mp[1]} {
-    margin-top: 100px;
-  }
-`;
 
 const TitleContent = styled.div`
   margin: 0 auto;
@@ -65,13 +47,12 @@ const TitleContent = styled.div`
       ? 'var(--text-in-light-text-10)'
       : 'var(--text-in-light-text-05)'};
 
-  /* ${mp[0]} {
-    margin-top: ${({ highlight }) => highlight && '48px'};
-  } */
-
-  /* ${mp[1]} { */
-  /* margin-top: ${({ highlight }) => highlight && '200px'}; */
-  /* } */
+  ${mp[0]} {
+    margin-bottom: 24px;
+  }
+  ${mp[1]} {
+    margin-bottom: 56px;
+  }
 `;
 
 const Container = styled.div`
@@ -82,7 +63,7 @@ const Container = styled.div`
   background-color: var(--components-components-02);
 `;
 
-const BodyContent = styled.p`
+const BodyContent = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: start;
