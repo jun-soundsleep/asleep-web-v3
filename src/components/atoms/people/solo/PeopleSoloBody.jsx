@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../../styles/device';
+import { useRouter } from 'next/router';
 
 function PeopleSoloBody({ item }) {
-  return <Container dangerouslySetInnerHTML={{ __html: item }} />;
+  const router = useRouter();
+  return (
+    <Container
+      dangerouslySetInnerHTML={{ __html: item }}
+      locale={router.locale}
+    />
+  );
 }
 
 export default PeopleSoloBody;
 
 const Container = styled.p`
-  word-break: break-all;
+  word-break: ${({ locale }) => (locale === 'ko' ? 'break-all' : 'keep-all')};
   font-size: 16px;
   font-weight: 400;
   font-stretch: normal;
@@ -24,10 +31,10 @@ const Container = styled.p`
   }
 
   ${mp[0]} {
-    max-width: 290px;
+    max-width: ${({ locale }) => (locale === 'ko' ? '290px' : '320px')};
   }
   ${mp[1]} {
-    max-width: 677px;
+    max-width: ${({ locale }) => (locale === 'ko' ? '677px' : '707px')};
     font-size: 24px;
     line-height: 1.58;
     letter-spacing: -1.08px;

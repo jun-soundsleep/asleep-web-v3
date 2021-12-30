@@ -66,7 +66,7 @@ const TagConatiner = styled.div`
 const TitleContainer = styled.div`
   height: 126px;
   margin-bottom: 24px;
-  overflow: scroll;
+  overflow: hidden;
 
   ${mp[0]} {
     height: 158px;

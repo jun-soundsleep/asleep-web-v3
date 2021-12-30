@@ -26,16 +26,6 @@ export default function Index() {
     });
   };
 
-  useEffect(() => {
-    console.log('alkj');
-    setLoad(false);
-    // const handleLoad = () => {
-    //   setLoad(false);
-    // };
-    // window.addEventListener('load', handleLoad);
-    // return () => window.removeEventListener('load', handleLoad);
-  }, []);
-
   return (
     <AsleepLayout>
       <MainBigImageSection clickListener={goToNextSection} />

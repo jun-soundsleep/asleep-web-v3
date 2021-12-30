@@ -1,8 +1,9 @@
 import React from 'react';
+import styled from '@emotion/styled';
 
 function NavMenuButton({ clickHandler, menuSelected }) {
   return (
-    <img
+    <Image
       src={
         menuSelected
           ? '/images/icon/components-icons-icons-close.svg'
@@ -15,3 +16,7 @@ function NavMenuButton({ clickHandler, menuSelected }) {
 }
 
 export default NavMenuButton;
+
+const Image = styled.img`
+  cursor: pointer;
+`;

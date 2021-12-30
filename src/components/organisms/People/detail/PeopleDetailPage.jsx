@@ -225,7 +225,9 @@ function PeopleDetailPage({ data, href }) {
             <BodyContainer>
               <PeopleSoloName item={data[currentPeople].name} />
               <DetailSoloBody item={data[currentPeople].body} />
-              <PeopleSoloMoreButton href={data[currentPeople].href} />
+              {data[currentPeople].href && (
+                <PeopleSoloMoreButton href={data[currentPeople].href} />
+              )}
               {data.length >= 2 && (
                 <ThumnailContainer>
                   {data?.map(({ thumbnail }, idx) => (
@@ -247,7 +249,9 @@ function PeopleDetailPage({ data, href }) {
         <BodyContainer>
           <PeopleSoloName item={data[currentPeople].name} />
           <DetailSoloBody item={data[currentPeople].body} />
-          <PeopleSoloMoreButton href={data[currentPeople].href} />
+          {data[currentPeople].href && (
+            <PeopleSoloMoreButton href={data[currentPeople].href} />
+          )}
           {data.length >= 2 && (
             <ForwardedOverTabletThumbnailContainer
               length={data.length}

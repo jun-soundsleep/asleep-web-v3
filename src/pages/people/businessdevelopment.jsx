@@ -12,7 +12,7 @@ function Businessdevelopment(props) {
   const BD = [
     {
       name: ryanName,
-      href: 'https://medium.com/asleepblog/people-in-asleep-%EC%97%90%EC%9D%B4%EC%8A%AC%EB%A6%BD%EC%9D%98-%EC%A0%84%EB%9E%B5%EA%B0%80-cso-ryan-153174889f3a',
+      // href: 'https://medium.com/asleepblog/people-in-asleep-%EC%97%90%EC%9D%B4%EC%8A%AC%EB%A6%BD%EC%9D%98-%EC%A0%84%EB%9E%B5%EA%B0%80-cso-ryan-153174889f3a',
       body: ryanBody,
       src: [
         '/images/people/detail/2_Ryan_s_2x.jpg',
