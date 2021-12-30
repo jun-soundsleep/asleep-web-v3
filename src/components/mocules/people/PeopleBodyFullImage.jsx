@@ -10,20 +10,20 @@ function PeopleBodyFullImage({ src, title, href }) {
   const jd = t('common:find_jd');
 
   return (
-    <a href={href} target="_blank" rel="noreferrer">
-      <Container src={src[0]} srcm={src[1]} srcl={src[2]}>
-        <Dim dimColor={'var(--dim-dim-04)'} />
-        <TitleContainer>
-          <Title dangerouslySetInnerHTML={{ __html: title }} />
+    <Container src={src[0]} srcm={src[1]} srcl={src[2]}>
+      <Dim dimColor={'var(--dim-dim-04)'} />
+      <TitleContainer>
+        <Title dangerouslySetInnerHTML={{ __html: title }} />
+        <a href={href} target="_blank" rel="noreferrer">
           <ButtonMoreInfoInCard
             item={jd}
             hexColor={'#D8E1FF'}
             itemColor={'var(--sub-sub-04)'}
             margin={''}
           />
-        </TitleContainer>
-      </Container>
-    </a>
+        </a>
+      </TitleContainer>
+    </Container>
   );
 }
 
@@ -38,7 +38,6 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  cursor: pointer;
 
   ${mp[0]} {
     height: 456px;

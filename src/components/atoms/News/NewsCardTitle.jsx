@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
+import { useRouter } from 'next/router';
 
 function NewsCardTitle({ item }) {
-  return <Contents dangerouslySetInnerHTML={{ __html: item }} />;
+  const router = useRouter();
+  return (
+    <Contents
+      dangerouslySetInnerHTML={{ __html: item }}
+      locale={router.locale}
+    />
+  );
 }
 
 export default NewsCardTitle;
 
 const Contents = styled.h2`
-  word-break: break-all;
+  word-break: ${({ locale }) => (locale === 'ko' ? 'break-all' : 'keep-all')};
   font-size: 16px;
   font-weight: 600;
   font-stretch: normal;
