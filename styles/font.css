@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: format('/fonts/RedHatDisplay/RedHatDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: RedHatDisplay;
+  src: local(RedHatDisplay-Regular),
+    url('/fonts/RedHatDisplay/RedHatDisplay-Regular.woff2') format('woff2'),
+    url('/fonts/RedHatDisplay/RedHatDisplay-Regular.woff') format('woff'),
+    url('/fonts/RedHatDisplay/RedHatDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 800;
+  font-display: swap;
+  src: local('Pretendard ExtraBold'),
+    url('/fonts/Pretendard/woff2-subset/Pretendard-ExtraBold.subset.woff2')
+      format('woff2'),
+    url('/fonts/Pretendard/woff-subset/Pretendard-ExtraBold.subset.woff')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: swap;
+  src: local('Pretendard Bold'),
+    url('/fonts/Pretendard/woff2-subset/Pretendard-Bold.subset.woff2')
+      format('woff2'),
+    url('/fonts/Pretendard/woff-subset/Pretendard-Bold.subset.woff')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: swap;
+  src: local('Pretendard SemiBold'),
+    url('/fonts/Pretendard/woff2-subset/Pretendard-SemiBold.subset.woff2')
+      format('woff2'),
+    url('/fonts/Pretendard/woff-subset/Pretendard-SemiBold.subset.woff')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  font-display: swap;
+  src: local('Pretendard Medium'),
+    url('/fonts/Pretendard/woff2-subset/Pretendard-Medium.subset.woff2')
+      format('woff2'),
+    url('/fonts/Pretendard/woff-subset/Pretendard-Medium.subset.woff')
+      format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pretendard Regular'),
+    url('/fonts/Pretendard/woff2-subset/Pretendard-Regular.subset.woff2')
+      format('woff2'),
+    url('/fonts/Pretendard/woff-subset/Pretendard-Regular.subset.woff')
+      format('woff');
+}
