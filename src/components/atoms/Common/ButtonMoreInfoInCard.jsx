@@ -87,7 +87,7 @@ const Container = styled.button`
 
 const ArrowImg = styled.span`
   position: relative;
-  top: 2.5px;
+  top: 1.5px;
 
   ${mp[1]} {
     display: none;

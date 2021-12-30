@@ -6,46 +6,9 @@ function NewsMoreButton({ clickListener }) {
   return (
     <Button onClick={clickListener}>
       <span>More</span>
-      <ImageContainer>
-        <svg
-          width="14"
-          height="14"
-          viewBox="0 0 14 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.44 4.521a.437.437 0 1 0-.875 0v2.042H4.523a.437.437 0 1 0 0 .875h2.042V9.48a.438.438 0 0 0 .875 0V7.438h2.042a.437.437 0 1 0 0-.875H7.44V4.521z"
-            fill="#406BFF"
-          />
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M7.003.584a6.417 6.417 0 1 0 0 12.833 6.417 6.417 0 0 0 0-12.833zM1.46 7.001a5.542 5.542 0 1 1 11.083 0A5.542 5.542 0 0 1 1.461 7z"
-            fill="#406BFF"
-          />
-        </svg>
-      </ImageContainer>
-      <OverImageContainer>
-        <svg
-          width="25"
-          height="25"
-          viewBox="0 0 25 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.44 4.521a.437.437 0 1 0-.875 0v2.042H4.523a.437.437 0 1 0 0 .875h2.042V9.48a.438.438 0 0 0 .875 0V7.438h2.042a.437.437 0 1 0 0-.875H7.44V4.521z"
-            fill="#406BFF"
-          />
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M7.003.584a6.417 6.417 0 1 0 0 12.833 6.417 6.417 0 0 0 0-12.833zM1.46 7.001a5.542 5.542 0 1 1 11.083 0A5.542 5.542 0 0 1 1.461 7z"
-            fill="#406BFF"
-          />
-        </svg>
-      </OverImageContainer>
+      <LogoContainer>
+        <AsleepLogo />
+      </LogoContainer>
     </Button>
   );
 }
@@ -85,32 +48,26 @@ const Button = styled.button`
   }
 `;
 
-const ImageContainer = styled.span`
-  & > svg {
-    position: relative;
-    top: 2px;
-  }
-  ${mp[0]} {
-    display: none;
-  }
+const AsleepLogo = styled.div`
+  background: url('/images/icon/plus_button.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  width: 100%;
 `;
-const OverImageContainer = styled.span`
-  display: none;
-  ${mp[0]} {
-    display: flex;
 
-    & > svg {
-      position: relative;
-      top: 4px;
-    }
+const LogoContainer = styled.div`
+  width: 12px;
+  height: 12px;
+
+  ${mp[0]} {
+    width: 12px;
+    height: 12px;
   }
 
   ${mp[1]} {
-    display: flex;
-
-    & > svg {
-      position: relative;
-      top: 5px;
-    }
+    width: 24px;
+    height: 24px;
   }
 `;

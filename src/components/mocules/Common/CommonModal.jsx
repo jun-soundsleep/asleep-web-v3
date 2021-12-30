@@ -54,9 +54,11 @@ function CommonDetailPage({
         <Article>
           <ModalBody item={body} />
         </Article>
-        <DividerContainer>
-          <ModalDivider />
-        </DividerContainer>
+        {footNote && (
+          <DividerContainer>
+            <ModalDivider />
+          </DividerContainer>
+        )}
         <FootNoteContainer>
           {footNote?.map((el, idx) => {
             return <ModalFootNote item={el} key={idx} />;

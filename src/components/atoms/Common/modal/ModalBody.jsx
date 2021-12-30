@@ -18,6 +18,10 @@ const Container = styled.div`
   text-align: left;
   color: var(--text-in-dark-text-03);
 
+  & > sup {
+    font-size: 10px;
+  }
+
   & > b {
     color: var(--text-in-light-text-10);
   }
