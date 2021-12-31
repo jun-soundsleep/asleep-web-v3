@@ -25,6 +25,7 @@ export default function Index() {
     });
   };
 
+  // test
   return (
     <AsleepLayout>
       <MainBigImageSection clickListener={goToNextSection} />
