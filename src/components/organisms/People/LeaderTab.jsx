@@ -1,8 +1,6 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
 import PeopleSoleSection from './PeopleSoleSection';
-import { mp } from '../../../../styles/device';
 import SectionContainer from '../../atoms/people/SectionContainer';
 
 function LeaderTab(props) {
