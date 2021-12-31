@@ -5,7 +5,10 @@ import { mp } from '../../../../../styles/device';
 function PeopleThumbnail({ src, index, clickListener, forwardedRef }) {
   return (
     <Container
-      onClick={() => clickListener(index)}
+      onClick={() => {
+        window.scrollTo(0, 0);
+        clickListener(index);
+      }}
       src={src[0]}
       srcm={src[1]}
       srcl={src[2]}
