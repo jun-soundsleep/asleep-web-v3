@@ -52,7 +52,7 @@ function AdvisorsTab(props) {
         title={'Collaborated Research'}
         fname={t('people:advisor_5_name')}
         fbody={[t('people:advisor_5_body_1'), t('people:advisor_5_body_2')]}
-        fsrc={'/images/people/advisor/3_advisor-6_l_2x.jpg'}
+        fsrc={'/images/people/advisor/3_advisor-5_l_2x.jpg'}
         stitle={'asldkj'}
         sname={t('people:advisor_6_name')}
         sbody={[
@@ -61,7 +61,7 @@ function AdvisorsTab(props) {
           t('people:advisor_6_body_3'),
           t('people:advisor_6_body_4')
         ]}
-        ssrc={'/images/people/advisor/3_advisor-5_l_2x.jpg'}
+        ssrc={'/images/people/advisor/3_advisor-6_l_2x.jpg'}
       />
     </SectionContainer>
   );
