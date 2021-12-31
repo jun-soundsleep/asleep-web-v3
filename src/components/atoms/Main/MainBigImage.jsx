@@ -6,11 +6,11 @@ import { mp } from '../../../../styles/device';
 function MainBigImage() {
   return (
     <>
-      <Head>
-        <link rel="preload" href="/images/main/home_s.jpg" as="image" />
-        <link rel="preload" href="/images/main/home_m.jpg" as="image" />
-        <link rel="preload" href="/images/main/home_l.jpg" as="image" />
-      </Head>
+      {/* <Head> */}
+      {/* <link rel="preload" href="/images/main/home_s.jpg" as="image" /> */}
+      {/* <link rel="preload" href="/images/main/home_m.jpg" as="image" /> */}
+      {/* <link rel="preload" href="/images/main/home_l.jpg" as="image" /> */}
+      {/* </Head> */}
       <ImageContainer />
     </>
   );

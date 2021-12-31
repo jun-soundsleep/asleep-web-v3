@@ -80,6 +80,9 @@ function App({ Component, pageProps }) {
           href={'/images/icon/components-icons-icons-menu.svg'}
           as="image"
         />
+        <link rel="preload" href="/images/main/home_s.jpg" as="image" />
+        <link rel="preload" href="/images/main/home_m.jpg" as="image" />
+        <link rel="preload" href="/images/main/home_l.jpg" as="image" />
       </Head>
       <Component {...pageProps} />
     </>

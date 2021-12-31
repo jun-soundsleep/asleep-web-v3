@@ -11,6 +11,7 @@ import DetailPeopleImage from '../../../atoms/people/detail/DetailPeopleImage';
 import DetailPeopleDirectionButton from '../../../atoms/people/detail/DetailPeopleDirectionButton';
 import DetailPeopleDirectionLeftButton from '../../../atoms/people/detail/DetailPeopleDirectionLeftButton';
 import { mp } from '../../../../../styles/device';
+import next from 'next';
 
 const OverTabletThumbnailContainerComponent = dynamic(
   import('../../../atoms/people/detail/OverTabletThumbnailContainer')
@@ -215,6 +216,15 @@ function PeopleDetailPage({ data, href }) {
 
     return () => window.removeEventListener('popstate', handleBack);
   });
+
+  useEffect(() => {
+    data.map(el => {
+      for (let i = 0; i < el.src.length; i++) {
+        const image = new Image();
+        image.src = el.src[i];
+      }
+    });
+  }, []);
 
   return (
     <>
