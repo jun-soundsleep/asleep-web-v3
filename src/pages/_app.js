@@ -11,6 +11,7 @@ function App({ Component, pageProps }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-R1W34L4RKY"
         />
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
