@@ -216,14 +216,14 @@ function PeopleDetailPage({ data, href }) {
     return () => window.removeEventListener('popstate', handleBack);
   });
 
-  // useEffect(() => {
-  //   data.map(el => {
-  //     for (let i = 0; i < el.src.length; i++) {
-  //       const image = new Image();
-  //       image.src = el.src[i];
-  //     }
-  //   });
-  // }, []);
+  useEffect(() => {
+    data.map(el => {
+      for (let i = 0; i < el.src.length; i++) {
+        const image = new Image();
+        image.src = el.src[i];
+      }
+    });
+  }, []);
 
   return (
     <>
