@@ -1,6 +1,6 @@
 {
   "localeDetection": true,
-  "defaultLocale": "ko",
+  "defaultLocale": "en",
   "locales": ["ko", "en"],
   "pages": {
     "*": [
