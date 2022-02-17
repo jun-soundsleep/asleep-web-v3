@@ -51,13 +51,12 @@ function Footer() {
             />
             <FooterExternalConnection
               item={t('footer:recruiting')}
-              href="https://ab
-              oard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd"
+              href="https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd"
               darkMode={checkIfTechPageOrNot()}
             />
             <FooterExternalConnection
               item={t('footer:blog')}
-              href="https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd"
+              href="https://medium.com/asleepblog"
               darkMode={checkIfTechPageOrNot()}
             />
           </div>
@@ -140,8 +139,7 @@ function Footer() {
               <FooterExternalConnection
                 item={t('footer:blog')}
                 darkMode={checkIfTechPageOrNot()}
-                href="
-          https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd"
+                href="https://medium.com/asleepblog"
               />
             </div>
           </MXFlex>
