@@ -56,6 +56,11 @@ function Footer() {
             />
             <FooterExternalConnection
               item={t('footer:blog')}
+              href="https://blog.naver.com/asleep_official"
+              darkMode={checkIfTechPageOrNot()}
+            />
+            <FooterExternalConnection
+              item={t('footer:interview')}
               href="https://medium.com/asleepblog"
               darkMode={checkIfTechPageOrNot()}
             />
@@ -139,7 +144,12 @@ function Footer() {
               <FooterExternalConnection
                 item={t('footer:blog')}
                 darkMode={checkIfTechPageOrNot()}
+                href="https://blog.naver.com/asleep_official"
+              />
+              <FooterExternalConnection
+                item={t('footer:interview')}
                 href="https://medium.com/asleepblog"
+                darkMode={checkIfTechPageOrNot()}
               />
             </div>
           </MXFlex>
