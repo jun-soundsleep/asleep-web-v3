@@ -10,16 +10,14 @@ function FooterAddress({ margin, darkMode }) {
         <span>
           사업자 등록번호: 840-81-02142 | 대표: 이동헌
           <br />
-          본사: 06178 서울특별시 강남구 테헤란로82길 15(대치동 942-15,
-          디아이타워 7층)
+          본사: 06193 서울특별시 강남구 테헤란로 420 19층 에이슬립 (대치동 890-16)
           <br />
           미국 지사: 3003 North 1st Street #221, San Jose, CA 95134
         </span>
       ) : (
         <span>
           Corporate Registration Number: 840-81-02142 | CEO: Dongheon Lee <br />
-          Headquarters: 15, Teheran-ro 82-gil, Gangnam-gu, Seoul, 06178,
-          Republic of Korea(DI Tower 7F) <br />
+          Headquarters: 06193 Asleep (890-16) 19F in Daechi-dong, 420 Teheran-ro, Gangnam-gu, Seoul, Republic of Korea<br />
           U.S Office: 3003 North 1st Street #221, San Jose, CA 95134
         </span>
       )}
@@ -30,7 +28,7 @@ function FooterAddress({ margin, darkMode }) {
 export default FooterAddress;
 
 const Address = styled.address`
-  margin: ${({ margin }) => margin && margin};
+  margin: ${({ margin }) => margin };
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
