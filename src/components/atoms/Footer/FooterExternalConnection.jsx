@@ -3,21 +3,23 @@ import styled from '@emotion/styled';
 import { MXFlexVerticalCentering } from '../../mixin/MXFlex';
 import { mp } from '../../../../styles/device';
 
-function FooterExternalConnection({ item, margin, href, darkMode }) {
+function FooterExternalConnection({ item, margin, href, darkMode, needArrow }) {
   return (
     <a href={href} target="_blank" rel="noreferrer">
       <FooterExternalConnectionContainer margin={margin} darkMode={darkMode}>
         <Item darkMode={darkMode}>{item}</Item>
-        <img
-          width={14}
-          height={14}
-          src={
-            darkMode
-              ? '/images/icon/components-icons-icons-arrow-up-right-white.svg'
-              : '/images/icon/components-icons-icons-arrow-up-right.svg'
-          }
-          alt="icons-arrow-up-right"
-        />
+        {needArrow &&
+          <img
+            width={14}
+            height={14}
+            src={
+              darkMode
+                ? '/images/icon/components-icons-icons-arrow-up-right-white.svg'
+                : '/images/icon/components-icons-icons-arrow-up-right.svg'
+            }
+            alt="icons-arrow-up-right"
+          />
+        }
       </FooterExternalConnectionContainer>
     </a>
   );

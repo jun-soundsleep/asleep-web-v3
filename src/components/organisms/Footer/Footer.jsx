@@ -50,19 +50,27 @@ function Footer() {
               margin="0px 0px 48px"
             />
             <FooterExternalConnection
+              item={t('footer:privacy_policy')}
+              href="https://app.catchsecu.com/document/P/7e372ba0ed2a126"
+              darkMode={checkIfTechPageOrNot()}
+            />
+            <FooterExternalConnection
               item={t('footer:recruiting')}
               href="https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd"
               darkMode={checkIfTechPageOrNot()}
+              needArrow
             />
             <FooterExternalConnection
               item={t('footer:blog')}
               href="https://blog.naver.com/asleep_official"
               darkMode={checkIfTechPageOrNot()}
+              needArrow
             />
             <FooterExternalConnection
               item={t('footer:interview')}
               href="https://medium.com/asleepblog"
               darkMode={checkIfTechPageOrNot()}
+              needArrow
             />
           </div>
           <div>
@@ -137,19 +145,27 @@ function Footer() {
               />
               <OvertabletHeight />
               <FooterExternalConnection
+                item={t('footer:privacy_policy')}
+                href="https://app.catchsecu.com/document/P/7e372ba0ed2a126"
+                darkMode={checkIfTechPageOrNot()}
+              />
+              <FooterExternalConnection
                 darkMode={checkIfTechPageOrNot()}
                 item={t('footer:recruiting')}
                 href="https://aboard-haircut-fe6.notion.site/Job-Board-fd68685235fd47fb98e0932bdeff6ebd"
+                needArrow
               />
               <FooterExternalConnection
                 item={t('footer:blog')}
                 darkMode={checkIfTechPageOrNot()}
                 href="https://blog.naver.com/asleep_official"
+                needArrow
               />
               <FooterExternalConnection
                 item={t('footer:interview')}
                 href="https://medium.com/asleepblog"
                 darkMode={checkIfTechPageOrNot()}
+                needArrow
               />
             </div>
           </MXFlex>
