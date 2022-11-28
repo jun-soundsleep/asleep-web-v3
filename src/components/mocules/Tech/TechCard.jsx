@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import CardTitle from '../../atoms/Common/CardTitle';
 import useTranslation from 'next-translate/useTranslation';
-import TechCardMoreButton from '../../atoms/Tech/TechCardMoreButton';
 import useWindowSize from '../../../../hooks/userWindowSize';
 import ButtonMoreInfoInCard from '../../atoms/Common/ButtonMoreInfoInCard';
 

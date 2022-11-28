@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import CardTitle from '../../atoms/Common/CardTitle';
 import useTranslation from 'next-translate/useTranslation';
 import userWindowSize from '../../../../hooks/userWindowSize';
-import CompanyCardMoreButton from '../../atoms/Company/CompanyCardMoreButton';
 import { mp } from '../../../../styles/device';
 import ButtonMoreInfoInCard from '../../atoms/Common/ButtonMoreInfoInCard';
 
@@ -111,9 +110,4 @@ const Container = styled.div`
   }
 
   cursor: pointer;
-`;
-
-//
-const Test = styled.div`
-  z-index: 1000;
 `;

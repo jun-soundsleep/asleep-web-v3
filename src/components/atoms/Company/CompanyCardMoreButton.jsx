@@ -13,10 +13,7 @@ function CompanyCardMoreButton({ item, margin }) {
         {item}
       </MainCardMoreButtonContainer>
       <MoreButtonContainer>
-        <img
-          src="/images/icon/acomponents-icons-icons-arrow-up-right-blue.svg"
-          objectfit={'cover'}
-        />
+        <img src="/images/icon/acomponents-icons-icons-arrow-up-right-blue.svg" />
       </MoreButtonContainer>
     </Wrapper>
   );
@@ -64,6 +61,7 @@ const Wrapper = styled(MXFlexCenteringFS)`
   /* position: absolute; */
   left: ${({ locale }) => (locale === 'en' ? '24px' : '24px')};
   bottom: ${({ locale }) => (locale === 'en' ? '40px' : '40px')};
+
   ${mp[0]} {
     left: ${({ locale }) => (locale === 'en' ? '24px' : '24px')};
     bottom: ${({ locale }) => (locale === 'en' ? '59px' : '115px')};

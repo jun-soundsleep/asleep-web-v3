@@ -13,10 +13,7 @@ function TechCardMoreButton({ item, margin }) {
         {item}
       </MainCardMoreButtonContainer>
       <MoreButtonContainer>
-        <img
-          src="/images/icon/acomponents-icons-icons-arrow-up-right-light-blue.svg"
-          objectfit={'cover'}
-        />
+        <img src="/images/icon/acomponents-icons-icons-arrow-up-right-light-blue.svg" />
       </MoreButtonContainer>
     </Wrapper>
   );
