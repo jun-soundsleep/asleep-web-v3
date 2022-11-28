@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c172d01b-4a18-44f1-8603-43ff3e376372" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/locales/en/footer.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/en/footer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/ko/footer.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/ko/footer.json" afterDir="false" />
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Footer/FooterExternalConnection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Footer/FooterExternalConnection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,12 +15,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1669617593" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1669617573" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GQkrTY3PMes8jGV6u9V8xeFBX1" />
+  <component name="ProjectId" id="2IAHXcW9psbYsSl15jWw2aweLVw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,20 +65,19 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/asleep/Desktop/dev/asleep-web-v2/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="true" />
+      </map>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -64,19 +91,18 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c172d01b-4a18-44f1-8603-43ff3e376372" name="Changes" comment="" />
-      <created>1666328393157</created>
+      <changelist id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="" />
+      <created>1669617509221</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666328393157</updated>
-      <workItem from="1666328394809" duration="1434000" />
+      <updated>1669617509221</updated>
+      <workItem from="1669617511408" duration="754000" />
     </task>
     <servers />
   </component>
