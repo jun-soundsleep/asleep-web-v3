@@ -16,8 +16,6 @@ X
 .src/components/mocules/Company/CompanyCard.jsx,c/d/cd7377fd189c5171fe15fd19bd75ecb1d94ceb1b
 f
 6src/components/atoms/Company/CompanyCardMoreButton.jsx,e/a/ea60bb1b12f1b6eba1e5969ceb09108627e71a2b
->
-next.config.js,8/1/811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
 G
 src/pages/_document.tsx,0/5/052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
 `
