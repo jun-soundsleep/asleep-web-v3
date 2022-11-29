@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.3.0",
     "@next/bundle-analyzer": "^13.0.5",
     "axios": "^0.24.0",
+    "daisyui": "^2.42.1",
     "moment": "^2.29.1",
     "next": "^12.0.7",
     "next-translate": "^1.2.0",
