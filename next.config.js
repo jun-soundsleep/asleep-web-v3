@@ -2,9 +2,14 @@ const nextTranslate = require('next-translate');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true'
 });
-
-module.exports = withBundleAnalyzer({
-  ...nextTranslate(),
-  reactStrictMode: true,
-  trailingSlash: true
+const withPWA = require('next-pwa')({
+  dest: 'public'
 });
+
+module.exports = withPWA(
+  withBundleAnalyzer({
+    ...nextTranslate(),
+    reactStrictMode: true,
+    trailingSlash: true
+  })
+);

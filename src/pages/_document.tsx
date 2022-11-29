@@ -16,6 +16,28 @@ class AsleepDocument extends Document {
             type="image/x-icon"
           />
           {/* favicon end */}
+          {/*
+          for pwa
+          */}
+          <link rel="manifest" href="/manifest.json" />
+          <link
+            href="/pwa-favicon/favicon-16x16.png"
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+          />
+          <link
+            href="/pwa-favicon/favicon-32x32.png"
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+          />
+          <link rel="apple-touch-icon" href="/pwa/icon-192x192.png" />
+          <meta name="theme-color" content="#fff" />
+          <meta name="msapplication-TileColor" content="#FF98BA"></meta>
+          {/*
+          for pwa end
+          */}
         </Head>
         <body>
           <Main />

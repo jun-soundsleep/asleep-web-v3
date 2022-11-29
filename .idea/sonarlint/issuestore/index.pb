@@ -16,8 +16,6 @@ X
 .src/components/mocules/Company/CompanyCard.jsx,c/d/cd7377fd189c5171fe15fd19bd75ecb1d94ceb1b
 f
 6src/components/atoms/Company/CompanyCardMoreButton.jsx,e/a/ea60bb1b12f1b6eba1e5969ceb09108627e71a2b
-G
-src/pages/_document.tsx,0/5/052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
 `
 0src/components/atoms/Tech/TechCardMoreButton.jsx,f/e/fe1d7b22863316b959b2a0ff6c9ffa636ca389d4
 ]
