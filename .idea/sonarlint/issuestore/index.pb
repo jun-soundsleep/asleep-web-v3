@@ -20,8 +20,6 @@ G
 src/pages/_document.tsx,0/5/052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
 `
 0src/components/atoms/Tech/TechCardMoreButton.jsx,f/e/fe1d7b22863316b959b2a0ff6c9ffa636ca389d4
-=
-next-env.d.ts,7/9/7948598afd6f2aa542f1b55d7b6f077a70937e77
 ]
 -src/components/templates/CommonDetailPage.jsx,0/4/042e0ff7022b9962fa4eff237c1b567d7d271536
 M
