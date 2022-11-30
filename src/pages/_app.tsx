@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import '../../styles/globals.css';
 import '../../styles/font.css';
 
@@ -7,11 +8,8 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         {/* Ga  */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-R1W34L4RKY"
-        />
-        <script
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-R1W34L4RKY" />
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -21,7 +19,7 @@ function App({ Component, pageProps }) {
         `
           }}
         />
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
             (function(w, d, a){
