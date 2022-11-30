@@ -3,7 +3,6 @@ import Link from 'next/link';
 import styled from '@emotion/styled';
 import useTranslation from 'next-translate/useTranslation';
 import { mp } from '../../../../../styles/device';
-import { MXFlexCenteringSB } from '../../../mixin/MXFlex';
 
 function DetailPeoleBackButton({ href }) {
   const { t } = useTranslation();
@@ -11,7 +10,7 @@ function DetailPeoleBackButton({ href }) {
 
   return (
     <ButtonContainer>
-      <Link href={href}>
+      <Link href={href} legacyBehavior>
         <ExtendedLink>
           <svg
             width="24"

@@ -26,16 +26,37 @@ function CompanyCard({
   const size = userWindowSize();
   let overTablet = size.width > 768;
 
-  return (
-    <>
-      {overTablet ? (
+  return <>
+    {overTablet ? (
+      <Container
+        margin={margin}
+        src={src}
+        oneColumn={oneColumn}
+        srcM={srcM}
+        srcL={srcL}
+        onClick={modalListener}
+      >
+        <CardTitle
+          item={title}
+          margin="8px 0px 26px 0px"
+          whiteColor={whiteTitleColor}
+        />
+        <ButtonMoreInfoInCard
+          hexColor={'#406bff'}
+          item={findOurMore}
+          itemColor={'var(--primary-primary-in-light)'}
+          fontWeight={500}
+        />
+      </Container>
+    ) : (
+      (<Link href={href} locale={router.locale}>
+
         <Container
           margin={margin}
           src={src}
           oneColumn={oneColumn}
           srcM={srcM}
           srcL={srcL}
-          onClick={modalListener}
         >
           <CardTitle
             item={title}
@@ -49,33 +70,10 @@ function CompanyCard({
             fontWeight={500}
           />
         </Container>
-      ) : (
-        <Link href={href} locale={router.locale}>
-          <a>
-            <Container
-              margin={margin}
-              src={src}
-              oneColumn={oneColumn}
-              srcM={srcM}
-              srcL={srcL}
-            >
-              <CardTitle
-                item={title}
-                margin="8px 0px 26px 0px"
-                whiteColor={whiteTitleColor}
-              />
-              <ButtonMoreInfoInCard
-                hexColor={'#406bff'}
-                item={findOurMore}
-                itemColor={'var(--primary-primary-in-light)'}
-                fontWeight={500}
-              />
-            </Container>
-          </a>
-        </Link>
-      )}
-    </>
-  );
+
+      </Link>)
+    )}
+  </>;
 }
 
 export default CompanyCard;

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -10,16 +9,12 @@ function NavLanguageChangeButton({ margin, clickListener }) {
   return (
     <LanguageButton margin={margin} onClick={clickListener}>
       <Link locale="ko" href={router.pathname}>
-        <a>
-          {' '}
-          <LanguageSpan active={router.locale === 'ko'}>Kor</LanguageSpan>
-        </a>
+        {' '}
+        <LanguageSpan active={router.locale === 'ko'}>Kor</LanguageSpan>
       </Link>
       <HorizontalDivider>&nbsp;&nbsp;|&nbsp;&nbsp;</HorizontalDivider>
       <Link locale="en" href={router.pathname}>
-        <a>
-          <LanguageSpan active={router.locale === 'en'}>Eng</LanguageSpan>
-        </a>
+        <LanguageSpan active={router.locale === 'en'}>Eng</LanguageSpan>
       </Link>
     </LanguageButton>
   );

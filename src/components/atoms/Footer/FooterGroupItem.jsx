@@ -7,7 +7,7 @@ function FooterGroupItem({ item, margin, href, darkMode }) {
   return (
     <Container margin={margin} darkMode={darkMode}>
       <Link href={href}>
-        <a>{item}</a>
+        {item}
       </Link>
     </Container>
   );

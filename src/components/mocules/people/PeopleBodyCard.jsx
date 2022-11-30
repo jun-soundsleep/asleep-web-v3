@@ -10,20 +10,20 @@ function PeopleBodyCard({ title, subtitle, href }) {
   const meetMembers = t('common:meet_out_team_members');
 
   return (
-    <Link href={href}>
-      <a>
-        <Container>
-          <Title>{title}</Title>
-          <SubTitle>{subtitle}</SubTitle>
-          <ButtonMoreInfoInCard
-            hexColor={'#406bff'}
-            item={meetMembers}
-            itemColor={'var(--primary-primary-in-light)'}
-            fontWeight={500}
-          />
-        </Container>
-      </a>
-    </Link>
+    (<Link href={href}>
+
+      <Container>
+        <Title>{title}</Title>
+        <SubTitle>{subtitle}</SubTitle>
+        <ButtonMoreInfoInCard
+          hexColor={'#406bff'}
+          item={meetMembers}
+          itemColor={'var(--primary-primary-in-light)'}
+          fontWeight={500}
+        />
+      </Container>
+
+    </Link>)
   );
 }
 

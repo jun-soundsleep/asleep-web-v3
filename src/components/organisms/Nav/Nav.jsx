@@ -129,15 +129,15 @@ const LogoContainer = styled.nav`
 
 const NavLogContainer = styled(MXFlexCenteringSB)`
   height: var(--nav-height);
-  padding: 0px 20px 0px 20px;
+  padding: 0 20px 0 20px;
 `;
 
 const DetailItem = styled.div`
   position: absolute;
   top: 58px;
-  right: 0px;
-  left: 0px;
-  padding: 0px 0px 0px 47px;
+  right: 0;
+  left: 0;
+  padding: 0 0 0 47px;
   z-index: 10;
   height: ${({ menuSelected }) => (menuSelected ? '420px' : '0px')};
   transition: background 0.4s ease-in 0s;
@@ -162,7 +162,7 @@ const OverTabletNavContainer = styled.nav`
 
 const OverTabletItemContainer = styled(MXFlexCenteringSB)`
   height: 100%;
-  padding: 0px 110px 0px 100px;
+  padding: 0 110px 0 100px;
   margin: 0 auto;
 
   //제니 한테 질문

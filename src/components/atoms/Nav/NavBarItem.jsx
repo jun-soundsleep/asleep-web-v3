@@ -5,9 +5,7 @@ import { mp } from '../../../../styles/device';
 function NavBarItem({ item, margin, on, href }) {
   return (
     <NavBarContainer margin={margin} on={on}>
-      <Link href={href}>
-        <a>{item}</a>
-      </Link>
+      <Link href={href}>{item}</Link>
     </NavBarContainer>
   );
 }
@@ -34,7 +32,7 @@ const NavBarContainer = styled.li`
     font-style: normal;
     line-height: 1.8;
     letter-spacing: 0.4px;
-    margin: 0px 30.5px 0px 0px;
+    margin: 0 30.5px 0 0;
   }
 
   ${mp[1]} {
@@ -44,6 +42,6 @@ const NavBarContainer = styled.li`
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.72px;
-    margin: 0px 68px 0px 0px;
+    margin: 0 68px 0 0;
   }
 `;

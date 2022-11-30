@@ -26,16 +26,37 @@ function TechCard({
   const size = useWindowSize();
   let overTablet = size.width > 768;
 
-  return (
-    <>
-      {overTablet ? (
+  return <>
+    {overTablet ? (
+      <TechContainer
+        margin={margin}
+        src={src}
+        oneColumn={oneColumn}
+        srcM={srcM}
+        srcL={srcL}
+        onClick={modalListener}
+      >
+        <CardTitle
+          item={title}
+          margin="8px 0px 26px 0px"
+          whiteColor={whiteTitleColor}
+        />
+        <ButtonMoreInfoInCard
+          hexColor={'#D8E1FF'}
+          item={findOurMore}
+          itemColor={'var(--sub-sub-04)'}
+          fontWeight={500}
+        />
+      </TechContainer>
+    ) : (
+      (<Link href={href} locale={router.locale}>
+
         <TechContainer
           margin={margin}
           src={src}
           oneColumn={oneColumn}
           srcM={srcM}
           srcL={srcL}
-          onClick={modalListener}
         >
           <CardTitle
             item={title}
@@ -49,33 +70,10 @@ function TechCard({
             fontWeight={500}
           />
         </TechContainer>
-      ) : (
-        <Link href={href} locale={router.locale}>
-          <a>
-            <TechContainer
-              margin={margin}
-              src={src}
-              oneColumn={oneColumn}
-              srcM={srcM}
-              srcL={srcL}
-            >
-              <CardTitle
-                item={title}
-                margin="8px 0px 26px 0px"
-                whiteColor={whiteTitleColor}
-              />
-              <ButtonMoreInfoInCard
-                hexColor={'#D8E1FF'}
-                item={findOurMore}
-                itemColor={'var(--sub-sub-04)'}
-                fontWeight={500}
-              />
-            </TechContainer>
-          </a>
-        </Link>
-      )}
-    </>
-  );
+
+      </Link>)
+    )}
+  </>;
 }
 
 export default TechCard;

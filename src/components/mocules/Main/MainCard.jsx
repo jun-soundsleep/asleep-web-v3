@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import MainCardMission from '../../atoms/Main/MainCardMission';
 import CardTitle from '../../atoms/Common/CardTitle';
 import CardMoreButton from '../../atoms/Common/CardMoreButton';
@@ -60,34 +59,32 @@ function MainCard({
         </a>
       ) : (
         <Link href={href}>
-          <a>
-            <MainCardContainer
-              margin={margin}
-              src={src}
-              oneColumn={oneColumn}
-              srcM={srcM}
-              srcL={srcL}
-            >
-              <TextWrapper>
-                <MainCardMission
-                  item={category ? category : 'Mission'}
-                  color={missionColor}
-                />
-                <CardTitle
-                  item={title}
-                  margin="8px 0px 26px 0px"
-                  whiteColor={whiteTitleColor}
-                />
-                <CardMoreButton
-                  item={findOurMore}
-                  CardMoreButton
-                  color={moreButtonColor}
-                  href={href}
-                />
-              </TextWrapper>
-              {whiteDim && <WhiteDim />}
-            </MainCardContainer>
-          </a>
+          <MainCardContainer
+            margin={margin}
+            src={src}
+            oneColumn={oneColumn}
+            srcM={srcM}
+            srcL={srcL}
+          >
+            <TextWrapper>
+              <MainCardMission
+                item={category ? category : 'Mission'}
+                color={missionColor}
+              />
+              <CardTitle
+                item={title}
+                margin="8px 0px 26px 0px"
+                whiteColor={whiteTitleColor}
+              />
+              <CardMoreButton
+                item={findOurMore}
+                CardMoreButton
+                color={moreButtonColor}
+                href={href}
+              />
+            </TextWrapper>
+            {whiteDim && <WhiteDim />}
+          </MainCardContainer>
         </Link>
       )}
     </>

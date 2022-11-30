@@ -7,17 +7,15 @@ import { mp } from '../../../../styles/device';
 function NavAsleepLogo() {
   const router = useRouter();
 
-  return (
-    <>
-      <Link href={'/'} locale={router.locale}>
-        <a>
-          <LogoContainer>
-            <AsleepLogo />
-          </LogoContainer>
-        </a>
-      </Link>
-    </>
-  );
+  return <>
+    <Link href={'/'} locale={router.locale}>
+
+      <LogoContainer>
+        <AsleepLogo />
+      </LogoContainer>
+
+    </Link>
+  </>;
 }
 
 export default NavAsleepLogo;
