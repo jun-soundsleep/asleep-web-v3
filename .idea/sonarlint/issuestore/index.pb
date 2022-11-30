@@ -5,10 +5,6 @@ L
 .idea/codeStyles/Project.xml,6/e/6ecd6000a7b6f4a2884412ff19f74193ed089648
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
-X
-(src/components/mocules/Tech/TechCard.jsx,6/4/64ff9707cce551812873e7df6c1cd2a8ec6731c6
-^
-.src/components/mocules/Company/CompanyCard.jsx,c/d/cd7377fd189c5171fe15fd19bd75ecb1d94ceb1b
 f
 6src/components/atoms/Company/CompanyCardMoreButton.jsx,e/a/ea60bb1b12f1b6eba1e5969ceb09108627e71a2b
 `

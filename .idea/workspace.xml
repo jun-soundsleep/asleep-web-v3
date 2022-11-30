@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: update next.13">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workbox-588899ac.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Footer/FooterGroupItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Footer/FooterGroupItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Nav/NavAsleepLogo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Nav/NavAsleepLogo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Nav/NavBarItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Nav/NavBarItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Nav/NavLanguageChangeButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Nav/NavLanguageChangeButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/people/detail/DetailPeoleBackButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/people/detail/DetailPeoleBackButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mocules/Company/CompanyCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mocules/Company/CompanyCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mocules/Main/MainCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mocules/Main/MainCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mocules/Tech/TechCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mocules/Tech/TechCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mocules/people/PeopleBodyCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mocules/people/PeopleBodyCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Nav/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/64ff9707cce551812873e7df6c1cd2a8ec6731c6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd7377fd189c5171fe15fd19bd75ecb1d94ceb1b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669796202428</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: update next.13">
+      <created>1669800322159</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669800322159</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
