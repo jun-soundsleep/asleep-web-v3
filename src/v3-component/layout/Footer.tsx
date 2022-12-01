@@ -1,10 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import { useWindowSize } from 'react-use';
 import useGetCurrentSize from '../../../hooks/useGetCurrentSize';
 import { deviceType } from '../../../styles/device';
 import Link from 'next/link';
-import { WEB_ROUTING } from '../../../util/routing';
 import { FOOTER_SECTION_DATA } from '../../v3-data/footer/FOOTER_DATA';
 
 const FooterSection = ({ data }) => {

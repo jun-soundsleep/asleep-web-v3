@@ -60,8 +60,6 @@ e
 5src/components/organisms/Main/MainBigImageSection.jsx,d/6/d67642f47f5dc19f033bfef6ce3343592a6a1e43
 X
 (src/components/mocules/Main/MainCard.jsx,3/8/38b0c40b394e5c9d455ebe8e8cc1c6091616bfac
-T
-$src/components/organisms/Nav/Nav.jsx,7/3/73f341fd8a1e97b808c38bddda0ca4a2a8f4bff8
 J
 src/pages/api/ces/index.ts,9/b/9bffb54b7ba5f92f323ff646728bc4ccb74680a3
 l
@@ -90,9 +88,5 @@ Bpublic/images/icon/components-icons-icons-circled-chevron-left.svg,d/7/d732e04
 .prettierrc,2/0/20137a9e94744624390b6748bc96df5ca1579b71
 F
 locales/ko/footer.json,7/a/7a8ba10c80cd61ce7f98ff4bf90f5e4edce8c13c
-d
-4src/components/atoms/Nav/NavLanguageChangeButton.jsx,d/b/dbfc643f85825b6caa713b66da29f26e1d68713d
 K
 public/images/icon/exit.svg,1/3/13999b8ded95d9faf873fb8829fdca53fc605cac
-=
-tsconfig.json,6/1/61ebb9fd6e8cf9082658121d5d81e297791dacd0
