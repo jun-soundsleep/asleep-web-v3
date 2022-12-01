@@ -52,8 +52,6 @@ l
 <src/components/atoms/people/detail/DetailPeoleBackButton.jsx,9/8/98a135daf63d1be9cd5abf1605b364a9319a7821
 D
 public/manifest.json,4/2/42e89cd2213b9d5dfae4f63522702c623170d792
->
-next.config.js,8/1/811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
 Z
 *src/components/atoms/Main/MainBigImage.jsx,5/6/56036ca56885d044189c5bb354da1a1c495045b7
 e
@@ -84,8 +82,6 @@ B
 styles/globals.css,8/c/8c258232cbcd5d83991c524a9e86c8d3f984fc57
 r
 Bpublic/images/icon/components-icons-icons-circled-chevron-left.svg,d/7/d732e04d0a14197f17b625cc062fc2aa041d80a2
-;
-.prettierrc,2/0/20137a9e94744624390b6748bc96df5ca1579b71
 F
 locales/ko/footer.json,7/a/7a8ba10c80cd61ce7f98ff4bf90f5e4edce8c13c
 K

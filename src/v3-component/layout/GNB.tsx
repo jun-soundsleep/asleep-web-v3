@@ -4,6 +4,7 @@ import useGetCurrentSize from '../../../hooks/useGetCurrentSize';
 import { deviceType } from '../../../styles/device';
 import Link from 'next/link';
 import { WEB_ROUTING } from '../../../util/routing';
+import ButtonDown from '/public/imagev3/icon/chevron-down.svg';
 
 const GNB = () => {
   const currentSize = useGetCurrentSize();
@@ -12,7 +13,7 @@ const GNB = () => {
 
   return (
     <nav
-      className={`h-[46px] bg-black flex px-[16px] items-center justify-between medium:px-[36px] medium:py-[25px] medium:h-[63px] large:h-[90px]`}
+      className={`h-[46px] bg-black flex px-[16px] items-center justify-between medium:px-[36px] medium:py-[25px] medium:h-[63px] large:h-[90px] large:px-[316px]`}
     >
       <Link href={WEB_ROUTING.main}>
         <Image
@@ -43,12 +44,24 @@ const GNB = () => {
 const LargeMenu = () => {
   return (
     <ul className={`hidden large:flex text-white gap-[80px] items-center`}>
-      <li>Sleeptrack API</li>
-      <li>Sleeptrack API</li>
-      <li>Sleeptrack API</li>
-      <li>Sleeptrack API</li>
+      <li className={`flex items-center gap-[8px]`}>
+        Sleeptrack API
+        <ButtonDown />
+      </li>
+      <li className={`flex items-center gap-[8px]`}>
+        Sleeptrack API
+        <ButtonDown />
+      </li>
+      <li className={`flex items-center gap-[8px]`}>
+        Sleeptrack API
+        <ButtonDown />
+      </li>
+      <li className={`flex items-center gap-[8px]`}>
+        Sleeptrack API
+        <ButtonDown />
+      </li>
       <button className={`bg-[#2226c1] py-[13px] px-[24px] b3-bold-large`}>
-        Contact Us
+        <Link href={WEB_ROUTING.main}>Contact Us</Link>
       </button>
     </ul>
   );
