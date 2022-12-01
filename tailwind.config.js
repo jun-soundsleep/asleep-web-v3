@@ -9,7 +9,11 @@ module.exports = {
       medium: '768px',
       large: '1920px'
     },
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-pretendard)']
+      }
+    }
   },
   plugins: [require('daisyui')]
 };

@@ -1,7 +1,24 @@
 import Head from 'next/head';
 import Script from 'next/script';
+import localFont from '@next/font/local';
 import '../../styles/globals.css';
 import '../../styles/font.css';
+
+const pretendard = localFont({
+  src: [
+    {
+      path: './fonts/RedHatDisplay/RedHatDisplay-Regular.woff2',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: './fonts/Pretendard/Pretendard-Regular.subset.woff2',
+      weight: '400',
+      style: 'normal'
+    }
+  ],
+  variable: '--font-pretendard'
+});
 
 function App({ Component, pageProps }) {
   return (
@@ -110,16 +127,13 @@ function App({ Component, pageProps }) {
         />
         <link
           rel="preload"
-          href={'/images/icon/asleep_logo.svg'}
-          as="image"
-        />
-        <link
-          rel="preload"
           href={'/images/icon/components-icons-icons-menu.svg'}
           as="image"
         />
       </Head>
-      <Component {...pageProps} />
+      <main className={pretendard.className}>
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }

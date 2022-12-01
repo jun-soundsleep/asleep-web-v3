@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="fix: change asleep logo to image component">
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: adjust next/font example">
+      <change afterPath="$PROJECT_DIR$/src/pages/fonts/Pretendard/Pretendard-Bold.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/fonts/Pretendard/Pretendard-ExtraBold.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/fonts/Pretendard/Pretendard-Medium.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/fonts/Pretendard/Pretendard-Regular.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/fonts/Pretendard/Pretendard-SemiBold.subset.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/fonts/RedHatDisplay/RedHatDisplay-Regular.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mocules/Main/MainCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mocules/Main/MainCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/namjun/Desktop/dev/asleep-web-v2/fonts/RedHatDisplay",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,7 +91,12 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fonts/RedHatDisplay" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/fonts/Pretendard" />
       <recent name="$PROJECT_DIR$/public/pwa-favicon" />
       <recent name="$PROJECT_DIR$/public/pwa" />
       <recent name="$PROJECT_DIR$/public" />
@@ -135,8 +146,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build:asleep-web" />
       </list>
@@ -279,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669863237241</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix: adjust prettier option enforce single attribute per line">
+      <created>1669863572597</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669863572597</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +344,9 @@
     <MESSAGE value="fix: raw script tag to next script" />
     <MESSAGE value="test: main page image" />
     <MESSAGE value="fix: change asleep logo to image component" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: change asleep logo to image component" />
+    <MESSAGE value="fix: adjust prettier option enforce single attribute per line" />
+    <MESSAGE value="feat: adjust next/font example" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adjust next/font example" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
