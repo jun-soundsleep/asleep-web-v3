@@ -12,7 +12,12 @@ const MainAsleepVisionComponent = dynamic(
 
 // eslint-disable-next-line react/display-name
 const ForwardedRefComponent = forwardRef((props, ref) => {
-  return <MainAsleepVisionComponent {...props} forwardedRef={ref} />;
+  return (
+    <MainAsleepVisionComponent
+      {...props}
+      forwardedRef={ref}
+    />
+  );
 });
 
 export default function Index() {

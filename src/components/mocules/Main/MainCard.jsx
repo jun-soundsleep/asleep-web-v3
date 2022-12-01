@@ -29,7 +29,11 @@ function MainCard({
   return (
     <>
       {outer ? (
-        <a href={href} target="_blank" rel="noreferrer">
+        <a
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+        >
           <MainCardContainer
             margin={margin}
             src={src}
