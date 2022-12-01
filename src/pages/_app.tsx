@@ -3,6 +3,7 @@ import Script from 'next/script';
 import localFont from '@next/font/local';
 import '../../styles/globals.css';
 import '../../styles/font.css';
+import '../../styles/component.css';
 
 const pretendard = localFont({
   src: [

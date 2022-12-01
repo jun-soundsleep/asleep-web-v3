@@ -14,6 +14,12 @@ export const device = {
   desktop: `(min-width: ${size.desktop})`
 };
 
-const breakpoints = [768, 1920];
+export const breakpoints = [768, 1920];
 
 export const mp = breakpoints.map(bp => `@media (min-width: ${bp}px)`);
+
+export const deviceType = {
+  small: 'small',
+  medium: 'medium',
+  large: 'large'
+};
