@@ -5,8 +5,6 @@ L
 .idea/codeStyles/Project.xml,6/e/6ecd6000a7b6f4a2884412ff19f74193ed089648
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
-f
-6src/components/atoms/Company/CompanyCardMoreButton.jsx,e/a/ea60bb1b12f1b6eba1e5969ceb09108627e71a2b
 `
 0src/components/atoms/Tech/TechCardMoreButton.jsx,f/e/fe1d7b22863316b959b2a0ff6c9ffa636ca389d4
 ]
@@ -17,8 +15,6 @@ N
 src/pages/people/aiservice.jsx,1/2/12ad753e1ebb469e392ae3f587cbd41c29c14cb7
 S
 #src/pages/technology/accurateai.jsx,5/e/5e5eb379c862fe2f1dcbfe4294febd9eaee12c79
-T
-$src/pages/company/sleepdiagnosis.jsx,c/2/c23ca7005ad5bd2701cbba763b58964c515b61d5
 S
 #src/pages/company/sleepsolution.jsx,0/0/0067307caaf8813e81d0652c5e455e71d819e86c
 U
@@ -48,8 +44,6 @@ _
 /src/components/atoms/Footer/FooterGroupItem.jsx,8/7/874f5dce16ca50b0a81fc95a55cfb5a271b791eb
 `
 0src/components/mocules/people/PeopleBodyCard.jsx,3/2/32cd7179b06b60a93b957885fa3d1e189e4639b2
-<
-public/sw.js,4/a/4a4b0ecc67d3a205e68728f34986d179a31a91c4
 X
 (src/components/mocules/Tech/TechCard.jsx,6/4/64ff9707cce551812873e7df6c1cd2a8ec6731c6
 W
@@ -94,8 +88,6 @@ r
 Bpublic/images/icon/components-icons-icons-circled-chevron-left.svg,d/7/d732e04d0a14197f17b625cc062fc2aa041d80a2
 ;
 .prettierrc,2/0/20137a9e94744624390b6748bc96df5ca1579b71
-Z
-*src/components/organisms/Footer/Footer.jsx,c/3/c36d98e81db7cf094429d681bc7b04ecdcb5d0b1
 F
 locales/ko/footer.json,7/a/7a8ba10c80cd61ce7f98ff4bf90f5e4edce8c13c
 d

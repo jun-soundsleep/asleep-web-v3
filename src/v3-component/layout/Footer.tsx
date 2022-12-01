@@ -17,6 +17,7 @@ const FooterSection = ({ data }) => {
       </div>
       {data.sub.map((el, idx) => (
         <div
+          key={el.id}
           className={`${idx === 0 ? 'mt-[24px]' : 'mt-[8px]'} ${commonStyle}`}
         >
           <Link href={el.to}>{el.title}</Link>
@@ -70,6 +71,7 @@ const Footer = () => {
         <a
           href="https://instagram.com/slee.ai?igshid=YmMyMTA2M2Y="
           target={'_blank'}
+          rel="noreferrer"
         >
           <Image
             src={'/images/icon/exit.svg'}
@@ -81,6 +83,7 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/company/sleepfy/"
           target={'_blank'}
+          rel="noreferrer"
         >
           <Image
             src={'/images/icon/exit.svg'}
@@ -94,6 +97,7 @@ const Footer = () => {
         className={`caption-small underline mt-[16px] text-[#626262] medium:mt-[28px] medium:caption-medi inline-block large:b3-large`}
         href="https://app.catchsecu.com/document/P/7e372ba0ed2a126"
         target={'_blank'}
+        rel="noreferrer"
       >
         Privacy & Policy
       </a>
