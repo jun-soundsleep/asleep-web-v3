@@ -6,10 +6,13 @@ const withPWA = require('next-pwa')({
   dest: 'public'
 });
 
-module.exports = withPWA(
-  withBundleAnalyzer({
-    ...nextTranslate(),
-    reactStrictMode: true,
-    trailingSlash: true
-  })
-);
+const nextConfig = {
+  ...nextTranslate(),
+  reactStrictMode: true,
+  trailingSlash: true,
+  image: {
+    deviceSizes: [768, 1920]
+  }
+};
+
+module.exports = withPWA(withBundleAnalyzer(nextConfig));

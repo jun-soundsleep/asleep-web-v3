@@ -1,32 +1,14 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { mp } from '../../../../styles/device';
+import Image from 'next/image';
 
 function MainBigImage() {
-  return <ImageContainer />;
+  return (
+    <Image
+      src={'/images/main/home_l.jpg'}
+      alt={'asleep_offical_image'}
+      fill
+      priority={true}
+    />
+  );
 }
 
 export default MainBigImage;
-
-const ImageContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  background: url('/images/main/home_s.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-
-  ${mp[0]} {
-    background: url('/images/main/home_m.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-
-  ${mp[1]} {
-    background: url('/images/main/home_l.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-`;

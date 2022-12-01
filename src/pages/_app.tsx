@@ -81,21 +81,12 @@ function App({ Component, pageProps }) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         {/* style */}
         <link rel="canonical" href="https://www.asleep.ai/" />
-        {/* <link
-          rel="preload"
-          as="font"
-          type="font"
-          href="/fonts/RedHatDisplay/RedHatDisplay-Regular.ttf"
-        /> */}
         <link rel="preload" href={'/images/icon/asleep_logo.svg'} as="image" />
         <link
           rel="preload"
           href={'/images/icon/components-icons-icons-menu.svg'}
           as="image"
         />
-        <link rel="preload" href="/images/main/home_s.jpg" as="image" />
-        <link rel="preload" href="/images/main/home_m.jpg" as="image" />
-        <link rel="preload" href="/images/main/home_l.jpg" as="image" />
       </Head>
       <Component {...pageProps} />
     </>

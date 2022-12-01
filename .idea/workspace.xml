@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: test next.13">
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="fix: raw script tag to next script">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Main/MainBigImage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Main/MainBigImage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,9 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.build:asleep-web" />
       </list>
     </recent_temporary>
@@ -255,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669800982534</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix: raw script tag to next script">
+      <created>1669801587069</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669801587069</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +309,7 @@
     <MESSAGE value="feat: change api routes to typescript" />
     <MESSAGE value="feat: update next.13" />
     <MESSAGE value="feat: test next.13" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: test next.13" />
+    <MESSAGE value="fix: raw script tag to next script" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: raw script tag to next script" />
   </component>
 </project>
