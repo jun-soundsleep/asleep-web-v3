@@ -12,6 +12,15 @@ const nextConfig = {
   trailingSlash: true,
   image: {
     deviceSizes: [768, 1920]
+  },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack']
+    });
+
+    return config;
   }
 };
 

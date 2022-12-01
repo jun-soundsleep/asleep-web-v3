@@ -65,11 +65,22 @@
   --direction-button: 500;
   --company-hoverd: 100;
 
-  /* 
+  /*
   height
   */
   --nav-height: 58px;
   --nav--height--over-tablet: 56px;
+
+
+  /*
+  start v3 variable
+  */
+  --gnb-height: 46px;
+  --gnb-height-medi: 63px;
+  --gnb-height-large: 90px;
+  /*
+  start v3 end
+  */
 }
 
 * {
@@ -126,4 +137,8 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+svg {
+  max-width: 100%
 }

@@ -45,10 +45,7 @@ if (!self.define) {
   };
 
   self.define = (depsNames, factory) => {
-    const uri =
-      nextDefineUri ||
-      ('document' in self ? document.currentScript.src : '') ||
-      location.href;
+    const uri = nextDefineUri || ("document" in sel'document'nt.currentScript.src : "") || location.h''f;
     if (registry[uri]) {
       // Module is already loading or loaded.
       return;
@@ -60,48 +57,44 @@ if (!self.define) {
       exports,
       require
     };
-    registry[uri] = Promise.all(
-      depsNames.map(depName => specialDeps[depName] || require(depName))
-    ).then(deps => {
+    registry[uri] = Promise.all(depsNames.map(
+      depName => specialDeps[depName] || require(depName)
+    )).then(deps => {
       factory(...deps);
       return exports;
     });
   };
 }
-define(['./workbox-327c579b'], function (workbox) {
+define(['./workbox-327c579b'], (function(workbox) {
   'use strict';
 
   importScripts();
   self.skipWaiting();
   workbox.clientsClaim();
-  workbox.registerRoute(
-    '/',
-    new workbox.NetworkFirst({
-      cacheName: 'start-url',
-      plugins: [
-        {
-          cacheWillUpdate: async ({ request, response, event, state }) => {
-            if (response && response.type === 'opaqueredirect') {
-              return new Response(response.body, {
-                status: 200,
-                statusText: 'OK',
-                headers: response.headers
-              });
-            }
-            return response;
-          }
+  workbox.registerRoute('/', new workbox.NetworkFirst({
+    'cacheName': 'start-url',
+    plugins: [{
+      cacheWillUpdate: async ({
+                                request,
+                                response,
+                                event,
+                                state
+                              }) => {
+        if (response && response.type === 'opaqueredirect') {
+          return new Response(response.body, {
+            status: 200,
+            statusText: 'OK',
+            headers: response.headers
+          });
         }
-      ]
-    }),
-    'GET'
-  );
-  workbox.registerRoute(
-    /.*/i,
-    new workbox.NetworkOnly({
-      cacheName: 'dev',
-      plugins: []
-    }),
-    'GET'
-  );
-});
+        return response;
+      }
+    }]
+  }), 'GET');
+  workbox.registerRoute(/.*/i, new workbox.NetworkOnly({
+    'cacheName': 'dev',
+    plugins: []
+  }), 'GET');
+
+}));
 //# sourceMappingURL=sw.js.map

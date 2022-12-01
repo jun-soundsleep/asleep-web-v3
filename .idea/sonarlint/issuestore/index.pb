@@ -3,12 +3,8 @@ T
 $.idea/codeStyles/codeStyleConfig.xml,d/d/dd7b3350c29c49497756c7f32c69a3bed18b1cba
 L
 .idea/codeStyles/Project.xml,6/e/6ecd6000a7b6f4a2884412ff19f74193ed089648
-\
-,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
 `
 0src/components/atoms/Tech/TechCardMoreButton.jsx,f/e/fe1d7b22863316b959b2a0ff6c9ffa636ca389d4
-]
--src/components/templates/CommonDetailPage.jsx,0/4/042e0ff7022b9962fa4eff237c1b567d7d271536
 M
 src/pages/technology/wifi.jsx,b/d/bdd4d311794173fa4621b51a3b736c831e32f5cd
 N
@@ -40,20 +36,14 @@ Z
 *src/components/atoms/Nav/NavMenuButton.jsx,d/d/dd88f98b5b65bd2349647dce12c4662b9b6abc44
 ^
 .src/components/mocules/Company/CompanyCard.jsx,c/d/cd7377fd189c5171fe15fd19bd75ecb1d94ceb1b
-_
-/src/components/atoms/Footer/FooterGroupItem.jsx,8/7/874f5dce16ca50b0a81fc95a55cfb5a271b791eb
 `
 0src/components/mocules/people/PeopleBodyCard.jsx,3/2/32cd7179b06b60a93b957885fa3d1e189e4639b2
 X
 (src/components/mocules/Tech/TechCard.jsx,6/4/64ff9707cce551812873e7df6c1cd2a8ec6731c6
-W
-'src/components/atoms/Nav/NavBarItem.jsx,f/5/f5cbe50c9d8848c668bd0ddcffec1a46eaed3bca
 l
 <src/components/atoms/people/detail/DetailPeoleBackButton.jsx,9/8/98a135daf63d1be9cd5abf1605b364a9319a7821
 D
 public/manifest.json,4/2/42e89cd2213b9d5dfae4f63522702c623170d792
->
-next.config.js,8/1/811a6d5a2e04fadb44d8eec365f2fa8af5c4facf
 Z
 *src/components/atoms/Main/MainBigImage.jsx,5/6/56036ca56885d044189c5bb354da1a1c495045b7
 e
@@ -80,13 +70,13 @@ Z
 *src/components/atoms/Nav/NavAsleepLogo.jsx,e/f/eff022cde6043cfe760414bdbacfdedd8478fac8
 ?
 styles/font.css,e/1/e1509edffd972fa5b8ca364dd3aaafd76f51b2d7
-B
-styles/globals.css,8/c/8c258232cbcd5d83991c524a9e86c8d3f984fc57
 r
 Bpublic/images/icon/components-icons-icons-circled-chevron-left.svg,d/7/d732e04d0a14197f17b625cc062fc2aa041d80a2
-;
-.prettierrc,2/0/20137a9e94744624390b6748bc96df5ca1579b71
 F
 locales/ko/footer.json,7/a/7a8ba10c80cd61ce7f98ff4bf90f5e4edce8c13c
 K
 public/images/icon/exit.svg,1/3/13999b8ded95d9faf873fb8829fdca53fc605cac
+T
+$public/imagev3/icon/chevron-down.svg,a/2/a2ff0a4391645cf8edca8cbb177de88b7f07a763
+]
+-src/components/templates/CommonDetailPage.jsx,0/4/042e0ff7022b9962fa4eff237c1b567d7d271536

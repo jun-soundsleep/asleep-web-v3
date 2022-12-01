@@ -28,6 +28,7 @@
     "react-use": "^17.4.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "autoprefixer": "^10.4.13",
