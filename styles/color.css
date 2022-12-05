@@ -1,0 +1,59 @@
+.accentAsleep {
+    color: #191998;
+}
+
+.accentPrimary {
+    color: #2226C1;
+}
+
+.accentSecondary {
+    color: #3C41EA;
+}
+
+.accentGreenPrimary {
+    color: #74E897;
+}
+
+.accentPressedPrimary {
+    color: #3C3FD2;
+}
+
+.accentPressedSecondary {
+    color: #5156FF;
+}
+
+.gray0 {
+    color: #c8c8c8;
+}
+
+.gray1 {
+    color: #B6B6B6;
+}
+
+.gray2 {
+    color: #8C8C8C;
+}
+
+.gray3 {
+    color: #626262;
+}
+
+.gray4 {
+    color: #363636;
+}
+
+.gray5 {
+    color: #2E2E2E;
+}
+
+.gray6 {
+    color: #1E1F21;
+}
+
+.gray7 {
+    color: #121212;
+}
+
+.blackO80 {
+    color: rgba(0, 0, 0, 0.8);
+}

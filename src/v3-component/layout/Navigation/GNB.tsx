@@ -22,7 +22,7 @@ const GNB = () => {
   const [selectedItem, setSelectedItem] = useState<null | selectedItems>(null);
 
   return (
-    <nav>
+    <nav className={`fixed top-0 z-40`}>
       {isLarge && <CesAlert />}
       <div
         className={`relative h-[var(--gnb-height)] bg-black flex px-[16px] items-center justify-between medium:px-[36px] medium:py-[25px] medium:h-[var(--gnb-height-medi)] large:h-[var(--gnb-height-large)] large:px-[316px]`}

@@ -4,6 +4,7 @@ import localFont from '@next/font/local';
 import '../../styles/globals.css';
 import '../../styles/font.css';
 import '../../styles/component.css';
+import '../../styles/color.css';
 
 const pretendard = localFont({
   src: [

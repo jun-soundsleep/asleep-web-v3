@@ -1,0 +1,3 @@
+.mainImageContainer {
+    height: calc(100vh - var(--gnb-height) - var(--cesAlert-height));
+}

@@ -81,6 +81,8 @@
   /*
   start v3 end
   */
+  --cesAlert-height: 38px;
+  --cesAlert-height-medi: 46px;
 }
 
 * {
