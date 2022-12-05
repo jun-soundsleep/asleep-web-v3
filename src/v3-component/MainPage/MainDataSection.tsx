@@ -9,10 +9,13 @@ const SmallView = (): JSX.Element => {
     <>
       {Array(3)
         .fill(0)
-        .map(el => {
+        .map((el, idx) => {
           return (
             <>
-              <div className={`relative mt-[32px] w-full h-[184px]`}>
+              <div
+                className={`relative mt-[32px] w-full h-[184px]`}
+                key={idx}
+              >
                 <Image
                   src={'/images/main/home_5_l_2x.jpg'}
                   alt={'aasd'}
@@ -41,6 +44,7 @@ const MediumView = (): JSX.Element => {
           return (
             <div
               className={`flex h-[221px] mb-[24px] ${idx === 0 && 'mt-[64px]'}`}
+              key={idx}
             >
               <div className={`px-[32px] pt-[59px] bg-[#1E1F21]`}>
                 <h3 className={`mt-[16px] sub-bold-small`}>
@@ -71,7 +75,10 @@ const LargeView = (): JSX.Element => {
         .fill(0)
         .map((_, idx) => {
           return (
-            <div className={`mt-[56px]`}>
+            <div
+              className={`mt-[56px]`}
+              key={idx}
+            >
               <div className={`relative h-[276px] w-full grow`}>
                 <Image
                   src={'/images/main/home_5_l_2x.jpg'}

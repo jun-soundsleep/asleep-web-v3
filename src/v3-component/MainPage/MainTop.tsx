@@ -29,7 +29,7 @@ const MainTop = () => {
           className={`b1-small text-[#B6B6B6] mt-[16px] medium:b1-medium-medi large:sub-large large:mt-[24px]`}
         >
           Industry leading companies are using Sleeptrack API to understand
-          their customers' sleep and create innovative business use cases.
+          their customers sleep and create innovative business use cases.
         </h2>
         <motion.button
           className={`mt-[32px] text-white b1-medium-small min-w-[132px] min-h-[47px] flex justify-center items-center bg-[#2E2E2E] bg-opacity-15 medium:b2-medium-medi medium:min-w-[156px] medium:min-h-[55px] large:b2-medium-large large:min-w-[182px] medium:min-h-[64px] medium:mt-[40px] large:mt-[56px]`}
