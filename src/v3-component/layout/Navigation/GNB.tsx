@@ -45,7 +45,7 @@ const GNB = () => {
           </button>
           {isLarge && <LargeMenu />}
         </div>
-        {detailMenu && (
+        {detailMenu && !isLarge && (
           <ul
             className={`absolute z-10 h-[539px] right-0 top-[var(--gnb-height)]  medium:"top-[var(--gnb-height-medi)] large:"top-[var(--gnb-height-large)] w-full medium:w-[unset] medium:w-[405px]`}
           >
