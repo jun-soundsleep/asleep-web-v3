@@ -45,15 +45,7 @@ if (!self.define) {
   };
 
   self.define = (depsNames, factory) => {
-    const uri = nextDefineUri || ('document' in sel
-    'document';
-    nt.currentScript.src;
-  :
-    '';
-  ) ||
-    location.h;
-    '';
-    f;
+    const uri = nextDefineUri || ("document" in sel'document'nt.currentScript.src : "") || location.h''f;
     if (registry[uri]) {
       // Module is already loading or loaded.
       return;

@@ -1,14 +1,7 @@
-import Footer from '../v3-component/layout/Footer';
-import React from 'react';
-import GNB from '../v3-component/layout/Navigation/GNB';
+import MainPage from '../v3-component/MainPage';
 
 const Test = () => {
-  return (
-    <>
-      <GNB />
-      <Footer />
-    </>
-  );
+  return <MainPage />;
 };
 
 export default Test;
