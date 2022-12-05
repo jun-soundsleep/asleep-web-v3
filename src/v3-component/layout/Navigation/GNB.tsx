@@ -21,8 +21,6 @@ const GNB = () => {
   const [detailMenu, setDetailMenu] = useToggle(false);
   const [selectedItem, setSelectedItem] = useState<null | selectedItems>(null);
 
-  console.log(selectedItem);
-
   return (
     <nav>
       {isLarge && <CesAlert />}
@@ -49,7 +47,7 @@ const GNB = () => {
         </div>
         {detailMenu && (
           <ul
-            className={`absolute z-10 left-0 h-[539px] right-0 top-[var(--gnb-height)]  medium:"top-[var(--gnb-height-medi)] large:"top-[var(--gnb-height-large)]`}
+            className={`absolute z-10 h-[539px] right-0 top-[var(--gnb-height)]  medium:"top-[var(--gnb-height-medi)] large:"top-[var(--gnb-height-large)] w-full medium:w-[unset] medium:w-[405px]`}
           >
             {GNB_DATA.map((el, idx) => {
               return (

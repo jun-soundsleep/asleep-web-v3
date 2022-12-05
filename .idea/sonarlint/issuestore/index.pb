@@ -76,7 +76,5 @@ F
 locales/ko/footer.json,7/a/7a8ba10c80cd61ce7f98ff4bf90f5e4edce8c13c
 K
 public/images/icon/exit.svg,1/3/13999b8ded95d9faf873fb8829fdca53fc605cac
-T
-$public/imagev3/icon/chevron-down.svg,a/2/a2ff0a4391645cf8edca8cbb177de88b7f07a763
 ]
 -src/components/templates/CommonDetailPage.jsx,0/4/042e0ff7022b9962fa4eff237c1b567d7d271536
