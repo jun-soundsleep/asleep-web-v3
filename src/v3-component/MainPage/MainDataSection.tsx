@@ -2,6 +2,7 @@ import { MainSectionH2, MainSectionLabel } from './Main.styled';
 import Image from 'next/image';
 import useGetCurrentSize from '../../../hooks/useGetCurrentSize';
 import { deviceType } from '../../../styles/device';
+import { motion } from 'framer-motion';
 
 const SmallView = (): JSX.Element => {
   return (
@@ -103,8 +104,11 @@ const MainDataSection = () => {
   };
 
   return (
-    <section
+    <motion.section
       className={`mt-[131px] px-[16px] large:mt-[175px] large:px-[317px] flex items-center flex-col`}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.3 }}
     >
       <MainSectionLabel title={'Data'} />
       <div className={`mt-[12px]`} />
@@ -112,7 +116,7 @@ const MainDataSection = () => {
         title={'With Just a Microphone,\n' + 'Get Users’ Sleep Data'}
       />
       {renderView[currentSize]}
-    </section>
+    </motion.section>
   );
 };
 
