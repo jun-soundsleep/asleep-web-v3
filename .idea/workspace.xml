@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: init main page">
-      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/color.css" afterDir="false" />
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: complete main page top">
+      <change afterPath="$PROJECT_DIR$/public/imagev3/logo/Client_Logos.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainClientLogo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainTop.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainVideoSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/workbox-327c579b.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/workbox-327c579b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/layout/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/layout/MainLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/layout/Navigation/GNB.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/layout/Navigation/GNB.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/namjun/Desktop/dev/asleep-web-v2/public/imagev3/main",
+    "last_opened_file_path": "/Users/namjun/Desktop/dev/asleep-web-v2/public/imagev3/logo",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -101,6 +99,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/imagev3/logo" />
       <recent name="$PROJECT_DIR$/public/imagev3/main" />
       <recent name="$PROJECT_DIR$/public/imagev3/icon" />
       <recent name="$PROJECT_DIR$/fonts/RedHatDisplay" />
@@ -175,7 +174,7 @@
       <workItem from="1669617511408" duration="10315000" />
       <workItem from="1669689677062" duration="11800000" />
       <workItem from="1669879427244" duration="11418000" />
-      <workItem from="1670206868239" duration="25027000" />
+      <workItem from="1670206868239" duration="26926000" />
     </task>
     <task id="LOCAL-00001" summary="add typescript">
       <created>1669618419798</created>
@@ -373,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670234868838</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="feat: complete main page top">
+      <created>1670238686379</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1670238686379</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +410,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fix build error" />
     <MESSAGE value="test: api routes" />
     <MESSAGE value="test: api routes -2" />
     <MESSAGE value="test: api routes -4" />
@@ -429,7 +434,8 @@
     <MESSAGE value="fix: add medium nav detail bar" />
     <MESSAGE value="feat: add navigation bar in large view" />
     <MESSAGE value="feat: init main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: init main page" />
+    <MESSAGE value="feat: complete main page top" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: complete main page top" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
