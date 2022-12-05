@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: complete main client logo">
-      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainVideo.tsx" afterDir="false" />
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: complete main video section">
+      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/Main.styled.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainDataSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/workbox-327c579b.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/workbox-327c579b.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/component.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/component.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +172,7 @@
       <workItem from="1669617511408" duration="10315000" />
       <workItem from="1669689677062" duration="11800000" />
       <workItem from="1669879427244" duration="11418000" />
-      <workItem from="1670206868239" duration="28910000" />
+      <workItem from="1670206868239" duration="33042000" />
     </task>
     <task id="LOCAL-00001" summary="add typescript">
       <created>1669618419798</created>
@@ -382,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670240762239</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="feat: complete main video section">
+      <created>1670242752779</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1670242752779</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +422,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="test: api routes -2" />
     <MESSAGE value="test: api routes -4" />
     <MESSAGE value="feat: add tailwind css" />
     <MESSAGE value="feat: add next bundle analyzer" />
@@ -438,7 +446,8 @@
     <MESSAGE value="feat: init main page" />
     <MESSAGE value="feat: complete main page top" />
     <MESSAGE value="feat: complete main client logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: complete main client logo" />
+    <MESSAGE value="feat: complete main video section" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: complete main video section" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -448,7 +457,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/v3-component/MainPage/index.tsx</url>
-          <line>15</line>
+          <line>17</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
