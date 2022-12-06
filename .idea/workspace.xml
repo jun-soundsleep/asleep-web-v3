@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="add: main product value">
-      <change afterPath="$PROJECT_DIR$/public/imagev3/main/star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainPdfDownload.tsx" afterDir="false" />
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="add: main pdf section">
+      <change afterPath="$PROJECT_DIR$/public/imagev3/main/sleep_report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainSleepReport.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/MainDataSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainDataSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/MainFeatures.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainFeatures.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +171,7 @@
       <workItem from="1669617511408" duration="10315000" />
       <workItem from="1669689677062" duration="11800000" />
       <workItem from="1669879427244" duration="11418000" />
-      <workItem from="1670206868239" duration="46208000" />
+      <workItem from="1670206868239" duration="47910000" />
     </task>
     <task id="LOCAL-00001" summary="add typescript">
       <created>1669618419798</created>
@@ -424,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670302442084</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add: main pdf section">
+      <created>1670305657143</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1670305657143</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +463,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="feat: add daisyui package" />
     <MESSAGE value="feat: add pwa [MARK]" />
     <MESSAGE value="feat: add redirect api" />
     <MESSAGE value="feat: change api routes to typescript" />
@@ -480,7 +487,8 @@
     <MESSAGE value="fix: build error" />
     <MESSAGE value="add: main feature section" />
     <MESSAGE value="add: main product value" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: main product value" />
+    <MESSAGE value="add: main pdf section" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: main pdf section" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -85,6 +85,7 @@ const MainFeatures = () => {
               }
               alt={'aasd'}
               fill
+              quality={100}
             />
           </div>
         </div>

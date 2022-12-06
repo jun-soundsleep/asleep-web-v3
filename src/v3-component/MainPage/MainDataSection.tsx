@@ -112,7 +112,7 @@ const MainDataSection = () => {
 
   return (
     <motion.section
-      className={`mt-[131px] px-[16px] large:mt-[175px] large:px-[317px] flex items-center flex-col`}
+      className={`mt-[131px] px-[16px] large:mt-[175px] large:px-[317px] large:flex large:items-center large:flex-col`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.3 }}
