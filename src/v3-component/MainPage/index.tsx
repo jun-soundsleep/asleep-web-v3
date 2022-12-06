@@ -3,6 +3,7 @@ import MainTop from './MainTop';
 import MainClientLogo from './MainClientLogo';
 import MainVideo from './MainVideo';
 import MainDataSection from './MainDataSection';
+import MainFeatures from './MainFeatures';
 
 const MainPage = () => {
   return (
@@ -11,6 +12,7 @@ const MainPage = () => {
       <MainClientLogo />
       <MainVideo />
       <MainDataSection />
+      <MainFeatures />
     </MainLayout>
   );
 };

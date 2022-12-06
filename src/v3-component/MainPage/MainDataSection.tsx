@@ -116,6 +116,7 @@ const MainDataSection = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.3 }}
+      viewport={{ once: true }}
     >
       <MainSectionLabel title={'Data'} />
       <div className={`mt-[12px]`} />

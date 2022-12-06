@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: add animation in main data section">
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="fix: build error">
+      <change afterPath="$PROJECT_DIR$/public/imagev3/icon/minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imagev3/icon/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainFeatures.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workbox-327c579b.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/workbox-327c579b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/MainDataSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainDataSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/MainTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainTop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/namjun/Desktop/dev/asleep-web-v2/public/imagev3/logo",
+    "last_opened_file_path": "/Users/namjun/Desktop/dev/asleep-web-v2/public/imagev3/icon",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -95,9 +97,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/imagev3/icon" />
       <recent name="$PROJECT_DIR$/public/imagev3/logo" />
       <recent name="$PROJECT_DIR$/public/imagev3/main" />
-      <recent name="$PROJECT_DIR$/public/imagev3/icon" />
       <recent name="$PROJECT_DIR$/fonts/RedHatDisplay" />
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
@@ -152,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build:asleep-web" />
       </list>
@@ -170,7 +172,7 @@
       <workItem from="1669617511408" duration="10315000" />
       <workItem from="1669689677062" duration="11800000" />
       <workItem from="1669879427244" duration="11418000" />
-      <workItem from="1670206868239" duration="34405000" />
+      <workItem from="1670206868239" duration="40240000" />
     </task>
     <task id="LOCAL-00001" summary="add typescript">
       <created>1669618419798</created>
@@ -403,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670249921865</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fix: build error">
+      <created>1670250078510</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1670250078510</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +459,6 @@
     <MESSAGE value="feat: add v3-footer" />
     <MESSAGE value="feat: initialize nav bar" />
     <MESSAGE value="feat: add mobile navigation bar" />
-    <MESSAGE value="fix: build error" />
     <MESSAGE value="fix: add medium nav detail bar" />
     <MESSAGE value="feat: add navigation bar in large view" />
     <MESSAGE value="feat: init main page" />
@@ -459,7 +467,8 @@
     <MESSAGE value="feat: complete main video section" />
     <MESSAGE value="feat: complete main data section" />
     <MESSAGE value="feat: add animation in main data section" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add animation in main data section" />
+    <MESSAGE value="fix: build error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: build error" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -469,7 +478,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/v3-component/MainPage/index.tsx</url>
-          <line>17</line>
+          <line>19</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
