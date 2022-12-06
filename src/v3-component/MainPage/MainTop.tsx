@@ -34,8 +34,8 @@ const MainTop = () => {
         </h2>
         <motion.button
           className={`mt-[32px] text-white b1-medium-small min-w-[132px] min-h-[47px] flex justify-center items-center bg-[#2E2E2E] bg-opacity-15 medium:b2-medium-medi medium:min-w-[156px] medium:min-h-[55px] large:b2-medium-large large:min-w-[182px] medium:min-h-[64px] medium:mt-[40px] large:mt-[56px]`}
-          whileTap={{ scale: 1.2 }}
           transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+          whileTap={{ scale: 1.2 }}
         >
           <Link href={WEB_ROUTING.main}>Contact Us</Link>
         </motion.button>

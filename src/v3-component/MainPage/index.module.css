@@ -5,3 +5,11 @@
 .mainPdfGradient {
     background: linear-gradient(180deg, rgba(12, 12, 87, 0.7) 0%, rgba(25, 25, 152, 0.7) 29.69%, rgba(109, 109, 190, 0.63) 59.9%, rgba(255, 255, 255, 0.75) 96.35%);
 }
+
+.mainExtensionBoxGradient {
+    background: linear-gradient(180deg, #000000 0%, #121248 54.17%, #191998 100%);
+}
+
+.mainExtensionBottomGradient {
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, rgba(25, 25, 152, 0.46) 67.71%, rgba(9, 9, 84, 0.94) 100%);
+}

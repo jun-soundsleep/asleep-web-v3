@@ -21,7 +21,7 @@ export const SmallDetailMenu = ({
   }, [selectedItem]);
 
   return (
-    <li className={`px-[16px] bg-[#121212] bg-opacity-80`}>
+    <li className={`px-[16px]`}>
       <div
         className={`flex justify-between h-[62px] items-center ${
           showSubMenu

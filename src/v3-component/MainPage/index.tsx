@@ -7,6 +7,7 @@ import MainFeatures from './MainFeatures';
 import MainProductValue from './MainProductValue';
 import MainPdfDownload from './MainPdfDownload';
 import MainSleepReport from './MainSleepReport';
+import MainExtensions from './MainExtensions';
 
 const MainPage = () => {
   return (
@@ -19,6 +20,7 @@ const MainPage = () => {
       <MainProductValue />
       <MainPdfDownload />
       <MainSleepReport />
+      <MainExtensions />
     </MainLayout>
   );
 };

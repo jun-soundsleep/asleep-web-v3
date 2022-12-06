@@ -10,7 +10,7 @@ import { GNB_DATA } from './GNB_DATA';
 import { LargeMenu } from './LargeMenu';
 import CesAlert from './CesAlert';
 import { SmallDetailMenu } from './SmallDetailMenu';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import { selectedItems } from './GNB.util';
 
@@ -45,35 +45,40 @@ const GNB = () => {
           </button>
           {isLarge && <LargeMenu />}
         </div>
-        {detailMenu && !isLarge && (
-          <ul
-            className={`absolute z-10 h-[539px] right-0 top-[var(--gnb-height)]  medium:"top-[var(--gnb-height-medi)] large:"top-[var(--gnb-height-large)] w-full medium:w-[unset] medium:w-[405px]`}
-          >
-            {GNB_DATA.map((el, idx) => {
-              return (
-                <SmallDetailMenu
-                  key={idx}
-                  title={el.page}
-                  category={el.subCategory}
-                  selectedHandler={setSelectedItem}
-                  selectedItem={selectedItem}
-                />
-              );
-            })}
-            <motion.button
-              className="absolute bottom-0 w-full bg-[#2226C1] h2-small text-white flex items-center justify-center min-h-[47px]"
-              whileTap={{ scale: 1.2 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+        <AnimatePresence>
+          {detailMenu && !isLarge && (
+            <motion.ul
+              className={`absolute z-10 h-[539px] right-0 top-[var(--gnb-height)]  medium:"top-[var(--gnb-height-medi)] large:"top-[var(--gnb-height-large)] w-full medium:w-[unset] medium:w-[405px]  bg-[#121212] bg-opacity-80`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
             >
-              <Link
-                href={WEB_ROUTING.main}
-                className={`w-full h-full`}
+              {GNB_DATA.map((el, idx) => {
+                return (
+                  <SmallDetailMenu
+                    key={idx}
+                    title={el.page}
+                    category={el.subCategory}
+                    selectedHandler={setSelectedItem}
+                    selectedItem={selectedItem}
+                  />
+                );
+              })}
+              <motion.button
+                className="absolute bottom-0 w-full bg-[#2226C1] h2-small text-white flex items-center justify-center min-h-[47px]"
+                whileTap={{ scale: 1.2 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
               >
-                Contact Us
-              </Link>
-            </motion.button>
-          </ul>
-        )}
+                <Link
+                  href={WEB_ROUTING.main}
+                  className={`w-full h-full`}
+                >
+                  Contact Us
+                </Link>
+              </motion.button>
+            </motion.ul>
+          )}
+        </AnimatePresence>
       </div>
       {!isLarge && <CesAlert />}
     </nav>

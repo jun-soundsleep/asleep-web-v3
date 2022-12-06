@@ -1,7 +1,7 @@
 import ButtonDown from '/public/imagev3/icon/chevron-down.svg';
 import Link from 'next/link';
 import { WEB_ROUTING } from '../../../../util/routing';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { GNB_DATA } from './GNB_DATA';
 import { useToggle } from 'react-use';
 import { useEffect, useState } from 'react';
@@ -61,7 +61,9 @@ const LargeList = ({ title, category, selectedHandler, selectedItem }) => {
               showSubMenu && 'rotate-180'
             } transition-300 transition-all`}
           />
-          {showSubMenu && <LargeSubList category={category} />}
+          <AnimatePresence>
+            {showSubMenu && <LargeSubList category={category} />}
+          </AnimatePresence>
         </div>
       </button>
     </li>
@@ -72,8 +74,11 @@ const LargeSubList = ({ category }) => {
   const listStyle = `text-[#B6B6B6] hover:text-white border-b-[1px] border-[#626262] h-[54px] flex items-center`;
 
   return (
-    <div
+    <motion.div
       className={`absolute top-[43px] right-2/4 w-[230px] bg-[#121212] bg-opacity-80 min-w-[230px] px-[16px]`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <ul>
         {category.map((el, idx) => {
@@ -87,6 +92,6 @@ const LargeSubList = ({ category }) => {
           );
         })}
       </ul>
-    </div>
+    </motion.div>
   );
 };
