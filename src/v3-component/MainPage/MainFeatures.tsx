@@ -43,15 +43,9 @@ const MainFeatures = () => {
     return el.title === currentTab;
   });
 
-  console.log(
-    MAIN_FEATURE_DATA.findIndex(el => {
-      return el.title === currentTab;
-    })
-  );
-
   return (
     <motion.section
-      className={`mt-[131px] px-[16px] medium:px-[32px] large:px-[317px] large:flex large:gap-[96px] large:items-start`}
+      className={`mt-[131px] px-[16px] medium:px-[32px] large:px-[317px] large:flex large:gap-[96px] large:items-start large:pb-[164px]`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.3 }}
@@ -81,8 +75,8 @@ const MainFeatures = () => {
           );
         })}
       </div>
-      <div className={`relative w-full h-[711px]`}>
-        {isLarge && (
+      {isLarge && (
+        <div className={`relative w-full h-[711px]`}>
           <div className={`relative w-full h-full `}>
             <Image
               src={
@@ -93,8 +87,8 @@ const MainFeatures = () => {
               fill
             />
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </motion.section>
   );
 };
@@ -133,7 +127,11 @@ const SubSection = ({
           idx === 0 && 'mt-[32px]'
         } h-[62px] border-b-[1px] border-[#626262] large:min-w-[512px]`}
       >
-        <h3 className={`b1-medium-small medium:b1-bold-medi`}>{title}</h3>
+        <h3
+          className={`b1-medium-small medium:b1-bold-medi large:sub-bold-large`}
+        >
+          {title}
+        </h3>
         <div onClick={clickHandler}>
           {selected ? (
             <div className={buttonStyle}>
@@ -154,7 +152,9 @@ const SubSection = ({
             initial={{ height: 0 }}
             animate={{ height: 'auto' }}
           >
-            <div className={`b1-small medium:b1-medium-medi gray2`}>
+            <div
+              className={`b1-small medium:b1-medium-medi gray2 large:b2-large`}
+            >
               {description}
             </div>
             {!isLarge && (

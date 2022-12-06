@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import styles from './index.module.css';
+
 import { WEB_ROUTING } from '../../../util/routing';
 
 const MainTop = () => {
