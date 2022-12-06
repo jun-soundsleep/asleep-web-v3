@@ -5,6 +5,7 @@ import MainVideo from './MainVideo';
 import MainDataSection from './MainDataSection';
 import MainFeatures from './MainFeatures';
 import MainProductValue from './MainProductValue';
+import MainPdfDownload from './MainPdfDownload';
 
 const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ const MainPage = () => {
       <MainDataSection />
       <MainFeatures />
       <MainProductValue />
+      <MainPdfDownload />
     </MainLayout>
   );
 };

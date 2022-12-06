@@ -1,3 +1,7 @@
 .mainImageContainer {
     height: calc(100vh - var(--gnb-height) - var(--cesAlert-height));
 }
+
+.mainPdfGradient {
+    background: linear-gradient(180deg, rgba(12, 12, 87, 0.7) 0%, rgba(25, 25, 152, 0.7) 29.69%, rgba(109, 109, 190, 0.63) 59.9%, rgba(255, 255, 255, 0.75) 96.35%);
+}

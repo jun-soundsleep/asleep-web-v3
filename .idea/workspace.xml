@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="add: main feature section">
-      <change afterPath="$PROJECT_DIR$/public/imagev3/main/Feature_List.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainProductValue.tsx" afterDir="false" />
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="add: main product value">
+      <change afterPath="$PROJECT_DIR$/public/imagev3/main/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainPdfDownload.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/MainFeatures.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainFeatures.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/MainTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainTop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +170,7 @@
       <workItem from="1669617511408" duration="10315000" />
       <workItem from="1669689677062" duration="11800000" />
       <workItem from="1669879427244" duration="11418000" />
-      <workItem from="1670206868239" duration="43705000" />
+      <workItem from="1670206868239" duration="46208000" />
     </task>
     <task id="LOCAL-00001" summary="add typescript">
       <created>1669618419798</created>
@@ -418,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670295642330</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add: main product value">
+      <created>1670302442084</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1670302442084</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +455,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="feat: add tailwind responsive setting" />
     <MESSAGE value="feat: add daisyui package" />
     <MESSAGE value="feat: add pwa [MARK]" />
     <MESSAGE value="feat: add redirect api" />
@@ -474,22 +479,11 @@
     <MESSAGE value="feat: add animation in main data section" />
     <MESSAGE value="fix: build error" />
     <MESSAGE value="add: main feature section" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: main feature section" />
+    <MESSAGE value="add: main product value" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: main product value" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/v3-component/MainPage/index.tsx</url>
-          <line>21</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
