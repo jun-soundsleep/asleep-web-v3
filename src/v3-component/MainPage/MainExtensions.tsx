@@ -3,6 +3,7 @@ import styles from './index.module.css';
 import SpeakIcon from '/public/imagev3/main/speaker.svg';
 import BottomContactButton from '../layout/BottomContactButton';
 import useGetCurrentSize from '../../../hooks/useGetCurrentSize';
+import InfiniteLooper from '../util/InfinityLooper';
 
 const DATA = [
   {
@@ -92,27 +93,34 @@ const MainExtensions = () => {
         <div
           className={`mt-[32px] flex gap-[12px] w-full overflow-scroll medium:mt-[56px]`}
         >
-          {DATA.map((el, idx) => {
-            return (
-              <div
-                className={`flex flex-col items-center `}
-                key={idx}
-              >
+          <InfiniteLooper
+            speed={10}
+            direction={'right'}
+          >
+            {DATA.map((el, idx) => {
+              return (
                 <div
-                  className={`w-[124px] h-[124px] flex items-center justify-center ${styles.mainExtensionBoxGradient} medium:w-[183px] medium:h-[183px] large:w-[224px] large:h-[224px] `}
+                  className={`flex flex-col items-center `}
+                  key={idx}
                 >
                   <div
-                    className={`w-[34px] h-[42px] large:w-[50px] large:h-[91px] flex items-center justify-center`}
+                    className={`w-[124px] h-[124px] flex items-center justify-center ${styles.mainExtensionBoxGradient} medium:w-[183px] medium:h-[183px] large:w-[224px] large:h-[224px] `}
                   >
-                    <SpeakIcon />
+                    <div
+                      className={`w-[34px] h-[42px] large:w-[50px] large:h-[91px] flex items-center justify-center`}
+                    >
+                      <SpeakIcon />
+                    </div>
+                  </div>
+                  <div
+                    className={`mt-[8px] gray1 b1-small medium:caption-medi`}
+                  >
+                    {el.title}
                   </div>
                 </div>
-                <div className={`mt-[8px] gray1 b1-small medium:caption-medi`}>
-                  {el.title}
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </InfiniteLooper>
         </div>
       </motion.section>
       <BottomContactButton />
