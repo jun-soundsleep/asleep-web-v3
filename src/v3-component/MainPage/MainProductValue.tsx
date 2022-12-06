@@ -62,6 +62,7 @@ const MainProductValue = () => {
             return (
               <div
                 className={`border-b-[1px] border-[#626262] pb-[15px] medium:border-b-0`}
+                key={idx}
               >
                 <div
                   className={`flex mt-[32px] items-center`}

@@ -66,6 +66,7 @@ const MainFeatures = () => {
           return (
             <SubSection
               idx={idx}
+              key={idx}
               title={el.title}
               image={el.image}
               description={el.description}

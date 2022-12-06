@@ -66,11 +66,9 @@ const MainSleepReport = () => {
                 className={`border-b-[1px] border-[#626262] pb-[15px] ${
                   idx === PRODUCT_DATA.length - 1 && 'medium:border-b-0'
                 }`}
+                key={idx}
               >
-                <div
-                  className={`flex mt-[32px] items-center`}
-                  key={idx}
-                >
+                <div className={`flex mt-[32px] items-center`}>
                   <div className={`mr-[12px]`}>
                     <Icon />
                   </div>
