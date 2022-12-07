@@ -152,8 +152,6 @@ a
 1src/v3-component/layout/Navigation/GNB.styled.tsx,f/0/f01867e7dfa56312254c53ba2e1712c2e4e0598c
 <
 package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
-Z
-*src/v3-component/MainPage/index.module.css,6/7/67e9575b07ba23cc82ed9dbd7ccea2cd9c2a015c
 9
 	yarn.lock,5/3/53585a096fe3a3b96321113856ae62602995a33b
 _
@@ -164,5 +162,3 @@ f
 6src/v3-component/layout/Navigation/SmallDetailMenu.tsx,9/f/9f1963e34c26f357ca997a8ada16bd4bc8fd8102
 e
 5src/v3-component/util/InfinityLooper/index.module.css,a/d/adef41fdc2ec184336176cfaff17f648a1bbf613
-\
-,src/v3-component/MainPage/MainExtensions.tsx,a/4/a4fa66785a6e2dab7412d337bb5020a4d5c4cb87

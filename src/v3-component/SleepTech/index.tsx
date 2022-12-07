@@ -5,6 +5,8 @@ import SleeTechVideoSection from './SleeTechVideoSection';
 import SleepTechMedicalBackgroundSection from './SleepTechMedicalBackgroundSection';
 import SleepTechCompetition from './SleepTechCompetition';
 import SleeTechResearchPaper from './SleeTechResearchPaper';
+import PartnershipBoxSection from '../common/PartnershipBoxSection';
+import BottomContactButton from '../layout/BottomContactButton';
 
 const Index = () => {
   return (
@@ -15,6 +17,8 @@ const Index = () => {
       <SleepTechMedicalBackgroundSection />
       <SleepTechCompetition />
       <SleeTechResearchPaper />
+      <PartnershipBoxSection />
+      <BottomContactButton />
     </MainLayout>
   );
 };
