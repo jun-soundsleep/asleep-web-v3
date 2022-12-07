@@ -1,0 +1,14 @@
+.radicalGradient {
+    background: radial-gradient(38.31% 49.93% at 50% 50.07%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 34.9%, rgba(255, 255, 255, 0) 100%);
+}
+
+.ballon {
+    border-top: 0 solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #2E2E2E;
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
