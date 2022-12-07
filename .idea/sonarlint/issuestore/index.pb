@@ -138,8 +138,6 @@ M
 public/imagev3/icon/minus.svg,9/e/9e06568e3c4d2b20e268b3df5618adcdf34ef53b
 L
 public/imagev3/icon/plus.svg,2/7/2767a510a14d6a3936cc38237abb72f96d8c61ff
-<
-public/sw.js,4/a/4a4b0ecc67d3a205e68728f34986d179a31a91c4
 ^
 .src/v3-component/MainPage/MainVideoSection.tsx,6/2/62c585fdf7511cb487107225fe709564e47b9ab0
 Y
