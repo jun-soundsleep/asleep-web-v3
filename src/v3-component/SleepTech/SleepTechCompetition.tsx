@@ -198,8 +198,8 @@ const AbovePercentBox = ({
   );
 };
 
-const LowerPercentBox = ({ bg = '#363636' }: { bg?: string }) => {
+const LowerPercentBox = () => {
   return (
-    <div className={`w-full h-full bg-[${bg}] absolute left-0 top-0 z-0`} />
+    <div className={`w-full h-full bg-[#363636] absolute left-0 top-0 z-0`} />
   );
 };
