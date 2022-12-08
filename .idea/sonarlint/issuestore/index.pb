@@ -40,8 +40,6 @@ l
 <src/components/atoms/people/detail/DetailPeoleBackButton.jsx,9/8/98a135daf63d1be9cd5abf1605b364a9319a7821
 D
 public/manifest.json,4/2/42e89cd2213b9d5dfae4f63522702c623170d792
-J
-src/pages/api/ces/index.ts,9/b/9bffb54b7ba5f92f323ff646728bc4ccb74680a3
 l
 <src/pages/fonts/Pretendard/Pretendard-ExtraBold.subset.woff2,5/f/5f67bfacb9146b3379e3cbbbe34edd7ea177bea8
 j
@@ -144,8 +142,6 @@ L
 public/imagev3/main/star.svg,d/c/dc18294bce5c8d64a4ac586e4b0b47ef530560de
 a
 1src/v3-component/layout/Navigation/GNB.styled.tsx,f/0/f01867e7dfa56312254c53ba2e1712c2e4e0598c
-9
-	yarn.lock,5/3/53585a096fe3a3b96321113856ae62602995a33b
 O
 public/imagev3/main/speaker.svg,d/c/dc8f09c11b2e438819d19773f2593f7829a6637d
 f
