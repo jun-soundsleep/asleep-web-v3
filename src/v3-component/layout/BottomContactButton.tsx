@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from '../MainPage/index.module.css';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { WEB_ROUTING } from '../../../util/routing';
 
 const BottomContactButton = () => {
   return (
@@ -16,7 +18,7 @@ const BottomContactButton = () => {
           transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           whileTap={{ scale: 1.2 }}
         >
-          Contact Us
+          <Link href={WEB_ROUTING.main}>Contact Us</Link>
         </motion.button>
       </div>
     </div>

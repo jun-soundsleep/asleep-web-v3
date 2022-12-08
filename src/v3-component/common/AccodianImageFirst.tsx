@@ -1,12 +1,14 @@
 import React, { FC, useEffect, useState } from 'react';
-import useGetCurrentSize from '../../../hooks/useGetCurrentSize';
-import { deviceType } from '../../../styles/device';
-import WithViewPortOpacity from '../Animation/WithViewPortOpacity';
 import Image from 'next/image';
 import { useToggle } from 'react-use';
 import PlusButton from '/public/imagev3/icon/plus.svg';
 import MinusButton from '/public/imagev3/icon/minus.svg';
+import AndroidIcon from '/public/imagev3/logo/Google_Play.svg';
+import IosIcon from '/public/imagev3/logo/App_Store.svg';
 import { AnimatePresence, motion } from 'framer-motion';
+import useGetCurrentSize from '../../../hooks/useGetCurrentSize';
+import { deviceType } from '../../../styles/device';
+import LabelBodySection from './LabelBodySection';
 
 type AccodianDataType = {
   title: string;
@@ -16,11 +18,21 @@ type AccodianDataType = {
 
 type AccodianSectionType = {
   data: AccodianDataType[];
+  defaultImage: string;
+  styleClass?: string;
   head: string;
-  subHead: string;
+  description: string;
+  appStore?: { androidLink: string; iosLink: string };
 };
 
-const AccodianSection: FC<AccodianSectionType> = ({ data, head, subHead }) => {
+const AccodianImageFirst: FC<AccodianSectionType> = ({
+  data,
+  defaultImage,
+  styleClass,
+  head,
+  description,
+  appStore
+}) => {
   const [currentTab, setCurrentTab] = useState<null | string>(null);
   const currentSize = useGetCurrentSize();
   const isLarge = currentSize === deviceType.large;
@@ -29,29 +41,76 @@ const AccodianSection: FC<AccodianSectionType> = ({ data, head, subHead }) => {
     return el.title === currentTab;
   });
 
-  return (
-    <WithViewPortOpacity
-      styleClass={`mt-[131px] px-[16px] medium:px-[32px] large:px-[317px] large:flex large:gap-[96px] large:items-start large:pb-[164px]`}
-    >
+  const getImage = () => {
+    return (
+      <div className={`relative w-full h-[354px] medium:h-[702px]`}>
+        <Image
+          src={largeImageIndex < 0 ? defaultImage : data[largeImageIndex].image}
+          alt={'aasd'}
+          fill
+        />
+      </div>
+    );
+  };
+
+  const getAppIcon = () => {
+    const iconStyle = `w-[78px] h-[26px] medium:w-[112px] medium:h-[32px] `;
+
+    return (
       <>
-        <div>
+        {appStore && (
           <div
-            className={`gray2 b2-bold-small medium:b2-bold-medi large:b2-bold-large`}
+            className={`flex justify-start gap-[12px] mt-[16px] medium:mt-[32px] large:mt-[24px]`}
           >
-            {head}
+            <div className={iconStyle}>
+              <a
+                href={appStore.androidLink}
+                target={'__blank'}
+              >
+                <AndroidIcon />
+              </a>
+            </div>
+            <div className={iconStyle}>
+              <a
+                href={appStore.iosLink}
+                target={'__blank'}
+              >
+                <IosIcon />
+              </a>
+            </div>
           </div>
-          <h2
-            className={`text-white h1-bold-small medium:h1-medium-medi large:h1-large`}
-          >
-            {subHead}
-          </h2>
+        )}
+      </>
+    );
+  };
+
+  const getHead = () => {
+    return (
+      <>
+        <LabelBodySection
+          head={head}
+          description={description}
+        />
+        {getAppIcon()}
+      </>
+    );
+  };
+
+  return (
+    <>
+      {!isLarge && getHead()}
+      <div
+        className={`mt-[32px] large:flex large:gap-[38px] large:items-start large:pb-[164px]`}
+      >
+        {!isLarge && getImage()}
+        <div>
+          {isLarge && getHead()}
           {data.map((el, idx) => {
             return (
               <SubSection
                 idx={idx}
                 key={idx}
                 title={el.title}
-                image={el.image}
                 description={el.description}
                 setCurrentTab={setCurrentTab}
                 currentTab={currentTab}
@@ -59,37 +118,16 @@ const AccodianSection: FC<AccodianSectionType> = ({ data, head, subHead }) => {
             );
           })}
         </div>
-        {isLarge && (
-          <div className={`relative w-full h-[711px]`}>
-            <div className={`relative w-full h-full `}>
-              <Image
-                src={data[largeImageIndex < 0 ? 0 : largeImageIndex].image}
-                alt={'aasd'}
-                fill
-                quality={100}
-              />
-            </div>
-          </div>
-        )}
-      </>
-    </WithViewPortOpacity>
+        {isLarge && getImage()}
+      </div>
+    </>
   );
 };
 
-export default AccodianSection;
+export default AccodianImageFirst;
 
-const SubSection = ({
-  idx,
-  title,
-  image,
-  description,
-  currentTab,
-  setCurrentTab
-}) => {
+const SubSection = ({ idx, title, description, currentTab, setCurrentTab }) => {
   const [selected, setSelected] = useToggle(false);
-  const currentSize = useGetCurrentSize();
-  const isLarge = currentSize === deviceType.large;
-
   const buttonStyle = `w-[20px] h-[22px] flex items-center justify-between`;
 
   const clickHandler = () => {
@@ -140,15 +178,6 @@ const SubSection = ({
             >
               {description}
             </div>
-            {!isLarge && (
-              <div className={`relative w-full h-[200px] mt-[16px]`}>
-                <Image
-                  src={image}
-                  alt={'aasd'}
-                  fill
-                />
-              </div>
-            )}
           </motion.div>
         )}
       </AnimatePresence>

@@ -128,12 +128,8 @@ B
 styles/globals.css,8/c/8c258232cbcd5d83991c524a9e86c8d3f984fc57
 T
 $public/imagev3/logo/Client_Logos.svg,3/b/3b67acd2d533d36a23c0fc8c0b341290f8185681
-Z
-*public/imagev3/logo/Client_Logos_Large.svg,8/6/86d89432efad4607e5ae906aeb5e4d85417b539b
 D
 src/pages/people.jsx,5/b/5bba3529a4f3ae257a76cb58e36fdf0685a88501
-V
-&src/v3-component/layout/MainLayout.tsx,0/0/0031dc675b487f28a5afb2b4fa32631bba0f9ddf
 M
 public/imagev3/icon/minus.svg,9/e/9e06568e3c4d2b20e268b3df5618adcdf34ef53b
 L
@@ -148,12 +144,8 @@ L
 public/imagev3/main/star.svg,d/c/dc18294bce5c8d64a4ac586e4b0b47ef530560de
 a
 1src/v3-component/layout/Navigation/GNB.styled.tsx,f/0/f01867e7dfa56312254c53ba2e1712c2e4e0598c
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 9
 	yarn.lock,5/3/53585a096fe3a3b96321113856ae62602995a33b
-_
-/src/v3-component/layout/BottomContactButton.tsx,f/c/fc8c8f334cfaee17eb8ca4888704e40ec08782da
 O
 public/imagev3/main/speaker.svg,d/c/dc8f09c11b2e438819d19773f2593f7829a6637d
 f
