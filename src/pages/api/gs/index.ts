@@ -1,10 +1,13 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 // Config variables
-const SPREADSHEET_ID = '';
-const SHEET_ID = '';
-const CLIENT_EMAIL = '';
-const PRIVATE_KEY = '';
+const keyStart = '-----BEGIN PRIVATE KEY-----\n';
+const keyEnd = '\n-----END PRIVATE KEY-----\n';
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
+const SHEET_ID = process.env.SHEET_ID;
+const CLIENT_EMAIL = process.env.CLIENT_EMAIL;
+const PRIVATE_KEY =
+  keyStart + process.env.PRIVATE_KEY.replace(/\\n/g, '\n') + keyEnd;
 
 export default async function handler(req, res) {
   try {
@@ -16,7 +19,6 @@ export default async function handler(req, res) {
     await doc.loadInfo();
     const sheet = doc.sheetsById[SHEET_ID];
     const result = await sheet.addRow({ Name: 'jun-test', Value: 'jun-test' });
-    console.log(result);
     return res.json({ d: result });
   } catch (e) {
     console.error(e);
