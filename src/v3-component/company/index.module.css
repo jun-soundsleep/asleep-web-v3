@@ -1,0 +1,25 @@
+.companyImageContainer {
+    height: calc(100vh - var(--gnb-height) - var(--cesAlert-height));
+}
+
+.wellnessGradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 21.35%, rgba(255, 255, 255, 0.1) 80.73%, rgba(255, 255, 255, 0) 100%);
+}
+
+.investorGradient {
+    background: radial-gradient(38.31% 49.93% at 50% 50.07%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 34.9%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media (min-width: 1920px) {
+    /*
+    todo [jun]
+    css variable로 고치기
+    */
+    .wellnessWidth {
+        width: calc(100% + 632px);
+        margin: 0 -316px;
+    }
+}
+
+
+

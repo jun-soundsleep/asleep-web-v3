@@ -40,7 +40,6 @@ const SolutionSlee = () => {
             androidLink: 'https://toss.com',
             iosLink: 'https://sss.com'
           }}
-          // styleClass={`mt-[112px]`}
         />
       </>
     </WithViewPortOpacity>

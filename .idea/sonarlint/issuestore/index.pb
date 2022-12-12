@@ -19,8 +19,6 @@ U
 .eslintrc.json,7/1/71c20a341bfe32aa5cd5b4384e94f942bab6a7d3
 B
 src/pages/news.jsx,5/8/58a7bc388fc9828dbe6c082f9083aef6553d6e81
-F
-src/pages/business.jsx,7/8/78a57b318cc5c0a9a51a01ce936a95d38ffaf8aa
 ]
 -src/components/mocules/Common/CommonModal.jsx,2/d/2d933420959c395905d7fa4eb2ba9668295b225c
 N
@@ -49,8 +47,6 @@ i
 9src/pages/fonts/Pretendard/Pretendard-Medium.subset.woff2,8/7/8709d5685686f45e523e5edd7e92930eebf15ecd
 i
 9src/pages/fonts/RedHatDisplay/RedHatDisplay-Regular.woff2,2/1/216bba0b5f39a8aac8884d56cef991fc062ba337
-G
-src/pages/_document.tsx,0/5/052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
 Z
 *src/components/atoms/Nav/NavAsleepLogo.jsx,e/f/eff022cde6043cfe760414bdbacfdedd8478fac8
 ?
@@ -141,5 +137,3 @@ O
 public/imagev3/main/speaker.svg,d/c/dc8f09c11b2e438819d19773f2593f7829a6637d
 f
 6src/v3-component/layout/Navigation/SmallDetailMenu.tsx,9/f/9f1963e34c26f357ca997a8ada16bd4bc8fd8102
-e
-5src/v3-component/util/InfinityLooper/index.module.css,a/d/adef41fdc2ec184336176cfaff17f648a1bbf613
