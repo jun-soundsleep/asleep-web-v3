@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="is connecting google spread sheet">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="add enviroment variable for api routes">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/workbox-327c579b.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/workbox-327c579b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/api/gs/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/api/gs/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/MainPage/MainTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/MainPage/MainTop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +173,7 @@
       <workItem from="1669689677062" duration="11800000" />
       <workItem from="1669879427244" duration="11418000" />
       <workItem from="1670206868239" duration="59389000" />
-      <workItem from="1670377288739" duration="42145000" />
+      <workItem from="1670377288739" duration="47366000" />
     </task>
     <task id="LOCAL-00001" summary="add typescript">
       <created>1669618419798</created>
@@ -509,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670491303959</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add enviroment variable for api routes">
+      <created>1670556830939</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1670556830939</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fix: adjust prettier option enforce single attribute per line" />
     <MESSAGE value="feat: adjust next/font example" />
     <MESSAGE value="feat: add v3-footer" />
     <MESSAGE value="feat: initialize nav bar" />
@@ -565,7 +573,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="add solutions page" />
     <MESSAGE value="is connecting google spread sheet" />
-    <option name="LAST_COMMIT_MESSAGE" value="is connecting google spread sheet" />
+    <MESSAGE value="add enviroment variable for api routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add enviroment variable for api routes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

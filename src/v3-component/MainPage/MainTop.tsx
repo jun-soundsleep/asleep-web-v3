@@ -1,12 +1,9 @@
 import Image from 'next/image';
-import styles from './index.module.css';
 import ContactButton from '../common/ContactButton';
 
 const MainTop = () => {
   return (
-    <div
-      className={`${styles.mainImageContainer} relative medium:h-[calc(100vh-var(--gnb-height-medi)-var(--cesAlert-height-medi))] large:h-[calc(100vh-var(--gnb-height---gnb-height-large)-var(--cesAlert-height-medi))]`}
-    >
+    <div className={`relative h-[510px] medium:h-[697px] large:h-[836px]`}>
       <Image
         className={`absolute z-0`}
         src={'/imagev3/main/main_top.png'}
@@ -21,13 +18,14 @@ const MainTop = () => {
         <h1
           className={`text-white title-small medium:title-medi large:title-large`}
         >
-          Enter the Bedroom Market with Sleeptrack API
+          {'Enter the Bedroom\nMarket with\nSleeptrack API'}
         </h1>
         <h2
           className={`b1-small text-[#B6B6B6] mt-[16px] medium:b1-medium-medi large:sub-large large:mt-[24px]`}
         >
-          Industry leading companies are using Sleeptrack API to understand
-          their customers sleep and create innovative business use cases.
+          {
+            'Industry leading companies are using\nSleeptrack API to understand their\ncustomers sleep and create\ninnovative business use cases.'
+          }
         </h2>
         <ContactButton />
       </div>

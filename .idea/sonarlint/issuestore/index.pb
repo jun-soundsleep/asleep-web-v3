@@ -15,9 +15,6 @@ S
 #src/pages/company/sleepsolution.jsx,0/0/0067307caaf8813e81d0652c5e455e71d819e86c
 U
 %src/pages/company/sleepmonitoring.jsx,3/8/386a0f3a642d352aadb0d03000d39eafd997df99
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 >
 .eslintrc.json,7/1/71c20a341bfe32aa5cd5b4384e94f942bab6a7d3
 B
@@ -120,8 +117,6 @@ X
 (src/components/mocules/Tech/TechCard.jsx,6/4/64ff9707cce551812873e7df6c1cd2a8ec6731c6
 B
 tailwind.config.js,0/9/0918cbb76f2c44f223706cec9d31a32cd1177ce4
-B
-src/pages/_app.tsx,2/e/2eefa41a18ed6ea3f58b3748f9e5559a28e77646
 B
 styles/globals.css,8/c/8c258232cbcd5d83991c524a9e86c8d3f984fc57
 T
