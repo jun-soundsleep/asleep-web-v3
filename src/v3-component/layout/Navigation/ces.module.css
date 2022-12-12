@@ -1,6 +1,11 @@
-.scrollText {
-    animation: scrollText 3s infinite linear;
-    transition: all 3s ease;
+.scrollAnimation {
+    animation: 15s scrollText 0.2s infinite linear;
+}
+
+@media (min-width: 768px) {
+    .scrollAnimation {
+        animation: unset;
+    }
 }
 
 @keyframes scrollText {
