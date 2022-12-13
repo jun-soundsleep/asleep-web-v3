@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: add news section">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/0067307caaf8813e81d0652c5e455e71d819e86c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/386a0f3a642d352aadb0d03000d39eafd997df99" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: add isr at company page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,21 +169,7 @@
       <workItem from="1669689677062" duration="11800000" />
       <workItem from="1669879427244" duration="11418000" />
       <workItem from="1670206868239" duration="59389000" />
-      <workItem from="1670377288739" duration="82702000" />
-    </task>
-    <task id="LOCAL-00007" summary="feat: add tailwind css">
-      <created>1669690545123</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1669690545123</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: add next bundle analyzer">
-      <created>1669691854958</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1669691854958</updated>
+      <workItem from="1670377288739" duration="83138000" />
     </task>
     <task id="LOCAL-00009" summary="feat: add tailwind responsive setting">
       <created>1669696252755</created>
@@ -515,7 +500,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670917798665</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="fix: delete legacy page">
+      <created>1670918264291</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1670918264291</updated>
+    </task>
+    <task id="LOCAL-00057" summary="feat: add isr at company page">
+      <created>1670918468962</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1670918468962</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,8 +555,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="feat: add navigation bar in large view" />
-    <MESSAGE value="feat: init main page" />
     <MESSAGE value="feat: complete main page top" />
     <MESSAGE value="feat: complete main client logo" />
     <MESSAGE value="feat: complete main video section" />
@@ -581,7 +578,9 @@
     <MESSAGE value="fix: build error" />
     <MESSAGE value="feat: news list section layout" />
     <MESSAGE value="feat: add news section" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add news section" />
+    <MESSAGE value="fix: delete legacy page" />
+    <MESSAGE value="feat: add isr at company page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add isr at company page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
