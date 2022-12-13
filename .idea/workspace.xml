@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: add company page except news">
-      <change afterPath="$PROJECT_DIR$/public/imagev3/company/company_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imagev3/company/company_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imagev3/company/company_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imagev3/company/company_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/imagev3/company/company_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/com.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/company/Common/CompanyAccodian.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/company/CompanyAP.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/company/CompanyGoal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/company/CompanyInvestors.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/company/CompanyNewsList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/company/CompanyTopSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/company/CompanyWellness.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/company/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/v3-component/company/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/SolutionsPage/SolutionSlee.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/SolutionsPage/SolutionSlee.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workbox-327c579b.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/workbox-327c579b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/company/Common/CompanyAccodian.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/company/Common/CompanyAccodian.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build:asleep-web" />
       </list>
@@ -187,14 +170,7 @@
       <workItem from="1669689677062" duration="11800000" />
       <workItem from="1669879427244" duration="11418000" />
       <workItem from="1670206868239" duration="59389000" />
-      <workItem from="1670377288739" duration="63999000" />
-    </task>
-    <task id="LOCAL-00003" summary="test: api routes">
-      <created>1669620297186</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1669620297186</updated>
+      <workItem from="1670377288739" duration="64775000" />
     </task>
     <task id="LOCAL-00004" summary="test: api routes -2">
       <created>1669620955598</created>
@@ -532,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670829618393</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="feat: add company page except news">
+      <created>1670839469821</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1670839469821</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

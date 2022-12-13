@@ -142,7 +142,10 @@ const SubSection = ({ idx, title, description, currentTab, setCurrentTab }) => {
             >
               {description.map((el, idx) => {
                 return (
-                  <div className={`flex gap-[5px]`}>
+                  <div
+                    className={`flex gap-[5px]`}
+                    key={idx}
+                  >
                     <div>{idx + 1}.</div>
                     <div key={idx}>{el}</div>
                   </div>
