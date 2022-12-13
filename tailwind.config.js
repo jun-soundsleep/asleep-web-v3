@@ -18,6 +18,5 @@ module.exports = {
         sans: ['var(--font-pretendard)']
       }
     }
-  },
-  plugins: [require('daisyui')]
+  }
 };
