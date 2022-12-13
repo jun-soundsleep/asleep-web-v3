@@ -16,7 +16,8 @@ export async function getStaticProps() {
   const result = await getNewList();
   return {
     props: {
-      newsList: result
+      newsList: result,
+      revalidate: 300
     }
   };
 }
