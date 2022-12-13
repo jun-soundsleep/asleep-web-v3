@@ -131,8 +131,6 @@ J
 hooks/useGetCurrentSize.ts,c/4/c47e5c5a0dfaced09f61f1572a6250655ba39787
 L
 public/imagev3/main/star.svg,d/c/dc18294bce5c8d64a4ac586e4b0b47ef530560de
-a
-1src/v3-component/layout/Navigation/GNB.styled.tsx,f/0/f01867e7dfa56312254c53ba2e1712c2e4e0598c
 O
 public/imagev3/main/speaker.svg,d/c/dc8f09c11b2e438819d19773f2593f7829a6637d
 f

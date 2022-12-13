@@ -15,7 +15,7 @@ const FooterSection = ({ data }) => {
       </div>
       {data.sub.map((el, idx) => (
         <div
-          key={el.id}
+          key={idx}
           className={`${idx === 0 ? 'mt-[24px]' : 'mt-[8px]'} ${commonStyle}`}
         >
           <Link href={el.to}>{el.title}</Link>

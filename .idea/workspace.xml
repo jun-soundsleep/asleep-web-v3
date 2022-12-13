@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: add company page except news">
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="fix: build error">
+      <change afterPath="$PROJECT_DIR$/public/imagev3/icon/external_arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workbox-327c579b.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/workbox-327c579b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/company/Common/CompanyAccodian.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/company/Common/CompanyAccodian.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workbox-588899ac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/common/MotionButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/common/MotionButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/company/CompanyNewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/company/CompanyNewsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/company/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/company/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/layout/Footer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +76,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/namjun/Desktop/dev/asleep-web-v2/public/imagev3/company",
+    "last_opened_file_path": "/Users/namjun/Desktop/dev/asleep-web-v2/public/imagev3/icon",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,11 +99,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/imagev3/icon" />
       <recent name="$PROJECT_DIR$/public/imagev3/company" />
       <recent name="$PROJECT_DIR$/public/imagev3/solutions" />
       <recent name="$PROJECT_DIR$/public/imagev3/logo" />
       <recent name="$PROJECT_DIR$/public/imagev3/sleeptech" />
-      <recent name="$PROJECT_DIR$/public/imagev3/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/imagev3/icon" />
@@ -151,8 +156,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.build:asleep-web" />
       </list>
@@ -170,14 +175,7 @@
       <workItem from="1669689677062" duration="11800000" />
       <workItem from="1669879427244" duration="11418000" />
       <workItem from="1670206868239" duration="59389000" />
-      <workItem from="1670377288739" duration="64775000" />
-    </task>
-    <task id="LOCAL-00004" summary="test: api routes -2">
-      <created>1669620955598</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1669620955598</updated>
+      <workItem from="1670377288739" duration="69997000" />
     </task>
     <task id="LOCAL-00005" summary="test: api routes -2">
       <created>1669626420239</created>
@@ -515,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670839469821</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="fix: build error">
+      <created>1670896695301</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1670896695301</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +574,6 @@
     <MESSAGE value="add: main product value" />
     <MESSAGE value="add: main pdf section" />
     <MESSAGE value="add: main slee report" />
-    <MESSAGE value="fix: build error" />
     <MESSAGE value="for sharing" />
     <MESSAGE value="wip" />
     <MESSAGE value="add: sleeptech 페이지" />
@@ -581,7 +585,8 @@
     <MESSAGE value="fix: main page top image size" />
     <MESSAGE value="feat: add ces alert animation" />
     <MESSAGE value="feat: add company page except news" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add company page except news" />
+    <MESSAGE value="fix: build error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: build error" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

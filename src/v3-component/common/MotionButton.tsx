@@ -7,13 +7,33 @@ type MotionButtonType = {
   text: string;
   styleClass?: string;
   externalLink?: string;
+  clickHandler?: () => void;
 };
 
 const MotionButton: FC<MotionButtonType> = ({
   text,
   styleClass,
-  externalLink
+  externalLink,
+  clickHandler
 }) => {
+  const getText = () => {
+    return (
+      <div>
+        {' '}
+        {externalLink ? (
+          <a
+            href={externalLink}
+            target={'__blank'}
+          >
+            {text}
+          </a>
+        ) : (
+          <Link href={WEB_ROUTING.main}>{text}</Link>
+        )}
+      </div>
+    );
+  };
+
   return (
     <motion.button
       className={
@@ -23,16 +43,7 @@ const MotionButton: FC<MotionButtonType> = ({
       transition={{ type: 'spring', stiffness: 400, damping: 10 }}
       whileTap={{ scale: 1.2 }}
     >
-      {externalLink ? (
-        <a
-          href={externalLink}
-          target={'__blank'}
-        >
-          {text}
-        </a>
-      ) : (
-        <Link href={WEB_ROUTING.main}>{text}</Link>
-      )}
+      {clickHandler ? <div onClick={clickHandler}>{text}</div> : getText()}
     </motion.button>
   );
 };

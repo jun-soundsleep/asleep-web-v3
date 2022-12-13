@@ -5,6 +5,7 @@ import CompanyWellness from './CompanyWellness';
 import BottomContactButton from '../layout/BottomContactButton';
 import CompanyAp from './CompanyAP';
 import CompanyInvestors from './CompanyInvestors';
+import CompanyNewsList from './CompanyNewsList';
 
 function Index() {
   return (
@@ -15,6 +16,7 @@ function Index() {
         <CompanyWellness />
         <CompanyAp />
         <CompanyInvestors />
+        <CompanyNewsList />
       </div>
       <BottomContactButton />
     </MainLayout>
