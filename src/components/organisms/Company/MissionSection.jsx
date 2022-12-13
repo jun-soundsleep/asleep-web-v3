@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { mp } from '../../../../styles/device';
-import { MXFlexCenteringSB } from '../../mixin/MXFlex';
-import FullImageContainer from '../../atoms/Common/FullImageContainer';
 
 function MissionSection({ missionTitle, missionBody }) {
   return (
@@ -10,9 +8,9 @@ function MissionSection({ missionTitle, missionBody }) {
       <ImageWrapper>
         <ImageContainer>
           <FullImage
-            src={'/images/company/company_1_s_2x.jpg'}
-            srcM={'/images/company/company_1_m_2x.jpg'}
-            srcL={'/images/company/company_1_l_2x.jpg'}
+            src={'/images/companyPage/company_1_s_2x.jpg'}
+            srcM={'/images/companyPage/company_1_m_2x.jpg'}
+            srcL={'/images/companyPage/company_1_l_2x.jpg'}
           />
         </ImageContainer>
         <MissionWrapper>

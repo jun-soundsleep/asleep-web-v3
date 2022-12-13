@@ -11,20 +11,20 @@ import CompanySectionContainer from '../../atoms/Company/CompanySectionContainer
 
 function CompanyFaithSection() {
   const { t } = useTranslation();
-  const title = t('company:company_faith_title');
-  const subTitle = t('company:company_faith_title_sub');
-  const psg = t('company:psg');
-  const psgDetail = t('company:psg_detail');
-  const family = t('company:family_health');
-  const familyDetail = t('company:family_health_detail');
-  const improve = t('company:improve_lift');
-  const improveDetail = t('company:improve_lift_detail');
-  const refresh = t('company:wake_refreshed');
-  const refreshDetail = t('company:wake_refreshed_detail');
-  const monitor = t('company:monitor_pass_data');
-  const monitorDetail = t('company:monitor_pass_data_detail');
-  const preventDisease = t('company:prevent_disease');
-  const preventDiseaseDetail = t('company:prevent_disease_detail');
+  const title = t('companyPage:company_faith_title');
+  const subTitle = t('companyPage:company_faith_title_sub');
+  const psg = t('companyPage:psg');
+  const psgDetail = t('companyPage:psg_detail');
+  const family = t('companyPage:family_health');
+  const familyDetail = t('companyPage:family_health_detail');
+  const improve = t('companyPage:improve_lift');
+  const improveDetail = t('companyPage:improve_lift_detail');
+  const refresh = t('companyPage:wake_refreshed');
+  const refreshDetail = t('companyPage:wake_refreshed_detail');
+  const monitor = t('companyPage:monitor_pass_data');
+  const monitorDetail = t('companyPage:monitor_pass_data_detail');
+  const preventDisease = t('companyPage:prevent_disease');
+  const preventDiseaseDetail = t('companyPage:prevent_disease_detail');
 
   return (
     <CompanySectionContainer>
@@ -35,11 +35,26 @@ function CompanyFaithSection() {
         <CompanyBodySubTitle item={subTitle} />
       </SubTitleContainer>
       <MobileContainer>
-        <CompanyHistorySmallCard title={psg} body={psgDetail} />
-        <CompanyHistorySmallCard title={family} body={familyDetail} />
-        <CompanyHistorySmallCard title={improve} body={improveDetail} />
-        <CompanyHistorySmallCard title={refresh} body={refreshDetail} />
-        <CompanyHistorySmallCard title={monitor} body={monitorDetail} />
+        <CompanyHistorySmallCard
+          title={psg}
+          body={psgDetail}
+        />
+        <CompanyHistorySmallCard
+          title={family}
+          body={familyDetail}
+        />
+        <CompanyHistorySmallCard
+          title={improve}
+          body={improveDetail}
+        />
+        <CompanyHistorySmallCard
+          title={refresh}
+          body={refreshDetail}
+        />
+        <CompanyHistorySmallCard
+          title={monitor}
+          body={monitorDetail}
+        />
         <CompanyHistorySmallCard
           title={preventDisease}
           body={preventDiseaseDetail}
@@ -50,36 +65,36 @@ function CompanyFaithSection() {
           <CompanyFaithCard
             title={psg}
             body={psgDetail}
-            srcm={'/images/company/company_5_l_2x.jpg'}
+            srcm={'/images/companyPage/company_5_l_2x.jpg'}
           />
           <CompanyFaithCard
             title={family}
             body={familyDetail}
-            srcm={'/images/company/company_6_l_2x.jpg'}
+            srcm={'/images/companyPage/company_6_l_2x.jpg'}
           />
         </CardContainer>
         <CardContainer>
           <CompanyFaithCard
             title={improve}
             body={improveDetail}
-            srcm={'/images/company/company_7_l_2x.jpg'}
+            srcm={'/images/companyPage/company_7_l_2x.jpg'}
           />
           <CompanyFaithCard
             title={refresh}
             body={refreshDetail}
-            srcm={'/images/company/company_8_l_2x.jpg'}
+            srcm={'/images/companyPage/company_8_l_2x.jpg'}
           />
         </CardContainer>
         <CardContainer>
           <CompanyFaithCard
             title={monitor}
             body={monitorDetail}
-            srcm={'/images/company/company_9_l_2x.jpg'}
+            srcm={'/images/companyPage/company_9_l_2x.jpg'}
           />
           <CompanyFaithCard
             title={preventDisease}
             body={preventDiseaseDetail}
-            srcm={'/images/company/company_10_l_2x.jpg'}
+            srcm={'/images/companyPage/company_10_l_2x.jpg'}
           />
         </CardContainer>
       </OverTabletConatiner>

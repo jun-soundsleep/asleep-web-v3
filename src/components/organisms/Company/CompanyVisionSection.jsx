@@ -12,10 +12,10 @@ function CompanyVisionSection({
   floatSolutionModal
 }) {
   const { t } = useTranslation();
-  const vision = t('company:company_vision');
-  const visionFirst = t('company:company_vision_1');
-  const visionSecond = t('company:company_vision_2');
-  const visionThird = t('company:company_vision_3');
+  const vision = t('companyPage:company_vision');
+  const visionFirst = t('companyPage:company_vision_1');
+  const visionSecond = t('companyPage:company_vision_2');
+  const visionThird = t('companyPage:company_vision_3');
 
   return (
     <CompanySectionContainer background={'var(--backgorund-bg-01)'}>
@@ -24,30 +24,30 @@ function CompanyVisionSection({
         <MobileCardConatiner>
           <CompanyCard
             title={visionFirst}
-            href={'/company/sleepdiagnosis'}
-            src={'/images/company/company_2_s_2x.jpg'}
-            srcM={'/images/company/company_2_m_2x.jpg'}
-            srcL={'/images/company/company_2_l_2x.jpg'}
+            href={'/companyPage/sleepdiagnosis'}
+            src={'/images/companyPage/company_2_s_2x.jpg'}
+            srcM={'/images/companyPage/company_2_m_2x.jpg'}
+            srcL={'/images/companyPage/company_2_l_2x.jpg'}
             modalListener={() => {}}
           />
         </MobileCardConatiner>
         <MobileCardConatiner>
           <CompanyCard
             title={visionSecond}
-            href={'/company/sleepsolution'}
-            src={'/images/company/company_3_s_2x.jpg'}
-            srcM={'/images/company/company_3_m_2x.jpg'}
-            srcL={'/images/company/company_3_l_2x.jpg'}
+            href={'/companyPage/sleepsolution'}
+            src={'/images/companyPage/company_3_s_2x.jpg'}
+            srcM={'/images/companyPage/company_3_m_2x.jpg'}
+            srcL={'/images/companyPage/company_3_l_2x.jpg'}
             modalListener={() => {}}
           />
         </MobileCardConatiner>
         <MobileCardConatiner>
           <CompanyCard
             title={visionThird}
-            href={'/company/sleepmonitoring'}
-            src={'/images/company/company_4_s_2x.jpg'}
-            srcM={'/images/company/company_4_m_2x.jpg'}
-            srcL={'/images/company/company_4_l_2x.jpg'}
+            href={'/companyPage/sleepmonitoring'}
+            src={'/images/companyPage/company_4_s_2x.jpg'}
+            srcM={'/images/companyPage/company_4_m_2x.jpg'}
+            srcL={'/images/companyPage/company_4_l_2x.jpg'}
             modalListener={() => {}}
           />
         </MobileCardConatiner>
@@ -59,9 +59,9 @@ function CompanyVisionSection({
               <CompanyCard
                 title={visionFirst}
                 href={'shref'}
-                src={'/images/company/company_2_s_2x.jpg'}
-                srcM={'/images/company/company_2_m_2x.jpg'}
-                srcL={'/images/company/company_2_l_2x.jpg'}
+                src={'/images/companyPage/company_2_s_2x.jpg'}
+                srcM={'/images/companyPage/company_2_m_2x.jpg'}
+                srcL={'/images/companyPage/company_2_l_2x.jpg'}
                 modalListener={floatDiagnosisModal}
               />
             </VisionLeftFirst>
@@ -69,9 +69,9 @@ function CompanyVisionSection({
               <CompanyCard
                 title={visionSecond}
                 href={'shref'}
-                src={'/images/company/company_3_s_2x.jpg'}
-                srcM={'/images/company/company_3_m_2x.jpg'}
-                srcL={'/images/company/company_3_l_2x.jpg'}
+                src={'/images/companyPage/company_3_s_2x.jpg'}
+                srcM={'/images/companyPage/company_3_m_2x.jpg'}
+                srcL={'/images/companyPage/company_3_l_2x.jpg'}
                 modalListener={floatMonitoringModal}
               />
             </VisionLeft>
@@ -80,9 +80,9 @@ function CompanyVisionSection({
             <CompanyCard
               title={visionThird}
               href={'shref'}
-              src={'/images/company/company_4_s_2x.jpg'}
-              srcM={'/images/company/company_4_m_2x.jpg'}
-              srcL={'/images/company/company_4_l_2x.jpg'}
+              src={'/images/companyPage/company_4_s_2x.jpg'}
+              srcM={'/images/companyPage/company_4_m_2x.jpg'}
+              srcL={'/images/companyPage/company_4_l_2x.jpg'}
               modalListener={floatSolutionModal}
             />
           </VisionRight>

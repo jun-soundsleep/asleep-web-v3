@@ -26,7 +26,7 @@ function MainAsleepVision({ margin, forwardedRef }) {
             src="/images/main/home_2_s_2x.jpg"
             srcM="/images/main/home_2_m_2x.jpg"
             srcL="/images/main/home_2_l_2x.jpg"
-            href={'/company#companyFuture'}
+            href={'/companyPage#companyFuture'}
             title={asleepWorld}
             whiteDim={true}
           />
@@ -36,7 +36,7 @@ function MainAsleepVision({ margin, forwardedRef }) {
             src="/images/main/home_3_s_2x.jpg"
             srcM="/images/main/home_3_m_2x.jpg"
             srcL="/images/main/home_3_l_2x.jpg"
-            href={'/company#companyFaith'}
+            href={'/companyPage#companyFaith'}
             title={betterLife}
             whiteDim={true}
           />
@@ -46,7 +46,7 @@ function MainAsleepVision({ margin, forwardedRef }) {
             src="/images/main/home_4_s_2x.jpg"
             srcM="/images/main/home_4_m_2x.jpg"
             srcL="/images/main/home_4_l_2x.jpg"
-            href={'/company#companyHistory'}
+            href={'/companyPage#companyHistory'}
             title={newExperience}
             whiteDim={true}
           />
@@ -57,7 +57,7 @@ function MainAsleepVision({ margin, forwardedRef }) {
           src="/images/main/home_5_s_2x.jpg"
           srcM="/images/main/home_5_m_2x.jpg"
           srcL="/images/main/home_5_l_2x.jpg"
-          href={'/company'}
+          href={'/companyPage'}
           title={ditialTransformation}
           whiteDim={true}
           category="story"

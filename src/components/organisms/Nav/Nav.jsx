@@ -36,7 +36,7 @@ function Nav() {
               item={'Company'}
               margin={'44px 0px 28px 0px'}
               href="company"
-              on={handleItemActive('/company')}
+              on={handleItemActive('/companyPage')}
             />
             <NavBarItem
               margin={'0px 0px 28px 0px'}
@@ -80,7 +80,7 @@ function Nav() {
               <NavBarItem
                 item={'Company'}
                 href="company"
-                on={handleItemActive('/company')}
+                on={handleItemActive('/companyPage')}
               />
               <NavBarItem
                 item={'Technology'}

@@ -17,6 +17,7 @@ const MotionButton: FC<MotionButtonType> = ({
   clickHandler
 }) => {
   const getText = () => {
+    const commonStyle = `w-full h-full`;
     return (
       <div>
         {' '}
@@ -24,11 +25,17 @@ const MotionButton: FC<MotionButtonType> = ({
           <a
             href={externalLink}
             target={'__blank'}
+            className={commonStyle}
           >
             {text}
           </a>
         ) : (
-          <Link href={WEB_ROUTING.main}>{text}</Link>
+          <Link
+            href={WEB_ROUTING.main}
+            className={commonStyle}
+          >
+            {text}
+          </Link>
         )}
       </div>
     );
@@ -42,8 +49,9 @@ const MotionButton: FC<MotionButtonType> = ({
       }
       transition={{ type: 'spring', stiffness: 400, damping: 10 }}
       whileTap={{ scale: 1.2 }}
+      onClick={clickHandler}
     >
-      {clickHandler ? <div onClick={clickHandler}>{text}</div> : getText()}
+      {clickHandler ? <div>{text}</div> : getText()}
     </motion.button>
   );
 };

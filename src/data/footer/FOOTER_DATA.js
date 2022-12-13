@@ -1,7 +1,7 @@
 export const COMPANY_ITEM = [
-  { item: 'Mission', href: '/company#companyFuture' },
-  { item: 'Core value', href: '/company#companyFaith' },
-  { item: 'History', href: '/company#companyHistory' }
+  { item: 'Mission', href: '/companyPage#companyFuture' },
+  { item: 'Core value', href: '/companyPage#companyFaith' },
+  { item: 'History', href: '/companyPage#companyHistory' }
 ];
 
 export const BIZ_ITEM = [

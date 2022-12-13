@@ -21,7 +21,7 @@ export const ABOUT_DATA = [
     category: 'about',
     title: '헬스케어 속도내는 카카오, 사내독립기업 설립',
     enTitle:
-      'Kakao, which is looking to speed up healthcare, has established an in-house independent company.',
+      'Kakao, which is looking to speed up healthcare, has established an in-house independent companyPage.',
     date: '2021. 11. 02',
     href: 'http://www.medigatenews.com/news/2915795928'
   },

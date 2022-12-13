@@ -9,19 +9,19 @@ import CompanySectionContainer from '../../atoms/Company/CompanySectionContainer
 
 function CompanyHistorySection(props) {
   const { t } = useTranslation();
-  const history = t('company:company_history');
-  const Q1 = t('company:1q');
-  const Q2 = t('company:2q');
-  const Q3 = t('company:3q');
-  const Q4 = t('company:4q');
-  const y2q1 = t('company:2021_1');
-  const y2q2 = t('company:2021_2');
-  const y2q3 = t('company:2021_3');
-  const y2q4 = t('company:2021_4');
+  const history = t('companyPage:company_history');
+  const Q1 = t('companyPage:1q');
+  const Q2 = t('companyPage:2q');
+  const Q3 = t('companyPage:3q');
+  const Q4 = t('companyPage:4q');
+  const y2q1 = t('companyPage:2021_1');
+  const y2q2 = t('companyPage:2021_2');
+  const y2q3 = t('companyPage:2021_3');
+  const y2q4 = t('companyPage:2021_4');
 
-  const y1q2 = t('company:2020_1');
-  const y1q3 = t('company:2020_3');
-  const y1q4 = t('company:2020_4');
+  const y1q2 = t('companyPage:2020_1');
+  const y1q3 = t('companyPage:2020_3');
+  const y1q4 = t('companyPage:2020_4');
 
   const history_2021 = [
     {
@@ -48,7 +48,10 @@ function CompanyHistorySection(props) {
           body={history_2021}
           highlight={true}
         />
-        <CompanyHistoryBigCard title={'2020'} body={history_2020} />
+        <CompanyHistoryBigCard
+          title={'2020'}
+          body={history_2020}
+        />
       </MobileContainer>
       <OverTabletContainer>
         <CompanyBodyTitle item={history} />
