@@ -11,10 +11,6 @@ N
 src/pages/people/aiservice.jsx,1/2/12ad753e1ebb469e392ae3f587cbd41c29c14cb7
 S
 #src/pages/technology/accurateai.jsx,5/e/5e5eb379c862fe2f1dcbfe4294febd9eaee12c79
-S
-#src/pages/company/sleepsolution.jsx,0/0/0067307caaf8813e81d0652c5e455e71d819e86c
-U
-%src/pages/company/sleepmonitoring.jsx,3/8/386a0f3a642d352aadb0d03000d39eafd997df99
 >
 .eslintrc.json,7/1/71c20a341bfe32aa5cd5b4384e94f942bab6a7d3
 B
@@ -65,16 +61,12 @@ _
 /src/components/atoms/Footer/FooterGroupItem.jsx,8/7/874f5dce16ca50b0a81fc95a55cfb5a271b791eb
 c
 3src/components/mocules/Footer/FotterMoculeGroup.jsx,c/0/c040036cc73e9b561ecd4f75ac6893f00bfcbb99
-N
-src/data/footer/FOOTER_DATA.js,a/7/a7821bb7e77fb35baf481c008319d6c9d90c035a
 Z
 *src/components/organisms/Footer/Footer.jsx,c/3/c36d98e81db7cf094429d681bc7b04ecdcb5d0b1
 c
 3src/components/organisms/AppLayout/AsleepLayout.jsx,3/7/37a79e4e7c6f90af124ce2c2e91837e572db59fe
 @
 styles/device.js,4/b/4bcf7fd213cf1e0c0265fcb9ce8ee6c1e6126c44
-T
-$src/components/organisms/Nav/Nav.jsx,7/3/73f341fd8a1e97b808c38bddda0ca4a2a8f4bff8
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
 Q
@@ -95,8 +87,6 @@ e
 5src/components/organisms/Main/MainBigImageSection.jsx,d/6/d67642f47f5dc19f033bfef6ce3343592a6a1e43
 ^
 .src/components/mocules/Company/CompanyCard.jsx,c/d/cd7377fd189c5171fe15fd19bd75ecb1d94ceb1b
-b
-2src/components/organisms/Main/MainAsleepVision.jsx,f/1/f1c1f59940b7b96786e37dcf440440e0a7ab8136
 c
 3src/components/organisms/Main/MainPeopleSection.jsx,5/1/5122b3e09b9f3eefc6e8387776bbf274a8de06fc
 Z
