@@ -107,8 +107,6 @@ L
 public/imagev3/main/star.svg,d/c/dc18294bce5c8d64a4ac586e4b0b47ef530560de
 O
 public/imagev3/main/speaker.svg,d/c/dc8f09c11b2e438819d19773f2593f7829a6637d
-f
-6src/v3-component/layout/Navigation/SmallDetailMenu.tsx,9/f/9f1963e34c26f357ca997a8ada16bd4bc8fd8102
 \
 ,src/components/atoms/News/NewsMoreButton.jsx,4/d/4d3b66056921961e65cb787844e76d1f9803fb9e
 @
@@ -133,10 +131,6 @@ X
 (src/v3-component/common/index.module.css,1/d/1da709dfbd763f80e9b6047a4a3b1afcfd047cfd
 ]
 -src/v3-component/MainPage/MainPdfDownload.tsx,c/3/c3e036f65ab2513eda4571e6c8d0ea36739b1589
-]
--src/v3-component/MainPage/MainSleepReport.tsx,1/8/18570e2418f41258e9040a734f42f127b2b778bf
-a
-1src/v3-component/common/PartnershipBoxSection.tsx,7/7/7721233b56faee2a28143765cb4c7173055173e7
 d
 4src/v3-component/SleepTech/SleeTechResearchPaper.tsx,8/2/820b7cdf991abf8c46155f2018d26e5fa12d238b
 h
@@ -149,8 +143,6 @@ _
 /src/v3-component/layout/BottomContactButton.tsx,f/c/fc8c8f334cfaee17eb8ca4888704e40ec08782da
 S
 #public/imagev3/logo/Google_Play.svg,d/e/de20417a1bccd980d42296c76fcce9d9785fc3a5
-\
-,src/v3-component/common/LabelBodySection.tsx,2/c/2c98a9d07e6d30c932339e50e4509f7e1de77687
 G
 src/pages/solutions.tsx,3/3/33ea632c5197b387a494d9ee9790b07ca5528570
 a
@@ -178,8 +170,6 @@ e
 5src/v3-component/util/InfinityLooper/index.module.css,a/d/adef41fdc2ec184336176cfaff17f648a1bbf613
 _
 /src/v3-component/layout/Navigation/CesAlert.tsx,c/6/c6cfdf50d577d48fa1807c646350af4d429fb28c
-E
-src/pages/contact.tsx,f/6/f6dbd6232b633dfd21cedddc87a937695f5da2ce
 c
 3src/v3-component/SleepTech/SleepTechCompetition.tsx,7/b/7b4228dc667f8c365b09011937f111402af17a96
 e
@@ -222,12 +212,8 @@ Z
 *src/v3-component/layout/Navigation/GNB.tsx,5/1/511a03ac9a95bf9a6e232f89f0faacd46fe5928e
 `
 0src/v3-component/layout/Navigation/LargeMenu.tsx,5/5/55e46e1c24710f8e29a7bf120ff9c0dea09c0429
-X
-(src/v3-component/SolutionsPage/index.tsx,e/3/e3f2ba49c2fe2a46af0f550fa9419112c9a72925
 W
 'src/v3-component/MainPage/MainVideo.tsx,d/2/d2f2df8987de3c5473664b5155e0e41decab2d70
-]
--src/v3-component/SolutionsPage/SolutionLG.tsx,b/c/bc5db091e92ed390c64e7385c122cf58fd77a644
 V
 &public/imagev3/icon/external_arrow.svg,4/9/4951c46d288690f951fcc9e7116543b57601b5bb
 R

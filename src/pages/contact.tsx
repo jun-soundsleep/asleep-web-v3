@@ -1,5 +1,7 @@
+import ContactPage from '../v3-component/ContactPage';
+
 const Contact = () => {
-  return <div>contact</div>;
+  return <ContactPage />;
 };
 
 export default Contact;

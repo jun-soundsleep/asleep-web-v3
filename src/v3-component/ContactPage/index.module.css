@@ -1,0 +1,8 @@
+.inputBorderStyle {
+    border-bottom: 1px solid #626262;
+}
+
+.textAreaStyle {
+    resize: none;
+    border-bottom: 1px solid #626262;
+}
