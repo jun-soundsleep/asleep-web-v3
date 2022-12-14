@@ -127,6 +127,7 @@ const CompanyNewsList = () => {
     );
   };
 
+  debugger;
   return (
     <WithViewPortOpacity styleClass={`mt-[56px] medium:mt-[200px]`}>
       <>
