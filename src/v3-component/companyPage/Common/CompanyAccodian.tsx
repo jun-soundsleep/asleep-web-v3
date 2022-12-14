@@ -120,7 +120,7 @@ const SubSection = ({ idx, title, description, currentTab, setCurrentTab }) => {
         <div onClick={clickHandler}>
           {selected ? (
             <div className={buttonStyle}>
-              <MinusButton />
+              <MinusButton className={'w-full h-full'} />
             </div>
           ) : (
             <div className={buttonStyle}>

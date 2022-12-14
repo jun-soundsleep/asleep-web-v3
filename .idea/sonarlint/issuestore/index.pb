@@ -97,10 +97,6 @@ B
 styles/globals.css,8/c/8c258232cbcd5d83991c524a9e86c8d3f984fc57
 T
 $public/imagev3/logo/Client_Logos.svg,3/b/3b67acd2d533d36a23c0fc8c0b341290f8185681
-M
-public/imagev3/icon/minus.svg,9/e/9e06568e3c4d2b20e268b3df5618adcdf34ef53b
-L
-public/imagev3/icon/plus.svg,2/7/2767a510a14d6a3936cc38237abb72f96d8c61ff
 ^
 .src/v3-component/MainPage/MainVideoSection.tsx,6/2/62c585fdf7511cb487107225fe709564e47b9ab0
 Y
@@ -246,10 +242,6 @@ I
 -src/v3-component/companyPage/index.module.css,9/f/9f8b31b79c910473efce778319c3eb0fc874b28a
 K
 src/data/News/ABOUT_DATA.js,3/7/3737264bb15029838c018408abfb207824386aef
-g
-7src/v3-component/companyPage/Common/CompanyAccodian.tsx,a/c/acf3c9f54a56e71f88f37cbdc82457182c9ae542
-Z
-*src/v3-component/companyPage/CompanyAP.tsx,e/f/ef2b86a1f22ed8606b9d0c234dc0e761a109a377
 h
 8src/components/organisms/Company/CompanyFaithSection.jsx,0/4/04630c04dd514b78281fc91aef15a662da002db7
 j

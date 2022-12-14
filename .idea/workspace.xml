@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="test: for news list">
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="fix: bug for newslist">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/imagev3/icon/minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/imagev3/icon/minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/imagev3/icon/plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/imagev3/icon/plus.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/workbox-327c579b.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/workbox-327c579b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/company.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/company.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/companyPage/CompanyNewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/companyPage/CompanyNewsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/companyPage/Common/CompanyAccodian.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/companyPage/Common/CompanyAccodian.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,14 +174,7 @@
       <workItem from="1669879427244" duration="11418000" />
       <workItem from="1670206868239" duration="59389000" />
       <workItem from="1670377288739" duration="83474000" />
-      <workItem from="1670982933698" duration="3163000" />
-    </task>
-    <task id="LOCAL-00011" summary="feat: add pwa [MARK]">
-      <created>1669712265416</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1669712265416</updated>
+      <workItem from="1670982933698" duration="3764000" />
     </task>
     <task id="LOCAL-00012" summary="feat: add redirect api">
       <created>1669795776772</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670983522214</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="fix: bug for newslist">
+      <created>1670986185564</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1670986185564</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +560,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="feat: complete main video section" />
     <MESSAGE value="feat: complete main data section" />
     <MESSAGE value="feat: add animation in main data section" />
     <MESSAGE value="add: main feature section" />
@@ -584,7 +584,8 @@
     <MESSAGE value="feat: add isr at company page" />
     <MESSAGE value="fix: delete daisyui" />
     <MESSAGE value="test: for news list" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: for news list" />
+    <MESSAGE value="fix: bug for newslist" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: bug for newslist" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
