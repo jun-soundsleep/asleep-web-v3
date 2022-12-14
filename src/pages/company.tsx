@@ -14,6 +14,7 @@ export default Company;
 
 export async function getStaticProps() {
   const result = await getNewList();
+
   return {
     props: {
       newsList: result,

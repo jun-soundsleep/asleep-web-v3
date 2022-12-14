@@ -268,8 +268,6 @@ T
 $src/components/organisms/Nav/Nav.jsx,7/3/73f341fd8a1e97b808c38bddda0ca4a2a8f4bff8
 @
 src/type/news.ts,d/9/d9099c0bd184bc6da113a032e2037379a63a9c1e
-J
-src/libs/store/newsList.ts,0/e/0e901bcbe87e68a73dc511e413486df806ffdfb5
 U
 %src/v3-component/MainPage/MainTop.tsx,f/b/fbd7c6dc47d8c40ed95c710bee46ca49703f121a
 c

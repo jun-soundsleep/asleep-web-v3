@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="fix: build error">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12ad753e1ebb469e392ae3f587cbd41c29c14cb7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5e5eb379c862fe2f1dcbfe4294febd9eaee12c79" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bdd4d311794173fa4621b51a3b736c831e32f5cd" beforeDir="false" />
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="test: for news list">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workbox-588899ac.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workbox-327c579b.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/workbox-327c579b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/company.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/company.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/v3-component/companyPage/CompanyNewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/companyPage/CompanyNewsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,8 +154,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.build:asleep-web" />
       </list>
     </recent_temporary>
@@ -176,14 +173,7 @@
       <workItem from="1669879427244" duration="11418000" />
       <workItem from="1670206868239" duration="59389000" />
       <workItem from="1670377288739" duration="83474000" />
-      <workItem from="1670982933698" duration="568000" />
-    </task>
-    <task id="LOCAL-00010" summary="feat: add daisyui package">
-      <created>1669700385362</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1669700385362</updated>
+      <workItem from="1670982933698" duration="3163000" />
     </task>
     <task id="LOCAL-00011" summary="feat: add pwa [MARK]">
       <created>1669712265416</created>
@@ -521,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670918538678</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="test: for news list">
+      <created>1670983522214</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1670983522214</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +559,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="feat: complete main client logo" />
     <MESSAGE value="feat: complete main video section" />
     <MESSAGE value="feat: complete main data section" />
     <MESSAGE value="feat: add animation in main data section" />
@@ -587,7 +583,8 @@
     <MESSAGE value="fix: delete legacy page" />
     <MESSAGE value="feat: add isr at company page" />
     <MESSAGE value="fix: delete daisyui" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: delete daisyui" />
+    <MESSAGE value="test: for news list" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: for news list" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

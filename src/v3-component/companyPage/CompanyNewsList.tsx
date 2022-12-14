@@ -1,3 +1,4 @@
+import dayjs from 'dayjs';
 import WithViewPortOpacity from '../Animation/WithViewPortOpacity';
 import ExternalLinkIcon from '/public/imagev3/icon/external_arrow.svg';
 import MotionButton from '../common/MotionButton';
@@ -6,7 +7,6 @@ import useGetCurrentSize from '../../../hooks/useGetCurrentSize';
 import { deviceType } from '../../../styles/device';
 import { NewsContext } from '../../libs/store/newsList';
 import { NewsListType } from '../../type/news';
-import dayjs from 'dayjs';
 
 const CompanyNewsList = () => {
   const range = 5;
@@ -16,25 +16,24 @@ const CompanyNewsList = () => {
   const tabList = [
     ...new Set(
       list.map(el => {
-        return dayjs(el.date).year();
-      }, [])
+        return Number(el.date.split('.')[0]);
+      })
     )
   ].sort((a, b) => b - a);
-
-  const sortNewList = (lastIndex: number) => {
+  const sortNewsList = (lastIndex: number) => {
     return list
-      .filter(el => dayjs(el.date).year() === currentTab)
+      .filter(el => Number(el.date.split('.')[0]) === currentTab)
       .sort((a, b) => dayjs(b.date).valueOf() - dayjs(a.date).valueOf())
       .slice(0, lastIndex);
   };
 
   const [currentTab, setCurrentTab] = useState<number>(tabList[0]);
   const [currentNewsIndex, setCurrentNewIndex] = useState(range);
-  const [newList, setNewList] = useState(sortNewList(currentNewsIndex));
+  const [newsList, setNewList] = useState(sortNewsList(currentNewsIndex));
 
   useEffect(
     function getNewNewsList() {
-      setNewList(sortNewList(currentNewsIndex));
+      setNewList(sortNewsList(currentNewsIndex));
     },
     [currentNewsIndex, currentTab]
   );
@@ -48,7 +47,7 @@ const CompanyNewsList = () => {
 
   const checkIfneedButtonOrNot = () => {
     return (
-      list.filter(el => dayjs(el.date).year() === currentTab).length >
+      list.filter(el => Number(el.date.split('.')[0]) === currentTab).length >
       currentNewsIndex
     );
   };
@@ -89,7 +88,7 @@ const CompanyNewsList = () => {
   const getList = () => {
     return (
       <ul className={`mt-[32px]`}>
-        {newList.map(
+        {newsList.map(
           ({ title_en, date, company_en, externalLink }: NewsListType, idx) => {
             return (
               <li
@@ -127,7 +126,6 @@ const CompanyNewsList = () => {
     );
   };
 
-  debugger;
   return (
     <WithViewPortOpacity styleClass={`mt-[56px] medium:mt-[200px]`}>
       <>
