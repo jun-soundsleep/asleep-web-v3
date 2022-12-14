@@ -111,10 +111,10 @@ const TermsAndCondition = () => {
       </a>{' '}
       and{' '}
       <a
-        href='<a
-        href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88+%EC%9E%AC%EB%B0%9C%EA%B8%89"
+        href="
+        https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9A%B4%EC%A0%84%EB%A9%B4%ED%97%88+%EC%9E%AC%EB%B0%9C%EA%B8%89
+      "
         target="__blank"
-      >'
       >
         Privacy Policy
       </a>

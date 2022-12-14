@@ -65,8 +65,6 @@ P
  public/imagev3/icon/Subtract.svg,1/d/1d0f4aa9b899b6bd01d58a212336230d1b9787ca
 L
 public/imagev3/icon/exit.svg,6/9/69a3938321567e02828c330969f918f5be97911c
-T
-$public/imagev3/icon/chevron-down.svg,a/2/a2ff0a4391645cf8edca8cbb177de88b7f07a763
 ^
 .src/v3-component/layout/Navigation/GNB.util.ts,c/1/c1bdad77db38a68d36d9705de787e568e4145387
 ^
