@@ -9,8 +9,6 @@ L
 .eslintrc.json,7/1/71c20a341bfe32aa5cd5b4384e94f942bab6a7d3
 ]
 -src/components/mocules/Common/CommonModal.jsx,2/d/2d933420959c395905d7fa4eb2ba9668295b225c
-N
-src/components/mixin/MXFlex.js,d/0/d09aa831c713bbad53ff1dfaa9d2d9e7a4bd73b6
 H
 locales/ko/business.json,2/d/2db213a463cbde155b74ef2f7711ef10497dde46
 F
@@ -73,8 +71,6 @@ $public/imagev3/icon/chevron-down.svg,a/2/a2ff0a4391645cf8edca8cbb177de88b7f07a
 .src/v3-component/layout/Navigation/GNB.util.ts,c/1/c1bdad77db38a68d36d9705de787e568e4145387
 ^
 .src/v3-component/layout/Navigation/GNB_DATA.ts,d/9/d911cd040f6a2ea21d5fb633af933dd1312b2958
-C
-src/pages/index.jsx,a/c/acc81c36557d8229ae7d4d064f6bdca7a69078ca
 e
 5src/components/organisms/Main/MainBigImageSection.jsx,d/6/d67642f47f5dc19f033bfef6ce3343592a6a1e43
 ^
@@ -101,8 +97,6 @@ $public/imagev3/logo/Client_Logos.svg,3/b/3b67acd2d533d36a23c0fc8c0b341290f8185
 .src/v3-component/MainPage/MainVideoSection.tsx,6/2/62c585fdf7511cb487107225fe709564e47b9ab0
 Y
 )src/v3-component/MainPage/Main.styled.tsx,4/0/409d610935551179cce918c10b85fa96b64b7f84
-J
-hooks/useGetCurrentSize.ts,c/4/c47e5c5a0dfaced09f61f1572a6250655ba39787
 L
 public/imagev3/main/star.svg,d/c/dc18294bce5c8d64a4ac586e4b0b47ef530560de
 O
@@ -121,8 +115,6 @@ U
 %public/imagev3/logo/Branding_logo.svg,1/b/1b2f5d9d953b92dbedb0463cd0945ac7d9ef1bab
 Y
 )src/v3-component/common/ContactButton.tsx,5/d/5d430511234a582c262fd6da4779c01137261add
-G
-src/pages/sleeptech.tsx,4/0/40f68d7c5e7de84216f5c78b5dd920a857cf96bd
 ]
 -src/v3-component/MainPage/MainDataSection.tsx,6/5/65a02bec971a9f2004e51168579a5dc06e86866b
 \
@@ -160,8 +152,6 @@ J
 src/pages/api/ces/index.ts,9/b/9bffb54b7ba5f92f323ff646728bc4ccb74680a3
 ?
 util/routing.ts,a/7/a70eed7c9ca5bf6154481abb68a1ee9234d87066
-H
-src/pages/sleeptrack.tsx,5/0/503c46f2b359a538d99877d2bd92ccca7e7da588
 b
 2src/v3-component/Animation/WithViewPortOpacity.tsx,5/b/5b0746f3f6514c8236324712fe69039987826b2b
 ^
@@ -180,8 +170,6 @@ b
 2src/v3-component/SleepTech/SleepTechTopSection.tsx,5/9/59a793f342f26485ce7179ba9ac7b6fd51dea6e9
 e
 5src/v3-component/SolutionsPage/SolutionExtensions.tsx,3/f/3f17ea143bfe7f842c4ebd15acd47ff482349816
-G
-src/pages/_document.tsx,0/5/052f85edfc3fbb9d129530f0f8b191ff6c16f7ce
 B
 src/pages/_app.tsx,2/e/2eefa41a18ed6ea3f58b3748f9e5559a28e77646
 a
@@ -208,8 +196,6 @@ V
 &src/v3-component/layout/MainLayout.tsx,0/0/0031dc675b487f28a5afb2b4fa32631bba0f9ddf
 9
 	i18n.json,9/9/9954ee18a07423ff1a95d74a81e0f233a6fe9048
-Z
-*src/v3-component/layout/Navigation/GNB.tsx,5/1/511a03ac9a95bf9a6e232f89f0faacd46fe5928e
 `
 0src/v3-component/layout/Navigation/LargeMenu.tsx,5/5/55e46e1c24710f8e29a7bf120ff9c0dea09c0429
 W
@@ -250,5 +236,3 @@ U
 %src/v3-component/MainPage/MainTop.tsx,f/b/fbd7c6dc47d8c40ed95c710bee46ca49703f121a
 c
 3src/v3-component/SleepTech/SleeTechVideoSection.tsx,7/f/7f188c7954739a97d40df74778d1bc611b7f626e
-J
-src/libs/api/getNewList.ts,1/5/15d1074e55f762cb6212810726784c1986ede188
