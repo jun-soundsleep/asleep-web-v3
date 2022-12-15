@@ -67,8 +67,6 @@ L
 public/imagev3/icon/exit.svg,6/9/69a3938321567e02828c330969f918f5be97911c
 ^
 .src/v3-component/layout/Navigation/GNB.util.ts,c/1/c1bdad77db38a68d36d9705de787e568e4145387
-^
-.src/v3-component/layout/Navigation/GNB_DATA.ts,d/9/d911cd040f6a2ea21d5fb633af933dd1312b2958
 e
 5src/components/organisms/Main/MainBigImageSection.jsx,d/6/d67642f47f5dc19f033bfef6ce3343592a6a1e43
 ^
@@ -148,8 +146,6 @@ Q
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 J
 src/pages/api/ces/index.ts,9/b/9bffb54b7ba5f92f323ff646728bc4ccb74680a3
-?
-util/routing.ts,a/7/a70eed7c9ca5bf6154481abb68a1ee9234d87066
 b
 2src/v3-component/Animation/WithViewPortOpacity.tsx,5/b/5b0746f3f6514c8236324712fe69039987826b2b
 ^
@@ -188,10 +184,6 @@ Z
 *src/v3-component/MainPage/MainFeatures.tsx,7/a/7a5985eb1460630f36cd2e335b6091b97bb0556b
 _
 /src/v3-component/SolutionsPage/SolutionSlee.tsx,b/6/b617426447bea8c76ad99f10e0aa8058274aded7
-a
-1src/v3-component/layout/Navigation/GNB.styled.tsx,f/0/f01867e7dfa56312254c53ba2e1712c2e4e0598c
-V
-&src/v3-component/layout/MainLayout.tsx,0/0/0031dc675b487f28a5afb2b4fa32631bba0f9ddf
 9
 	i18n.json,9/9/9954ee18a07423ff1a95d74a81e0f233a6fe9048
 `
@@ -200,8 +192,6 @@ W
 'src/v3-component/MainPage/MainVideo.tsx,d/2/d2f2df8987de3c5473664b5155e0e41decab2d70
 V
 &public/imagev3/icon/external_arrow.svg,4/9/4951c46d288690f951fcc9e7116543b57601b5bb
-R
-"src/v3-component/layout/Footer.tsx,d/0/d0705c331a5617ef7dd978c14ad932519e6b7c18
 ;
 .prettierrc,2/0/20137a9e94744624390b6748bc96df5ca1579b71
 =

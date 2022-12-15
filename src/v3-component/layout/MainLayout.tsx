@@ -1,4 +1,3 @@
-import React from 'react';
 import GNB from './Navigation/GNB';
 import Footer from './Footer';
 

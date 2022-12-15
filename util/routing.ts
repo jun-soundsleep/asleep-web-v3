@@ -1,3 +1,7 @@
 export const WEB_ROUTING = {
-  main: '/'
+  main: '/',
+  contact: 'contact',
+  company: 'company',
+  sleeptech: 'sleeptech',
+  solutions: 'solutions'
 };
