@@ -6,3 +6,11 @@
     resize: none;
     border-bottom: 1px solid #626262;
 }
+
+.contactInput {
+    color: #FFA3CE;
+}
+
+.contactInputPlaceholder::placeholder {
+    color: #FFA3CE;
+}

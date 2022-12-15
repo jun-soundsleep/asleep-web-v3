@@ -1,11 +1,11 @@
 import TextWithWishIcon from '../common/TextWithWishIcon';
-import styles from './index.module.css';
 import MotionButton from '../common/MotionButton';
 import useGetCurrentSize from '../../../hooks/useGetCurrentSize';
 import { deviceType } from '../../../styles/device';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { ContactInputType } from '../../type/contact';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import styles from './index.module.css';
 
 const ContactInput = () => {
   const currentSize = useGetCurrentSize();
@@ -33,14 +33,23 @@ const Form = () => {
   const textAreaStyle = `focus:text-white ${styles.textAreaStyle} pb-[12px] gray3 b2-small bg-transparent mt-[40px] w-full medium:b2-medi large:b1-large`;
   const [isLoading, setLoading] = useState(false);
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isValid }
-  } = useForm<ContactInputType>();
+  const firstNameRef = useRef<null | HTMLInputElement>(null);
+  const lastNameRef = useRef<null | HTMLInputElement>(null);
+  const jobRef = useRef<null | HTMLInputElement>(null);
+  const companyRef = useRef<null | HTMLInputElement>(null);
+  const emailRef = useRef<null | HTMLInputElement>(null);
+  const countryRef = useRef<null | HTMLInputElement>(null);
+
+  const { register, handleSubmit, watch } = useForm<ContactInputType>();
+  const { ref: firstNameElement, ...firstNameRest } = register('firstName');
+  const { ref: lastNameElement, ...lastNameRest } = register('lastName');
+  const { ref: jobElement, ...jobRest } = register('job');
+  const { ref: companyElement, ...companyRest } = register('companyName');
+  const { ref: emailElement, ...emailRest } = register('email');
+  const { ref: countryElement, ...countryRest } = register('country');
 
   const onSubmit: SubmitHandler<ContactInputType> = async data => {
-    if (!isValid || isLoading) {
+    if (!checkBlankRequiredInput(data) || isLoading) {
       return;
     }
 
@@ -60,6 +69,143 @@ const Form = () => {
       });
   };
 
+  const checkBlankRequiredInput = (data: ContactInputType): boolean => {
+    const { firstName, lastName, email, job, companyName, country } = data;
+    const emailTest =
+      /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/.test(
+        email
+      );
+
+    if (!firstName) {
+      firstNameRef.current.classList.add(
+        styles.contactInput,
+        !firstName && styles.contactInputPlaceholder
+      );
+      return false;
+    } else {
+      firstNameRef.current.classList.remove(
+        styles.contactInput,
+        styles.contactInputPlaceholder
+      );
+    }
+
+    if (!lastName) {
+      lastNameRef.current.classList.add(
+        styles.contactInput,
+        !lastName && styles.contactInputPlaceholder
+      );
+      return false;
+    } else {
+      lastNameRef.current.classList.remove(
+        styles.contactInput,
+        !lastName && styles.contactInputPlaceholder
+      );
+    }
+
+    if (!companyName) {
+      companyRef.current.classList.add(
+        styles.contactInput,
+        !companyName && styles.contactInputPlaceholder
+      );
+      return false;
+    } else {
+      companyRef.current.classList.remove(
+        styles.contactInput,
+        styles.contactInputPlaceholder
+      );
+    }
+    if (!emailTest) {
+      emailRef.current.classList.add(
+        styles.contactInput,
+        !emailTest && styles.contactInputPlaceholder
+      );
+      return false;
+    } else {
+      emailRef.current.classList.remove(
+        styles.contactInput,
+        styles.contactInputPlaceholder
+      );
+    }
+
+    if (!job) {
+      jobRef.current.classList.add(
+        styles.contactInput,
+        !job && styles.contactInputPlaceholder
+      );
+      return false;
+    } else {
+      jobRef.current.classList.remove(
+        styles.contactInput,
+        styles.contactInputPlaceholder
+      );
+    }
+
+    if (!country) {
+      countryRef.current.classList.add(
+        styles.contactInput,
+        !country && styles.contactInputPlaceholder
+      );
+      return false;
+    } else {
+      countryRef.current.classList.remove(
+        styles.contactInput,
+        styles.contactInputPlaceholder
+      );
+    }
+    return true;
+  };
+
+  useEffect(
+    function handleInputWatch() {
+      const { firstName, lastName, email, job, companyName, country } = watch();
+      const emailTest =
+        /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/.test(
+          email
+        );
+      console.log(watch());
+      console.log(firstName);
+      console.log(lastName.length);
+      if (firstName) {
+        firstNameRef.current.classList.remove(
+          styles.contactInput,
+          styles.contactInputPlaceholder
+        );
+      }
+      if (lastName) {
+        console.log(lastName);
+        lastNameRef.current.classList.remove(
+          styles.contactInput,
+          styles.contactInputPlaceholder
+        );
+      }
+      if (emailTest) {
+        emailRef.current.classList.remove(
+          styles.contactInput,
+          styles.contactInputPlaceholder
+        );
+      }
+      if (companyName) {
+        companyRef.current.classList.remove(
+          styles.contactInput,
+          styles.contactInputPlaceholder
+        );
+      }
+      if (country) {
+        countryRef.current.classList.remove(
+          styles.contactInput,
+          styles.contactInputPlaceholder
+        );
+      }
+      if (job) {
+        jobRef.current.classList.remove(
+          styles.contactInput,
+          styles.contactInputPlaceholder
+        );
+      }
+    },
+    [watch()]
+  );
+
   return (
     <form
       className={`mt-[24px] large:mt-[unset]`}
@@ -70,41 +216,61 @@ const Form = () => {
           type="text"
           placeholder={'First Name *'}
           className={inputStyle}
-          {...register('firstName', { required: true })}
+          ref={e => {
+            firstNameElement(e);
+            firstNameRef.current = e;
+          }}
+          {...firstNameRest}
         />
         <input
           type="text"
           placeholder={'Last Name *'}
           className={inputStyle}
-          {...register('lastName', { required: true })}
+          ref={e => {
+            lastNameElement(e);
+            lastNameRef.current = e;
+          }}
+          {...lastNameRest}
         />
         <input
           type="text"
           placeholder={'Company Name *'}
           className={inputStyle}
-          {...register('companyName', { required: true })}
+          ref={e => {
+            companyElement(e);
+            companyRef.current = e;
+          }}
+          {...companyRest}
         />
         <input
-          type="email"
+          type="text"
           placeholder={'Email Address *'}
           className={inputStyle}
-          {...register('email', {
-            required: true,
-            pattern:
-              /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
-          })}
+          ref={e => {
+            emailElement(e);
+            emailRef.current = e;
+          }}
+          {...emailRest}
         />
         <input
           type="text"
           placeholder={'Job Title *'}
           className={inputStyle}
-          {...register('job', { required: true })}
+          ref={e => {
+            jobElement(e);
+            jobRef.current = e;
+          }}
+          {...jobRest}
         />
         <input
           type="text"
           placeholder={'Country *'}
           className={inputStyle}
-          {...register('country', { required: true })}
+          ref={e => {
+            countryElement(e);
+            countryRef.current = e;
+          }}
+          {...countryRest}
         />
       </div>
       <textarea
@@ -134,11 +300,7 @@ const Form = () => {
       >
         <MotionButton
           text={'Submit'}
-          styleClass={`w-full bg-[${
-            isValid ? '#3C41EA' : '#2E2E2E'
-          }] h-[47px] ${
-            isValid ? 'text-white' : 'gray2'
-          }  px-[33px] py-[10px] mt-[24px] b1-medium-small medium:b2-medium-medi medium:px-[37px] medium:py-[12px] medium:mt-[unset] large:sub-large`}
+          styleClass={`w-full bg-[#3C41EA] h-[47px] text-white  px-[33px] py-[10px] mt-[24px] b1-medium-small medium:b2-medium-medi medium:px-[37px] medium:py-[12px] medium:mt-[unset] large:sub-large`}
           clickHandler={() => {}}
         />
         <TermsAndCondition />

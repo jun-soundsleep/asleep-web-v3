@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: add contact page validation">
+    <list default="true" id="7d5d6af3-2e34-4078-b904-311d803def03" name="Changes" comment="feat: add routing in nav, footer">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/workbox-327c579b.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/workbox-327c579b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/layout/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/layout/MainLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-component/layout/Navigation/GNB_DATA.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/layout/Navigation/GNB_DATA.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v3-data/footer/FOOTER_DATA.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-data/footer/FOOTER_DATA.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/util/routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/ContactPage/ContactInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/ContactPage/ContactInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v3-component/ContactPage/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/v3-component/ContactPage/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,14 +174,7 @@
       <workItem from="1669879427244" duration="11418000" />
       <workItem from="1670206868239" duration="59389000" />
       <workItem from="1670377288739" duration="83474000" />
-      <workItem from="1670982933698" duration="25797000" />
-    </task>
-    <task id="LOCAL-00017" summary="test: main page image">
-      <created>1669860827004</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1669860827004</updated>
+      <workItem from="1670982933698" duration="32460000" />
     </task>
     <task id="LOCAL-00018" summary="fix: change asleep logo to image component">
       <created>1669863237241</created>
@@ -520,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671083656144</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="feat: add routing in nav, footer">
+      <created>1671084046115</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1671084046115</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +560,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="add: main slee report" />
     <MESSAGE value="for sharing" />
     <MESSAGE value="wip" />
     <MESSAGE value="add: sleeptech 페이지" />
@@ -586,7 +584,8 @@
     <MESSAGE value="feat: contact page responsive layout" />
     <MESSAGE value="feat: add ccpa layout" />
     <MESSAGE value="feat: add contact page validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add contact page validation" />
+    <MESSAGE value="feat: add routing in nav, footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add routing in nav, footer" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

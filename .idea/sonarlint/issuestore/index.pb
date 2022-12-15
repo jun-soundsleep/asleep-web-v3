@@ -85,8 +85,6 @@ _
 /src/components/mocules/Main/MainFirstTitles.jsx,b/3/b3b95430306b01821448704d13f6e9065b74b296
 X
 (src/components/mocules/Tech/TechCard.jsx,6/4/64ff9707cce551812873e7df6c1cd2a8ec6731c6
-B
-styles/globals.css,8/c/8c258232cbcd5d83991c524a9e86c8d3f984fc57
 T
 $public/imagev3/logo/Client_Logos.svg,3/b/3b67acd2d533d36a23c0fc8c0b341290f8185681
 ^
