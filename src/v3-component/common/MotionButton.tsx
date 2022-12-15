@@ -8,13 +8,15 @@ type MotionButtonType = {
   styleClass?: string;
   externalLink?: string;
   clickHandler?: () => void;
+  disabled?: boolean;
 };
 
 const MotionButton: FC<MotionButtonType> = ({
   text,
   styleClass,
   externalLink,
-  clickHandler
+  clickHandler,
+  disabled
 }) => {
   const getText = () => {
     const commonStyle = `w-full h-full`;
@@ -50,6 +52,7 @@ const MotionButton: FC<MotionButtonType> = ({
       transition={{ type: 'spring', stiffness: 400, damping: 10 }}
       whileTap={{ scale: 1.2 }}
       onClick={clickHandler}
+      disabled={disabled}
     >
       {clickHandler ? <div>{text}</div> : getText()}
     </motion.button>

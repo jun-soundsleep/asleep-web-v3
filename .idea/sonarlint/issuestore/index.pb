@@ -202,8 +202,6 @@ V
 &public/imagev3/icon/external_arrow.svg,4/9/4951c46d288690f951fcc9e7116543b57601b5bb
 R
 "src/v3-component/layout/Footer.tsx,d/0/d0705c331a5617ef7dd978c14ad932519e6b7c18
-I
-src/pages/api/gs/index.ts,6/3/63a1a4915c231265aa7be5e9690272cc9232fa79
 ;
 .prettierrc,2/0/20137a9e94744624390b6748bc96df5ca1579b71
 =
@@ -228,8 +226,6 @@ c
 3src/components/organisms/Company/MissionSection.jsx,2/2/22f0389d0d648187326fc09594008856338436a8
 T
 $src/components/organisms/Nav/Nav.jsx,7/3/73f341fd8a1e97b808c38bddda0ca4a2a8f4bff8
-@
-src/type/news.ts,d/9/d9099c0bd184bc6da113a032e2037379a63a9c1e
 U
 %src/v3-component/MainPage/MainTop.tsx,f/b/fbd7c6dc47d8c40ed95c710bee46ca49703f121a
 c

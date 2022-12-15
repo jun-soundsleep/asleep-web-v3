@@ -11,6 +11,7 @@ const PRIVATE_KEY =
 
 export default async function handler(req, res) {
   try {
+    const body = JSON.parse(req.body);
     const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
     await doc.useServiceAccountAuth({
       client_email: CLIENT_EMAIL,
@@ -18,8 +19,9 @@ export default async function handler(req, res) {
     });
     await doc.loadInfo();
     const sheet = doc.sheetsById[SHEET_ID];
-    const result = await sheet.addRow({ Name: 'jun-test', Value: 'jun-test' });
-    return res.json({ d: result });
+    const result = await sheet.addRow(body);
+    console.log(result);
+    return res.json({ d: 'result' });
   } catch (e) {
     console.error(e);
     return res.json({ d: 'e' });

@@ -3,10 +3,12 @@ import styles from './index.module.css';
 import MotionButton from '../common/MotionButton';
 import useGetCurrentSize from '../../../hooks/useGetCurrentSize';
 import { deviceType } from '../../../styles/device';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { ContactInputType } from '../../type/contact';
+import { useState } from 'react';
 
 const ContactInput = () => {
   const currentSize = useGetCurrentSize();
-
   const isLarge = currentSize === deviceType.large;
 
   return (
@@ -27,47 +29,89 @@ const ContactInput = () => {
 export default ContactInput;
 
 const Form = () => {
-  const inputStyle = `pb-[6px] ${styles.inputBorderStyle} gray3 b2-small w-full mt-[40px] medium:b1-medium-medi large:b1-large`;
-  const textAreaStyle = `${styles.textAreaStyle} pb-[12px] gray3 b2-small bg-transparent mt-[40px] w-full medium:b2-medi large:b1-large`;
+  const inputStyle = `focus:text-white pb-[6px] ${styles.inputBorderStyle} gray3 b2-small w-full mt-[40px] medium:b1-medium-medi large:b1-large `;
+  const textAreaStyle = `focus:text-white ${styles.textAreaStyle} pb-[12px] gray3 b2-small bg-transparent mt-[40px] w-full medium:b2-medi large:b1-large`;
+  const [isLoading, setLoading] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isValid }
+  } = useForm<ContactInputType>();
+
+  const onSubmit: SubmitHandler<ContactInputType> = async data => {
+    if (!isValid || isLoading) {
+      return;
+    }
+
+    setLoading(true);
+    await fetch('/api/gs', {
+      method: 'POST',
+      body: JSON.stringify(data)
+    })
+      .then(el => {
+        window.alert('접수가 완료되었습니다.');
+        setLoading(false);
+        window.location.reload();
+      })
+      .catch(e => {
+        window.alert('다시 시도해주세요.');
+        setLoading(false);
+      });
+  };
 
   return (
-    <form className={`mt-[24px] large:mt-[unset]`}>
+    <form
+      className={`mt-[24px] large:mt-[unset]`}
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <div className={`medium:grid medium:grid-cols-2 medium:gap-[36px]`}>
         <input
           type="text"
           placeholder={'First Name *'}
           className={inputStyle}
+          {...register('firstName', { required: true })}
         />
         <input
           type="text"
           placeholder={'Last Name *'}
           className={inputStyle}
+          {...register('lastName', { required: true })}
         />
         <input
           type="text"
           placeholder={'Company Name *'}
           className={inputStyle}
+          {...register('companyName', { required: true })}
         />
         <input
           type="email"
           placeholder={'Email Address *'}
           className={inputStyle}
+          {...register('email', {
+            required: true,
+            pattern:
+              /([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/
+          })}
         />
         <input
           type="text"
           placeholder={'Job Title *'}
           className={inputStyle}
+          {...register('job', { required: true })}
         />
         <input
           type="text"
           placeholder={'Country *'}
           className={inputStyle}
+          {...register('country', { required: true })}
         />
       </div>
       <textarea
         placeholder={'Anyting else (optional)'}
         className={textAreaStyle}
         rows={3}
+        {...register('anything', { required: false })}
       />
       <div
         className={`p-[20px] w-full h-[80px] flex justify-between items-center mt-[48px] bg-[#363636] medium:p-[32px]`}
@@ -82,6 +126,7 @@ const Form = () => {
           id="scales"
           name="scales"
           className={`w-[20px] h-[20px]`}
+          {...register('marketing', { required: false })}
         />
       </div>
       <div
@@ -89,7 +134,12 @@ const Form = () => {
       >
         <MotionButton
           text={'Submit'}
-          styleClass={`w-full bg-[#2E2E2E] h-[47px] gray2 px-[33px] py-[10px] mt-[24px] b1-medium-small medium:b2-medium-medi medium:px-[37px] medium:py-[12px] medium:mt-[unset] large:sub-large`}
+          styleClass={`w-full bg-[${
+            isValid ? '#3C41EA' : '#2E2E2E'
+          }] h-[47px] ${
+            isValid ? 'text-white' : 'gray2'
+          }  px-[33px] py-[10px] mt-[24px] b1-medium-small medium:b2-medium-medi medium:px-[37px] medium:py-[12px] medium:mt-[unset] large:sub-large`}
+          clickHandler={() => {}}
         />
         <TermsAndCondition />
       </div>
